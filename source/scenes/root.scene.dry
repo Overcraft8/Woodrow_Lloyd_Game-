@@ -49,13 +49,6 @@ set-bg: img/cities/weyburn_street.jpg
 new-page: true
 on-arrival: {!
 
-// Reverting start menu graphics
-document.getElementById('topbar').style.display = ''; 
-document.getElementById('tools_wrapper').style.display = ''; 
-document.getElementById('game-title').style.display = ''; 
-document.getElementById('game-author').style.display = ''; 
-document.getElementById('header-links').style.display = ''; 
-
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
@@ -1986,10 +1979,6 @@ window.updateBar('left');
 window.updateBar('top');
 
 console.log("reached end of root");
-
-
-
-
 !}
 
 > *"Our party stands at the crossroad in Saskatchewan. The relentless work of capitalism is changing and corrupting the province and the people. Many have been crushed; more dispersed; all are confused and manipulated.
@@ -2027,7 +2016,7 @@ on-arrival: {!
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
 
-- @lloyd_intro
+- @lloyd_intro: A New Era?
 
 @1932_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
@@ -2050,12 +2039,19 @@ this.state.disableSaves = true;
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
 
-- @lloyd_intro
+- @lloyd_intro: A New Era?
 
 @lloyd_intro
-title: A New Era?
 subtitle: Our Party Darling is gone...
 go-to: 1932_main
+on-departure: {!
+    // Reverting start menu graphics
+document.getElementById('topbar').style.display = ''; 
+document.getElementById('tools_wrapper').style.display = ''; 
+document.getElementById('game-title').style.display = ''; 
+document.getElementById('game-author').style.display = ''; 
+document.getElementById('header-links').style.display = ''; 
+!}
 
 = A Changing Saskatchewan
 
