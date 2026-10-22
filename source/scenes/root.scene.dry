@@ -5,6 +5,7 @@ go-to: post_event if started = 1; start_menu_2 if started = 0
 @start_menu
 new-page: true
 set-bg: img/cities/rokeby_overhead.jpg
+go-to: start_menu_2
 
 @start_menu_2
 audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
@@ -45,7 +46,7 @@ style: start-scene
 
 
 @start
-set-bg: img/cities/weyburn_street.jpg
+set-bg: img/cities/regina_overhead.jpg
 new-page: true
 on-arrival: {!
 
@@ -93,16 +94,16 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['moderate', 'managerial', 'agrarian_populist', 'left_hardliner', 'labour'];
+Q.factions = ['moderate', 'managerial', 'agrarian', 'left_hardliner', 'labour'];
 // should this be normalized to 100%?
 
-Q.agrarian_populist_strength = 55;
-Q.agrarian_populist_dissent = 0;
+Q.agrarian_strength = 35;
+Q.agrarian_dissent = 0;
 
 Q.left_hardliner_strength = 10;
 Q.left_hardliner_dissent = 20;
 
-Q.managerial_strength = 25;
+Q.managerial_strength = 45;
 Q.managerial_dissent = 5;
 
 Q.moderate_strength = 10;
@@ -118,11 +119,10 @@ Q.neorevisionist_dissent = 10;
 
 Q.faction_colors = {
     left_hardliner_color : "#c32222", 
-    agrarian_populist_color : "#b2c520", 
+    agrarian_color : "#b2c520", 
     managerial_color : "#d26e28", 
     moderate_color : "#f2ff00"
 };
-
 
 Q.party_demographics = ['labour', 'middle class', 'agrarian', 'students'];
 
@@ -279,7 +279,7 @@ Q.inflation = 2.9;
 
 Q.parties = ['ccf', 'cpc_s', 'lps', 'cps', 'scps', 'other'];
 Q.party_names = {
-    'ccf' : 'FLP', 
+    'ccf' : 'CCF(SS)', 
     'cpc_s' : 'CPC(S)', 
     'pps' : 'PPS', 
     'lps' : 'LPS', 
@@ -447,8 +447,8 @@ Q.cpc_s_coalition_dissent = 0;
 Q.ccf_toleration = 0;
 
 // is the current government a minority government?
-Q.minority_government = 1;
-Q.ruling_government = "Cooperative Coalition";
+Q.minority_government = 0;
+Q.ruling_government = "CCF Majority";
 
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
@@ -1809,9 +1809,9 @@ Q.in_election = 1;
 
 
 
-Q.next_parl_election_year = 1934;
+Q.next_parl_election_year = 1964;
 Q.next_parl_election_month = 4;
-Q.next_election_time = 6; //months until the next election
+Q.next_election_time = 31; //months until the next election
 // government affairs timers
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
@@ -1993,6 +1993,31 @@ This game is a total conversion mod for Autumn Chen's game - Social Democracy: A
 
 For more information on the politics and government of Saskatchewan, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
+- @lloyd_intro: A New Era for Saskatchewan
+
+@lloyd_intro
+subtitle: Our Party Darling is gone...
+on-departure: {!
+    // Reverting start menu graphics
+document.getElementById('topbar').style.display = ''; 
+document.getElementById('tools_wrapper').style.display = ''; 
+document.getElementById('game-title').style.display = ''; 
+document.getElementById('game-author').style.display = ''; 
+document.getElementById('header-links').style.display = ''; 
+!}
+
+= A Changing Saskatchewan
+
+Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor country cousin of Confederation, still rotten from the despair of the 'Dirty Thirties' and the Great Depression. It's people were among the poorest in all of Canada. The Liberal Party's political machine and patronage appointments ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers. 
+
+The loudest opposition was from the benches, our party. Coldwell, Williams, and Douglas; all had taken their turn attacking the Liberals for their rampant cronyism. All had offered a promise: Of greater social security and public ownership than the old-line parties could even conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people returned a CCF government. 
+
+With great success, the CCF went about socializing public utilities, hospitalization, and promoting cooperatives like never before. They returned 17 balanced budgets across 17 years in power. It was under the CCF that O&L and potash found it's root in Saskatchewan, helping the our party establish the most generous welfare state in all of Canada. And in 5 consecutive elections, the CCF was returned to power in subsequent majorities. 
+
+But the man who made this possible is gone. The beloved Tommy Douglas has left to lead the Federal NDP. You, Woodrow Lloyd, have been left to oversee the province's greatest transformation yet: the introduction of Medicare. It is three years until the next election. Is this the beginning of The Lloyd Years?
+
+- @1932_main: The road won't be easy
+
 - @1932_main: Begin (Arcade Mode)
 - @1932_hard: Begin (hard difficulty)
 - @1932_historical: Begin (historical mode)
@@ -2015,8 +2040,7 @@ on-arrival: {!
 !}
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
-
-- @lloyd_intro: A New Era?
+go-to: 1932_main
 
 @1932_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
@@ -2038,31 +2062,7 @@ this.state.disableSaves = true;
 !}
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
-
-- @lloyd_intro: A New Era?
-
-@lloyd_intro
-subtitle: Our Party Darling is gone...
 go-to: 1932_main
-on-departure: {!
-    // Reverting start menu graphics
-document.getElementById('topbar').style.display = ''; 
-document.getElementById('tools_wrapper').style.display = ''; 
-document.getElementById('game-title').style.display = ''; 
-document.getElementById('game-author').style.display = ''; 
-document.getElementById('header-links').style.display = ''; 
-!}
-
-= A Changing Saskatchewan
-
-Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor backwater of Dominion, still rotten from the despair of the 'Dirty Thirties', a period of intense drought and crop failure, and the Great Depression. It's people were among the poorest in all of Canada. The Liberal Party's political machine and patronage appointments ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers. 
-
-The loudest opposition was from the benches. Coldwell, Williams, and Douglas; all taken their turn critizing the Liberals for their rampant cronyism. All had offered a promise: Of greater social security and public ownership than the old-line parties could even conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people returned a CCF government. 
-
-And with great success, the CCF went about socializing public utilities, hospitalization, and promoting cooperatives like never before. They returned 17 balanced budgets across 17 years in power. It was under the CCF that O&L and mining finally found a foothold in Saskatchewan, helping the CCF establish the most generous welfare state in all of Canada. And in 5 consecutive elections, the CCF was returned to power in subsequent majorities. 
-
-But the man who made this possible is gone. The beloved Tommy Douglas has left to lead the Federal NDP. You, Woodrow Lloyd, have been left to oversee the province's greatest transformation yet: the introduction of Medicare. It is three years until the next election. Is this the beginning of The Lloyd Years?
-
 
 @1932_main
 subtitle: More freedom, Intended way to Play - Less historical

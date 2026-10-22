@@ -94,6 +94,7 @@ credit_union.jpg
 powerhouse.jpg
 rokeby_overhead.jpg - https://prairie-towns.com/rokeby-images.html
 craven_scene.jpg - https://www.prairie-towns.com/craven-images.html
+regina_overhead.jpg - https://www.prairie-towns.com/regina-234.html
 
 // -----------------------------------
 //  Reddit
