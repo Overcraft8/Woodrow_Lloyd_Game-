@@ -237,9 +237,11 @@ CPS: [+ cps_ideology +] ([+ cps_leader +])
 
 [? if year <= 1935 and month <= 3 : SCPS: [+ scps_ideology +] ([+ scps_leader +]) ?]
 
-Support for Socialism: [+ socialism_support +]
+<div style="border-bottom:2px solid grey"></div>
 
-Support for Social Credit: [+ social_credit_support +]
+Support for Socialism: [+ socialism_support +]%
+
+Support for Social Credit: [+ social_credit_support +]%
 
 @organizations
 on-arrival: {!

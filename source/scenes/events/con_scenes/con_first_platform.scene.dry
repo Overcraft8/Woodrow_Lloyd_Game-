@@ -9,7 +9,7 @@ face-image: img/Tory/cps_platform.png
 
 - @diefenbaker_platform: The CPS adopts a Red Tory Platform
 - @macpherson_platform: The Return of Traditional Conservatism
-- @bryant_platform: Anderson's 
+- @bryant_platform: The Cultural Fight
 
 @diefenbaker_platform
 view-if: cps_leader = 'Diefenbaker'
@@ -19,7 +19,7 @@ view-if: cps_leader = 'Diefenbaker'
 
 As expected John Diefenbaker is pushing the Conservative Party leftwards, emphasizing the ability of government to raise the standard of living for Saskatchewan residents and resist the societal effects of the Great Depression, in line with Red Toryism. 
 
-The Tories are now campaigning on debtor protection, prevention of mortgage foreclosure, the promotion of co-operatives, crop insurance, and stricter enforcement of the Minimum Wage Act. Perhaps most surprisingly, Diefenbaker's Red Tories have included a provision advocating state medicine, hospitalization, and health insurance pending a government investigation into the matter. For all intents and purposes, it seems the Red Tory wing of the CPS is moving the party in the programmatic direction of the Progressives!
+The Tories are now campaigning on debtor protection, prevention of mortgage foreclosure, the promotion of co-operatives, crop insurance, electoral reform, and stricter enforcement of the Minimum Wage Act. Perhaps most surprisingly, Diefenbaker's Red Tories have included a provision advocating state medicine, hospitalization, and health insurance pending a government investigation into the matter. For all intents and purposes, it seems the Red Tory wing of the CPS is moving the party in the programmatic direction of the Progressives!
 
 However, lacking funding from the Federal Party and from it's own membership means the CPS is likely to run the campaign half-starved and exhausted from 5 years in government. Tory riding associations are in disarray and morale is at an all time low following the most recent election's disastrous result. The question still remains, no matter the ideological direction of the CPS, whether they are simply an outspent force. 
 
@@ -30,7 +30,7 @@ view-if: cps_leader = 'MacPherson'
 
 For MacPherson, a return to good government and public confidence in government requires the restoration of sound public finance. The province has earned the most debt of all the Canadian provinces as it's dominant agricultural sector has been decimated by successive years of crop failure and low prices. 
 
-MacPherson is moving the party in a traditional fiscal conservatist direction, emphasizing the need for balanced budgets in order to attract capital and ease the burdens of the depression. 
+MacPherson is moving the party in a traditional fiscal conservatist direction, emphasizing the need for balanced budgets in order to attract capital and ease the burdens of the depression. In addition, the Conservatives are making planks towards workers with proposals of unemployment insurance, greater labour legislation, and electoral reform. 
 
 
 

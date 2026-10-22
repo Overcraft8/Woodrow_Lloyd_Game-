@@ -1,13 +1,20 @@
 title: News
 new-page: true
 is-special: true
+
+@government_actions
+
+= Government Actions
+
+
+@news
 on-arrival: {!
 
 // --------------------------------------------------------------------
 //                            NEWS
 // --------------------------------------------------------------------
 
-
+/* 
 window.news_activator();
 
 if (document.getElementById('news_title') == null) {
@@ -15,7 +22,7 @@ if (document.getElementById('news_title') == null) {
   container.innerHTML += `<div style="text-align: center;" id="news_title">
                             <span style="font-family: Times New Roman; font-size: 2.2em; font-weight: bold;">News</span>
                           </div>`;
-}
+} */
 
 !}
 
@@ -24,7 +31,3 @@ if (document.getElementById('news_title') == null) {
 </div>
 
 [+ news_display +]
-
-@government_actions
-
-= Government Actions

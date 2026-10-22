@@ -798,6 +798,7 @@ for (var party of Q.parties) {
 }
 
 Q.parliament_diagram = data
+Q.time_since_last_election = 0; 
 
 /* 
 if (window && d3) {

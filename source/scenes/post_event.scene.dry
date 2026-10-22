@@ -261,6 +261,7 @@ if (Q.month == 7) {
 // 1. update dates
 if (Q.month_actions >= 1) {
     Q.time += 1;
+    Q.time_since_last_election += 1;
     Q.month_actions = 0;
     Q.month += 1;
     if (Q.month >= 9) {

@@ -1,0 +1,11 @@
+title: The LPS Returns to the Fore
+subtitle: The Premier is desperate
+tags: event
+view-if: year >= 1932 and year <= 1934 and lps_in_government = 1
+priority: 1
+max-visits: 1
+face-image: img/portraits/GardinerJimmy.jpg
+
+= Jimmy Gardiner Premier
+
+It has been five long years since the Liberal Party sat on the government benches. The natural order it seems, in Saskatchewan, has been restored. The LPS will have much work to do revitalizing the province, particularly in restoring it's finances and 
