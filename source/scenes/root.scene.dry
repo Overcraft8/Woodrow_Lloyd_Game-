@@ -305,24 +305,24 @@ Q.cps_relation = 40;
 Q.scps_relation = 10;
 
 
-Q.ccf_leader = "M.J. Coldwell";
+Q.ccf_leader = "Woodrow Lloyd";
 Q.ccf_leader_img = "LloydWoodrow.jpg";
 Q.ccf_president = "None";
 Q.ccf_president_img = "LloydWoodrow.jpg";
 
 
 Q.cpc_s_leader = "None";
-Q.cps_leader = "James Anderson";
-Q.lps_leader = "James Gardiner";
-Q.scps_leader = "Joseph Needham"; 
+Q.cps_leader = "Martin Pederson";
+Q.lps_leader = "Ross Thatcher";
+Q.scps_leader = "Martin Kelln"; 
 Q.pps_leader = "None";
 
 Q.ccf_legislative_leader = "Williams";
 Q.ccf_president = "Williams";
-Q.cpc_s_leader = "None";
-Q.cps_leader = "Anderson";
-Q.lps_leader = "Gardiner";
-Q.scps_leader = "Needham"; 
+Q.cpc_s_leader = "Who cares?";
+Q.cps_leader = "Pederson";
+Q.lps_leader = "Thatcher";
+Q.scps_leader = "Kelln"; 
 Q.pps_leader = "None";
 
 Q.party_colours = {
@@ -422,7 +422,7 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.prime_minister = "Richard Bennett (CPC)";
+Q.prime_minister = "Diefenbaker (PC)";
 // starting premier: James Anderson
 Q.premier = "Woodrow Lloyd";
 Q.premier_img = 'LloydWoodrow.jpg';
@@ -1507,7 +1507,7 @@ Q.cpc_s_seats = 0;
 Q.pps_seats = 0;
 Q.lps_seats = 17;
 Q.cps_seats = 0;
-Q.other_seats = 6;
+Q.other_seats = 0;
 Q.scps_seats = 0;
 
 Q.largest_party = 'cps';
