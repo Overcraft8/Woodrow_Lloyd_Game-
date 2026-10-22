@@ -5,7 +5,6 @@ go-to: post_event if started = 1; start_menu if started = 0
 @start_menu
 new-page: true
 set-bg: img/cities/rokeby_overhead.jpg
-go-to: start_menu_2
 
 @start_menu_2
 audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
@@ -60,12 +59,12 @@ document.getElementById('header-links').style.display = '';
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1932;
-Q.prev_year = 1931;
-Q.month = 1;
+Q.year = 1961;
+Q.prev_year = 1960;
+Q.month = 11;
 // how many actions have been taken this month?
 Q.month_actions = 0;
-Q.last_month = 0
+Q.last_month = 0;
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
@@ -2027,7 +2026,8 @@ on-arrival: {!
 !}
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
-go-to: 1932_main
+
+- @lloyd_intro
 
 @1932_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
@@ -2049,7 +2049,24 @@ this.state.disableSaves = true;
 !}
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
+
+- @lloyd_intro
+
+@lloyd_intro
+title: A New Era?
+subtitle: Our Party Darling is gone...
 go-to: 1932_main
+
+= A Changing Saskatchewan
+
+Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor backwater of Dominion, still rotten from the despair of the 'Dirty Thirties', a period of intense drought and crop failure, and the Great Depression. It's people were among the poorest in all of Canada. The Liberal Party's political machine and patronage appointments ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers. 
+
+The loudest opposition was from the benches. Coldwell, Williams, and Douglas; all taken their turn critizing the Liberals for their rampant cronyism. All had offered a promise: Of greater social security and public ownership than the old-line parties could even conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people returned a CCF government. 
+
+And with great success, the CCF went about socializing public utilities, hospitalization, and promoting cooperatives like never before. They returned 17 balanced budgets across 17 years in power. It was under the CCF that O&L and mining finally found a foothold in Saskatchewan, helping the CCF establish the most generous welfare state in all of Canada. And in 5 consecutive elections, the CCF was returned to power in subsequent majorities. 
+
+But the man who made this possible is gone. The beloved Tommy Douglas has left to lead the Federal NDP. You, Woodrow Lloyd, have been left to oversee the province's greatest transformation yet: the introduction of Medicare. It is three years until the next election. Is this the beginning of The Lloyd Years?
+
 
 @1932_main
 subtitle: More freedom, Intended way to Play - Less historical
