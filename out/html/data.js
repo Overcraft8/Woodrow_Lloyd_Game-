@@ -130,6 +130,11 @@ const tooltipList = [{
     searchString: "Res. Workers", 
     explanationText: "Workers in the Resouce industry (lumber, mining, etc.)"
 },
+// Ideologies
+{
+    searchString: "Social Democracy", 
+    explanationText: "Social Democracy in Saskatchewan represents a moderation of the CCF's original Socialist goals as outlined in the Regina Manifesto. Social Democracy posits that the most realistic way for the CCF to maintain relevancy is to do away with the more radical aspects of the Regina Manifesto in favour of meeting immediate humanitarian needs. The Douglas government undertook in several areas state-intervention to achieve this: public ownership of utilities, government car insurance, marketing boards for Northern resources, and a state-owned inter-city transportation company. In other areas such as mining and O&L, the CCF has allowed private companies to take the lead, largely in part due to insufficient government expertise and funds. "
+},
 ];
 
 
@@ -249,95 +254,10 @@ const colourList = [{
         word: ['Wheat Pool'],
         style: "color: #babe39; font-weight: bold;"
     },
-    // Below this for states of qdisplays
-    /*
-    {
-        word: "very low", 
-        style: "color: #54e02a; font-weight: bold;"
-    },
-    {
-        word: "low", 
-        style: "color: #9ae02a; font-weight: bold;"
-    },
-    {
-        word: "medium", 
-        style: "color: #e0d12a; font-weight: bold;"
-    },
-    {
-        word: "high", 
-        style: "color: #e0702a; font-weight: bold;"
-    },
-    {
-        word: "very high", 
-        style: "color: #e0332a; font-weight: bold;"
-    },
-    //Relationships
-    {
-        word: "very friendly", 
-        style: "color: #54e02a; font-weight: bold;"
-    },
-    {
-        word: "friendly", 
-        style: "color: #9ae02a; font-weight: bold;"
-    },
-    {
-        word: "warm", 
-        style: "color: #c5e02a; font-weight: bold;"
-    },
-    {
-        word: "neutral", 
-        style: "color: #e0d12a; font-weight: bold;"
-    },
-    {
-        word: "cool", 
-        style: "color: #e0a62a; font-weight: bold;"
-    },
-    {
-        word: "cold", 
-        style: "color: rgb(224, 118, 42); font-weight: bold;"
-    },
-    {
-        word: "frigid", 
-        style: "color: rgb(224, 81, 42); font-weight: bold;"
-    },
-    {
-        word: "hostile", 
-        style: "color: rgb(224, 48, 42); font-weight: bold;"
-    },
-    //Population Percentage || Pop
-    {
-        word: "Scarce", 
-        style: "color: #54e02a; font-weight: bold;"
-    },
-    {
-        word: "Scarce", 
-        style: "color: #ace02a; font-weight: bold;"
-    },
-    {
-        word: "Prevalent", 
-        style: "color: #e0b52a; font-weight: bold;"
-    },
-    {
-        word: "Severe", 
-        style: "color: #e0792a; font-weight: bold;"
-    },
-    {
-        word: "Disastrous", 
-        style: "color: #e03c2a; font-weight: bold;"
-    },*/
-    // Militancy
     // Ideologies
     {
-        word: ['Social Democrat', 'Democratic Socialist'], 
-        style: "color: #e0452a; font-weight: bold;"
-    },
-    {
-        word: ['Social Democracy', 'The Lloyd Years', 'Social Democracy: The Lloyd Years'], 
+        word: ['The Lloyd Years', 'Social Democracy: The Lloyd Years'], 
         style: "color: #e06a2a; font-weight: bold;"
-    },
-    {
-        word: ['Socialism', 'Democratic Socialism'], 
-        style: "color: #e0452a; font-weight: bold;"
     },
     {
         word: ['Communist', 'Communist Party', 'Communists', 'communist', 'communists'], 
@@ -348,7 +268,7 @@ const colourList = [{
         style: "color: #BE0028; font-weight: bold;"
     },
     {
-        word: ['Conservative', 'Conservative Party', 'Tory', 'Tories'], 
+        word: ['Conservative Party', 'Tory', 'Tories', 'PC', "PC's", 'Progressive Conservative', 'Progressive Conservatives', 'Progressive Conservative Party'], 
         style: "color: #0055A5; font-weight: bold;"
     },
     {

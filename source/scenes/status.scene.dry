@@ -121,9 +121,6 @@ window.westminster('westminster_legislature', false, data);
     [+ party_names.ccf +] position: [? if ccf_toleration : toleration ?][? if ccf_in_government : in government - ?][? if ccf_toleration == 0 and ccf_in_government == 0 and ccf_caretaker == 0 : opposition ?][? if ccf_caretaker : caretaker government ?]
     [? if in_lps_coalition and ccf_in_government: Liberal-CCF Coalition ?][? if in_grand_coalition and ccf_in_government: Grand Coalition ?][? if in_unity_government and ccf_in_government: Popular Front ?][? if in_left_front and ccf_in_government: Left Front ?][? if in_ccf_majority and ccf_in_government: [+ party_names.ccf +] majority ?][? if in_minority_government and ccf_in_government: minority government ?]
 
-    [? if ccf_in_government and not in_ccf_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
-
-    [? if ccf_in_government and (in_left_front or in_unity_government): CPC(S) coalition dissent: [+ cpc_s_coalition_dissent : coalition_dissent +] ?]
 
     Prime Minister: [+ prime_minister +]
 </div> 
@@ -220,7 +217,7 @@ Next Legislative Election: [+ next_parl_election_month : month +] [+ next_parl_e
 
 CPC(S): [+ cpc_s_ideology +] ([+cpc_s_leader +])
 
-[+ party_names.ccf +]: [+ ccf_ideology +] ([+ ccf_president +])
+[+ party_names.ccf +]: [+ ccf_ideology +] ([+ ccf_leader +])
 
 [? if year <= 1932 and month <= 3 : PPS: [+ pps_ideology +] ([+ pps_leader +]) ?]
 
