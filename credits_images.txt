@@ -73,6 +73,9 @@ Premier_Scott.jpg, FrederickWAGHaultain.png - https://en.wikipedia.org/wiki/1905
 SGGA_picnic.jpg - https://en.wikipedia.org/wiki/Saskatchewan_Grain_Growers%27_Association#/media/File:William_Charles_Sutherland_addresses_a_Saskatchewan_Grain_Growers'_Picnic_at_Eagle_Creek_on_19_July_1911.jpg
 HaldemanJoshua.png - https://en.wikipedia.org/wiki/Joshua_N._Haldeman
 MacphersonMA.jpg - https://commons.wikimedia.org/wiki/File:Murdoch_Alexander_MacPherson.jpg
+LloydWoodrow.jpg - https://commons.wikimedia.org/wiki/File:Woodrow_Stanley_Lloyd-M._West,_Regina.jpg
+
+
 
 // -----------------------------------
 //    Internet Archive

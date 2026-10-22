@@ -84,7 +84,7 @@ PPS: [+ pps_r +]%
 # 1928: 10, 1930: 13
 CPC(S): [+ cpc_s_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-[+ lps_name +]: [+ lps_r +]%
+[+ party_names.lps +]: [+ lps_r +]%
 # 1928: 9, 1930: 5
 CPS: [+ cps_r +]%
 # 1928: 14, 1930: 7
@@ -171,7 +171,7 @@ PPS: [+ pps_polls +]%
 CPC(S): [+ cpc_s_polls +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-[+ lps_name +]: [+ lps_polls +]%
+[+ party_names.lps +]: [+ lps_polls +]%
 
 # 1928: 9, 1930: 5
 CPS: [+ cps_polls +]%
@@ -184,17 +184,17 @@ Others: [+ other_polls +]%
 
 **Detailed results for each demographic**
 
-Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, CPC(S): [+ workers_cpc_s_display +]%, [+ lps_name +]: [+ workers_lps_display +]%, CPS: [+ workers_cps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, CPC(S): [+ workers_cpc_s_display +]%, [+ party_names.lps +]: [+ workers_lps_display +]%, CPS: [+ workers_cps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%, CPC(S): [+ new_middle_cpc_s_display +]%, [+ lps_name +]: [+ new_middle_lps_display +]%, CPS: [+ new_middle_cps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%, CPC(S): [+ new_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ new_middle_lps_display +]%, CPS: [+ new_middle_cps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, CPC(S): [+ old_middle_cpc_s_display +]%, [+ lps_name +]: [+ old_middle_lps_display +]%, CPS: [+ old_middle_cps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, CPC(S): [+ old_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ old_middle_lps_display +]%, CPS: [+ old_middle_cps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, CPC(S): [+ farmers_cpc_s_display +]%, [+ lps_name +]: [+ farmers_lps_display +]%, CPS: [+ farmers_cps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
+Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, CPC(S): [+ farmers_cpc_s_display +]%, [+ party_names.lps +]: [+ farmers_lps_display +]%, CPS: [+ farmers_cps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
 
-Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, CPC(S): [+ unemployed_cpc_s_display +]%, [+ lps_name +]: [+ unemployed_lps_display +]%, CPS: [+ unemployed_cps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, CPC(S): [+ unemployed_cpc_s_display +]%, [+ party_names.lps +]: [+ unemployed_lps_display +]%, CPS: [+ unemployed_cps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Catholics: CCF(SS): [+ catholics_ccf_display +]%, PPS: [+ catholics_pps_display +]%, CPC(S): [+ catholics_cpc_s_display +]%, [+ lps_name +]: [+ catholics_lps_display +]%, CPS: [+ catholics_cps_display +]%; SCPS: [+ catholics_scps_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics: CCF(SS): [+ catholics_ccf_display +]%, PPS: [+ catholics_pps_display +]%, CPC(S): [+ catholics_cpc_s_display +]%, [+ party_names.lps +]: [+ catholics_lps_display +]%, CPS: [+ catholics_cps_display +]%; SCPS: [+ catholics_scps_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 @parties
 go-to: menu
@@ -450,7 +450,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#920c0c'> </div></td> <td>!} CPC(S): {!</td><td>!} [+ cpc_s_seats +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#BE0028'> </div></td><td>!} [+ lps_name +]: {!</td><td>!} [+ lps_seats +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#BE0028'> </div></td><td>!} [+ party_names.lps +]: {!</td><td>!} [+ lps_seats +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#7e741ab3'> </div></td><td>!} PPS: {!</td><td>!} [+ pps_seats +]% {!</td></tr>!}
 

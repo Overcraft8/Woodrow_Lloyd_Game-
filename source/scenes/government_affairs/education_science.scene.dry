@@ -120,7 +120,7 @@ go-to: vote_of_no_confidence.vonc_menu if in_lps_coalition or in_grand_coalition
 
 # instant VONC from zentrum
 
-The [+ party_names.ccf +], [+ lps_name +], CPS, and CPC(S) vote in favor of secular education, overcoming the opposition of the religiously-oriented PPS Party and SCPS. We have funded secular community schools to replace some previous denominational schools.
+The [+ party_names.ccf +], [+ party_names.lps +], CPS, and CPC(S) vote in favor of secular education, overcoming the opposition of the religiously-oriented PPS Party and SCPS. We have funded secular community schools to replace some previous denominational schools.
 
 [? if in_lps_coalition or in_grand_coalition or in_unity_government: Of course, the PPS Party is in revolt at this proposal, and have called for a vote of no confidence in our government. ?]
 

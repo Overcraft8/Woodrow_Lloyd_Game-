@@ -30,7 +30,7 @@ on-departure: {!
 style: start-scene
 
 <div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
-    = Social Democracy: The Prairie Lily
+    = Social Democracy: The Lloyd Years
 </div>
 
 # <div style="background: url('img/graphics/CCF.png') center 72% / cover no-repeat;width:100%;display: block;height: 20em;border: 3px ridge #4b422b;"></div>
@@ -285,7 +285,7 @@ Q.inflation = 2.9;
 // quality of life (as % of 1932 - currently unused - should be welfare-adjusted.)
 
 
-Q.parties = ['ccf', 'cpc_s', 'pps', 'lps', 'cps', 'scps', 'other'];
+Q.parties = ['ccf', 'cpc_s', 'lps', 'cps', 'scps', 'other'];
 Q.party_names = {
     'ccf' : 'FLP', 
     'cpc_s' : 'CPC(S)', 
@@ -297,18 +297,18 @@ Q.party_names = {
 };
 
 // inter-party relations
-Q.pps_relation = 50;
-Q.cpc_s_relation = 25;
-Q.lps_relation = 20;
-Q.cps_relation = 35;
+Q.pps_relation = 0;
+Q.cpc_s_relation = 20;
+Q.lps_relation = 0;
+Q.cps_relation = 40;
 // SCPS are invariably hostile
 Q.scps_relation = 10;
 
 
 Q.ccf_leader = "M.J. Coldwell";
-Q.ccf_leader_img = "ColdwellMajorJames.jpg";
+Q.ccf_leader_img = "LloydWoodrow.jpg";
 Q.ccf_president = "None";
-Q.ccf_president_img = "ColdwellMajorJames.jpg";
+Q.ccf_president_img = "LloydWoodrow.jpg";
 
 
 Q.cpc_s_leader = "None";
@@ -318,7 +318,7 @@ Q.scps_leader = "Joseph Needham";
 Q.pps_leader = "None";
 
 Q.ccf_legislative_leader = "Williams";
-Q.ccf_abpresident = "Williams";
+Q.ccf_president = "Williams";
 Q.cpc_s_leader = "None";
 Q.cps_leader = "Anderson";
 Q.lps_leader = "Gardiner";
@@ -367,26 +367,26 @@ Q.rural_seats = 31;
 //                           Party Ideologies
 Q.cpc_s_ideology = "Marxism-Leninism";
 Q.cpc_s_politlean = 3;
-Q.ccf_ideology = "Democratic Socialism";
+Q.ccf_ideology = "Social Democracy";
 Q.ccf_politlean = 7;
 Q.pps_ideology = "Even they don't know...";
 Q.pps_politlean = 8;
 Q.lps_ideology = "Classical Liberalism";
 Q.lps_politlean = 10;
-Q.cps_ideology = "Nativist Conservatism";
+Q.cps_ideology = "Moderate Toryism";
 Q.cps_politlean = 13;
-Q.scps_ideology = "Social Credit";
+Q.scps_ideology = "Right-Wing Populism";
 Q.scps_politlean = 16;
 
 Q.cpc_s_unity_front = 0
 
 
 
-Q.ccf_in_government = 0; 
+Q.ccf_in_government = 1; 
 Q.cpc_s_in_government = 0; 
-Q.pps_in_government = 1; 
-Q.cps_in_government = 1; 
-Q.other_in_government = 1; 
+Q.pps_in_government = 0; 
+Q.cps_in_government = 0; 
+Q.other_in_government = 0; 
 Q.lps_in_government = 0; 
 Q.scps_in_government = 0; 
 
@@ -424,9 +424,9 @@ Q.economic_records = [];
 // State of the government
 Q.prime_minister = "Richard Bennett (CPC)";
 // starting premier: James Anderson
-Q.premier = "James Anderson";
-Q.premier_img = 'AndersonJames.jpg';
-Q.premier_party = 'CPS';
+Q.premier = "Woodrow Lloyd";
+Q.premier_img = 'LloydWoodrow.jpg';
+Q.premier_party = 'CCF';
 
 Q.in_right_coalition = 0;
 // Weimar coalition = [+ party_names.ccf +] + PPS + LPS
@@ -1502,11 +1502,11 @@ Q.catholics_other = 6;
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
 
-Q.ccf_seats = 0;
+Q.ccf_seats = 37;
 Q.cpc_s_seats = 0;
-Q.pps_seats = 5;
-Q.lps_seats = 28;
-Q.cps_seats = 24;
+Q.pps_seats = 0;
+Q.lps_seats = 17;
+Q.cps_seats = 0;
 Q.other_seats = 6;
 Q.scps_seats = 0;
 
@@ -1933,13 +1933,6 @@ data = data.concat([
         "name": "LPS",
         "seats": Q.lps_seats,
         "bench": Q.lps_in_government
-    },
-    {
-        "id": "pps",
-        "legend": "PPS",
-        "name": "PPS",
-        "seats": Q.pps_seats, 
-        "bench": Q.pps_in_government
     },
     {
         "id": "cps",

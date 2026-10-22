@@ -84,7 +84,7 @@ if (!Q.stresemann_dead) {
 !}
 view-if: constructive_vonc = 0
 
-[? if pps_relation >= 30 : The Liberal-CCF Coalition parties, the [+ lps_name +] and PPS Party, support this reform, which will greatly improve the stability of the government. ?] [? if pps_relation < 30 : The [+ lps_name +] supports this reform, but the PPS Party does not trust us enough to support the constitutional referendum. ?] The more conservative and radical right-wing parties and the CPC(S) are in opposition, as they seem to relish in the republican system's instability.
+[? if pps_relation >= 30 : The Liberal-CCF Coalition parties, the [+ party_names.lps +] and PPS Party, support this reform, which will greatly improve the stability of the government. ?] [? if pps_relation < 30 : The [+ party_names.lps +] supports this reform, but the PPS Party does not trust us enough to support the constitutional referendum. ?] The more conservative and radical right-wing parties and the CPC(S) are in opposition, as they seem to relish in the republican system's instability.
 
 - @constructive_vonc_2: Call a constitutional referendum to pass the reform!
 - @reforms_menu: See other reform options.
@@ -111,7 +111,7 @@ view-if: prime_ministerial_powers = 0
 
 The wide-ranging prime ministerial powers promised by the constitution are a potential gateway to authoritarianism. Thus, we can support reforms that limit the powers of the prime minister, ending his power to unilaterally terminate an elected government and to remove state governments.
 
-The CPC(S) is in favor of this reform, having been victims of the *Reichsexekution* in the past (when CPC(S)-supported state governments in Thuringia and Saxony were removed). The democrats of the [+ lps_name +] also support this. [? if prime_minister == "Richard Bennett": However, the opposition from conservatives is vehement, as they see a reduction in prime ministerial powers as disrespectful to Richard Bennett. ?] [? if pps_relation <= 49 and prime_minister == "Richard Bennett" : Thus, the PPS Party has been influenced to oppose these reforms. ?] [? if pps_relation > 49 and prime_minister == "Richard Bennett" : Despite this, the PPS Party supports the proposed reform. ?] [? if prime_minister == "J. S. Woodsworth" : The PPS Party supports this reform. ?]
+The CPC(S) is in favor of this reform, having been victims of the *Reichsexekution* in the past (when CPC(S)-supported state governments in Thuringia and Saxony were removed). The democrats of the [+ party_names.lps +] also support this. [? if prime_minister == "Richard Bennett": However, the opposition from conservatives is vehement, as they see a reduction in prime ministerial powers as disrespectful to Richard Bennett. ?] [? if pps_relation <= 49 and prime_minister == "Richard Bennett" : Thus, the PPS Party has been influenced to oppose these reforms. ?] [? if pps_relation > 49 and prime_minister == "Richard Bennett" : Despite this, the PPS Party supports the proposed reform. ?] [? if prime_minister == "J. S. Woodsworth" : The PPS Party supports this reform. ?]
 
 - @prime_ministerial_powers_2: Call a constitutional referendum to pass the reform!
 - @reforms_menu: See other reform options.

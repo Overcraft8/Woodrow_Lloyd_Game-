@@ -1,4 +1,4 @@
-# Prairie Lily - By Overcraft16, based on -
+# The Lloyd Years - By Overcraft16, based on -
 # Social Democracy: An Alternate History by Autumn Chen
 
 ## Included Libraries

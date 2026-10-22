@@ -29,7 +29,7 @@ choose-if: progressive_coalition >= 50
 on-arrival: repealed_175 = 1; homosexual_rights += 1; pps_relation -= 5; cpc_s_relation += 4*(1-dissent); lps_relation += 4*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_lps_coalition); catholics_ccf -= 4; economic_growth += 0.1;
 audio: shuffle music/1928_1933/Das_lila_lied_normalized.mp3
 
-Together with the progressives in the CPC(S) and [+ lps_name +], we have effectively decriminalized homosexual sex in Saskatchewan. Persecution of homosexuals for their private acts will stop, as long as the police are loyal to the republic.
+Together with the progressives in the CPC(S) and [+ party_names.lps +], we have effectively decriminalized homosexual sex in Saskatchewan. Persecution of homosexuals for their private acts will stop, as long as the police are loyal to the republic.
 
 Of course, conservatives and the far right accuse us of "degeneracy".
 
@@ -42,7 +42,7 @@ choose-if: progressive_coalition >= 50
 on-arrival: reformed_183 = 1; homosexual_rights += 1; pps_relation -= 5; cpc_s_relation += 4*(1-dissent); lps_relation += 4*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_lps_coalition); catholics_ccf -= 4; economic_growth += 0.1;
 audio: shuffle music/1928_1933/Das_lila_lied_normalized.mp3
 
-Voting together with the progressives in the CPC(S) and [+ lps_name +], we have reformed Paragraph 183 so that it no longer criminalizes public homosexuality and cross-dressing.
+Voting together with the progressives in the CPC(S) and [+ party_names.lps +], we have reformed Paragraph 183 so that it no longer criminalizes public homosexuality and cross-dressing.
 
 
 @change_sex

@@ -54,13 +54,6 @@ data = data.concat([
         "bench": Q.lps_in_government
     },
     {
-        "id": "pps",
-        "legend": "PPS",
-        "name": "PPS",
-        "seats": Q.pps_seats, 
-        "bench": Q.pps_in_government
-    },
-    {
         "id": "cps",
         "legend": "CPS",
         "name": "CPS",
@@ -152,7 +145,7 @@ window.westminster('westminster_legislature', false, data);
 # # 1928: 10, 1930: 13
 # [? if cpc_s_seats > 0: [? if not cpc_s_name: CPC(S)?][? if cpc_s_name != 0 : [+ cpc_s_name +]?]{!</span>!}: [+ cpc_s_seats +] ?]
 # # 1928: 5, 1930: 4 (as DstP)
-# [? if lps_seats > 0: [? if not lps_name: LPS?][? if lps_name != 0 : [+ lps_name +]?]{!</span>!}: [+ lps_seats +] ?]
+# [? if lps_seats > 0: [? if not lps_name: LPS?][? if lps_name != 0 : [+ party_names.lps +]?]{!</span>!}: [+ lps_seats +] ?]
 # # 1928: 9, 1930: 5
 # [? if cps_seats > 0: [? if not cps_name: CPS?][? if cps_name != 0 : [+ cps_name +]?]{!</span>!}: [+ cps_seats +] ?]
 # # 1928: 14, 1930: 7
@@ -180,7 +173,7 @@ Assembly composition:
 # 1928: 10, 1930: 13
 [? if cpc_s_seats > 0: [? if not cpc_s_name: CPC(S)?][? if cpc_s_name != 0 : [+ cpc_s_name +]?]{!</span>!}: [+ cpc_s_seats +] ?]
 # 1928: 5, 1930: 4 (as DstP)
-[? if lps_seats > 0: [? if not lps_name: LPS?][? if lps_name != 0 : [+ lps_name +]?]{!</span>!}: [+ lps_seats +] ?]
+[? if lps_seats > 0: [? if not lps_name: LPS?][? if lps_name != 0 : [+ party_names.lps +]?]{!</span>!}: [+ lps_seats +] ?]
 # 1928: 9, 1930: 5
 [? if cps_seats > 0: [? if not cps_name: CPS?][? if cps_name != 0 : [+ cps_name +]?]{!</span>!}: [+ cps_seats +] ?]
 # 1928: 14, 1930: 7
