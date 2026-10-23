@@ -8,7 +8,6 @@ set-bg: img/cities/rokeby_overhead.jpg
 go-to: start_menu_2
 
 @start_menu_2
-audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
 on-arrival: {!
     document.getElementById('topbar').style.display = 'none'; 
     document.getElementById('tools_wrapper').style.display = 'none'; 
@@ -2005,16 +2004,27 @@ document.getElementById('game-title').style.display = '';
 document.getElementById('game-author').style.display = ''; 
 document.getElementById('header-links').style.display = ''; 
 !}
+audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
+face-image: img/cities/craven_scene.jpg
 
 = A Changing Saskatchewan
 
-Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor country cousin of Confederation, still rotten from the despair of the 'Dirty Thirties' and the Great Depression. It's people were among the poorest in all of Canada. The Liberal Party's political machine and patronage appointments ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers. 
+Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor country cousin of Confederation, still rotten from the despair of the 'Dirty Thirties' and the Great Depression. It's people were among the poorest in all of Canada and their work tied to the uncertain crop yields that had devasted them just a few years later. The Liberal Party's political machine and patronage appointees ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers.
 
-The loudest opposition was from the benches, our party. Coldwell, Williams, and Douglas; all had taken their turn attacking the Liberals for their rampant cronyism. All had offered a promise: Of greater social security and public ownership than the old-line parties could even conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people returned a CCF government. 
+The loudest opposition was from the benches, our party. Coldwell, Williams, and Douglas; all had taken their turn attacking the Liberals for their rampant cronyism and promoting a greater society. All had offered a promise: Greater social security and public ownership than the old-line parties could ever conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people voted in a CCF government with a measly 5 seat Liberal opposition. Thus started the years of hope for us. That we could conceive a Cooperative Commonwealth in our little province. 
 
-With great success, the CCF went about socializing public utilities, hospitalization, and promoting cooperatives like never before. They returned 17 balanced budgets across 17 years in power. It was under the CCF that O&L and potash found it's root in Saskatchewan, helping the our party establish the most generous welfare state in all of Canada. And in 5 consecutive elections, the CCF was returned to power in subsequent majorities. 
+<div class="face-figure"><img class="face-img" src="img/cities/saskatoon_overhead.jpg"></div>
 
-But the man who made this possible is gone. The beloved Tommy Douglas has left to lead the Federal NDP. You, Woodrow Lloyd, have been left to oversee the province's greatest transformation yet: the introduction of Medicare. It is three years until the next election. Is this the beginning of The Lloyd Years?
+It's been 17 years since that day. The province, in many ways, is a lady of considerable prospects. Our socialized utilities keep rates low for citizens, our state corporation for inter-city transit connects hundreds of communities to the urban centres, and our expansion of healthcare programs, namely universal hospitalization and the air ambulance service, have brought modern medicine to those who may have gone without just 20 years earlier. The development of our oil, gas, and potash deposits have brought employment and opportunity to the corners of the province over and workers can now state that they work under the most comprehensive Labour legislation in North America.
+
+- @woodrow_lloyd_start: But it wasn't you at the helm during all this
+
+@woodrow_lloyd_start
+face-image: img/portraits/DouglasTommy.jpg
+
+No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His projection of idealism in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party elite to navigate many a difficulties as a united front. 
+
+But the steady leadership of Douglas is gone. The Federal NDP beckons him to lead their party into Ottawa and 24 Sussex Drive. He leaves behind a mass of unfinished business. 
 
 - @1932_main: Begin (Arcade Mode)
 - @1932_hard: Begin (hard difficulty)

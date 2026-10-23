@@ -74,6 +74,7 @@ SGGA_picnic.jpg - https://en.wikipedia.org/wiki/Saskatchewan_Grain_Growers%27_As
 HaldemanJoshua.png - https://en.wikipedia.org/wiki/Joshua_N._Haldeman
 MacphersonMA.jpg - https://commons.wikimedia.org/wiki/File:Murdoch_Alexander_MacPherson.jpg
 LloydWoodrow.jpg - https://commons.wikimedia.org/wiki/File:Woodrow_Stanley_Lloyd-M._West,_Regina.jpg
+DouglasTommy.jpg - https://commons.wikimedia.org/wiki/File:Premier_Tommy_Douglas_(F1257_s1057_it2743).jpg
 
 
 
@@ -95,6 +96,7 @@ powerhouse.jpg
 rokeby_overhead.jpg - https://prairie-towns.com/rokeby-images.html
 craven_scene.jpg - https://www.prairie-towns.com/craven-images.html
 regina_overhead.jpg - https://www.prairie-towns.com/regina-234.html
+saskatoon_overhead.jpg - https://www.prairie-towns.com/saskatoon-170.html
 
 // -----------------------------------
 //  Reddit
