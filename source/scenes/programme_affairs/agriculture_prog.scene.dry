@@ -43,7 +43,7 @@ This is a radical farmers policy that would potentially destabilize our agricult
 
 @yes_use_lease
 title: Yes to use lease!
-on-arrival: agrarian_strength += 5; ccf_platform.agrarian.use_lease += 1; farmers_ccf += 8; lps_relation -= 10; cps_relation -= 15; pps_relation -= 6
+on-arrival: agrarian_strength += 5; ccf_platform.agrarian.use_lease += 1; farmers_ccf += 8; lps_relation -= 10; pcps_relation -= 15; pps_relation -= 6
 
 We have chosen to add a use-lease policy to our platform. The farmers will surely be enthusiastic. 
 
@@ -53,14 +53,14 @@ We have chosen to add a use-lease policy to our platform. The farmers will surel
 
 Enacting this policy would allow farmers to collect their crop and livestock for sale together in a provincially secured wheat pool, allowing greater bargaining power in both distribution and payment. 
 
-This would encroach upon many of the existing wheat pools in Saskatchewan though we could officiate a merger of these organizations if we so wished. In doing this, we will be displeasing the LPS and CPS who both have allies in the grain companies. 
+This would encroach upon many of the existing wheat pools in Saskatchewan though we could officiate a merger of these organizations if we so wished. In doing this, we will be displeasing the LPS and PCPS who both have allies in the grain companies. 
 
 - @yes_wheat_pool: Yes to the wheat pool
 - @farmers_policies: Let's go back
 
 @yes_wheat_pool
 title: Yes to the wheat pool!
-on-arrival: agrarian_strength += 3; ccf_platform.agrarian.wheat_pool_expansion += 1; farmers_ccf += 4; lps_relation -= 6; cps_relation -= 8
+on-arrival: agrarian_strength += 3; ccf_platform.agrarian.wheat_pool_expansion += 1; farmers_ccf += 4; lps_relation -= 6; pcps_relation -= 8
 
 We have chosen to add a provincial wheat pool to our platform. The farmers will surely be enthusiastic. 
 
@@ -72,14 +72,14 @@ Enacting this policy would put in place a heightened construction of grain eleva
 
 Enacting this policy would bring the ire of the businesses, particularly CPR which profits greatly from it's de facto monopoly over the agricultural sector's transportation and distribution. 
 
-In doing this, we will also be slightly displeasing the LPS and CPS who both have allies in the grain companies. 
+In doing this, we will also be slightly displeasing the LPS and PCPS who both have allies in the grain companies. 
 
 - @yes_grain_elevators: Yes to the grain elevators
 - @farmers_policies: Let's go back
 
 @yes_grain_elevators
 title: Yes to the grain elevators!
-on-arrival: agrarian_strength += 3; ccf_platform.agrarian.grain_elevator_expansion += 1; farmers_ccf += 3; lps_relation -= 4; cps_relation -= 6
+on-arrival: agrarian_strength += 3; ccf_platform.agrarian.grain_elevator_expansion += 1; farmers_ccf += 3; lps_relation -= 4; pcps_relation -= 6
 
 We have chosen to add a provincial grain elevator policy to our platform. 
 

@@ -16,7 +16,7 @@ tags: govt_affairs, cabinet
 # - traditional education (reduces relations with LPS)
 
 # - increase educational opportunities for working-class families.
-# - Secularize education (+ CPS, instant PPS vonc)
+# - Secularize education (+ PCPS, instant PPS vonc)
 
 # source for some of the education stuff: Martin, G. W. “Educational Reform in Saskatchewan 1918-1933.” Masters, Durham University, 1972. https://etheses.dur.ac.uk/9738/.
 
@@ -105,7 +105,7 @@ Education in Saskatchewan has traditionally been organized on religious and clas
 title: Support secular schools to end the religious dominance in education.
 subtitle: -1 budget
 unavailable-subtitle: -1 treasury - requres a majority of parties to support secular schools.
-choose-if: treasury >= 1 and (progressive_coalition + cps_seats >= 50)
+choose-if: treasury >= 1 and (progressive_coalition + pcps_seats >= 50)
 view-if: secularized = 0
 
 Are you sure about this? The Liberal-CCF Coalition had an agreement to not touch religious schools; the Catholic PPS Party will revolt.
@@ -115,12 +115,12 @@ Are you sure about this? The Liberal-CCF Coalition had an agreement to not touch
 - @cancel_advisor_action
 
 @secularize_2
-on-arrival: secularized = 1; catholics_ccf -= 15; pps_relation -= 15; cps_relation += 6*(1-dissent); lps_relation += 6*(1-dissent); cpc_s_relation += 6*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent); education_science += 0.5; new_middle_lps += 4; new_middle_cps += 4
+on-arrival: secularized = 1; catholics_ccf -= 15; pps_relation -= 15; pcps_relation += 6*(1-dissent); lps_relation += 6*(1-dissent); cpc_s_relation += 6*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent); education_science += 0.5; new_middle_lps += 4; new_middle_pcps += 4
 go-to: vote_of_no_confidence.vonc_menu if in_lps_coalition or in_grand_coalition or in_unity_government
 
 # instant VONC from zentrum
 
-The [+ party_names.ccf +], [+ party_names.lps +], CPS, and CPC(S) vote in favor of secular education, overcoming the opposition of the religiously-oriented PPS Party and SCPS. We have funded secular community schools to replace some previous denominational schools.
+The [+ party_names.ccf +], [+ party_names.lps +], PCPS, and CPC(S) vote in favor of secular education, overcoming the opposition of the religiously-oriented PPS Party and SCPS. We have funded secular community schools to replace some previous denominational schools.
 
 [? if in_lps_coalition or in_grand_coalition or in_unity_government: Of course, the PPS Party is in revolt at this proposal, and have called for a vote of no confidence in our government. ?]
 
@@ -167,7 +167,7 @@ What should be the major focus of our new curriculum?
 @dem_major
 title: Democratic curriculum
 subtitle: Critical thinking, democratic citizenship, and collabouration
-on-arrival: curriculum_timer = 50; major_curriculum = "democratic"; pro_republic += 5*(1-dissent); workers_ccf += 3*(1-dissent); democratization += 1; pps_relation -= 3; cps_relation -= 5; coalition_dissent += 1 if in_grand_coalition; pacifism += 1; education_science += 0.3
+on-arrival: curriculum_timer = 50; major_curriculum = "democratic"; pro_republic += 5*(1-dissent); workers_ccf += 3*(1-dissent); democratization += 1; pps_relation -= 3; pcps_relation -= 5; coalition_dissent += 1 if in_grand_coalition; pacifism += 1; education_science += 0.3
 go-to: curriculum_minor
 
 We should teach students how to be citizens of a democratic republic, by teaching them to critically evaluate politics and current events, to exercise their rights and to respect the rights of other citizens. Traditionalists of all stripes are critical of this curriculum.
@@ -191,7 +191,7 @@ Our educational curriculum should be focused on the humanities, including arts, 
 @vocational_major
 title: Vocational curriculum
 subtitle: Useful technical skills for future careers
-on-arrival: curriculum_timer = 50; major_curriculum = "vocational"; cps_relation += 3*(1-dissent); lps_relation += 3*(1-dissent); workers_ccf += 4*(1-dissent); farmers_ccf += 2*(1-dissent); unemployed_ccf += 3*(1-dissent); new_middle_ccf -= 1; unemployed -= 0.1; education_science += 0.5
+on-arrival: curriculum_timer = 50; major_curriculum = "vocational"; pcps_relation += 3*(1-dissent); lps_relation += 3*(1-dissent); workers_ccf += 4*(1-dissent); farmers_ccf += 2*(1-dissent); unemployed_ccf += 3*(1-dissent); new_middle_ccf -= 1; unemployed -= 0.1; education_science += 0.5
 go-to: curriculum_minor
 
 Education should be focused on providing a useful hands-on education, and teach the skills that will be most useful for students' future lives.
@@ -200,7 +200,7 @@ Education should be focused on providing a useful hands-on education, and teach 
 @trad_major
 title: Traditional curriculum
 subtitle: Classics, discipline, and nationalism
-on-arrival: curriculum_timer = 50; major_curriculum = "traditional"; cps_relation += 5*(1-dissent); pps_relation += 4*(1-dissent); old_middle_ccf += 3*(1-dissent); farmers_ccf += 3*(1-dissent); pacifism -= 1 if pacifism > 0; pro_republic -= 5; education_science += 0.2
+on-arrival: curriculum_timer = 50; major_curriculum = "traditional"; pcps_relation += 5*(1-dissent); pps_relation += 4*(1-dissent); old_middle_ccf += 3*(1-dissent); farmers_ccf += 3*(1-dissent); pacifism -= 1 if pacifism > 0; pro_republic -= 5; education_science += 0.2
 go-to: curriculum_minor
 
 The traditional curriculum had a focus on ancient history and language (particularly Latin and Greek), as well as rigid discipline and some level of militarism.
@@ -220,7 +220,7 @@ And what should be a secondary focus of the curriculum?
 title: Democratic curriculum
 subtitle: Critical thinking, democratic citizenship, and collabouration
 view-if: major_curriculum != "democratic"
-on-arrival: minor_curriculum = "democratic"; pro_republic += 3*(1-dissent); workers_ccf += 2*(1-dissent); democratization += 1; pps_relation -= 2; cps_relation -= 3;
+on-arrival: minor_curriculum = "democratic"; pro_republic += 3*(1-dissent); workers_ccf += 2*(1-dissent); democratization += 1; pps_relation -= 2; pcps_relation -= 3;
 
 We should teach students how to be citizens of a democratic republic, by teaching them to critically evaluate politics and current events, to exercise their rights and to respect the rights of other citizens. Traditionalists of all stripes are critical of this curriculum.
 
@@ -253,7 +253,7 @@ Education should be focused on providing a useful hands-on education, and teach 
 title: Traditional curriculum
 subtitle: Classics, discipline, and nationalism
 view-if: major_curriculum != "traditional"
-on-arrival: minor_curriculum = "traditional"; cps_relation += 2*(1-dissent); pps_relation += 2*(1-dissent); old_middle_ccf += 2*(1-dissent); farmers_ccf += 2*(1-dissent); pro_republic -= 3
+on-arrival: minor_curriculum = "traditional"; pcps_relation += 2*(1-dissent); pps_relation += 2*(1-dissent); old_middle_ccf += 2*(1-dissent); farmers_ccf += 2*(1-dissent); pro_republic -= 3
 
 The traditional curriculum had a focus on ancient history and language (particularly Latin and Greek), as well as rigid discipline.
 

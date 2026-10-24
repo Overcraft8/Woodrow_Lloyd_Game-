@@ -33,8 +33,8 @@ const tooltipList = [{
     explanationText: "The Progressive Party of Saskatchewan"
 },
 {
-    searchString: "CPS", 
-    explanationText: "The Conservative Party of Saskatchewan"
+    searchString: "PCPS", 
+    explanationText: "The Progressive Conservative Party of Saskatchewan"
 },
 {
     searchString: "SCPS", 
@@ -137,7 +137,15 @@ const tooltipList = [{
 // Ideologies
 {
     searchString: "Social Democracy", 
-    explanationText: "Social Democracy in Saskatchewan represents a moderation of the CCF's original Socialist goals as outlined in the Regina Manifesto. Social Democracy posits that the most realistic way for the CCF to maintain relevancy is to do away with the more radical aspects of the Regina Manifesto in favour of meeting immediate humanitarian needs. The Douglas government undertook in several areas state-intervention to achieve this: public ownership of utilities, government car insurance and hospitalization, marketing boards for Northern resources, and a state-owned inter-city transportation company. In other areas such as mining and O&L, the CCF has allowed private companies to take the lead, largely in part due to insufficient government expertise and funds. "
+    explanationText: "Social Democracy in Saskatchewan represents a moderation of the CCF's original Socialist goals as outlined in the Regina Manifesto. Social Democracy posits that the most realistic way for the CCF to maintain relevancy is to do away with the more radical aspects of the Regina Manifesto in favour of meeting immediate humanitarian needs. The Douglas government undertook in several areas state-intervention to achieve this: public ownership of utilities, public auto insurance and hospitalization, marketing boards for Northern resources, and a state-owned inter-city transportation company. In other areas such as mining and O&L, the CCF has allowed private companies to take the lead, largely in part due to insufficient government expertise and funds."
+},
+{
+    searchString: "Free-Enterprise Liberalism", 
+    explanationText: "The Liberal Party of Saskatchewan, since their defeat to the 'Socialist' CCF in 1944, have been a pronounced ally of private enterprise. They reject the CCF's emphasis on state-directed economic development in favour of attracting greater private capital into the province. Naturally, they advocate lower taxes in general, inter-provincially competetive royalty rates, and the sale of select crown corporations which they view as inhibitive to the business environment. With regards to agriculture, the LPS advocate lower interest rates to farmers and the sale of Crown-leased land to the producing farmer if willing. The Liberals are not categorically opposed to welfare measures but have criticized the extent of CCF social welfare policies which they believe strain expenditure and administrative capabilities."
+},
+{
+    searchString: "Progressive Conservatism", 
+    explanationText: "The Tories in Saskatchewan have, since the collapse of their last government in 1934, provided somewhat of a middle-ground between the Liberal and CCF parties. There remains a substantial 'Red Tory' tendency in the party that has manifested in a more paternalistic view of the relationship between the government and it's citiens. Thus, the party had been advocating a public medical system as early as 1938. Under Pederson, the party has renewed calls for resource development with a railway line to Churchill, Manitoba, through the provincial government if necessary. Additionally, they would eliminate the sales tax on select children's products. Still, traditional fiscal conservatism is exemplified in their plank to reduce the number of MLAs to 40 members. "
 },
 ];
 
@@ -176,7 +184,7 @@ const colourList = [{
         style: "color: #7e741ab3; font-weight: bold;"
     },
     {
-        word: "CPS", 
+        word: "PCPS", 
         style: "color: #0055A5; font-weight: bold;"
     },
     {

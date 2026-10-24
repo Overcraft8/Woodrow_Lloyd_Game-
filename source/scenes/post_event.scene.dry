@@ -451,7 +451,7 @@ if (Q.month_actions >= 1) {
         Q.inflation -= 1/12;
         // increase SCPS vote share
         Q.new_middle_lps -= 5/12;
-        Q.new_middle_cps -= 5/12;
+        Q.new_middle_pcps -= 5/12;
         Q.workers_cpc_s += 5/12;
         Q.ful_strength += 50/12;
         Q.kkk_strength += 100/12;
@@ -459,8 +459,8 @@ if (Q.month_actions >= 1) {
     } else if (Q.year == 1930) {
 
         Q.farmers_scps -= 15/12;
-        Q.new_middle_cps -= 5/12;
-        Q.old_middle_cps -= 6/12;
+        Q.new_middle_pcps -= 5/12;
+        Q.old_middle_pcps -= 6/12;
         Q.new_middle_lps -= 5/12;
         Q.old_middle_lps -= 6/12;
         Q.new_middle_other += 4/12;
@@ -478,9 +478,9 @@ if (Q.month_actions >= 1) {
         Q.kkk_strength += 100/12;
     } else if (Q.year == 1931) {
         Q.catholics_pps += 2/12;
-        Q.farmers_cps -= 8/12;
-        Q.old_middle_cps -= 8/12;
-        Q.new_middle_cps -= 8/12;
+        Q.farmers_pcps -= 8/12;
+        Q.old_middle_pcps -= 8/12;
+        Q.new_middle_pcps -= 8/12;
         Q.old_middle_lps -= 8/12;
         Q.new_middle_lps -= 8/12;
         Q.ful_strength += 50/12;
@@ -489,9 +489,9 @@ if (Q.month_actions >= 1) {
         Q.farmers_other -= 5/12;
         // TODO: economic policies should reduce SCPS farmers
         if (!Q.works_program) {
-            Q.old_middle_cps -= 6/12;
-            Q.new_middle_cps -= 6/12;
-            Q.farmers_cps -= 6/12;
+            Q.old_middle_pcps -= 6/12;
+            Q.new_middle_pcps -= 6/12;
+            Q.farmers_pcps -= 6/12;
             Q.workers -= 4/12;
             Q.unemployed_cpc_s += 2/12;
             Q.farmers_other -= 12/12;
@@ -499,9 +499,9 @@ if (Q.month_actions >= 1) {
             Q.ful_strength += 100/12;
             Q.kkk_strength += 50/12;
         } else if (Q.unemployed > 15) {
-            Q.old_middle_cps -= 4/12;
-            Q.new_middle_cps -= 4/12;
-            Q.farmers_cps -= 4/12;
+            Q.old_middle_pcps -= 4/12;
+            Q.new_middle_pcps -= 4/12;
+            Q.farmers_pcps -= 4/12;
         }
     } else if (Q.year == 1932) {
         Q.old_middle_other -= 7/12;
@@ -517,9 +517,9 @@ if (Q.month_actions >= 1) {
             Q.ful_strength += 200/12;
             Q.new_middle_scps += 4/12;
             Q.new_middle_scps += 4/12;
-            Q.new_middle_cps -= 4/12;
-            Q.old_middle_cps -= 4/12;
-            Q.farmers_cps -= 4/12;
+            Q.new_middle_pcps -= 4/12;
+            Q.old_middle_pcps -= 4/12;
+            Q.farmers_pcps -= 4/12;
         } else if (Q.unemployed > 25) {
             Q.ful_strength += 50/12;
         }
@@ -529,11 +529,11 @@ if (Q.month_actions >= 1) {
             if (Q.new_middle_lps_normalized < 40) {
                 Q.new_middle_lps += 6/12;
             }
-            if (Q.new_middle_cps_normalized < 25) {
-                Q.new_middle_cps += 3/12;
+            if (Q.new_middle_pcps_normalized < 25) {
+                Q.new_middle_pcps += 3/12;
             }
-            if (Q.old_middle_cps_normalized < 40) {
-                Q.old_middle_cps += 6/12;
+            if (Q.old_middle_pcps_normalized < 40) {
+                Q.old_middle_pcps += 6/12;
             }
             if (Q.farmers_scps_normalized < 40) {
                 Q.farmers_scps += 6/12;

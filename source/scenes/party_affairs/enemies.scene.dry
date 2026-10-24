@@ -16,8 +16,8 @@ Currently, the LPS remains our biggest threat. Ross Thatcher's Liberals have pre
 
 - @anti_lps: We need to focus our attacks on the Liberals.
 - @anti_scps: Social Credit is the biggest threat to this campaign.
-- @anti_establishment: We must take on the establishment: the CPS and the LPS.
-- @anti_cps: We need to go after the CPS.
+- @anti_establishment: We must take on the establishment: the PCPS and the LPS.
+- @anti_pcps: We need to go after the PCPS.
 - @easy_discard: Let's drop this and move on.
 
 @anti_radical
@@ -49,12 +49,12 @@ on-arrival: enemies = "LPS"; scps_urgency += 1; workers_lps -= 2; farmers_lps -=
 
 The LPS are our biggest opponents right now, 
 
-@anti_cps
-on-arrival: enemies = "CPS"; cps_relation -= 5
+@anti_pcps
+on-arrival: enemies = "PCPS"; pcps_relation -= 5
 
 The party would earn much from distancing itself from the electorally-poisionous Communists
 
 @anti_establishment
-on-arrival: enemies = "establishment parties"; left_hardliner_strength += 8; left_hardliner_dissent -= 5; cps_relation -= 5; pps_relation -= 5; cpc_s_relation += 5; managerial_dissent += 8; moderate_dissent += 8; workers_pps -= 3; coalition_dissent += 1
+on-arrival: enemies = "establishment parties"; left_hardliner_strength += 8; left_hardliner_dissent -= 5; pcps_relation -= 5; pps_relation -= 5; cpc_s_relation += 5; managerial_dissent += 8; moderate_dissent += 8; workers_pps -= 3; coalition_dissent += 1
 
 Targetting the old-line parties earns us populist goodwill.

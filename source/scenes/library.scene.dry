@@ -86,7 +86,7 @@ CPC(S): [+ cpc_s_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 [+ party_names.lps +]: [+ lps_r +]%
 # 1928: 9, 1930: 5
-CPS: [+ cps_r +]%
+PCPS: [+ pcps_r +]%
 # 1928: 14, 1930: 7
 SCPS: [+ scps_r +]%
 # 1928: 3, 1930: 18
@@ -129,7 +129,7 @@ go-to: menu
 
 **Working Class**: The working class, split between rural workers primarily employed as farmhands or in resource exploitation, and urban workers who primarily work in factories and construction. 15-20% of the population. 
 
-**Old Middle**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are a large base for the establishment parties - the LPS and CPS. 5-10% of the population.
+**Old Middle**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are a large base for the establishment parties - the LPS and PCPS. 5-10% of the population.
 
 **New Middle**: The new middle class consists of white-collar workers and government employees. 5-10% of the population. 
 
@@ -174,7 +174,7 @@ CPC(S): [+ cpc_s_polls +]%
 [+ party_names.lps +]: [+ lps_polls +]%
 
 # 1928: 9, 1930: 5
-CPS: [+ cps_polls +]%
+PCPS: [+ pcps_polls +]%
 
 # 1928: 14, 1930: 7
 SCPS: [+ scps_polls +]%
@@ -184,17 +184,17 @@ Others: [+ other_polls +]%
 
 **Detailed results for each demographic**
 
-Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, CPC(S): [+ workers_cpc_s_display +]%, [+ party_names.lps +]: [+ workers_lps_display +]%, CPS: [+ workers_cps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, CPC(S): [+ workers_cpc_s_display +]%, [+ party_names.lps +]: [+ workers_lps_display +]%, PCPS: [+ workers_pcps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%, CPC(S): [+ new_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ new_middle_lps_display +]%, CPS: [+ new_middle_cps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%, CPC(S): [+ new_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ new_middle_lps_display +]%, PCPS: [+ new_middle_pcps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, CPC(S): [+ old_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ old_middle_lps_display +]%, CPS: [+ old_middle_cps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, CPC(S): [+ old_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ old_middle_lps_display +]%, PCPS: [+ old_middle_pcps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, CPC(S): [+ farmers_cpc_s_display +]%, [+ party_names.lps +]: [+ farmers_lps_display +]%, CPS: [+ farmers_cps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
+Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, CPC(S): [+ farmers_cpc_s_display +]%, [+ party_names.lps +]: [+ farmers_lps_display +]%, PCPS: [+ farmers_pcps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
 
-Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, CPC(S): [+ unemployed_cpc_s_display +]%, [+ party_names.lps +]: [+ unemployed_lps_display +]%, CPS: [+ unemployed_cps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, CPC(S): [+ unemployed_cpc_s_display +]%, [+ party_names.lps +]: [+ unemployed_lps_display +]%, PCPS: [+ unemployed_pcps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Catholics: CCF(SS): [+ catholics_ccf_display +]%, PPS: [+ catholics_pps_display +]%, CPC(S): [+ catholics_cpc_s_display +]%, [+ party_names.lps +]: [+ catholics_lps_display +]%, CPS: [+ catholics_cps_display +]%; SCPS: [+ catholics_scps_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics: CCF(SS): [+ catholics_ccf_display +]%, PPS: [+ catholics_pps_display +]%, CPC(S): [+ catholics_cpc_s_display +]%, [+ party_names.lps +]: [+ catholics_lps_display +]%, PCPS: [+ catholics_pcps_display +]%; SCPS: [+ catholics_scps_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
 
 @parties
 go-to: menu
@@ -210,9 +210,9 @@ Current relations: [+ pps_relation : relationships +]
 
 Current relations: [+ lps_relation : relationships +]
 
-**CPS** - *Conservative Party* (The Tories) - a big tent conservative party. Under Anderson's leadership, they have adopted a strong nativist stance but also a more interventionist economic policy. 
+**PCPS** - *Conservative Party* (The Tories) - a big tent conservative party. Under Anderson's leadership, they have adopted a strong nativist stance but also a more interventionist economic policy. 
 
-Current relations: [+ cps_relation : relationships +]
+Current relations: [+ pcps_relation : relationships +]
 
 **SCPS** - *Social Credit Party* - a recently emerged right-wing populist party advocating for social credit reforms of the monetary system. 
 
@@ -224,7 +224,7 @@ Current relations: [+ cpc_s_relation : relationships +]
 
 [? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Saskatchewan) - a party recently formed in a split from the CCF(SS), the SAPD is essentially an agglomeration of various left-wing splinter groups between the CCF(SS) and CPC(S). ?]
 
-**Other parties** - There is a multitude of small parties, including the miniscule Labour party and Economic Group. There are many candidates nominated by the LPS, CPS, or PPS that run as independents and also fusion candidates such as Liberal-Labour candidates. 
+**Other parties** - There is a multitude of small parties, including the miniscule Labour party and Economic Group. There are many candidates nominated by the LPS, PCPS, or PPS that run as independents and also fusion candidates such as Liberal-Labour candidates. 
 
 @organizations
 on-arrival: {!
@@ -248,7 +248,7 @@ Strength: [+ wul_strength +] Thousand
 
 Militarization: [+ wul_militancy : militancy +]
 
-**Ku Klux Klan (KKK)**: A pro-British, anti-Catholic terror organization. They are a recent import from the United States. [? if ruling_government == "Cooperative Coalition" : There are rumours brewing about their connection to Anderson's CPS. ?]
+**Ku Klux Klan (KKK)**: A pro-British, anti-Catholic terror organization. They are a recent import from the United States. [? if ruling_government == "Cooperative Coalition" : There are rumours brewing about their connection to Anderson's PCPS. ?]
 
 Strength: [+ kkk_strength +] Thousand
 
@@ -368,10 +368,10 @@ data = data.concat([
         "seats": Q.pps_seats
     },
     {
-        "id": "cps",
-        "legend": "CPS",
-        "name": "CPS",
-        "seats": Q.cps_seats
+        "id": "pcps",
+        "legend": "PCPS",
+        "name": "PCPS",
+        "seats": Q.pcps_seats
     },
     {
         "id": "other",
@@ -408,8 +408,8 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'ccf': '#d29c28', 'cpc_s': '#920c0c', 'lps': '#BE0028', 'pps': '#7e741ab3', 'cps': '#0055A5', 'scps': '#49be39', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'ccf': 'CCF(SS)', 'cpc_s': 'CPC(S)', 'lps': Q.lps_name, 'pps': 'PPS', 'cps': 'CPS', 'scps': 'SCPS', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ccf': '#d29c28', 'cpc_s': '#920c0c', 'lps': '#BE0028', 'pps': '#7e741ab3', 'pcps': '#0055A5', 'scps': '#49be39', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'ccf': 'CCF(SS)', 'cpc_s': 'CPC(S)', 'lps': Q.lps_name, 'pps': 'PPS', 'pcps': 'PCPS', 'scps': 'SCPS', 'other': 'Others', 'sapd': 'SAPD'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -421,8 +421,8 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'ccf': '#d29c28', 'cpc_s': '#920c0c', 'lps': '#BE0028', 'pps': '#7e741ab3', 'cps': '#0055A5', 'scps': '#49be39', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'ccf': 'CCF(SS)', 'cpc_s': 'CPC(S)', 'lps': Q.lps_name, 'pps': 'PPS', 'cps': 'CPS', 'scps': 'SCPS', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ccf': '#d29c28', 'cpc_s': '#920c0c', 'lps': '#BE0028', 'pps': '#7e741ab3', 'pcps': '#0055A5', 'scps': '#49be39', 'other': '#a0a0a0', 'sapd': '#c40000'},
+            {'ccf': 'CCF(SS)', 'cpc_s': 'CPC(S)', 'lps': Q.lps_name, 'pps': 'PPS', 'pcps': 'PCPS', 'scps': 'SCPS', 'other': 'Others', 'sapd': 'SAPD'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -454,7 +454,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#7e741ab3'> </div></td><td>!} PPS: {!</td><td>!} [+ pps_seats +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#0055A5'> </div></td><td>!} CPS: {!</td><td>!} [+ cps_seats +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0055A5'> </div></td><td>!} PCPS: {!</td><td>!} [+ pcps_seats +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_seats +] % {!</td></tr>!}
 

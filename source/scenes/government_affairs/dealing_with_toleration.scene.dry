@@ -38,24 +38,24 @@ New elections have been set for [+ next_parl_election_month : month +] [+ next_p
 title: Urge the coalition against austerity politics, and to increase social spending.
 choose-if: treasury >= 1
 unavailable-subtitle: This can only happen with a budget surplus.
-go-to: urge_success if cps_relation >= 30 and pps_relation >= 40; urge_failure if cps_relation < 30 or pps_relation < 40
+go-to: urge_success if pcps_relation >= 30 and pps_relation >= 40; urge_failure if pcps_relation < 30 or pps_relation < 40
 
 @urge_success
-on-arrival: welfare += 1; treasury -= 1; workers_ccf += 5*(1-dissent); unemployed_ccf += 5*(1-dissent); pps_relation -= 3; cps_relation -= 3; managerial_dissent -= 5; agrarian_dissent -= 5; labour_dissent -= 5;
+on-arrival: welfare += 1; treasury -= 1; workers_ccf += 5*(1-dissent); unemployed_ccf += 5*(1-dissent); pps_relation -= 3; pcps_relation -= 3; managerial_dissent -= 5; agrarian_dissent -= 5; labour_dissent -= 5;
 
 We have successfully urged the coalition parties to increase social spending! Unfortunately, the center-right parties increasingly see us as a nuisance, and might not wish to continue these negotiations.
 
 @urge_failure
-on-arrival: pps_relation -= 3; cps_relation -= 3
+on-arrival: pps_relation -= 3; pcps_relation -= 3
 
 Unfortunately, our negotiations have met with failure. The center-right parties increasingly see us as a nuisance, and might not wish to continue these negotiations.
 
 
 @improve_relations
 title: Improve relations with the parties of the coalition.
-on-arrival: pps_relation += 5*(1-dissent); cps_relation += 4*(1-dissent); left_hardliner_dissent += 5;
+on-arrival: pps_relation += 5*(1-dissent); pcps_relation += 4*(1-dissent); left_hardliner_dissent += 5;
 
-We have increased our level of contact and discussions with the parties of the coalition, primarily the PPS Party and CPS.
+We have increased our level of contact and discussions with the parties of the coalition, primarily the PPS Party and PCPS.
 
 Our attempts to reach out to the center-right are met with disdain by leftists within our party.
 
@@ -65,13 +65,13 @@ Our attempts to reach out to the center-right are met with disdain by leftists w
 @new_grand_coalition
 title: Can we join the government in a new grand coalition?
 view-if: neo_lps_coalition >= 50
-choose-if: pps_relation >= 50 and cps_relation >= 30 and resources >= 2
+choose-if: pps_relation >= 50 and pcps_relation >= 30 and resources >= 2
 subtitle: We will need 2 resources to smooth out the process of forming the coalition.
-unavailable-subtitle: [? if pps_relation < 50 : We do not have adequate relations with the PPS Party. ?][? if cps_relation < 30 : We do not have adequate relations with the CPS. ?] [? if resources < 2 : We do not have enough resources. ?]
+unavailable-subtitle: [? if pps_relation < 50 : We do not have adequate relations with the PPS Party. ?][? if pcps_relation < 30 : We do not have adequate relations with the PCPS. ?] [? if resources < 2 : We do not have enough resources. ?]
 on-arrival: resources -= 2; ccf_in_government = 1; in_grand_coalition = 1; ccf_toleration = 0; left_hardliner_dissent += 6; managerial_strength += 5; leverage = 20 if leverage >= 20
 achievement: constitutional_coalition
 
-Our negotiations have succeeded, and the PPS Party and CPS have agreed to form a new coalition government with us!
+Our negotiations have succeeded, and the PPS Party and PCPS have agreed to form a new coalition government with us!
 
 We are now part of a "constitutional coalition" government that includes all parties except the extremists of the CPC(S), SCPS, and SCPS. [+ premier +] will remain as premier. Leftists in our party are skeptical of this arrangement.
 

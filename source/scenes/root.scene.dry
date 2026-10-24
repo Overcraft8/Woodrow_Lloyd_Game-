@@ -213,7 +213,7 @@ Q.bennett_enabled = 0;
 
 // Does the [+ party_names.ccf +] lead in City Police?
 Q.ccf_prussia = 1;
-// Options: ccf, lps, cps, scps
+// Options: ccf, lps, pcps, scps
 Q.city_government = "ccf";
 
 // The state of the country
@@ -277,13 +277,13 @@ Q.inflation = 2.9;
 // quality of life (as % of 1932 - currently unused - should be welfare-adjusted.)
 
 
-Q.parties = ['ccf', 'cpc_s', 'lps', 'cps', 'scps', 'other'];
+Q.parties = ['ccf', 'cpc_s', 'lps', 'pcps', 'scps', 'other'];
 Q.party_names = {
     'ccf' : 'CCF(SS)', 
     'cpc_s' : 'CPC(S)', 
     'pps' : 'PPS', 
     'lps' : 'LPS', 
-    'cps': 'CPS', 
+    'pcps': 'PPCPS', 
     'scps' : 'SCPS', 
     'other' : 'Other'
 };
@@ -292,7 +292,7 @@ Q.party_names = {
 Q.pps_relation = 0;
 Q.cpc_s_relation = 20;
 Q.lps_relation = 0;
-Q.cps_relation = 40;
+Q.pcps_relation = 40;
 // SCPS are invariably hostile
 Q.scps_relation = 10;
 
@@ -307,7 +307,7 @@ Q.lloyd_stress = 2;
 
 
 Q.cpc_s_leader = "None";
-Q.cps_leader = "Martin Pederson";
+Q.pcps_leader = "Martin Pederson";
 Q.lps_leader = "Ross Thatcher";
 Q.scps_leader = "Martin Kelln"; 
 Q.pps_leader = "None";
@@ -315,7 +315,7 @@ Q.pps_leader = "None";
 Q.ccf_legislative_leader = "Williams";
 Q.ccf_president = "Williams";
 Q.cpc_s_leader = "Who cares?";
-Q.cps_leader = "Pederson";
+Q.pcps_leader = "Pederson";
 Q.lps_leader = "Thatcher";
 Q.scps_leader = "Kelln"; 
 Q.pps_leader = "None";
@@ -325,7 +325,7 @@ Q.party_colours = {
         'cpc_s': '#920c0c',  
         'pps':'#7e741ab3', 
         'lps': '#BE0028',     
-        'cps': '#0055A5',
+        'pcps': '#0055A5',
         'scps': '#49be39', 
         'other':'#909090', 
         'sapd': '#C40000'
@@ -341,16 +341,16 @@ Q.premier_portraits = {
 
 Q.ccf_contests = 55; 
 Q.lps_contests = 55;
-Q.cps_contests = 55;
+Q.pcps_contests = 55;
 Q.scps_contests = 55;
 Q.cpc_s_contests = 55;
 Q.pps_contests = 55;
 Q.other_contests = 55;
 
-Q.cps_cooperation = 0;
+Q.pcps_cooperation = 0;
 Q.scps_cooperation = 0; 
 Q.cpc_s_cooperation = 0;
-Q.cps_election_planning = 0;
+Q.pcps_election_planning = 0;
 Q.scps_election_planning = 0;
 Q.cpc_s_election_planning = 0;
 // Dynamic parties / existing parties
@@ -366,10 +366,10 @@ Q.ccf_ideology = "Social Democracy";
 Q.ccf_politlean = 7;
 Q.pps_ideology = "Even they don't know...";
 Q.pps_politlean = 8;
-Q.lps_ideology = "Classical Liberalism";
+Q.lps_ideology = "Free-Enterprise Liberalism";
 Q.lps_politlean = 10;
-Q.cps_ideology = "Moderate Toryism";
-Q.cps_politlean = 13;
+Q.pcps_ideology = "Progressive Conservatism";
+Q.pcps_politlean = 13;
 Q.scps_ideology = "Right-Wing Populism";
 Q.scps_politlean = 16;
 
@@ -380,7 +380,7 @@ Q.cpc_s_unity_front = 0
 Q.ccf_in_government = 1; 
 Q.cpc_s_in_government = 0; 
 Q.pps_in_government = 0; 
-Q.cps_in_government = 0; 
+Q.pcps_in_government = 0; 
 Q.other_in_government = 0; 
 Q.lps_in_government = 0; 
 Q.scps_in_government = 0; 
@@ -426,8 +426,8 @@ Q.premier_party = 'CCF';
 Q.in_right_coalition = 0;
 // Weimar coalition = [+ party_names.ccf +] + PPS + LPS
 Q.in_lps_coalition = 0;
-// Grand coalition = [+ party_names.ccf +] + PPS + LPS + CPS
-// also includes the "new grand coalition" of [+ party_names.ccf +] + PPS + LPS + CPS + Others
+// Grand coalition = [+ party_names.ccf +] + PPS + LPS + PCPS
+// also includes the "new grand coalition" of [+ party_names.ccf +] + PPS + LPS + PCPS + Others
 Q.in_grand_coalition = 0;
 // Popular front = [+ party_names.ccf +] + CPC(S) + PPS + LPS
 Q.in_unity_government = 0;
@@ -462,21 +462,21 @@ Q.ruling_government = "CCF(SS) Majority";
 
 
 Q.cooperatives_minister = "None";
-Q.cooperatives_minister_party = "CPS";
+Q.cooperatives_minister_party = "PCPS";
 Q.education_minister = "None";
-Q.education_minister_party = "CPS";
+Q.education_minister_party = "PCPS";
 Q.mineral_resources_minister = "None";
-Q.mineral_resources_minister_party = "CPS";
+Q.mineral_resources_minister_party = "PCPS";
 Q.municipal_minister = "None";
-Q.municipal_minister_party = "CPS";
+Q.municipal_minister_party = "PCPS";
 Q.transportation_minister = "None";
-Q.transportation_minister_party = "CPS";
+Q.transportation_minister_party = "PCPS";
 Q.telephones_telegraphs_minister = "None";
-Q.telephones_telegraphs_minister_party = "CPS";
+Q.telephones_telegraphs_minister_party = "PCPS";
 
 
 Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'CPS';
+Q.foreign_minister_party = 'PCPS';
 Q.interior_minister = 'von Keudell';
 Q.interior_minister_party = 'SCPS';
 Q.justice_minister = 'Hergt';
@@ -486,7 +486,7 @@ Q.labour_minister_party = 'PPS';
 Q.rcmp_minister = 'Groener';
 Q.rcmp_minister_party = 'I';
 Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'CPS';
+Q.economic_minister_party = 'PCPS';
 Q.finance_minister = 'Köhler';
 Q.finance_minister_party = 'PPS';
 Q.agriculture_minister = 'Schiele';
@@ -1253,32 +1253,32 @@ Q.region_situation;
 //          Region Seats              //
 //--------------------------------------
 
-Q.regina_cps_seats = 2; 
-Q.saskatoon_cps_seats = 2; 
+Q.regina_pcps_seats = 2; 
+Q.saskatoon_pcps_seats = 2; 
 
 Q.north_lps_seats = 2; 
 
 Q.east_central_lps_seats = 7; 
-Q.east_central_cps_seats = 2; 
+Q.east_central_pcps_seats = 2; 
 Q.east_central_other_seats = 1; 
 Q.east_central_pps_seats = 1; 
 
 Q.west_central_lps_seats = 8; 
-Q.west_central_cps_seats = 1; 
+Q.west_central_pcps_seats = 1; 
 Q.west_central_other_seats = 2; 
 Q.west_central_pps_seats = 1; 
 
-Q.southwest_cps_seats = 8;
+Q.southwest_pcps_seats = 8;
 Q.southwest_lps_seats = 5; 
 Q.southwest_pps_seats = 1; 
 
-Q.southeast_cps_seats = 7; 
+Q.southeast_pcps_seats = 7; 
 Q.southeast_lps_seats = 6; 
 Q.southeast_other_seats = 2; 
 Q.southeast_pps_seats = 2; 
 
 Q.prince_albert_lps_seats = 1; 
-Q.moose_jaw_cps_seats = 2;
+Q.moose_jaw_pcps_seats = 2;
 
 
 //--------------------------------------------------------------
@@ -1434,7 +1434,7 @@ Q.sapd_formed = 0;
 
 Q.ccf_old_polls = 0;
 Q.cpc_s_old_polls = 0;
-Q.cps_old_polls = 0;
+Q.pcps_old_polls = 0;
 Q.lps_old_polls = 0;
 Q.scps_old_polls = 0;
 Q.pps_old_polls = 0;
@@ -1446,7 +1446,7 @@ Q.workers_ccf = 4;
 Q.workers_cpc_s = 3;
 Q.workers_pps = 3;
 Q.workers_lps = 43;
-Q.workers_cps = 35;
+Q.workers_pcps = 35;
 Q.workers_scps = 0;
 Q.workers_other = 12;
 
@@ -1454,7 +1454,7 @@ Q.old_middle_ccf = 0;
 Q.old_middle_cpc_s = 0;
 Q.old_middle_pps = 10;
 Q.old_middle_lps= 38;
-Q.old_middle_cps = 49;
+Q.old_middle_pcps = 49;
 Q.old_middle_scps = 0;
 Q.old_middle_other = 3;
 
@@ -1462,7 +1462,7 @@ Q.new_middle_ccf = 4;
 Q.new_middle_cpc_s = 0;
 Q.new_middle_pps = 12;
 Q.new_middle_lps= 44;
-Q.new_middle_cps = 38;
+Q.new_middle_pcps = 38;
 Q.new_middle_scps = 0;
 Q.new_middle_other = 2;
 
@@ -1470,7 +1470,7 @@ Q.farmers_ccf = 7;
 Q.farmers_cpc_s = 3;
 Q.farmers_pps = 6;
 Q.farmers_lps= 44;
-Q.farmers_cps = 37;
+Q.farmers_pcps = 37;
 Q.farmers_scps = 0;
 Q.farmers_other = 3;
 
@@ -1478,7 +1478,7 @@ Q.unemployed_ccf = 6;
 Q.unemployed_cpc_s = 5;
 Q.unemployed_pps = 7;
 Q.unemployed_lps = 43;
-Q.unemployed_cps = 32;
+Q.unemployed_pcps = 32;
 Q.unemployed_scps = 0;
 Q.unemployed_other = 5;
 
@@ -1486,7 +1486,7 @@ Q.catholics_ccf = 7;
 Q.catholics_cpc_s = 2;
 Q.catholics_pps = 10;
 Q.catholics_lps = 45;
-Q.catholics_cps = 30;
+Q.catholics_pcps = 30;
 Q.catholics_scps = 0;
 Q.catholics_other = 6;
 
@@ -1501,11 +1501,11 @@ Q.ccf_seats = 37;
 Q.cpc_s_seats = 0;
 Q.pps_seats = 0;
 Q.lps_seats = 17;
-Q.cps_seats = 0;
+Q.pcps_seats = 0;
 Q.other_seats = 0;
 Q.scps_seats = 0;
 
-Q.largest_party = 'cps';
+Q.largest_party = 'pcps';
 
 
 // calculate support for each of the parties
@@ -1929,11 +1929,11 @@ data = data.concat([
         "bench": Q.lps_in_government
     },
     {
-        "id": "cps",
-        "legend": "CPS",
-        "name": "CPS",
-        "seats": Q.cps_seats, 
-        "bench": Q.cps_in_government
+        "id": "pcps",
+        "legend": "PCPS",
+        "name": "PCPS",
+        "seats": Q.pcps_seats, 
+        "bench": Q.pcps_in_government
     },
     {
         "id": "other",
@@ -2057,7 +2057,7 @@ on-arrival: {!
   Q.agrarian_dissent = 25;
   Q.pps_relation = 41;
   Q.cpc_s_relation = 16;
-  Q.cps_relation = 31;
+  Q.pcps_relation = 31;
   Q.treasury = 5;
 !}
 choose-if: 1 = 2
@@ -2079,7 +2079,7 @@ Q.labour_dissent = 25;
 Q.agrarian_dissent = 25;
 Q.pps_relation = 41;
 Q.cpc_s_relation = 16;
-Q.cps_relation = 31;
+Q.pcps_relation = 31;
 Q.treasury = 12;
 this.state.disableSaves = true;
 !}
@@ -2107,7 +2107,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 @intro_to_sask
 call: root
 
-In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, CPS, and <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
+In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, PCPS, and <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
 
 This picture becomes clearer once examine the province as a whole. 
 
@@ -2117,9 +2117,9 @@ This picture becomes clearer once examine the province as a whole.
 
 Saskatchewan was inaugurated as a province in 1905. In the first provincial election, the Liberal Party of Thomas Walter Scott endured an upset victory over former Northwest Territories Governor Haultain, leading the 'Provincial Rights' Party. In a move that will soon become motific, the LPS quickly catered to the agricultural vote, including farm leadership in cabinet and a political climate centred around the agricultural sector. 
 
-As for the Provincial Rights Party, while it remained highly competetive, maintaining a consistent 45% of the voteshare, it could not dislodge LPS seat dominance. Haultain soon retired from the Legislature to Wellington Wiloughby, who oversaw the party's affiliation with the national Conservative Party and renaming to the Conservative Party of Saskatchewan. However, Wiloughby also led the party to successive LPS majority governments. Change was needed though the CPS seemed unlikely to be the ones to bring it about. Prior to the 1921 provincial election, the CPS chose to not elect a leader and nominated only 4 candidates. 
+As for the Provincial Rights Party, while it remained highly competetive, maintaining a consistent 45% of the voteshare, it could not dislodge LPS seat dominance. Haultain soon retired from the Legislature to Wellington Wiloughby, who oversaw the party's affiliation with the national Conservative Party and renaming to the Conservative Party of Saskatchewan. However, Wiloughby also led the party to successive LPS majority governments. Change was needed though the PCPS seemed unlikely to be the ones to bring it about. Prior to the 1921 provincial election, the PCPS chose to not elect a leader and nominated only 4 candidates. 
 
-In replacement of the CPS, an Independent Movement was founded by disgruntled Tories and seperate school supporters (Catholic schools). It's 12 candidates were represented by a 3-way split of Tories, Labour candidates, and Non-Partisan League figures (An import from North Dakota, the NPL had scored 4% of the vote prior as an independent party). 
+In replacement of the PCPS, an Independent Movement was founded by disgruntled Tories and seperate school supporters (Catholic schools). It's 12 candidates were represented by a 3-way split of Tories, Labour candidates, and Non-Partisan League figures (An import from North Dakota, the NPL had scored 4% of the vote prior as an independent party). 
 
 However, the bigger news would be the arrival of the Progressive Party, which had won all but 1 of the Federal seats in Saskatchewan in 1921. Despite running only 7 provincial candidates, the PPS would manage to elect 6 and achieve 7.5% of the popular vote. The rise of the PPS showed that there was potential for left-leaning political organizations to usurp the LPS as the voice of the farmer. 
 
@@ -2135,7 +2135,7 @@ In 1926, the Ku Klux Klan entered the province from the USA. While it's American
 
 <div class="face-figure"><img class="face-img" src="img/portraits/AndersonJames.jpg"></div>
 
-Both the CPS under James Anderson and the PPS constructed programmes that drew on the prejudice raised by the KKK, likely aiding them in the 1929 election. Additionally, the CPS, PPS, and numerous Independents made electoral pacts that reduced the occurence of vote-splitting, leaving the LPS with only a plurality of seats. James Anderson organized the CPS, PPS, and Independents into what he'd call a Cooperative Coalition and took the mantle of government from the LPS. 
+Both the PCPS under James Anderson and the PPS constructed programmes that drew on the prejudice raised by the KKK, likely aiding them in the 1929 election. Additionally, the PCPS, PPS, and numerous Independents made electoral pacts that reduced the occurence of vote-splitting, leaving the LPS with only a plurality of seats. James Anderson organized the PCPS, PPS, and Independents into what he'd call a Cooperative Coalition and took the mantle of government from the LPS. 
 
 The Cooperative Coalition remains a contentious topic. Broadly, it maintained a nativist British stance but was pushed left-ward economically by the presence of Progressives. Both French as a language of instruction and the wearing of religious garb in public schools were banned. The Cooperative Coalition also established a minimum wage, protected the Wheat Pool, and removed partisan influence from the civil service. 
 

@@ -204,14 +204,16 @@ function getPartyIdeology(party, Q) {
         case 'LPS': 
             if (Q.lps_ideology === "Classical Liberalism") return '<span style="color: #C42424;">Centre - Centre Left</span> (Liberalism)';
             if (Q.lps_ideology === "Social Liberalism") return '<span style="color: #c45724;">Centre Left</span> (Social Liberalism)';
+            if (Q.lps_ideology === "Free-Enterprise Liberalism") return '<span style="color: #c45724;">Centre - Centre Right</span> (Free-Enterprise Liberalism)';
             if (Q.lps_ideology === "Centrism") return '<span style="color: #b97a7a;">Centrist</span> (Centrism)';
             return 'Unknown';
-        case 'CPS': 
-            if (Q.cps_ideology === "Blue Toryism") return '<span style="color: #2464c4;">Centre - Right Wing</span> (Conservatism)';
-            if (Q.cps_ideology === "Conservatism") return '<span style="color: #2464c4;">Centre - Right Wing</span> (Conservatism)';
-            if (Q.cps_ideology === "Red Toryism") return '<span style="color: #b97a7a;">Centre Right</span> (Paternalistic Conservatism)';
-            if (Q.cps_ideology === "Nativist Conservatism") return '<span style="color: #8b3a3a;">Right Wing</span> (Nativist Conservatism)';
-            if (Q.cps_ideology === "Conservative Populism") return '<span style="color: #b97a7a;">Right Wing</span> (Populist conservatism))';
+        case 'PCPS': 
+            if (Q.pcps_ideology === "Blue Toryism") return '<span style="color: #2464c4;">Centre - Right Wing</span> (Conservatism)';
+            if (Q.pcps_ideology === "Conservatism") return '<span style="color: #2464c4;">Centre - Right Wing</span> (Conservatism)';
+            if (Q.pcps_ideology === "Red Toryism") return '<span style="color: #b97a7a;">Centre Right</span> (Paternalistic Conservatism)';
+            if (Q.pcps_ideology === "Progressive Conservatism") return '<span style="color: #69b5ba;">Centre - Centre Right</span> (Progressive Conservatism)';
+            if (Q.pcps_ideology === "Nativist Conservatism") return '<span style="color: #8b3a3a;">Right Wing</span> (Nativist Conservatism)';
+            if (Q.pcps_ideology === "Conservative Populism") return '<span style="color: #b97a7a;">Right Wing</span> (Populist conservatism))';
             return 'Unknown';
         case 'SCPS': 
             if (Q.scps_ideology === "Social Creditism") return '<span style="color: #2464c4;">Centre Right - Right Wing</span> (Social Credit Theory)';
@@ -232,7 +234,7 @@ function getDynamicTooltipContent(searchString, baseTooltip) {
         'CPC(S)': 'cpc_s_relation',
         'PPS': 'pps_relation',
         'LPS': 'lps_relation',
-        'CPS': 'cps_relation',
+        'PCPS': 'pcps_relation',
         'SCPS': 'scps_relation'
     };
 
@@ -241,7 +243,7 @@ function getDynamicTooltipContent(searchString, baseTooltip) {
         'CCF(SS)': 'ccf_ideology', 
         'PPS': 'pps_ideology', 
         'LPS': 'lps_ideology', 
-        'CPS': 'cps_ideology', 
+        'PCPS': 'pcps_ideology', 
         'SCPS': 'scps_ideology'
     };
 
@@ -250,7 +252,7 @@ function getDynamicTooltipContent(searchString, baseTooltip) {
         'CCF(SS)': 'ccf_seats',
         'PPS': 'pps_seats',
         'LPS': 'lps_seats',
-        'CPS': 'cps_seats',
+        'PCPS': 'pcps_seats',
         'SCPS': 'scps_seats'
     }
 

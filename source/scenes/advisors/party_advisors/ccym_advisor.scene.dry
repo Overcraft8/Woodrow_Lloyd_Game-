@@ -50,7 +50,7 @@ subtitle: The CCYM maintains unofficial links to Communist movements
 on-arrival: cpc_s_relation -= 5; socialism -= 2
 
 @ccym_open_communists
-on-arrival: cpc_s_relation += 5; socialism += 2; cps_relation -= 2
+on-arrival: cpc_s_relation += 5; socialism += 2; pcps_relation -= 2
 
 The parties on our right are concerned about our courting of the Communists. 
 

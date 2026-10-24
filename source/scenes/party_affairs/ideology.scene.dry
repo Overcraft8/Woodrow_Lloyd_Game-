@@ -29,7 +29,7 @@ if (Q.ideology && Q.ideology != "left") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_hardliner_strength += 10; communist_coalition += 1; left_hardliner_dissent -= 5; pps_relation -= 3; cps_relation -= 5; nationalization_support += 1; cpc_s_relation += 3
+on-departure: ideology = "left"; left_hardliner_strength += 10; communist_coalition += 1; left_hardliner_dissent -= 5; pps_relation -= 3; pcps_relation -= 5; nationalization_support += 1; cpc_s_relation += 3
 
 The hardliner left of the party supports a course of class struggle among farmers and workers alike, aiming to transform the province into a Socialist beachead. They view cooperation with less-Socialist reform movements with skepticism and are willing to cooperate with Communists on a case-by-case basis. 
 
@@ -74,7 +74,7 @@ if (Q.ideology && Q.ideology != "moderate") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "moderate"; managerial_strength += 10; democratization += 1; managerial_dissent -= 5; pps_relation += 5; cps_relation += 5; cpc_s_relation -= 8; managerial_plan_support += 1
+on-departure: ideology = "moderate"; managerial_strength += 10; democratization += 1; managerial_dissent -= 5; pps_relation += 5; pcps_relation += 5; cpc_s_relation -= 8; managerial_plan_support += 1
 
 The Moderate wing is most in favour of cooperation with reformist parties to advance gradual systemic transformation. Perhaps we could use this to our advantage?
 

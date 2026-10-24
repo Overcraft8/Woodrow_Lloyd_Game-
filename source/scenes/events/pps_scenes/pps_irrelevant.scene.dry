@@ -54,22 +54,22 @@ on-arrival: {!
     Q.pps_seats -= 5; 
     Q.ccf_seats += 2; 
     Q.lps_seats += 1;
-    Q.cps_seats += 2; 
+    Q.pcps_seats += 2; 
 
 // Needs to be updated for west and east central
     Q.central_pps_seats -= 2;
     Q.central_ccf_seats += 1; 
     Q.central_lps_seats += 1; 
     Q.southeast_pps_seats -= 2; 
-    Q.southeast_cps_seats += 2; 
+    Q.southeast_pcps_seats += 2; 
     Q.southwest_pps_seats -= 1; 
-    Q.southwest_cps_seats += 1;
+    Q.southwest_pcps_seats += 1;
 
-    // Split PPS vote between LPS, FLP, and CPS
+    // Split PPS vote between LPS, FLP, and PCPS
     for (var c of Q.classes) {
         var third_pps_vote = Q[c + '_pps'] / 3;
         Q[c + '_ccf'] += third_pps_vote; 
-        Q[c + '_cps'] += third_pps_vote; 
+        Q[c + '_pcps'] += third_pps_vote; 
         Q[c + '_lps'] += third_pps_vote; 
         Q[c + '_pps'] = 0; 
     }

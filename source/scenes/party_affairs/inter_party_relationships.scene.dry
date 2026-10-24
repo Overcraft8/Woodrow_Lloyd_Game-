@@ -75,20 +75,20 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; lps_relation += 5*(1 - dissent)
-go-to: cps_anderson if cps_leader = 'James Anderson' and party_names.ccf = 'PFLP'; cps_reform if cps_leader = 'John Diefenbaker'; cps_moribund if year > 1940
+go-to: pcps_anderson if pcps_leader = 'James Anderson' and party_names.ccf = 'PFLP'; pcps_reform if pcps_leader = 'John Diefenbaker'; pcps_moribund if year > 1940
 
-@cps_anderson
-on-arrival: cps_relation += 7*(1 - dissent)
+@pcps_anderson
+on-arrival: pcps_relation += 7*(1 - dissent)
 
 James Anderson is open to cooperation with parties opposed to the Liberals. He welcomes our attempt to increase relations. 
 
-@cps_reform
-on-arrival: cps_relation += 8*(1 - dissent)
+@pcps_reform
+on-arrival: pcps_relation += 8*(1 - dissent)
 
-CPS leader John Diefenbaker represents a more populist and moderate angle of the CPS. He recognizes that the party is somewhat diminished and must be able to present new ideas to persist. 
+PCPS leader John Diefenbaker represents a more populist and moderate angle of the PCPS. He recognizes that the party is somewhat diminished and must be able to present new ideas to persist. 
 
-@cps_moribund
-on-arrival: cps_relation += 5*(1 - dissent)
+@pcps_moribund
+on-arrival: pcps_relation += 5*(1 - dissent)
 
 The Conservatives are somewhat electorally moribund, given their reputation as the government that entered the Depression and drought. It seems their role in Saskatchewan politics has ceased altogether. 
 

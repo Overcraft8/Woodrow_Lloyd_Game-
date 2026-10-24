@@ -245,7 +245,7 @@ for (var party of Q.parties) {
 // Q.lps_polls = Q.lps_polls.toFixed(1);
 // Q.ccf_polls = Q.ccf_polls.toFixed(1);
 // Q.pps_polls = Q.pps_polls.toFixed(1);
-// Q.cps_polls = Q.cps_polls.toFixed(1);
+// Q.pcps_polls = Q.pcps_polls.toFixed(1);
 // Q.other_polls = Q.other_polls.toFixed(1);
 // Q.cpc_s_polls = Q.cpc_s_polls.toFixed(1);
 // Q.scps_polls = Q.scps_polls.toFixed(1);
@@ -343,36 +343,36 @@ for (var party of Q.parties) {
 }
 
 
-// The largest party can only be the [+ party_names.ccf +], LPS, CPS, or SCPS.
+// The largest party can only be the [+ party_names.ccf +], LPS, PCPS, or SCPS.
 Q.largest_party = Q.party_names.ccf;
 
-if (Q.lps_seats >= Q.ccf_seats && Q.lps_seats >= Q.cps_seats && Q.lps_seats >= Q.scps_seats) {
+if (Q.lps_seats >= Q.ccf_seats && Q.lps_seats >= Q.pcps_seats && Q.lps_seats >= Q.scps_seats) {
     Q.largest_party = 'LPS';
 }
-if (Q.cps_seats >= Q.ccf_seats && Q.cps_seats >= Q.lps_seats && Q.cps_seats >= Q.scps_seats) {
-    Q.largest_party = 'CPS';
+if (Q.pcps_seats >= Q.ccf_seats && Q.pcps_seats >= Q.lps_seats && Q.pcps_seats >= Q.scps_seats) {
+    Q.largest_party = 'PCPS';
 }
-if (Q.scps_seats >= Q.ccf_seats && Q.scps_seats >= Q.lps_seats && Q.scps_seats >= Q.cps_seats) {
+if (Q.scps_seats >= Q.ccf_seats && Q.scps_seats >= Q.lps_seats && Q.scps_seats >= Q.pcps_seats) {
     Q.largest_party = 'SCPS';
 }
 
 // coalitions
 Q.lps_coalition = Math.round((Q.ccf_seats + Q.lps_seats) * 10) / 10;
 Q.pps_coalition = Math.round((Q.ccf_seats + Q.pps_seats) * 10) / 10;
-Q.grand_coalition = Math.round((Q.ccf_seats + Q.lps_seats + Q.pps_seats + Q.cps_seats) * 10) / 10;
-Q.bourgeois_coalition = Math.round((Q.lps_seats + Q.cps_seats + Q.other_seats) * 10) / 10;
-Q.conservative_coalition = Math.round((Q.cps_seats + Q.scps_seats) * 10) / 10;
-Q.right_coalition = Math.round((Q.cps_seats + Q.other_seats + Q.scps_seats) * 10) / 10;
+Q.grand_coalition = Math.round((Q.ccf_seats + Q.lps_seats + Q.pps_seats + Q.pcps_seats) * 10) / 10;
+Q.bourgeois_coalition = Math.round((Q.lps_seats + Q.pcps_seats + Q.other_seats) * 10) / 10;
+Q.conservative_coalition = Math.round((Q.pcps_seats + Q.scps_seats) * 10) / 10;
+Q.right_coalition = Math.round((Q.pcps_seats + Q.other_seats + Q.scps_seats) * 10) / 10;
 Q.scps_majority = Math.round(Q.scps_seats * 10) / 10;
 Q.left_coalition = Math.round((Q.ccf_seats + Q.cpc_s_seats) * 10) / 10;
-Q.cooperative_coalition = Math.round((Q.cps_seats + Q.pps_seats + Q.other_seats) * 10) / 10;
+Q.cooperative_coalition = Math.round((Q.pcps_seats + Q.pps_seats + Q.other_seats) * 10) / 10;
 // this is an absurd concept lol
 Q.unity_government_coalition = Math.round((Q.ccf_seats + Q.cpc_s_seats + Q.pps_seats + Q.lps_seats + Q.sapd_seats) * 10) / 10;
 Q.anti_democratic_coalition = Math.round((Q.cpc_s_seats + Q.scps_seats) * 10) / 10;
 // aka everyone except scps, cpc_s, scps
-Q.neo_lps_coalition = Math.round((Q.ccf_seats + Q.lps_seats + Q.pps_seats + Q.cps_seats + Q.other_seats) * 10) / 10;
+Q.neo_lps_coalition = Math.round((Q.ccf_seats + Q.lps_seats + Q.pps_seats + Q.pcps_seats + Q.other_seats) * 10) / 10;
 // Needham + Right-wing parties (only comes into effect if you've alienated PPS too badly)
-Q.needham_right_coalition = Math.round((Q.scps_seats + Q.cps_seats + Q.other_seats) * 10) / 10;
+Q.needham_right_coalition = Math.round((Q.scps_seats + Q.pcps_seats + Q.other_seats) * 10) / 10;
 // Progressive coalition isn't going to be implemented as a distinct coalition but it's the coalition that lets you pass improved women's rights/gay rights
 Q.progressive_coalition = Math.round((Q.ccf_seats + Q.cpc_s_seats + Q.lps_seats + Q.sapd_seats) * 10) / 10;
 
@@ -403,13 +403,13 @@ Q.municipal_affairs_minister_party = 'PPS';
 Q.transportation_minister_party = 'PPS';
 Q.telephones_telegraphs_minister_party = 'PPS';
 // Old Ministries
-Q.foreign_minister_party = 'CPS';
+Q.foreign_minister_party = 'PCPS';
 Q.interior_minister_party = 'PPS';
 Q.justice_minister_party = 'I';
 Q.labour_minister_party = 'PPS';
 Q.rcmp_minister_party = 'I';
 Q.economic_minister_party = Q.lps_name;
-Q.finance_minister_party = 'CPS';
+Q.finance_minister_party = 'PCPS';
 Q.agriculture_minister_party = 'PPS';
 
 // reset CPC(S) goals
@@ -483,11 +483,11 @@ data = data.concat([
         "bench": Q.lps_in_government
     },
     {
-        "id": "cps",
-        "legend": "CPS",
-        "name": "CPS",
-        "seats": Q.cps_seats, 
-        "bench": Q.cps_in_government
+        "id": "pcps",
+        "legend": "PCPS",
+        "name": "PCPS",
+        "seats": Q.pcps_seats, 
+        "bench": Q.pcps_in_government
     },
     {
         "id": "other",
@@ -566,7 +566,7 @@ go-to: coalition_menu
 
 [? if year == 1932 and month >= 2 : {!<tr><td><div class="box" style='background-color:#7e741ab3'> </div> !} PPS: {!</td><td>!} [+ pps_polls +]% {!</td><td>!} [+ pps_vote_change +] {!</td><td>!} [+ pps_seats +] {!</td><td>!} [+ seats_change_pps +]  {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#0055A5'> </div> !} CPS: {!</td><td>!} [+ cps_polls +]% {!</td><td>!} [+ cps_vote_change +] {!</td><td>!} [+ cps_seats +] {!</td><td>!} [+ seats_change_cps +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0055A5'> </div> !} PCPS: {!</td><td>!} [+ pcps_polls +]% {!</td><td>!} [+ pcps_vote_change +] {!</td><td>!} [+ pcps_seats +] {!</td><td>!} [+ seats_change_pcps +] {!</td></tr>!}
  
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Ind: {!</td><td>!} [+ other_polls +]% {!</td><td>!} [+ other_vote_change +] {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ seats_change_other +]  {!</td></tr>!}
 
@@ -586,7 +586,7 @@ go-to: coalition_menu
             {!<th>!}[+ party_names.ccf +]{!</th>!}
             [? if year == 1932 and month >= 2 : {!<th>PPS</th>!} ?]
             {!<th>LPS</th>!}
-            {!<th>CPS</th>!}
+            {!<th>PCPS</th>!}
             {!<th>Other</th>!}
             [? if scps_formed : {!<th>SCPS</th>!} ?]
         {!</tr>!}
@@ -597,7 +597,7 @@ go-to: coalition_menu
             {!<td>!}[+ regina_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ regina_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ regina_lps_seats +]{!</td>!}
-            {!<td>!}[+ regina_cps_seats +]{!</td>!}
+            {!<td>!}[+ regina_pcps_seats +]{!</td>!}
             {!<td>!}[+ regina_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ regina_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -608,7 +608,7 @@ go-to: coalition_menu
             {!<td>!}[+ saskatoon_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ saskatoon_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ saskatoon_lps_seats +]{!</td>!}
-            {!<td>!}[+ saskatoon_cps_seats +]{!</td>!}
+            {!<td>!}[+ saskatoon_pcps_seats +]{!</td>!}
             {!<td>!}[+ saskatoon_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ saskatoon_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -619,7 +619,7 @@ go-to: coalition_menu
             {!<td>!}[+ moosejaw_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ moosejaw_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ moosejaw_lps_seats +]{!</td>!}
-            {!<td>!}[+ moosejaw_cps_seats +]{!</td>!}
+            {!<td>!}[+ moosejaw_pcps_seats +]{!</td>!}
             {!<td>!}[+ moosejaw_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ moosejaw_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -630,7 +630,7 @@ go-to: coalition_menu
             {!<td>!}[+ princealbert_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ princealbert_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ princealbert_lps_seats +]{!</td>!}
-            {!<td>!}[+ princealbert_cps_seats +]{!</td>!}
+            {!<td>!}[+ princealbert_pcps_seats +]{!</td>!}
             {!<td>!}[+ princealbert_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ princealbert_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -641,7 +641,7 @@ go-to: coalition_menu
             {!<td>!}[+ southwest_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ southwest_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ southwest_lps_seats +]{!</td>!}
-            {!<td>!}[+ southwest_cps_seats +]{!</td>!}
+            {!<td>!}[+ southwest_pcps_seats +]{!</td>!}
             {!<td>!}[+ southwest_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ southwest_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -652,7 +652,7 @@ go-to: coalition_menu
             {!<td>!}[+ southeast_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ southeast_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ southeast_lps_seats +]{!</td>!}
-            {!<td>!}[+ southeast_cps_seats +]{!</td>!}
+            {!<td>!}[+ southeast_pcps_seats +]{!</td>!}
             {!<td>!}[+ southeast_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ southeast_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -663,7 +663,7 @@ go-to: coalition_menu
             {!<td>!}[+ central_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ central_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ central_lps_seats +]{!</td>!}
-            {!<td>!}[+ central_cps_seats +]{!</td>!}
+            {!<td>!}[+ central_pcps_seats +]{!</td>!}
             {!<td>!}[+ central_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ central_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -674,7 +674,7 @@ go-to: coalition_menu
             {!<td>!}[+ north_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ north_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ north_lps_seats +]{!</td>!}
-            {!<td>!}[+ north_cps_seats +]{!</td>!}
+            {!<td>!}[+ north_pcps_seats +]{!</td>!}
             {!<td>!}[+ north_other_seats +]{!</td>!}
             [? if scps_formed : {!<td>!}[+ north_scps_seats +]{!</td>!} ?]
         {!</tr>!}
@@ -728,11 +728,11 @@ Q.premier_party = party_names.lps;
 Q.premier_img = Q.premier_portraits[Q.lps_leader];
 !}
 
-@cps_forms_government
+@pcps_forms_government
 on-arrival: {! 
-Q.premier = Q.cps_leader; 
-Q.premier_party = party_names.cps; 
-Q.premier_img = Q.premier_portraits[Q.cps_leader];
+Q.premier = Q.pcps_leader; 
+Q.premier_party = party_names.pcps; 
+Q.premier_img = Q.premier_portraits[Q.pcps_leader];
 !}
 
 @ccf_majority
@@ -764,7 +764,7 @@ title: Coalition Options
 @ccf_tory_coalition
 title: Could we coalition with the Tories?
 unavailable-subtitle: They do not trust us enough
-choose-if: cps_relation >= 60 and (cps_ideology == 'Red Toryism' or cps_leader == 'James Anderson') and (ccf_ideology == 'Social Democracy' or ccf_ideology == 'Progressivism')
+choose-if: pcps_relation >= 60 and (pcps_ideology == 'Red Toryism' or pcps_leader == 'James Anderson') and (ccf_ideology == 'Social Democracy' or ccf_ideology == 'Progressivism')
 call: election.ccf_forms_government
 
 @ccf_socred_coalition
@@ -787,10 +787,10 @@ We could seek the support of another party in a Supply and Confidence Agreement;
 title: Tory Supply and Confidence
 subtitle: The Red Tories are pulling their clout
 unavailable-subtitle: They do not trust us enough
-choose-if: cps_relation >= 40 and cps_ideology == 'Red Toryism'
+choose-if: pcps_relation >= 40 and pcps_ideology == 'Red Toryism'
 call: election.ccf_forms_government
 
-The Tories have agreed to enter into a Supply and Confidence agreement. [? if cps_leader == 'John Diefenbaker' : John Diefenbaker's Red Toryism remains markedly economically interventionist and therefore, friendly to our own policies. ?]
+The Tories have agreed to enter into a Supply and Confidence agreement. [? if pcps_leader == 'John Diefenbaker' : John Diefenbaker's Red Toryism remains markedly economically interventionist and therefore, friendly to our own policies. ?]
 
 @ccf_socred_sc
 title: S&C with Socreds
@@ -841,34 +841,34 @@ The LPS has achieved a majority. For the next 4-5 years, the LPS will be essenti
 
 @tory_plurality
 title: The Tories win a Plurality
-view-if: largest_party == 'CPS' and cps_seats <= seat_majority
-call: election.cps_forms_government
+view-if: largest_party == 'PCPS' and pcps_seats <= seat_majority
+call: election.pcps_forms_government
 on-arrival: {!
     for (var p of Q.parties) {
         Q[p + '_in_government'] = 0;
     }
-    Q.cps_in_government = 1; 
+    Q.pcps_in_government = 1; 
 !}
 
 @tory_majority
 title: The Tories win a Majority
-view-if: cps_seats >= seat_majority
-call: election.cps_forms_government
+view-if: pcps_seats >= seat_majority
+call: election.pcps_forms_government
 on-arrival: {!
     for (var p of Q.parties) {
         Q[p + '_in_government'] = 0;
     }
-    Q.cps_in_government = 1; 
+    Q.pcps_in_government = 1; 
 !}
 
 
 @cooperative_coalition
 title: A traditional alliance
-subtitle: CPS + PPS ([+ cooperative_coalition +]%)
-unavailable-subtitle: CPS + PPS ([+ cooperative_coalition +]%)
+subtitle: PCPS + PPS ([+ cooperative_coalition +]%)
+unavailable-subtitle: PCPS + PPS ([+ cooperative_coalition +]%)
 view-if: cooperative_coalition >= 50
 choose-if: cooperative_coalition >= 50
-on-arrival: ccf_in_government = 0; ccf_toleration = 0; foreign_minister_party = "CPS"; interior_minister_party = "CPS"; justice_minister_party = "CPS"; labour_minister_party = "PPS"; rcmp_minister_party = "I"; economic_minister_party = "CPS"; finance_minister_party = "CPS"; agriculture_minister_party = "CPS"; in_cooperative_coalition = 1;
+on-arrival: ccf_in_government = 0; ccf_toleration = 0; foreign_minister_party = "PCPS"; interior_minister_party = "PCPS"; justice_minister_party = "PCPS"; labour_minister_party = "PPS"; rcmp_minister_party = "I"; economic_minister_party = "PCPS"; finance_minister_party = "PCPS"; agriculture_minister_party = "PCPS"; in_cooperative_coalition = 1;
 
 # Haha, not happening
 
@@ -877,7 +877,7 @@ Anderson's Cooperative Coalition has managed to attain another majority.
 - @anderson_premier: Anderson holds steady
 
 @anderson_premier
-on-arrival: premier =  "James Anderson"; premier_party = "CPS"; ccf_in_government = 0; in_ccf_majority = 0; 
+on-arrival: premier =  "James Anderson"; premier_party = "PCPS"; ccf_in_government = 0; in_ccf_majority = 0; 
 
 
 @new_elections
@@ -892,7 +892,7 @@ if (Q.next_parl_election_month > 12) {
 }
 if (Q.premier == "Brüning") {
     Q.pps_relation -= 5;
-    Q.cps_relation -= 5;
+    Q.pcps_relation -= 5;
 }
 Q.pro_republic -= 8;
 Q.workers_ccf -= 5;
@@ -900,8 +900,8 @@ Q.new_middle_ccf -= 5;
 Q.old_middle_ccf -= 5;
 Q.farmers_ccf -= 5;
 Q.catholics_ccf -= 3;
-Q.new_middle_cps -= 8;
-Q.old_middle_cps -= 8;
+Q.new_middle_pcps -= 8;
+Q.old_middle_pcps -= 8;
 Q.new_middle_lps -= 5;
 Q.old_middle_lps -= 10;
 Q.farmers_scps -= 5;
@@ -917,7 +917,7 @@ if (Q.pro_republic < 45 && Q.pro_republic >= 36) {
 if (Q.pro_republic < 36) {
     // TODO: if you pursue a consistently revolutionary course, you might avoid this? But you might also cause a coalition between Needham and the PPS.
     Q.pps_relation -= 5;
-    Q.cps_relation -= 5;
+    Q.pcps_relation -= 5;
     Q.workers_ccf *= 0.85;
     Q.unemployed_ccf -= 2;
     Q.new_middle_ccf -= 5;
@@ -1111,14 +1111,14 @@ go-to: ministries
 @drop_finance
 title: Drop the Finance Ministry.
 view-if: finance_minister_party = party_names.ccf
-on-arrival: finance_minister_party = "CPS"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "PPS" if in_lps_coalition or in_unity_government; finance_minister = "Köhler" if in_lps_coalition or in_unity_government
+on-arrival: finance_minister_party = "PCPS"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "PPS" if in_lps_coalition or in_unity_government; finance_minister = "Köhler" if in_lps_coalition or in_unity_government
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_economic
 title: Drop the Economic Ministry.
 view-if: economic_minister_party = party_names.ccf
-on-arrival: economic_minister_party = "CPS"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = lps_name if in_lps_coalition or in_unity_government; economic_minister = "Dietrich" if in_lps_coalition or in_unity_government;
+on-arrival: economic_minister_party = "PCPS"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = lps_name if in_lps_coalition or in_unity_government; economic_minister = "Dietrich" if in_lps_coalition or in_unity_government;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1132,7 +1132,7 @@ go-to: ministries
 @drop_foreign
 title: Drop the Foreign Ministry.
 view-if: foreign_minister_party = party_names.ccf
-on-arrival: foreign_minister_party = "CPS"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "PPS" if in_lps_coalition or in_unity_government; foreign_minister = "Wirth" if in_lps_coalition or in_unity_government;
+on-arrival: foreign_minister_party = "PCPS"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "PPS" if in_lps_coalition or in_unity_government; foreign_minister = "Wirth" if in_lps_coalition or in_unity_government;
 tags: drop_mins_1928
 go-to: ministries
 

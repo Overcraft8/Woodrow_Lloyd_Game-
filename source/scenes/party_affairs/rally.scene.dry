@@ -29,7 +29,7 @@ on-arrival: workers_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent) if welfar
 Speaking of a strong welfare state certainly inspires the workers and farmers who have been downtrodden by the lack of an adequate relief program. 
 
 @blame_old_line
-on-arrival: workers_cps -= 2; workers_lps -= 2; farmers_cps -= 2; farmers_lps -= 2; new_middle_cps -= 2; new_middle_lps -= 2; cps_relation -= 5
+on-arrival: workers_pcps -= 2; workers_lps -= 2; farmers_pcps -= 2; farmers_lps -= 2; new_middle_pcps -= 2; new_middle_lps -= 2; pcps_relation -= 5
 
 Blaming the old parties increases support for new parties like ours. 
 
