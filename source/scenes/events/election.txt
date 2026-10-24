@@ -556,7 +556,7 @@ go-to: coalition_menu
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td>Total Seats</td><td>Seat Change</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D26E28; outline: 2px; outline-style: solid;'> </div> !} **[+ party_names.ccf +]:** {!</td><td>!} **[+ ccf_polls +]%** {!</td><td>!} **[+ ccf_vote_change +]** {!</td><td>!}  **[+ ccf_seats +]** {!</td><td>!}  **[+ seats_change_ccf +]**{!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#d29c28; outline: 2px; outline-style: solid;'> </div> !} **[+ party_names.ccf +]:** {!</td><td>!} **[+ ccf_polls +]%** {!</td><td>!} **[+ ccf_vote_change +]** {!</td><td>!}  **[+ ccf_seats +]** {!</td><td>!}  **[+ seats_change_ccf +]**{!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !} SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ sapd_vote_change +] {!</td><td>!} [+ seat_change_sapd +]{!</td></tr>!} ?]
 

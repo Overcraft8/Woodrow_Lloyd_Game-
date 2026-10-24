@@ -119,7 +119,7 @@ Q.neorevisionist_dissent = 10;
 Q.faction_colors = {
     left_hardliner_color : "#c32222", 
     agrarian_color : "#b2c520", 
-    managerial_color : "#d26e28", 
+    managerial_color : "#d29c28", 
     moderate_color : "#f2ff00"
 };
 
@@ -319,7 +319,7 @@ Q.scps_leader = "Kelln";
 Q.pps_leader = "None";
 
 Q.party_colours = {
-        'ccf': '#D26E28',
+        'ccf': '#d29c28',
         'cpc_s': '#920c0c',  
         'pps':'#7e741ab3', 
         'lps': '#BE0028',     
@@ -2023,7 +2023,8 @@ It's been 17 years since that day. The province, in many ways, is a lady of cons
 - @woodrow_lloyd_start: But it wasn't you at the helm during all this
 
 @woodrow_lloyd_start
-face-image: img/portraits/DouglasTommy.jpg
+
+<div class="face-figure"><img class="face-img" src="img/portraits/DouglasTommy.jpg"></div>
 
 No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His projection of idealism in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party elite to navigate many a difficulties as a united front. 
 
@@ -2100,9 +2101,10 @@ audio: shuffle music/CoveredWagonDays.mp3 music/WhiteRiverStomp.mp3 music/Coaxin
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1932
+= 1961
 
 @intro_to_sask
+call: root
 
 In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, CPS, and <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
 

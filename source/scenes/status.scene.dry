@@ -515,7 +515,7 @@ on-arrival: {!
     // 1. Define your party colors here to feed the inline pie chart.
     // Update these hex codes to match your specific CSS theme colors.
     Q.party_colours = {
-        'ccf': '#D26E28',
+        'ccf': '#d29c28',
         'cpc_s': '#920c0c',  
         'pps':'#7e741ab3', 
         'lps': '#BE0028',     
