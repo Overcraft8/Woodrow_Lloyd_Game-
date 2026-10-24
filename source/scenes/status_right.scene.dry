@@ -2,10 +2,24 @@ title: News
 new-page: true
 is-special: true
 
-@government_actions
+@important_matters
 
-= Government Actions
+= Matters of Importance
 
+<div class="status-card-row">
+
+  <button id="northern_issue_button" class="status_panel_card">
+    <img class="status_panel_card_image" src="img/misc_photos/cree_women.jpg" onclick="window.ChangeTab('big', 'status_big.northern_issue', 'northern_issue_button')"> 
+    <span class="card-caption">The Great Northern Question</span> 
+  </button>
+
+  <button id="ccf_ndp_button" class="status_panel_card">
+    <img class="status_panel_card_image" src="img/CCF/forward_with_ccf.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ccf_ndp_button')"> 
+    <span class="card-caption">CCF or NDP?</span> 
+  </button>
+
+
+</div>
 
 @news
 on-arrival: {!

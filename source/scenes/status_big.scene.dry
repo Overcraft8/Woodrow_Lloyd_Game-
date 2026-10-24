@@ -1,0 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@northern_issue
+new-page: true
+call: status_big.expand_right_tab
+on-departure: {!
+    window.dendryUI.dendryEngine.runActions(status_big.close_right_tab.onArrival);
+!}
+
+= The North
+
+
+
+
+
+
+@ccf_or_ndp
+new-page: true
+call: status_big.expand_right_tab
+on-departure: {!
+    window.dendryUI.dendryEngine.runActions(status_big.close_right_tab.onArrival);
+!}
+
+
+
+
+@expand_right_tab
+on-arrival: {!
+  document.getElementById('big_panel').style.display = 'flex';
+!}
+
+@close_right_tab
+on-arrival: {!
+  document.getElementById('big_panel').style.display = 'none';
+!}

@@ -313,6 +313,25 @@
 
     <div id='page'>
 
+        <div id="big_panel" style="
+            width: min(50em, calc(100vw - 2rem));
+            height: min(30em, calc(100dvh - 2rem));
+            box-sizing: border-box;
+            background: var(--content-bg-color);
+            position: fixed;
+            z-index: 99;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px ridge var(--border-color);
+            display: flex;
+            overflow: auto;
+        ">
+
+            <div id="big_qualities"></div>
+        
+        </div>
+
         <!-- 
         <div id="top_panel">
             <div id="top_tools_container" class="tools" style="top: 0px; right: 5px; position: fixed; border: 2px solid #de982f; border-radius: 0%;">
@@ -363,7 +382,7 @@
                 <div id='news_frame' class='tools right'>
 
                     <div id="right_sidebar_tabs" class="status_tab_container">
-                        <button class="status_tab_button" style="width:45%;" id="government_actions_tab" onclick="window.ChangeTab('right', 'status_right.government_actions', 'government_actions_tab');">Government Actions</button>
+                        <button class="status_tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab');">The Provincial Situation</button>
                         <button class="status_tab_button" style="width:45%;" id="news_tab" onclick="window.ChangeTab('right', 'status_right.news', 'news_tab');">General News</button>
                     </div>
 

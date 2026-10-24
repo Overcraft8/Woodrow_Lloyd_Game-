@@ -391,7 +391,7 @@ function createDetailedText(innerText, tooltipContent, style) {
   };
 
 // ==========================================
-// "Regions"
+// Status tabs
 // ==========================================
 const Bar_Config = {
     center: {
@@ -422,6 +422,12 @@ const Bar_Config = {
         containerId: 'topbar',
         targetId: 'qualities_top',
         starting_scene: 'statusTabTop',
+        constant_refresh: false
+    },
+    big: {
+        containerId: 'big_panel', 
+        targetId: 'big_qualities', 
+        starting_scene: 'status_big', 
         constant_refresh: false
     },
     district: {

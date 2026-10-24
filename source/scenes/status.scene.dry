@@ -215,8 +215,6 @@ Next Legislative Election: [+ next_parl_election_month : month +] [+ next_parl_e
 
 = Ideologies
 
-CPC(S): [+ cpc_s_ideology +] ([+cpc_s_leader +])
-
 [+ party_names.ccf +]: [+ ccf_ideology +] ([+ ccf_leader +])
 
 [? if year <= 1932 and month <= 3 : PPS: [+ pps_ideology +] ([+ pps_leader +]) ?]
