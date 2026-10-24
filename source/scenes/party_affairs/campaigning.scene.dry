@@ -11,10 +11,10 @@ tags: party_affairs
 
 Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
-- @urban_workers: The urban working class, our traditional support base.
-- @new_middle: The "new middle class" of government employees and white-collar workers.
-- @old_middle: The "old middle class" of small independent businessmen and artisans.
 - @farmers: Farmers, our traditional support base.   
+- @urban_workers: The working class, our traditional support base.
+- @new_middle: The rising middle class of government employees and white-collar workers.
+- @old_middle: The old middle class of small independent businessmen.
 - @unemployed: The unemployed.
 - @catholics: Catholics, who typically support the LPS Party.
 - @root: We either don't want to or cannot campaign right now.

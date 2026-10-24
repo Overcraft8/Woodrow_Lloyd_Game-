@@ -7,8 +7,9 @@ is-special: true
   <span style="margin-bottom: 0;">
   <img src="img/portraits/[+ ccf_leader_img +]" style="width:125px;height:170px;object-fit:cover;object-position:top;margin-top:0.5em;border:4px ridge #8B7355;">
   <div class="horizontal_line" style="border-top: 10px dotted #dcb682; width: 50%;"></div>
-    <span class="card-caption" style="font-size: 1.3em;">Party Leader: [+ ccf_leader +]</span>
+    <span class="card-caption" style="font-size: 1.3em;">Party Leader: Woodrow Lloyd</span>
     <span>Lloyd's Principles : [+ lloyd_principles : lloyd_principles +]<span>
+    <span>Lloyd's Stress Levels: [+ lloyd_stress : stress +]</span>
   </span>
 
 @programme_display
@@ -100,29 +101,32 @@ if (window && window.customgeneratemultibar) {
 }
 !}
 
+<!--
 = Faction Strength
 
 <div style='justify-content: center; text-align: center;'>
 <div id="faction_strength_bar"></div><br>
 </div>
 
-<!-- 
+
 = Party Demography
 
 <div id='party_demography'></div><br>
 -->
 
-= Faction Dissent
+= Factions
 
-Agrarian Dissent: [+ agrarian_dissent : dissent +]
+Labour Wing Relations: [+ labour_dissent : dissent +]<br>
+Labour Wing Strength: [+ labour_strength : strength +]<br>
 
-Labour Dissent: [+ labour_dissent : dissent +]
+Managerial Wing Relations: [+ managerial_dissent : dissent +]<br>
+Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
-Managerial Dissent: [+ managerial_dissent : dissent +]
+Moderates Relations: [+ moderate_dissent : dissent +]<br>
+Moderates Strength: [+ moderate_strength : strength +]<br>
 
-Moderates Dissent: [+ moderate_dissent : dissent +]
-
-Left Hardliners Dissent: [+ left_hardliner_dissent : dissent +]
+Left Hardliners Relations: [+ left_hardliner_dissent : dissent +]<br>
+Left Hardliners Strength: [+ left_hardliner_strength : strength +]<br>
 
 <!-- 
 

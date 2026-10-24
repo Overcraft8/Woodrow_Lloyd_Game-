@@ -21,7 +21,6 @@ max-cards: 6
 - @party
 - @govt
 - @govt_two
-- @electoral_strategy_deck
 - #advisor
 - @shuffle_leadership_pinned
 
@@ -48,7 +47,6 @@ max-cards: 6
 - @party
 - @govt_two
 - @govt
-- @electoral_strategy_deck
 - #advisor
 # - @shuffle_leadership_pinned
 
@@ -73,11 +71,3 @@ card-image: img/Saskatchewan_Legislature.jpg
 is-deck: true
 
 - #govtwo
-
-@electoral_strategy_deck
-title: Electoral Strategy
-card-image: img/graphics/new_order_ccf.jpg
-is-deck: true
-choose-if: electoral_strategy_timer <= 0
-
-- #electoral_affairs

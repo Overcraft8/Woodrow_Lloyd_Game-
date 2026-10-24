@@ -29,7 +29,8 @@ on-departure: {!
 style: start-scene
 
 {!<div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
-    <h1>Social Democracy: The Lloyd Years</h1>
+    <h1 style="color:green;margin: 0 0 0 0;">Social Democracy: </h1>
+    <h1 style="color:orange;margin:0.5em 0 0 0;">The Lloyd Years</h1>
 </div>!}
 
 # <div style="background: url('img/graphics/CCF.png') center 72% / cover no-repeat;width:100%;display: block;height: 20em;border: 3px ridge #4b422b;"></div>
@@ -302,6 +303,7 @@ Q.ccf_president = "None";
 Q.ccf_president_img = "LloydWoodrow.jpg";
 
 Q.lloyd_principles = 0;
+Q.lloyd_stress = 2;
 
 
 Q.cpc_s_leader = "None";
@@ -449,7 +451,7 @@ Q.ccf_toleration = 0;
 
 // is the current government a minority government?
 Q.minority_government = 0;
-Q.ruling_government = "CCF Majority";
+Q.ruling_government = "CCF(SS) Majority";
 
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
@@ -1743,7 +1745,7 @@ Q.timers = ['advisor_action', 'confronting_scps', 'crisis_program',
             // New party ones
 
             'organizations_relations', 'riding_orgs', 'recruitment',
-            'intra_party_relations', 'electoral_strategy', 
+            'intra_party_relations', 
 
 
 
@@ -1998,14 +2000,6 @@ For more information on the politics and government of Saskatchewan, see the "Li
 
 @game_intro
 subtitle: Our Party Darling is gone...
-on-departure: {!
-    // Reverting start menu graphics
-document.getElementById('topbar').style.display = ''; 
-document.getElementById('tools_wrapper').style.display = ''; 
-document.getElementById('game-title').style.display = ''; 
-document.getElementById('game-author').style.display = ''; 
-document.getElementById('header-links').style.display = ''; 
-!}
 audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
 face-image: img/cities/craven_scene.jpg
 new-page: true
@@ -2099,9 +2093,17 @@ go-to: 1932_main
 subtitle: The struggle begins
 audio: shuffle music/CoveredWagonDays.mp3 music/WhiteRiverStomp.mp3 music/CoaxingthePiano.mp3 music/OCanadaColdstreamGuards.mp3 music/COURAGE.mp3
 new-page: true
+on-departure: {!
+    // Reverting start menu graphics
+document.getElementById('topbar').style.display = ''; 
+document.getElementById('tools_wrapper').style.display = ''; 
+document.getElementById('game-title').style.display = ''; 
+document.getElementById('game-author').style.display = ''; 
+document.getElementById('header-links').style.display = ''; 
+!}
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1961
+= November 1961
 
 @intro_to_sask
 call: root

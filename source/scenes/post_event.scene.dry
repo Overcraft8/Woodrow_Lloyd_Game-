@@ -179,20 +179,19 @@ if (Q.month >= 13) {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////     PARTY STATISTICS
 
-if (Q.month >= 13) {
-    console.log("Got into party stats");
-
-    Q.membership_change_trend = Q.membership_change > 0
-            ? '<img src="img/arrowup.png"> ' 
-            : Q.membership_change < 0
-            ? '<img src="img/arrowdown.png">'
-            : '<img src="img/steady.png"> ';
+console.log("Updating party membership");
 
     Q.membership += Q.membership_change;
 
-    Q.membership_change_display = Q.membership_change_trend + Q.membership_change;
-}
+    Q.membership_change_trend = Q.membership_change > 0
+        ? '<img src="img/arrowup.png"> '
+        : Q.membership_change < 0
+        ? '<img src="img/arrowdown.png"> '
+        : '<img src="img/steady.png"> ';
 
+    Q.membership_change_display = Q.membership_change_trend + Q.membership_change;
+
+    Q.membership_change = 0;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -267,9 +266,7 @@ if (Q.month_actions >= 1) {
     if (Q.month >= 13) {
         Q.month = 1;
         Q.year += 1;
-        if (Q.historical_mode) {
-            Q.resources += 2;
-        }
+        Q.resources += Q.dues;
     }
     // decrement timers
     for (var timer of Q.timers) {

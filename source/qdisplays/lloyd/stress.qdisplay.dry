@@ -1,0 +1,6 @@
+
+(..2) <span style='color: #64b52a'> Relatively Untroubled </span>
+(2..4) <span style='color: #90b52a'> Under Pressure </span>
+(4..6) <span style='color: #b0b52a'> Under Strain </span>
+(6..8) <span style='color: #b56b2a'> Severely Strained </span>
+(8..) <span style='color: #b54f2a'> Under Severe Strain </span>
