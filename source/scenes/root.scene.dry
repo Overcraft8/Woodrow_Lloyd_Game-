@@ -28,9 +28,9 @@ on-departure: {!
 !}
 style: start-scene
 
-<div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
-    = Social Democracy: The Lloyd Years
-</div>
+{!<div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
+    <h1>Social Democracy: The Lloyd Years</h1>
+</div>!}
 
 # <div style="background: url('img/graphics/CCF.png') center 72% / cover no-repeat;width:100%;display: block;height: 20em;border: 3px ridge #4b422b;"></div>
 
@@ -1992,9 +1992,9 @@ This game is a total conversion mod for Autumn Chen's game - Social Democracy: A
 
 For more information on the politics and government of Saskatchewan, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
-- @lloyd_intro: A New Era for Saskatchewan
+- @game_intro: A New Era for Saskatchewan
 
-@lloyd_intro
+@game_intro
 subtitle: Our Party Darling is gone...
 on-departure: {!
     // Reverting start menu graphics
@@ -2006,10 +2006,11 @@ document.getElementById('header-links').style.display = '';
 !}
 audio: shuffle music/ccf_song.m4a music/WHITERIVERSTOMP.mp3
 face-image: img/cities/craven_scene.jpg
+new-page: true
 
 = A Changing Saskatchewan
 
-Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor country cousin of Confederation, still rotten from the despair of the 'Dirty Thirties' and the Great Depression. It's people were among the poorest in all of Canada and their work tied to the uncertain crop yields that had devasted them just a few years later. The Liberal Party's political machine and patronage appointees ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers.
+Saskatchewan is not the same place it was 17 years ago. Then, the province had been the poor country cousin of Confederation, still rotten from the despair of the 'Dirty Thirties' and the Great Depression. It's people were among the poorest in all of Canada and their work tied to the uncertain crop yields that had devasted them just a few years earlier. The Liberal Party's political machine and patronage appointees ran rampant through all corners of the government, supported by the masses of Liberal-aligned newspapers.
 
 The loudest opposition was from the benches, our party. Coldwell, Williams, and Douglas; all had taken their turn attacking the Liberals for their rampant cronyism and promoting a greater society. All had offered a promise: Greater social security and public ownership than the old-line parties could ever conceive. And at the height of war with Germany, when government intervention managed to produce from a sparsely populated corner of the British Empire a terrifying war machine, the Saskatchewan people voted in a CCF government with a measly 5 seat Liberal opposition. Thus started the years of hope for us. That we could conceive a Cooperative Commonwealth in our little province. 
 
@@ -2024,9 +2025,26 @@ face-image: img/portraits/DouglasTommy.jpg
 
 No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His projection of idealism in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party elite to navigate many a difficulties as a united front. 
 
-But the steady leadership of Douglas is gone. The Federal NDP beckons him to lead their party into Ottawa and 24 Sussex Drive. He leaves behind a mass of unfinished business. 
+But the steady leadership of Douglas is gone. The Federal NDP beckons him to lead their party into Ottawa and 24 Sussex Drive. You, Woodrow Lloyd, are his replacement. He leaves behind a mass of unfinished business. 
 
-- @1932_main: Begin (Arcade Mode)
+<div class="face-figure"><img class="face-img" src="img/portraits/ThatcherRoss.jpg"></div>
+
+In 1958, Douglas had engaged the now (in?)famous Ross Thatcher, head of the LPS, in a debate at Mossbank. Thatcher pushed aggressively against our Socialist tendencies as he does now, advocating for a united right-wing front under the LPS banner to wrest our party from the reins of government. A talented and biting speaker, he will be a force to reckon with. 
+
+<div class="face-figure"><img class="face-img" src="img/CCF/health_pamphlet.jpg"></div>
+
+In 1960, Douglas had campaigned on Medicare and won another majority government. Despite a drop in popular vote, Douglas had taken it as a mandate to enact Medicare, subsequently passing the bill in November of 1961. We are now expected to enact the program, though not without sustained struggle against the Saskatchewan College of Physicians and Surgeons who vehemently oppose the plan. 
+
+<div class="face-figure"><img class="face-img" src="img/misc_photos/cree_women.jpg"></div>
+
+The question of the great north remains highly prevalent. It is the most isolated and Indigenous-populated part of Saskatchewan. It suffers from some of the most intensive poverty in the country with the vast majority of communities lacking a roadway connection, only able to transport goods and people out and in via small aircraft and runways. Previous government's heavy-handed approach has not seemed to bear drastic improvements. As such, it will be our job to navigate the complexities of the North. 
+
+<div class="face-figure"><img class="face-img" src="img/CCF/forward_with_ccf.jpg"></div>
+
+And there still remains considerable grassroots resistance to the New Democratic Party, a merger of the CCF and the Trade Unions. Many, especially our large farmer base, view the NDP with suspicion, fearing that the homegrown CCF movement will now be dominated by Union bosses and Eastern industrial interests. We will have to find a way through this somehow without alienating either our federal counterpart or our own constituents. 
+
+
+- @1932_main: Towards The Dawn!
 - @1932_hard: Begin (hard difficulty)
 - @1932_historical: Begin (historical mode)
 
@@ -2049,6 +2067,7 @@ on-arrival: {!
 choose-if: 1 = 2
 unavailable-subtitle: WIP!
 go-to: 1932_main
+view-if: 1 = 2
 
 @1932_historical
 subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
@@ -2069,6 +2088,7 @@ Q.treasury = 12;
 this.state.disableSaves = true;
 !}
 choose-if: 1 = 2
+view-if: 1 = 1
 unavailable-subtitle: WIP!
 go-to: 1932_main
 

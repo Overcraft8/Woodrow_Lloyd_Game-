@@ -75,6 +75,8 @@ HaldemanJoshua.png - https://en.wikipedia.org/wiki/Joshua_N._Haldeman
 MacphersonMA.jpg - https://commons.wikimedia.org/wiki/File:Murdoch_Alexander_MacPherson.jpg
 LloydWoodrow.jpg - https://commons.wikimedia.org/wiki/File:Woodrow_Stanley_Lloyd-M._West,_Regina.jpg
 DouglasTommy.jpg - https://commons.wikimedia.org/wiki/File:Premier_Tommy_Douglas_(F1257_s1057_it2743).jpg
+ThatcherRoss.jpg - https://commons.wikimedia.org/wiki/File:Wilbert_Ross_Thatcher,_1953.jpg
+cree_women.jpg - https://commons.wikimedia.org/wiki/File:Cree_Woman_Carrying_Domestic_Supplies_-_Waterhen_River,_Northern_Saskatchewan_(20373063675).jpg
 
 
 
