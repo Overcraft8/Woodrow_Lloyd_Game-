@@ -1,0 +1,6 @@
+
+(..2) <span style='color: #64b52a'> Firmly Held </span>
+(2..4) <span style='color: #90b52a'> Flexible </span>
+(4..6) <span style='color: #b0b52a'> Compromised </span>
+(6..8) <span style='color: #b56b2a'> Conceding </span>
+(8..) <span style='color: #b54f2a'> Abandoned! </span>

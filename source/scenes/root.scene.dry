@@ -301,6 +301,8 @@ Q.ccf_leader_img = "LloydWoodrow.jpg";
 Q.ccf_president = "None";
 Q.ccf_president_img = "LloydWoodrow.jpg";
 
+Q.lloyd_principles = 0;
+
 
 Q.cpc_s_leader = "None";
 Q.cps_leader = "Martin Pederson";
@@ -2025,11 +2027,11 @@ face-image: img/portraits/DouglasTommy.jpg
 
 No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His projection of idealism in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party elite to navigate many a difficulties as a united front. 
 
-But the steady leadership of Douglas is gone. The Federal NDP beckons him to lead their party into Ottawa and 24 Sussex Drive. You, Woodrow Lloyd, are his replacement. He leaves behind a mass of unfinished business. 
+But the steady and tested leadership of Douglas is gone. The NDP beckons him to lead the Federal party into Ottawa, attempting to overcome nearly a century of Tory and Grit rule. You, Woodrow Stanley Lloyd, are his replacement as Premier and CCF(SS) leader. Douglas leaves behind a mass of unfinished business that we will have to clean up if we want to continue and preserve the legacy of Social Democracy in Saskatchewan. Chief among them: 
 
 <div class="face-figure"><img class="face-img" src="img/portraits/ThatcherRoss.jpg"></div>
 
-In 1958, Douglas had engaged the now (in?)famous Ross Thatcher, head of the LPS, in a debate at Mossbank. Thatcher pushed aggressively against our Socialist tendencies as he does now, advocating for a united right-wing front under the LPS banner to wrest our party from the reins of government. A talented and biting speaker, he will be a force to reckon with. 
+In 1958, Douglas had engaged the now (in?)famous Ross Thatcher, a defector from the CCF and now head of the Liberal Party, in a debate at Mossbank. While a member of our party, Thatcher had found himself on the pro-business, right wing flank of the movement, ultimately leaving over corporate taxation policy. Thatcher is now pushing aggressively against our social democratic tendencies, advocating for a united right-wing front under the LPS banner to wrest our party from the reins of government. A talented and biting speaker, he will be a force to reckon with. 
 
 <div class="face-figure"><img class="face-img" src="img/CCF/health_pamphlet.jpg"></div>
 
@@ -2037,7 +2039,7 @@ In 1960, Douglas had campaigned on Medicare and won another majority government.
 
 <div class="face-figure"><img class="face-img" src="img/misc_photos/cree_women.jpg"></div>
 
-The question of the great north remains highly prevalent. It is the most isolated and Indigenous-populated part of Saskatchewan. It suffers from some of the most intensive poverty in the country with the vast majority of communities lacking a roadway connection, only able to transport goods and people out and in via small aircraft and runways. Previous government's heavy-handed approach has not seemed to bear drastic improvements. As such, it will be our job to navigate the complexities of the North. 
+The question of the great north remains highly prevalent. It is the most isolated and Indigenous-populated part of Saskatchewan. It also suffers from some of the most intensive poverty in the country with the vast majority of communities lacking a roadway connection, only able to transport goods and people in and out via small aircraft and runways. Previous government's heavy-handed approach has not seemed to bear drastic improvements. As such, it will be our job to navigate the complexities of the North. 
 
 <div class="face-figure"><img class="face-img" src="img/CCF/forward_with_ccf.jpg"></div>
 
@@ -2093,7 +2095,7 @@ unavailable-subtitle: WIP!
 go-to: 1932_main
 
 @1932_main
-subtitle: More freedom, Intended way to Play - Less historical
+subtitle: The struggle begins
 audio: shuffle music/CoveredWagonDays.mp3 music/WhiteRiverStomp.mp3 music/CoaxingthePiano.mp3 music/OCanadaColdstreamGuards.mp3 music/COURAGE.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
