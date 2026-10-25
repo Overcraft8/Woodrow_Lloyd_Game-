@@ -7,7 +7,7 @@ new-page: true
 
 @northern_issue
 new-page: true
-call: status_big.expand_right_tab
+call: status_big, expand_right_tab
 on-departure: {!
     window.dendryUI.dendryEngine.runActions(status_big.close_right_tab.onArrival);
 !}
@@ -21,7 +21,7 @@ on-departure: {!
 
 @ccf_or_ndp
 new-page: true
-call: status_big; expand_right_tab
+call: status_big, expand_right_tab
 on-departure: {!
     window.dendryUI.dendryEngine.runActions(status_big.close_right_tab.onArrival);
 !}
