@@ -8,8 +8,11 @@ on-arrival: {!
     document.getElementById('mid_panel').style.margin = '';
     document.getElementById('big_panel').style.display = 'flex';
 
+    // change ids
     document.getElementById('content').id = 'content_older';
     document.getElementById('big_panel').id = 'content';
+    document.getElementById('qualities').id = 'qualities_older';
+    document.getElementById('big_qualities').id = 'qualities';
 
 
     //document.getElementById('content').style.maxWidth = '500px';
