@@ -363,3 +363,34 @@ outline-offset: -5px;
   overflow-x: scroll;
   overflow: auto;
 }
+
+.gov-scene .choices {
+  background: #f2ecdd
+}
+
+.gov-scene ul.choices li div.subtitle {
+  margin-right: 0.5em;
+}
+
+
+.gov-scene ul.choices li .subtitle:has(> img) {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+}
+
+.gov-scene ul.choices li .subtitle:has(> img) > img {
+    flex-shrink: 0;
+    display: block;
+    margin: 0 !important;
+    width: 100px !important;
+    height: 125px !important;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.gov-scene ul.choices li .subtitle:has(> img) > span {
+  flex: 1;
+  min-width: 0;
+}

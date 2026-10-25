@@ -1748,7 +1748,7 @@ Q.timers = ['advisor_action', 'confronting_scps', 'crisis_program',
             'intra_party_relations', 
 
             // new govt
-            'gov_timer', 
+            'gov', 
 
 
 
@@ -1777,6 +1777,8 @@ Q.ideology_timer = 0;
 Q.inter_party_relationships_timer = 0;
 Q.international_relations_timer = 0;
 Q.iron_front_timer = 0;
+
+Q.gov_timer = 0;
 
 
 Q.media_timer = 0;
