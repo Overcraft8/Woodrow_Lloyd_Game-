@@ -365,5 +365,7 @@ outline-offset: -5px;
   transform: translate(-50%, -50%);
   border: 2px ridge var(--border-color);
   display: none;
+  flex-direction: row;
+  overflow-x: scroll;
   overflow: auto;
 }
