@@ -4,13 +4,73 @@ is-pinned-card: true
 view-if: ccf_in_government = 1
 card-image: img/Saskatchewan_Legislature.jpg
 on-arrival: {!
-    document.getElementById('content').style.maxWidth = '';
-    document.getElementById('content').style.width = '40';
-    document.getElementById('mid_panel').style.margin = '';
-
+    // document.getElementById('content').style.maxWidth = '';
+    // document.getElementById('content').style.width = '40';
+    // document.getElementById('mid_panel').style.margin = '';
+// 
     //document.getElementById('content').style.maxWidth = '500px';
     //document.getElementById('mid_panel').style.margin = '0 21em';
 !}
 
 = Government Options
 
+<div class="tab_container">
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_economy');">Economy</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_north');">The Northern Question</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_agriculture');">Agriculture</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_welfare');">Welfare</button>
+    <button class="tab_button" onclick="window.ChangeTab('left', 'status.polls', 'polls_tab');">Polls</button>
+</div>
+
+
+@gov_economy
+
+= The Saskatchewan Economy
+
+- @housing_corp
+- @housing_finance
+- @attract_industry
+- @progressive_taxation
+- @beautification
+- @provincial_parks
+- @cooperative_technical_aid
+- @cooperative_tax_aid
+
+@housing_corp
+title: A Housing Crown
+subtitle: Establish a Crown corporation responsible for constructing and managing affordable housing, particularly for low-income families, elderly residents, and workers moving into industrial centres.
+
+@housing_finance
+title: Financing Housing
+subtitle: Provide low-interest loans, loan guarantees, and other financial assistance for home construction and renovation 
+
+@attract_industry
+title: Incentivizing Development
+subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] [? if year >= 1962 : <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation  ?]
+
+@progressive_taxation
+title: Implementing Progressive Taxation
+subtitle: The federal government has decentralized the income tax system; implement a progressive tax reduction, decreasing tax on low- and middle-income earners and raising taxes for corporations and high earners –> only after and during 1962
+
+@beautification
+title: Beautification
+subtitle: “Beautify” the major streets and avenues of Saskatoon, Regina, and various small towns 
+
+@provincial_parks
+title: Expanding Provincial Parks and Conservation Areas
+subtitle: Set aside land for conservation and provincial parks; develop public recreational facilities in rural areas
+
+@cooperative_technical_aid
+title: Aiding Cooperatives
+subtitle: Provide further technical and operational assistance to developing cooperatives
+
+@cooperative_tax_aid
+title: Aiding Cooperatives
+subtitle: Provide tax incentives and relief to developing cooperatives
+
+
+@gov_north
+
+@gov_agriculture
+
+@gov_welfare
