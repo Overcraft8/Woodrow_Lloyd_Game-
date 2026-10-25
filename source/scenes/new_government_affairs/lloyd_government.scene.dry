@@ -5,15 +5,8 @@ view-if: ccf_in_government = 1
 card-image: img/Saskatchewan_Legislature.jpg
 on-arrival: {!
     document.getElementById('content').style.maxWidth = '';
+    document.getElementById('content').style.width = '40';
     document.getElementById('mid_panel').style.margin = '';
-    document.getElementById('big_panel').style.display = 'flex';
-
-    // change ids
-    document.getElementById('content').id = 'content_older';
-    document.getElementById('big_panel').id = 'content';
-    document.getElementById('qualities').id = 'qualities_older';
-    document.getElementById('big_qualities').id = 'qualities';
-
 
     //document.getElementById('content').style.maxWidth = '500px';
     //document.getElementById('mid_panel').style.margin = '0 21em';
