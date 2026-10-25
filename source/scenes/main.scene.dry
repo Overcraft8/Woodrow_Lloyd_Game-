@@ -14,14 +14,12 @@ max-cards: 6
  
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1932 and month = 2 : The Anderson government buckles down on it's policy of retrenchment, their options limited by the Federal government and Saskatchewan business. ?]
-
-[? if year = 1935 and month = 4 : In Alberta, the CCF(SS) affiliated DLP and UFA have lost all their seats to the upstart ASCP which now forms a Majority Government. ?]
-
 - @party
 - @govt
 - @govt_two
 - #advisor
+- #family
+- @lloyd_government
 - @shuffle_leadership_pinned
 
 @main_easy
