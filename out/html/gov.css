@@ -339,3 +339,31 @@ outline-offset: -5px;
 .start-scene .choices {
   background: url("img/CCF/forward_with_ccf.jpg") center 2% / cover no-repeat;;
 }
+
+
+
+
+/* awdsasdasdasd Government Options ADasdasdasdasd */
+
+#content.government-scene{
+  width: 30em;
+}
+
+
+
+
+
+#big_panel {
+  width: min(50em, calc(100vw - 2rem));
+  height: min(30em, calc(100dvh - 2rem));
+  box-sizing: border-box;
+  background: var(--content-bg-color);
+  position: fixed;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px ridge var(--border-color);
+  display: none;
+  overflow: auto;
+}

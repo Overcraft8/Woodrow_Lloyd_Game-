@@ -1,0 +1,18 @@
+title: Government
+new-page: true
+is-card: true
+tags: govtwo
+view-if: 1 = 1
+card-image: img/Saskatchewan_Legislature.jpg
+style: government-scene
+on-arrival: {!
+    document.getElementById('content').style.maxWidth = '';
+    document.getElementById('mid_panel').style.margin = '';
+
+
+    //document.getElementById('content').style.maxWidth = '500px';
+    //document.getElementById('mid_panel').style.margin = '0 21em';
+!}
+
+= Government Options
+

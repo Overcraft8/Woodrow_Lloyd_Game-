@@ -49,6 +49,7 @@ max-cards: 6
 - @govt
 - #advisor
 - #family
+- @lloyd_government
 # - @shuffle_leadership_pinned
 
 @party
