@@ -34,43 +34,37 @@ style: gov-scene
 
 
 
-[ = The Saskatchewan Economy ]
+[
+= The Saskatchewan Economy 
+]
 
 
-[ <div style='text-align: center; display: flex;'>
-
-    <div style='border: 2px solid ; width: 100%; padding: 5px;'>
-        Inflation: <br>
-         [+ inflation_2 +]%
-    </div>
-
-    <div style='border: 2px solid ; width: 100%; text-align: center; padding: 5px;'>
-        Unemployment: <br>
-        [+ unemployed_rounded +]% <br>
-        <img style="width: 50%;" src="img/Melfort_Market.jpg">
-    </div>
-
-    <div style='border: 2px solid ; width: 100%; padding: 5px;'>
-        Rural Poverty Incidence: <br>
+[
+{!<div class="panel_holder">!}
+    {!<div class="panel_">Inflation:<br>!}
+        [+ inflation_2 +]%
+    {!</div>!}
+    {!<div class="panel_">Unemployment:<br>!}
+        [+ unemployed_rounded +]%
+        {!<br><img style="width:50%;" src="img/Melfort_Market.jpg">!}
+    {!</div>!}
+    {!<div class="panel_">Rural Poverty Incidence:<br>!}
         [+ rural_poverty +]%
-    </div>
-</div>
+    {!</div>!}
+{!</div>!}
 
-
-<div style='text-align: center; display: flex;'>
-
-<div style='border: 2px solid ; width: 100%; text-align: center; padding: 5px;'>
-    GDP Growth ([+ economic_year +]): [+ economic_growth_trend +][+ economic_growth_rounded : economic_growth_colorized +]
-</div>
-
-<div style='border: 2px solid ; width: 100%; text-align: center; padding: 5px;'>
-    Total Saskatchewan Debt: [+ saskatchewan_debt +]
-    <div style='text-align: center;'>
-        <span style='font-size: 8px;'>(Indexed to [+ economic_year +] GDP)</span>
-    </div>
-</div>
-
-</div> ]
+{!<div class="panel_holder">!}
+    {!<div class="panel_">GDP Growth (!}
+        [+ economic_year +]
+        {!): !}[+ economic_growth_trend +][+ economic_growth_rounded : economic_growth_colorized +]
+    {!</div>!}
+    {!<div class="panel_">Total Saskatchewan Debt: !}
+        [+ saskatchewan_debt +]
+        {!<div style="text-align:center;"><span style="font-size:8px;">(Indexed to !}
+            [+ economic_year +]
+        {! GDP)</span></div></div>!}
+{!</div>!}
+]
 
 - @housing_corp
 - @housing_finance
@@ -102,7 +96,7 @@ subtitle: Provide further technical and operational assistance to developing coo
 
 @cooperative_tax_aid
 title: Aiding Cooperatives
-subtitle: Provide tax incentives and relief to developing cooperatives
+subtitle: Provide tax incentives and tax relief to developing cooperatives
 
 
 
