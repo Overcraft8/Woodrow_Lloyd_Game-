@@ -18,7 +18,7 @@ max-cards: 6
 - @govt
 - @govt_two
 - #advisor
-- #family
+- @family_time
 - @lloyd_government
 - @shuffle_leadership_pinned
 
@@ -46,7 +46,7 @@ max-cards: 6
 - @govt_two
 - @govt
 - #advisor
-- #family
+- @family_time
 - @lloyd_government
 # - @shuffle_leadership_pinned
 
