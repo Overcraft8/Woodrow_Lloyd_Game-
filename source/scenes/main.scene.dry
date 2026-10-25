@@ -48,6 +48,7 @@ max-cards: 6
 - @govt_two
 - @govt
 - #advisor
+- #family
 # - @shuffle_leadership_pinned
 
 @party

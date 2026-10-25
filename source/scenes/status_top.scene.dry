@@ -116,16 +116,16 @@ if (window && window.customgeneratemultibar) {
 
 = Factions
 
-Labour Wing Relations: [+ labour_dissent : dissent +]<br>
+Labour Wing Dissent: [+ labour_dissent : dissent +]<br>
 Labour Wing Strength: [+ labour_strength : strength +]<br>
 
-Managerial Wing Relations: [+ managerial_dissent : dissent +]<br>
+Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
 Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
-Moderates Relations: [+ moderate_dissent : dissent +]<br>
+Moderates Dissent: [+ moderate_dissent : dissent +]<br>
 Moderates Strength: [+ moderate_strength : strength +]<br>
 
-Left Hardliners Relations: [+ left_hardliner_dissent : dissent +]<br>
+Left Hardliners Dissent: [+ left_hardliner_dissent : dissent +]<br>
 Left Hardliners Strength: [+ left_hardliner_strength : strength +]<br>
 
 <!-- 

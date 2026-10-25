@@ -407,8 +407,8 @@ const Bar_Config = {
         constant_refresh: true //constant_refresh for refreshing the page every turn
     },
     right: {
-        containerId: 'news_frame',
-        targetId: 'news_qualities',
+        containerId: 'right_sidebar',
+        targetId: 'right_qualities',
         starting_scene: 'statusTabRight',
         constant_refresh: true
     },

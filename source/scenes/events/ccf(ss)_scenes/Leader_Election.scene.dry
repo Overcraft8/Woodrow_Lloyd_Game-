@@ -8,7 +8,7 @@ max-visits: 1
 face-image: img/CCF_Convention.jpg
 on-display: {!
     var left_sidebar = document.getElementById('stats_sidebar'); 
-    var right_sidebar = document.getElementById('news_frame'); 
+    var right_sidebar = document.getElementById('right_sidebar'); 
 
     window.ChangeTab('left', 'Leader_Election.george_william_leadership_candidacy', 'none');
     window.ChangeTab('right', 'Leader_Election.major_coldwell_leadership_candidacy', 'none');
@@ -27,7 +27,7 @@ on-display: {!
 !} 
 on-departure: {!
     var left_sidebar = document.getElementById('stats_sidebar'); 
-    var right_sidebar = document.getElementById('news_frame');
+    var right_sidebar = document.getElementById('right_sidebar');
 
     var allTabContainers = left_sidebar.getElementsByClassName('tab_container');
     var allTabContainers_right = right_sidebar.getElementsByClassName('tab_container');
