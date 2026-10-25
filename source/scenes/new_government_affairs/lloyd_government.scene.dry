@@ -31,6 +31,33 @@ go-to: root
 
 @gov_economy
 style: gov-scene
+on-arrival: {!
+    Q.economy_info = `{!<div class="panel_holder">!}
+    {!<div class="panel">Inflation:<br>!}
+        [+ inflation_2 +]%
+    {!</div>!}
+    {!<div class="panel">Unemployment:<br>!}
+        [+ unemployed_rounded +]%
+        {!<br><img style="width:50%;" src="img/Melfort_Market.jpg">!}
+    {!</div>!}
+    {!<div class="panel">Rural Poverty Incidence:<br>!}
+        [+ rural_poverty +]%
+    {!</div>!}
+{!</div>!}
+
+{!<div class="panel_holder">!}
+    {!<div class="panel">GDP Growth (!}
+        [+ economic_year +]
+        {!): !}[+ economic_growth_trend +][+ economic_growth_rounded : economic_growth_colorized +]
+    {!</div>!}
+    {!<div class="panel">Total Saskatchewan Debt: !}
+        [+ saskatchewan_debt +]
+        {!<div style="text-align:center;"><span style="font-size:8px;">(Indexed to !}
+            [+ economic_year +]
+        {! GDP)</span></div></div>!}
+{!</div>!}`;
+
+!}
 
 
 
@@ -38,33 +65,11 @@ style: gov-scene
 = The Saskatchewan Economy 
 ]
 
-
 [
-{!<div class="panel_holder">!}
-    {!<div class="panel_">Inflation:<br>!}
-        [+ inflation_2 +]%
-    {!</div>!}
-    {!<div class="panel_">Unemployment:<br>!}
-        [+ unemployed_rounded +]%
-        {!<br><img style="width:50%;" src="img/Melfort_Market.jpg">!}
-    {!</div>!}
-    {!<div class="panel_">Rural Poverty Incidence:<br>!}
-        [+ rural_poverty +]%
-    {!</div>!}
-{!</div>!}
-
-{!<div class="panel_holder">!}
-    {!<div class="panel_">GDP Growth (!}
-        [+ economic_year +]
-        {!): !}[+ economic_growth_trend +][+ economic_growth_rounded : economic_growth_colorized +]
-    {!</div>!}
-    {!<div class="panel_">Total Saskatchewan Debt: !}
-        [+ saskatchewan_debt +]
-        {!<div style="text-align:center;"><span style="font-size:8px;">(Indexed to !}
-            [+ economic_year +]
-        {! GDP)</span></div></div>!}
-{!</div>!}
+    [+ economy_info +]
 ]
+
+
 
 - @housing_corp
 - @housing_finance
@@ -82,7 +87,7 @@ title: Financing Housing
 subtitle: Provide low-interest loans, loan guarantees, and other financial assistance for home construction and renovation 
 
 @attract_industry
-title: Incentivizing Development
+title: Incentivizing Industrial Development
 subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] [? if year >= 1962 : <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation  ?]
 
 @progressive_taxation
