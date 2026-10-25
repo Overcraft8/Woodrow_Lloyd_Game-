@@ -1747,6 +1747,9 @@ Q.timers = ['advisor_action', 'confronting_scps', 'crisis_program',
             'organizations_relations', 'riding_orgs', 'recruitment',
             'intra_party_relations', 
 
+            // new govt
+            'gov_timer', 
+
 
 
             'labour_prog', 'infra_prog', 'agri_prog',
