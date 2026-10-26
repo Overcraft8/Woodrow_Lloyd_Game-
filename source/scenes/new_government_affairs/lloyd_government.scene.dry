@@ -70,7 +70,7 @@ style: gov-scene
         {!):<br>!}
         [+ crude_oil_mbarrels +]
         {! million barrels!}
-        <img style="width: 80%;" src="img/misc_graphics/oil_barrel.jpg">
+        <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png">
     {!</div>!}
 
     {!<div class="panel">Manufacturing Shipments (!}

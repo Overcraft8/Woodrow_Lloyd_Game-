@@ -147,6 +147,8 @@ the_cooperative_commonwealth.jpg - https://platform.coop/blog/navigating-the-gol
 farmers_support_ccf.jpg - https://www.abebooks.co.uk/first-edition/Why-Farmers-Support-CCF-Co-operative-Commonwealth/31859887688/bd
 all_need_ccf.jpg - https://canadianworkingconditions.weebly.com/iii-actions-and-responses.html
 start_fresh.jpg - https://www.tvo.org/article/how-leslie-frosts-1959-election-win-predicted-the-future
+anti_medicare_rally_colored.jpg - https://nonnocere.ca/2015/10/doctor-strikes-in-canada/
+anti_medicare_cartoon.png - https://www.sutori.com/en/story/canada-during-the-1960s--3VunXcTodQq8Y8jfeSBjtztV
 
 
 stacked bar graph (thanks maybe): https://d3-graph-gallery.com/graph/barplot_stacked_basicWide.html

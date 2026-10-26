@@ -18,6 +18,16 @@ is-special: true
     <span class="card-caption">CCF or NDP?</span> 
   </button>
 
+  <button id="ross_thatcher_button" class="status_panel_card">
+    <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ross_thatcher_button')"> 
+    <span class="card-caption">The Thatcher Problem</span> 
+  </button>
+
+  <button id="medicare_button" class="status_panel_card">
+    <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'medicare_button')"> 
+    <span class="card-caption">Enacting Medicare</span> 
+  </button>
+
 
 </div>
 
