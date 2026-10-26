@@ -259,7 +259,7 @@ Q.old_middle = 5; // "old mittelstand"
 Q.new_middle = 13; // "new mittelstand"
 Q.farmers = 58; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 15;
+Q.unemployed = 4;
 Q.catholics = 1;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
@@ -1408,6 +1408,17 @@ Q.stc_balance_sheet = ``;
 Q.electricity_pie_chart = 0;
 Q.telecoms_pie_chart = 0;
 Q.transport_pie_chart = 0;
+
+
+// ----------------------------
+// ----------------------------
+// New Economy
+// ---------------------------
+// ---------------------------
+
+Q.crop_harvest_mbushels = 182.3;
+Q.crude_oil_mbarrels =	55.4;
+Q.manufacturing_shipments_millions = 372.1;
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////

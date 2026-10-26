@@ -126,6 +126,7 @@ Sask_CCL.jpg - https://www.esask.uregina.ca/entry/saskatchewan_federation_of_lab
 regina_riot_protest.jpg  -https://www.esask.uregina.ca/entry/labour.html
 BryantJames.jpg - https://esask.uregina.ca/entry/bryant_james_fraser_1877-1945.html
 Lloyd_and_wife.jpg - https://www.esask.uregina.ca/entry/lloyd_woodrow_stanley_1913-72.html
+ipsco.jpg - https://esask.uregina.ca/entry/ipsco_inc.html
 
 
 // ------------------------------------

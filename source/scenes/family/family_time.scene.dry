@@ -2,7 +2,7 @@ title: Family Time
 is-pinned-card: true
 card-image: img/portraits/Lloyd_and_wife.jpg
 new-page: true
-on-arrival: month_actions += 1
+on-arrival: month_actions += 1; lloyd_stress -= 1
 
 = Time with the Family
 

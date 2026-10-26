@@ -43,41 +43,61 @@ style: gov-scene
 
 [
 {!<div class="panel_holder">!}
-    {!<div class="panel">Inflation:<br>!}
+
+    {!<div class="panel">Consumer Price Inflation:<br>!}
         [+ inflation_2 +]%
     {!</div>!}
-    {!<div class="panel">Unemployment:<br>!}
+
+    {!<div class="panel">Unemployment Rate:<br>!}
         [+ unemployed_rounded +]%
-        {!<br><img style="width:50%;" src="img/Melfort_Market.jpg">!}
     {!</div>!}
-    {!<div class="panel">Rural Poverty Incidence:<br>!}
-        [+ rural_poverty +]%
+
+    {!<div class="panel">Field Crop Harvest (!}
+        [+ economic_year +]
+        {!):<br>!}
+        [+ crop_harvest_mbushels +]
+        {! million bushels!}
     {!</div>!}
+
 {!</div>!}
 
+
 {!<div class="panel_holder">!}
-    {!<div class="panel">GDP Growth (!}
+
+    {!<div class="panel">Crude Oil Production (!}
         [+ economic_year +]
-        {!): !}[+ economic_growth_trend +][+ economic_growth_rounded : economic_growth_colorized +]
+        {!):<br>!}
+        [+ crude_oil_mbarrels +]
+        {! million barrels!}
     {!</div>!}
-    {!<div class="panel">Total Saskatchewan Debt: !}
+
+    {!<div class="panel">Manufacturing Shipments (!}
+        [+ economic_year +]
+        {!):<br>!}
+        [+ manufacturing_shipments_millions +]
+        {! million!}
+    {!</div>!}
+
+    {!<div class="panel">Provincial Debt Burden:<br>!}
         [+ saskatchewan_debt +]
-        {!<div style="text-align:center;"><span style="font-size:8px;">(Indexed to !}
-            [+ economic_year +]
-        {! GDP)</span></div></div>!}
+        {!<div style="text-align:center;">
+            <span style="font-size:8px;">
+                (Indexed to !}
+                [+ economic_year +]
+                {! GDP)
+            </span>
+        </div>!}
+    {!</div>!}
+
 {!</div>!}
 ]
 
-- @housing_corp
-- @housing_finance
 - @attract_industry
-- @progressive_taxation
+- @income_taxation
+- @corporate_taxation
 - @cooperative_technical_aid
 - @cooperative_tax_aid
-
-@housing_corp
-title: A Housing Crown
-subtitle: Establish a Crown corporation responsible for constructing and managing affordable housing, particularly for low-income families and elderly residents.
+- @housing_finance
 
 @housing_finance
 title: Financing Housing
@@ -87,10 +107,16 @@ subtitle: Provide low-interest loans, loan guarantees, and other financial assis
 title: Incentivizing Industrial Development
 subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] [? if year >= 1962 : <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation  ?]
 
-@progressive_taxation
-title: Implementing Progressive Taxation
+@income_taxation
+title: Income Tax Raise
 view-if: year >= 1962
-subtitle: The federal government has decentralized the income tax system; implement a progressive tax reduction, decreasing tax on low- and middle-income earners and raising taxes for corporations and high earners
+subtitle: The federal government has decentralized the income tax system; Raise a 3% surcharge on top of any existing provincial surcharges to personal income tax payable under the Income Tax Act. 
+
+@corporate_taxation
+title: Corporate Tax Raise
+view-if: year >= 1962
+subtitle: The federal government has decentralized the corporate tax system; Implement a 1% increase on corporate income under the Income Tax Act. 
+
 
 @cooperative_technical_aid
 title: Aiding Cooperatives
@@ -112,6 +138,28 @@ new-page: true
 style: gov-scene
 
 [+ government_tabs +]
+
+- @northern_infrastructure1
+- @SaskForest_conversion
+- @Sasktrading_conversion
+- @northern_qol
+
+@northern_infrastructure1
+title: Uranium City Highway
+subtitle: Currently, many northern communities are accessible only by ice road; begin the construction of a highway to uranium city and subsidiary roads to adjacent towns
+
+@SaskForest_conversion
+title: Economic Decentralization
+subtitle: Continue the process of de-centralization of the northern economy with the conversion of Saskatchewan Forest and Lakes Products into consumer cooperatives
+
+@Sasktrading_conversion
+title: Economic Decentralization
+subtitle: Continue the process of de-centralization of the northern economy with the conversion of Saskatchewan government trading services into a retail cooperative
+
+@northern_qol
+title: Raise Northern Living Standards
+subtitle: Implement wide-ranging policies in the north to raise the standard of living; housing programs, local road improvements, renovation of public buildings, and expanding access to Kindergarten for Indigenous children
+
 
 
 # --------------------------------------------------------------------------
@@ -137,9 +185,14 @@ style: gov-scene
 
 [+ government_tabs +]
 
-
+- @housing_corp
 - @beautification
 - @provincial_parks
+
+@housing_corp
+title: A Housing Crown
+subtitle: Establish a Crown corporation responsible for constructing and managing affordable housing, particularly for low-income families and elderly residents.
+
 
 @beautification
 title: Beautification

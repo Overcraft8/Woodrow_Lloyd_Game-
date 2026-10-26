@@ -3,20 +3,21 @@ set-bg: img/cities/regina_overhead.jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
-    Q.pinnedCardsDescription = 'Organizations - an action is available.';
+    Q.pinnedCardsDescription = 'Special Cards - an action is available.';
 } else if (Q.advisor_action_timer == 1) {
-    Q.pinnedCardsDescription = 'Organizations - next action available in 1 month.';
+    Q.pinnedCardsDescription = 'Special Cards - next action available in 1 month.';
 } else {
-    Q.pinnedCardsDescription = 'Organizations - next action available in ' + Q.advisor_action_timer + ' months.';
+    Q.pinnedCardsDescription = 'Special Cards - next action available in ' + Q.advisor_action_timer + ' months.';
 }
 !}
 max-cards: 6
  
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
+# - @govt
+# - @govt_two
+
 - @party
-- @govt
-- @govt_two
 - #advisor
 - @family_time
 - @lloyd_government
@@ -42,9 +43,10 @@ max-cards: 6
 
 [? if year = 1932 and month = 4 : The Alberta Social Credit Party wins a majority in the provincial legislature. Our family in the Alberta CCF are deeply disturbed by the usurpation of what could've been a CCF stronghold. Aberhart's SCPS has already won over the the farmers of Albert. Is it possible the party could become just as infectious in Saskatchewan? ?]
 
+# - @govt
+# - @govt_two
+
 - @party
-- @govt_two
-- @govt
 - #advisor
 - @family_time
 - @lloyd_government
