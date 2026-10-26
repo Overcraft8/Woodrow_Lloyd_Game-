@@ -5,7 +5,7 @@ window.achievements_list = {
       "name": "Finished the Game",
       "description": "Finish the game.",
       "difficulty": 1,
-      "image": "img/Wheat_Bundle.png"
+      "image": "img/misc_graphics/Wheat_Bundle.png"
     },
     {
       "id": "tommy",

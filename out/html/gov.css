@@ -414,7 +414,7 @@ outline-offset: -5px;
 .panel_holder {
   text-align:center; 
   display:flex; 
-  gap:0.5em;
+  /* gap:0.5em; */
 }
 
 .panel {

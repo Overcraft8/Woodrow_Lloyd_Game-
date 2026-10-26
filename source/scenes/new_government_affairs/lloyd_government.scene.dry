@@ -57,6 +57,7 @@ style: gov-scene
         {!):<br>!}
         [+ crop_harvest_mbushels +]
         {! million bushels!}
+        <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png">
     {!</div>!}
 
 {!</div>!}
@@ -69,6 +70,7 @@ style: gov-scene
         {!):<br>!}
         [+ crude_oil_mbarrels +]
         {! million barrels!}
+        <img style="width: 80%;" src="img/misc_graphics/oil_barrel.jpg">
     {!</div>!}
 
     {!<div class="panel">Manufacturing Shipments (!}

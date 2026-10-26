@@ -147,6 +147,12 @@ const tooltipList = [{
     searchString: "Progressive Conservatism", 
     explanationText: "The Tories in Saskatchewan have, since the collapse of their last government in 1934, provided somewhat of a middle-ground between the Liberal and CCF parties. There remains a substantial 'Red Tory' tendency in the party that has manifested in a more paternalistic view of the relationship between the government and it's citiens. Thus, the party had been advocating a public medical system as early as 1938. Under Pederson, the party has renewed calls for resource development with a railway line to Churchill, Manitoba, through the provincial government if necessary. Additionally, they would eliminate the sales tax on select children's products. Still, traditional fiscal conservatism is exemplified in their plank to reduce the number of MLAs to 40 members. "
 },
+// Companies
+{
+    searchString: "IPSCO", 
+    explanationText: "Interprovincial Steel Corporation",
+    detailedText: "IPSCO is a relatively young and homegrown steel manufacturing company"
+}
 ];
 
 
@@ -291,6 +297,11 @@ const colourList = [{
         word: ['Red Tory', 'Red Tories', 'Red Toryism'], 
         style: "color: #b7227b; font-weight: bold;"
     },
+    // Companies
+    {
+        word: ['Interprovincial Steel Corporation', 'IPSCO'], 
+        style: "border-bottom: dotted;"
+    }
 ];
 
 

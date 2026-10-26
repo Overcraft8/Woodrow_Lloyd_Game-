@@ -151,6 +151,8 @@ if (Q.month >= 13) {
     Q.old_economic_growth = Q.economic_growth;
     Q.old_economic_growth_rounded = Q.economic_growth_rounded;
 
+    Q.economic_year += 1;
+
 
 
 

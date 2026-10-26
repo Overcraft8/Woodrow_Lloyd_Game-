@@ -354,7 +354,6 @@ Curriculum: [+ Curriculum +]
 Healthcare quality: [+ healthcarequality +]
 
 @economy
-on-arrival: economic_year = year - 1;
 
 = Economic Overview
 <hr>

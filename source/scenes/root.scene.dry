@@ -1416,9 +1416,10 @@ Q.transport_pie_chart = 0;
 // ---------------------------
 // ---------------------------
 
-Q.crop_harvest_mbushels = 182.3;
-Q.crude_oil_mbarrels =	55.4;
-Q.manufacturing_shipments_millions = 372.1;
+Q.economic_year = 1960;
+Q.crop_harvest_mbushels = 183.3;
+Q.crude_oil_mbarrels =	55.9;
+Q.manufacturing_shipments_millions = 344.4;
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
