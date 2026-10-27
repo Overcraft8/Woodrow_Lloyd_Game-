@@ -12,10 +12,11 @@ on-arrival: {!
     //document.getElementById('mid_panel').style.margin = '0 21em';
     Q.month_actions += 1;
     Q.government_tabs = `<div class="tab_container">
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_finance');">Finance</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_economy');">Economy</button>
-    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_north');">The Northern Question</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_north');">The North</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_agriculture');">Agriculture</button>
-    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_welfare');">Welfare</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_social');">Social</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_return');">Back</button> 
 </div>`;
 !}
@@ -27,6 +28,63 @@ on-arrival: {!
 @gov_return
 on-arrival: month_actions -= 1
 go-to: root
+
+
+@gov_finance
+new-page: true
+style: gov-scene
+
+[+ government_tabs +]
+
+Budget: [+ treasury +]
+
+= Taxes
+
+Sales Tax: [+ sales_tax +]%
+
+[? if year >= 1962 : Income Tax Surcharge: [+ income_tax_surcharge +] ?]
+
+[? if year >= 1962 : Corporate Tax: [+ corporate_tax +] ?]
+
+- @sales_tax_increase
+- @sales_tax_decrease
+- @income_taxation
+- @corporate_taxation
+- @spending_cuts
+- @civil_service_reduction
+
+@sales_tax_increase
+title: Sales Tax Increase
+subtitle: Levy a 2% increase on the provincial sales tax <br> Currently [+ sales_tax +]%
+
+
+@sales_tax_decrease
+title: Sales Tax Decrease
+subtitle: Implement a 2% decrease on the provincial sales tax <br> Currently [+ sales_tax +]%
+
+
+@income_taxation
+title: Income Tax Raise
+view-if: year >= 1962
+subtitle: The federal government has decentralized the income tax system; Raise a 3% surcharge on top of any existing provincial surcharges to personal income tax payable under the Income Tax Act. 
+
+
+@corporate_taxation
+title: Corporate Tax Raise
+view-if: year >= 1962
+subtitle: The federal government has decentralized the corporate tax system; Implement a 1% increase on corporate income under the Income Tax Act. 
+
+
+@spending_cuts
+title: Selective Spending Cuts
+view-if: year >= 1962
+subtitle: Pursue expenditure cuts in select departments through deferred projects, unfilled vacancies, and cutting operating expenses where necessary.
+
+
+@civil_service_reduction
+title: Reduce the Size of the Civil Service
+choose-if: treasury <= 0
+subtitle: While typically not preferred, by Lloyd, the intense fiscal pressure on government budget leaves this option open. 
 
 
 
@@ -44,7 +102,7 @@ style: gov-scene
 [
 {!<div class="panel_holder">!}
 
-    {!<div class="panel">Consumer Price Inflation:<br>!}
+    {!<div class="panel">Inflation:<br>!}
         [+ inflation_2 +]%
     {!</div>!}
 
@@ -52,12 +110,12 @@ style: gov-scene
         [+ unemployed_rounded +]%
     {!</div>!}
 
-    {!<div class="panel">Field Crop Harvest (!}
+    {!<div class="panel">Field Crop Harvest <br>(!}
         [+ economic_year +]
         {!):<br>!}
         [+ crop_harvest_mbushels +]
         {! million bushels!}
-        <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png">
+        # <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png">
     {!</div>!}
 
 {!</div>!}
@@ -65,15 +123,15 @@ style: gov-scene
 
 {!<div class="panel_holder">!}
 
-    {!<div class="panel">Crude Oil Production (!}
+    {!<div class="panel">Crude Oil Production <br>(!}
         [+ economic_year +]
         {!):<br>!}
         [+ crude_oil_mbarrels +]
         {! million barrels!}
-        <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png">
+        # <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png">
     {!</div>!}
 
-    {!<div class="panel">Manufacturing Shipments (!}
+    {!<div class="panel">Manufacturing Shipments <br>(!}
         [+ economic_year +]
         {!):<br>!}
         [+ manufacturing_shipments_millions +]
@@ -95,8 +153,6 @@ style: gov-scene
 ]
 
 - @attract_industry
-- @income_taxation
-- @corporate_taxation
 - @cooperative_technical_aid
 - @cooperative_tax_aid
 - @housing_finance
@@ -108,17 +164,6 @@ subtitle: Provide low-interest loans, loan guarantees, and other financial assis
 @attract_industry
 title: Incentivizing Industrial Development
 subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] [? if year >= 1962 : <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation  ?]
-
-@income_taxation
-title: Income Tax Raise
-view-if: year >= 1962
-subtitle: The federal government has decentralized the income tax system; Raise a 3% surcharge on top of any existing provincial surcharges to personal income tax payable under the Income Tax Act. 
-
-@corporate_taxation
-title: Corporate Tax Raise
-view-if: year >= 1962
-subtitle: The federal government has decentralized the corporate tax system; Implement a 1% increase on corporate income under the Income Tax Act. 
-
 
 @cooperative_technical_aid
 title: Aiding Cooperatives
@@ -143,7 +188,7 @@ style: gov-scene
 
 - @northern_infrastructure1
 - @SaskForest_conversion
-- @Sasktrading_conversion
+- @SaskTrading_conversion
 - @northern_qol
 
 @northern_infrastructure1
@@ -152,11 +197,11 @@ subtitle: Currently, many northern communities are accessible only by ice road; 
 
 @SaskForest_conversion
 title: Economic Decentralization
-subtitle: Continue the process of de-centralization of the northern economy with the conversion of Saskatchewan Forest and Lakes Products into consumer cooperatives
+subtitle: Continue the de-centralization of the northern economy with the conversion of Saskatchewan Forest and Lakes Products into consumer cooperatives
 
-@Sasktrading_conversion
+@SaskTrading_conversion
 title: Economic Decentralization
-subtitle: Continue the process of de-centralization of the northern economy with the conversion of Saskatchewan government trading services into a retail cooperative
+subtitle: Continue the decentralization of the northern economy with the conversion of Saskatchewan Government Trading Services into a retail cooperative
 
 @northern_qol
 title: Raise Northern Living Standards
@@ -181,7 +226,7 @@ style: gov-scene
 # --------------------------------------------------------------------------
 
 
-@gov_welfare
+@gov_social
 new-page: true
 style: gov-scene
 
@@ -203,3 +248,4 @@ subtitle: “Beautify” the major streets and avenues of Saskatoon, Regina, and
 @provincial_parks
 title: Expanding Provincial Parks and Conservation Areas
 subtitle: Set aside land for conservation and provincial parks; develop public recreational facilities in rural areas
+

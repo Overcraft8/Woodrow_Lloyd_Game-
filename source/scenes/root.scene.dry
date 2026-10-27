@@ -248,8 +248,6 @@ Q.cpc_s_banned = 0;
 Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 
-Q.treasury = 10;
-
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
@@ -1420,6 +1418,15 @@ Q.economic_year = 1960;
 Q.crop_harvest_mbushels = 183.3;
 Q.crude_oil_mbarrels =	55.9;
 Q.manufacturing_shipments_millions = 344.4;
+
+
+// ----------------------------
+// Finance
+
+Q.treasury = 10;
+Q.sales_tax = 5;
+Q.income_tax_surcharge = 0; 
+Q.corporate_tax = 0; 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
