@@ -55,12 +55,12 @@ Sales Tax: [+ sales_tax +]%
 
 @sales_tax_increase
 title: Sales Tax Increase
-subtitle: Levy a 2% increase on the provincial sales tax <br> Currently [+ sales_tax +]%
+subtitle: Levy a 2% increase on the provincial sales tax
 
 
 @sales_tax_decrease
 title: Sales Tax Decrease
-subtitle: Implement a 2% decrease on the provincial sales tax <br> Currently [+ sales_tax +]%
+subtitle: Implement a 2% decrease on the provincial sales tax
 
 
 @income_taxation

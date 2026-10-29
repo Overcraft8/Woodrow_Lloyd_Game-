@@ -217,7 +217,7 @@ CCF(SS) : [+ ccf_polls_display +]%
 
 LPS : [+ lps_polls_display +]%
 
-PCPS : [+ cps_polls_display +]%
+PCPS : [+ pcps_polls_display +]%
 
 [? if year >= 1963 : SCPS : [+ scps_polls_display +]?]
 

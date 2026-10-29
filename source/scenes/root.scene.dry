@@ -290,7 +290,7 @@ Q.party_names = {
 Q.pps_relation = 0;
 Q.cpc_s_relation = 20;
 Q.lps_relation = 0;
-Q.pcps_relation = 40;
+Q.pcps_relation = 30;
 // SCPS are invariably hostile
 Q.scps_relation = 10;
 
