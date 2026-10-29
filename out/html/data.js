@@ -286,7 +286,7 @@ const colourList = [{
         style: "color: #861a1a; font-weight: bold;"
     },
     {
-        word: ['Liberal', 'Liberal Party', 'Grit', 'Grits'], 
+        word: ['Liberal', 'Liberals', 'Liberal Party', 'Grit', 'Grits'], 
         style: "color: #BE0028; font-weight: bold;"
     },
     {

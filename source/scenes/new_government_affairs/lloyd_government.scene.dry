@@ -85,6 +85,7 @@ subtitle: Pursue expenditure cuts in select departments through deferred project
 title: Reduce the Size of the Civil Service
 choose-if: treasury <= 0
 subtitle: While typically not preferred, by Lloyd, the intense fiscal pressure on government budget leaves this option open. 
+unavailable-subtitle: The province is not in such a fiscal crisis as to necessitate this measure
 
 
 
@@ -115,7 +116,7 @@ style: gov-scene
         {!):<br>!}
         [+ crop_harvest_mbushels +]
         {! million bushels!}
-        # <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png">
+        <!-- <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png"> -->
     {!</div>!}
 
 {!</div>!}
@@ -128,7 +129,7 @@ style: gov-scene
         {!):<br>!}
         [+ crude_oil_mbarrels +]
         {! million barrels!}
-        # <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png">
+        <! -- <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png"> -->
     {!</div>!}
 
     {!<div class="panel">Manufacturing Shipments <br>(!}
@@ -154,7 +155,7 @@ style: gov-scene
 
 - @attract_industry
 - @cooperative_technical_aid
-- @cooperative_tax_aid
+- @cooperative_financial_aid
 - @housing_finance
 
 @housing_finance
@@ -163,15 +164,15 @@ subtitle: Provide low-interest loans, loan guarantees, and other financial assis
 
 @attract_industry
 title: Incentivizing Industrial Development
-subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] [? if year >= 1962 : <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation  ?]
+subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation 
 
 @cooperative_technical_aid
 title: Aiding Cooperatives
 subtitle: Provide further technical and operational assistance to developing cooperatives
 
-@cooperative_tax_aid
+@cooperative_financial_aid
 title: Aiding Cooperatives
-subtitle: Provide tax incentives and tax relief to developing cooperatives
+subtitle: Provide generous grants and loans to developing and established cooperatives to expand the cooperative influence in the provincial economy
 
 
 
@@ -219,6 +220,28 @@ new-page: true
 style: gov-scene
 
 [+ government_tabs +]
+
+@SaskLandBank
+title: Saskatchewan Land Bank
+subtitle: Approve the commission of a Saskatchewan “Land Bank” with a mandate to purchase retiring farmer’s land and lease it back at affordable rates to young startup farmers.
+
+@Northern_Agriculture
+title: Open up Northern Lands
+subtitle: Open up new land in the north for agricultural production
+
+@land_limits
+title: Impose limits on foreign and non-resident agricultural land ownership
+subtitle: Prohibit non-resident Canadians from owning land worth more than an aggregate of $15,000; limit non-Canadians to 10 acres and non-resident Canadians to 320 acres
+
+@support_agricultura_coops
+title: Help Finance Cooperative Farms
+subtitle: Revitalize the co-operative farm operations implemented after World War Two with generous grants and loans to new co-operative farm operations; set aside crownland for endeavouring co-operatives
+
+
+# Create a mandatory single desk marketing agency for the sale of hogs 
+
+# Create and designate the Saskatchewan beef commission as a voluntary marketing board
+
 
 
 # --------------------------------------------------------------------------

@@ -9,7 +9,7 @@ is-special: true
   <div class="horizontal_line" style="border-top: 10px dotted #dcb682; width: 50%;"></div>
     <span class="card-caption" style="font-size: 1.3em;">Party Leader: Woodrow Lloyd</span>
     <span>Lloyd's Principles : [+ lloyd_principles : lloyd_principles +]<span><br>
-    <span>Lloyd's Stress: [+ lloyd_stress : stress +]</span>
+    <!-- <span>Lloyd's Stress: [+ lloyd_stress : stress +]</span> -->
   </span>
 
 @programme_display
