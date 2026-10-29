@@ -221,6 +221,11 @@ style: gov-scene
 
 [+ government_tabs +]
 
+- @SaskLandBank
+- @Northern_Agriculture
+- @land_limits
+- @support_agriculture_coops
+
 @SaskLandBank
 title: Saskatchewan Land Bank
 subtitle: Approve the commission of a Saskatchewan “Land Bank” with a mandate to purchase retiring farmer’s land and lease it back at affordable rates to young startup farmers.
@@ -233,7 +238,7 @@ subtitle: Open up new land in the north for agricultural production
 title: Impose limits on foreign and non-resident agricultural land ownership
 subtitle: Prohibit non-resident Canadians from owning land worth more than an aggregate of $15,000; limit non-Canadians to 10 acres and non-resident Canadians to 320 acres
 
-@support_agricultura_coops
+@support_agriculture_coops
 title: Help Finance Cooperative Farms
 subtitle: Revitalize the co-operative farm operations implemented after World War Two with generous grants and loans to new co-operative farm operations; set aside crownland for endeavouring co-operatives
 

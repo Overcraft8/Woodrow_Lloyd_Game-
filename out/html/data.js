@@ -137,7 +137,7 @@ const tooltipList = [{
 // Ideologies
 {
     searchString: "Social Democracy", 
-    explanationText: "Social Democracy in Saskatchewan represents a moderation of the CCF's original Socialist goals as outlined in the Regina Manifesto. Social Democracy posits that the most realistic way for the CCF to maintain relevancy is to do away with the more radical aspects of the Regina Manifesto in favour of meeting immediate humanitarian needs. The Douglas government undertook in several areas state-intervention to achieve this: public ownership of utilities, public auto insurance and hospitalization, marketing boards for Northern resources, and a state-owned inter-city transportation company. In other areas such as mining and O&L, the CCF has allowed private companies to take the lead, largely in part due to insufficient government expertise and funds."
+    explanationText: "Social Democracy in Saskatchewan represents a moderation of the CCF's original Socialist goals as outlined in the Regina Manifesto. Social Democracy posits that the most realistic way for the CCF to maintain relevancy is to do away with the more radical aspects of the Regina Manifesto in favour of meeting immediate humanitarian needs. The Douglas government undertook in several areas state-intervention to achieve this: public ownership of utilities, public auto insurance and hospitalization, marketing boards for Northern resources, and a state-owned inter-city transportation company. In other areas such as mining and O&G, the CCF has allowed private companies to take the lead, largely in part due to insufficient government expertise and funds."
 },
 {
     searchString: "Free-Enterprise Liberalism", 

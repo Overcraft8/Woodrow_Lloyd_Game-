@@ -89,7 +89,7 @@ SCPS: [+ scps_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
-CCF(SS) position: [? if ccf_toleration : toleration ?][? if ccf_in_government : in government - ?][? if ccf_toleration == 0 and ccf_in_government == 0 and ccf_caretaker == 0 : opposition ?][? if ccf_caretaker : caretaker government ?]
+CCF(SS) position: [? if ccf_toleration : toleration ?][? if ccf_in_government : in government ?][? if ccf_toleration == 0 and ccf_in_government == 0 and ccf_caretaker == 0 : opposition ?][? if ccf_caretaker : caretaker government ?]
 [? if in_lps_coalition and ccf_in_government: Liberal-CCF Coalition ?][? if in_grand_coalition and ccf_in_government: Grand Coalition ?][? if in_unity_government and ccf_in_government: Popular Front ?][? if in_left_front and ccf_in_government: Left Front ?][? if in_ccf_majority and ccf_in_government: CCF(SS) majority ?][? if in_minority_government and ccf_in_government: minority government ?]
 
 [? if ccf_in_government and not in_ccf_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
