@@ -26,4 +26,4 @@ on-arrival: thatcher_ammunition += 0.05; old_middle_ccf -= 3; new_middle_ccf -= 
 
 As Lloyd finishes his speech, Dr. Dalgleish, head of the College, steps forward and asks all doctors who oppose the plan to stand. With only five exceptions, the crowd stands and commences the yelling and cheering. 
 
-- @continue: Is it war?
+- @root: Is it war?
