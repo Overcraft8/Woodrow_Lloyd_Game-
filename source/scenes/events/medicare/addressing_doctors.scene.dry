@@ -16,13 +16,13 @@ face-image: img/interiors/sask_medical_assocation_meeting.jpg
 
 News of Erb's resignation has already spread to the crowd of doctors it seems, released by the Leader Post just a few minutes prior to Lloyd's taking the stage. The doctors let out a burst of cheers as they read. 
 
-Lloyd's speech is singularly logical and reasonable. He details the history of the Medicare conflict meticulously, laying bare the concessions the government had already given, namely ensurances that there would be no interference with professional standards and independence and oppenness to altering doctor's payments and provision of facilities for appeals. The College would name three additional members to the administering Commission if that would make the plan acceptable. As he reads, scattered boos and hisses ring throughout. 
+Lloyd's speech is singularly logical and reasonable. He details the history of the Medicare conflict meticulously, laying bare the concessions the government had already given, namely assurances that there would be no interference with professional standards and independence, oppenness to altering doctor's payments and the provision of facilities for appeals. The College would name three additional members to the administering Commission if that would make the plan acceptable. As he reads, scattered boos and hisses ring throughout. 
 
 - @doctors_response: "My appeal is to what has been termed the 'ancient wisdom of your profession'. We seek not to change the ends of medicine. We do seek to find ways and means to adapt the financing of medical care to 20th century society and the legitimate expectactions of that society. In this the 'ancient mission' need not be lost. Its achievement can be advanced. I invite you to join in a bold attempt to consolidate past gains and to move toward new horizons in the field of medical care."
 
 @doctors_response
 subtitle: To light applause
-on-arrival: thatcher_ammunition += 0.05; old_middle_ccf -= 3; new_middle_ccf -= 2; workers_ccf -= 2
+on-arrival: thatcher_ammunition += 0.03; old_middle_ccf -= 3; new_middle_ccf -= 2; workers_ccf -= 2
 
 As Lloyd finishes his speech, Dr. Dalgleish, head of the College, steps forward and asks all doctors who oppose the plan to stand. With only five exceptions, the crowd stands and commences the yelling and cheering. 
 

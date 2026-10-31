@@ -311,6 +311,7 @@ Q.scps_leader = "Martin Kelln";
 Q.pps_leader = "None";
 
 Q.thatcher_ammunition = 0.50;
+Q.socred_dying = 0; 
 
 Q.ccf_legislative_leader = "Williams";
 Q.ccf_president = "Williams";

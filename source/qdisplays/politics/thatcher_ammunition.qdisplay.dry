@@ -1,0 +1,6 @@
+
+(..0.24) <span style='color: #64b52a'> very low </span>
+(0.25..0.50) <span style='color: #90b52a'> low </span>
+(0.51..0.75) <span style='color: #b0b52a'> medium </span>
+(0.75..1) <span style='color: #b56b2a'> high </span>
+(1.01..) <span style='color: #b54f2a'> very high </span>

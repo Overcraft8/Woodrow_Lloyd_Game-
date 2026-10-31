@@ -19,7 +19,7 @@ is-special: true
   </button>
 
   <button id="ross_thatcher_button" class="status_panel_card">
-    <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ross_thatcher_button')"> 
+    <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg" onclick="window.ChangeTab('big', 'status_right.thatcher_problem', 'ross_thatcher_button')"> 
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
@@ -55,3 +55,19 @@ if (document.getElementById('news_title') == null) {
 </div>
 
 [+ news_display +]
+
+
+
+
+
+
+@thatcher_problem 
+new-page: true
+
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab');">Back</button>
+
+= The Thatcher Problem
+
+Ross Thatcher is constantly attacking us in the media, aided by close party connections to large media organizations, both within and outside of Saskatchewan. His attacks whip up a populist fervor that our party once commanded under Douglas and turn many of our traditional anti-establishment voters towards him instead. 
+
+Thatcher's Ammunition : [+ thatcher_ammunition : thatcher_ammunition +]
