@@ -8,22 +8,22 @@ is-special: true
 
 <div class="status-card-row">
 
-  <button id="northern_issue_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.northern_issue', 'northern_issue_button')">
+  <button id="northern_issue_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.northern_issue', 'northern_issue_button')">
     <img class="status_panel_card_image" src="img/misc_photos/cree_women.jpg"> 
     <span class="card-caption">The Great Northern Question</span> 
   </button>
 
-  <button id="ccf_ndp_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ccf_ndp_button')">
+  <button id="ccf_ndp_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.ccf_or_ndp', 'ccf_ndp_button')">
     <img class="status_panel_card_image" src="img/CCF/forward_with_ccf.jpg"> 
     <span class="card-caption">CCF or NDP?</span> 
   </button>
 
-  <button id="ross_thatcher_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_right.thatcher_problem', 'ross_thatcher_button')">
+  <button id="ross_thatcher_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.thatcher_problem', 'ross_thatcher_button')">
     <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg"> 
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
-  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.enacting_medicare', 'medicare_button')">
+  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.enacting_medicare', 'medicare_button')">
     <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg"> 
     <span class="card-caption">Enacting Medicare</span> 
   </button>
