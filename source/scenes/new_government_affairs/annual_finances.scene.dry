@@ -1,0 +1,30 @@
+title: Government
+new-page: true
+tags: event
+view-if: 1 = 1
+max-visits: 1
+on-arrival: {!
+    Q.manufacturing_income = Math.round((Q.manufacturing_shipments_millions * 0.25) / 100) / 10; 
+    Q.oil_income = Math.round((Q.crude_oil_mbarrels * 1.5) / 100) / 10; 
+    Q.crop_income = Math.round(Q.crop_harvest_mbushels / 100) / 10; 
+
+
+!}
+
+= Annual Finances Report
+
+<table>
+    <tr>
+        <th>Income</th>
+    </tr>
+    <tr>
+        <td>Agriculture<td>
+        <td>Oil<td>
+        <td>Manufacturing<td>
+    </tr>
+    <tr>
+        <td>[+ manufacturing_income +]<td>
+        <td>[+ oil_income +]<td>
+        <td>[+ crop_income +]<td>
+    </tr>
+</table>

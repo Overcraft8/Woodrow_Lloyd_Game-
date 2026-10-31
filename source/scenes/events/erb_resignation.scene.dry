@@ -1,9 +1,0 @@
-title: Erb Resignation
-new-page: true
-subtitle: For the better!
-tags: event
-view-if: year = 1962 and month = 5
-max-visits: 1
-on-arrival: managerial_dissent += 5; moderate_dissent += 5
-
-= Late Night, May 2nd

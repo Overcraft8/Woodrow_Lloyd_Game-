@@ -1,0 +1,16 @@
+title: Erb's Resignation
+new-page: true
+tags: event
+view-if: year = 1962 and month = 5
+priority: 100
+max-visits: 1
+face-image: img/graphics/anti_medicare_cartoon.png
+on-arrival: managerial_dissent += 5; moderate_dissent += 5; thatcher_ammunition += 0.10; old_middle_ccf -= 2; new_middle_ccf -= 2
+
+= Walter Erb Defects!
+
+Walter Erb, long-standing Cabinet member and CCF(SS) MLA has been known for quite some time to have questionable convictions towards Medicare. Not only that, his record after years in office as both a Cabinet member and local representative has been singularly unimpressive, completing only the bare minimum of work to be done. He has really only managed to hold on for so long because of his old friendship with Tommy Douglas. Worse still, his move from the Health portfolio to Public Works under us has gravely damaged his ego. Thus, he has been the subject of rumours attributing to him the transfer of information and government plans to the anti-Medicare camp. 
+
+Now, it seems, his convictions have been laid bare and they have been found wanting. Not only has Erb sent in his letter of resignation, he has informed us of his plans to declare public disagreement with our government at a press conference, accompanied by the one and only Ross Thatcher. 
+
+- @continue: A new master for Erb...

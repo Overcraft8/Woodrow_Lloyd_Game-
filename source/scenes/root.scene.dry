@@ -310,6 +310,8 @@ Q.lps_leader = "Ross Thatcher";
 Q.scps_leader = "Martin Kelln"; 
 Q.pps_leader = "None";
 
+Q.thatcher_ammunition = 0.50;
+
 Q.ccf_legislative_leader = "Williams";
 Q.ccf_president = "Williams";
 Q.cpc_s_leader = "Who cares?";
@@ -389,7 +391,7 @@ Q.stv = 0;
 Q.mmp = 0;
 Q.pr = 0; 
 
-Q.alberta_premier = 'Brownlee'
+Q.alberta_premier = 'Brownlee';
 
 //--------------------------------------
 // Starting Party Seats by District   //

@@ -1,0 +1,29 @@
+title: Addressing the Doctors
+new-page: true
+tags: event
+view-if: year = 1962 and month = 5
+max-visits: 1
+priority: 2
+
+= Addressing the Doctors
+
+The timing of Walter Erb's resignation could not have been more untimely. It comes a day before the Premier's address to the College of Physicians and Surgeons.
+
+- @lloyd_addresses_doctors: If anything happens, we'll have six hundred doctors to look after us
+
+@lloyd_addresses_doctors
+face-image: img/interiors/sask_medical_assocation_meeting.jpg
+
+News of Erb's resignation has already spread to the crowd of doctors it seems, released by the Leader Post just a few minutes prior to Lloyd's taking the stage. The doctors let out a burst of cheers as they read. 
+
+Lloyd's speech is singularly logical and reasonable. He details the history of the Medicare conflict meticulously, laying bare the concessions the government had already given, namely ensurances that there would be no interference with professional standards and independence and oppenness to altering doctor's payments and provision of facilities for appeals. The College would name three additional members to the administering Commission if that would make the plan acceptable. As he reads, scattered boos and hisses ring throughout. 
+
+- @doctors_response: "My appeal is to what has been termed the 'ancient wisdom of your profession'. We seek not to change the ends of medicine. We do seek to find ways and means to adapt the financing of medical care to 20th century society and the legitimate expectactions of that society. In this the 'ancient mission' need not be lost. Its achievement can be advanced. I invite you to join in a bold attempt to consolidate past gains and to move toward new horizons in the field of medical care."
+
+@doctors_response
+subtitle: To light applause
+on-arrival: thatcher_ammunition += 0.05; old_middle_ccf -= 3; new_middle_ccf -= 2; workers_ccf -= 2
+
+As Lloyd finishes his speech, Dr. Dalgleish, head of the College, steps forward and asks all doctors who oppose the plan to stand. With only five exceptions, the crowd stands and commences the yelling and cheering. 
+
+- @continue: Is it war?
