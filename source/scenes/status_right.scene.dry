@@ -8,23 +8,23 @@ is-special: true
 
 <div class="status-card-row">
 
-  <button id="northern_issue_button" class="status_panel_card">
-    <img class="status_panel_card_image" src="img/misc_photos/cree_women.jpg" onclick="window.ChangeTab('big', 'status_big.northern_issue', 'northern_issue_button')"> 
+  <button id="northern_issue_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.northern_issue', 'northern_issue_button')">
+    <img class="status_panel_card_image" src="img/misc_photos/cree_women.jpg"> 
     <span class="card-caption">The Great Northern Question</span> 
   </button>
 
-  <button id="ccf_ndp_button" class="status_panel_card">
-    <img class="status_panel_card_image" src="img/CCF/forward_with_ccf.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ccf_ndp_button')"> 
+  <button id="ccf_ndp_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'ccf_ndp_button')">
+    <img class="status_panel_card_image" src="img/CCF/forward_with_ccf.jpg"> 
     <span class="card-caption">CCF or NDP?</span> 
   </button>
 
-  <button id="ross_thatcher_button" class="status_panel_card">
-    <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg" onclick="window.ChangeTab('big', 'status_right.thatcher_problem', 'ross_thatcher_button')"> 
+  <button id="ross_thatcher_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_right.thatcher_problem', 'ross_thatcher_button')">
+    <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg"> 
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
-  <button id="medicare_button" class="status_panel_card">
-    <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg" onclick="window.ChangeTab('big', 'status_big.ccf_or_ndp', 'medicare_button')"> 
+  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('big', 'status_big.enacting_medicare', 'medicare_button')">
+    <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg"> 
     <span class="card-caption">Enacting Medicare</span> 
   </button>
 
@@ -71,3 +71,14 @@ new-page: true
 Ross Thatcher is constantly attacking us in the media, aided by close party connections to large media organizations, both within and outside of Saskatchewan. His attacks whip up a populist fervor that our party once commanded under Douglas and turn many of our traditional anti-establishment voters towards him instead. 
 
 Thatcher's Ammunition : [+ thatcher_ammunition : thatcher_ammunition +]
+
+
+@enacting_medicare
+new-page: true
+
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab');">Back</button>
+
+= Enacting Medicare
+
+The implementation of Medicare is bound to be a strenous path. The College of Physicians and Surgeons right now is wholely opposed to the Medicare plan and are currently organizing and demonstrating among the anti-Medicare crowd. 
+
