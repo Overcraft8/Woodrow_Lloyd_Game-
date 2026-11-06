@@ -8,22 +8,22 @@ is-special: true
 
 <div class="status-card-row">
 
-  <button id="northern_issue_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.northern_issue', 'northern_issue_button')">
+  <button id="northern_issue_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.northern_issue', 'northern_issue_button', true)">
     <img class="status_panel_card_image" src="img/misc_photos/cree_women.jpg"> 
     <span class="card-caption">The Great Northern Question</span> 
   </button>
 
-  <button id="ccf_ndp_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.ccf_or_ndp', 'ccf_ndp_button')">
+  <button id="ccf_ndp_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.ccf_or_ndp', 'ccf_ndp_button', true)">
     <img class="status_panel_card_image" src="img/CCF/forward_with_ccf.jpg"> 
     <span class="card-caption">CCF or NDP?</span> 
   </button>
 
-  <button id="ross_thatcher_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.thatcher_problem', 'ross_thatcher_button')">
+  <button id="ross_thatcher_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.thatcher_problem', 'ross_thatcher_button', true)">
     <img class="status_panel_card_image" src="img/portraits/ThatcherRoss.jpg"> 
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
-  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.enacting_medicare', 'medicare_button')">
+  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.enacting_medicare', 'medicare_button', true)">
     <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg"> 
     <span class="card-caption">Enacting Medicare</span> 
   </button>
@@ -64,7 +64,7 @@ if (document.getElementById('news_title') == null) {
 @thatcher_problem 
 new-page: true
 
-<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab');">Back</button>
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
 
 = The Thatcher Problem
 
@@ -76,9 +76,12 @@ Thatcher's Ammunition : [+ thatcher_ammunition : thatcher_ammunition +]
 @enacting_medicare
 new-page: true
 
-<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab');">Back</button>
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
 
 = Enacting Medicare
 
 The implementation of Medicare is bound to be a strenous path. The College of Physicians and Surgeons right now is wholely opposed to the Medicare plan and are currently organizing and demonstrating among the anti-Medicare crowd. 
 
+College-Medicare Stance : [+ college_medicare : college_medicare +]
+
+Anti-Medicare Forces : [+ anti_medicare_strength : militancy +]

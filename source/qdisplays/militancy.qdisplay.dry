@@ -1,10 +1,10 @@
 
 # militancy for paramilitary groups
 
-(..0.05) Nonexistent
-(0.05..0.14) Very low
-(0.14..0.24) Low
-(0.24..0.44) Medium-low
-(0.44..0.69) Medium
-(0.69..1) High
-(1..) Very high
+(..0.05) <span style='color: #64b52a'> Nonexistent </span>
+(0.05..0.14) <span style='color: #79b52a'> Very low </span>
+(0.14..0.24) <span style='color: #90b52a'> Low </span>
+(0.24..0.44) <span style='color: #a2b52a'> Medium-low </span>
+(0.44..0.69) <span style='color: #b0a52a'> Medium </span>
+(0.69..1) <span style='color: #b56b2a'> High </span>
+(1..) <span style='color: #b54f2a'> Very high </span>

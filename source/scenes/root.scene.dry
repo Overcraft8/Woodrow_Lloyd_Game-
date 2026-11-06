@@ -4,7 +4,6 @@ go-to: post_event if started = 1; start_menu_2 if started = 0
 
 @start_menu
 new-page: true
-set-bg: img/cities/rokeby_overhead.jpg
 go-to: start_menu_2
 
 @start_menu_2
@@ -26,6 +25,7 @@ on-departure: {!
     document.getElementById('content').style.border = ``;
     document.getElementById('start_collage').remove();
 !}
+set-bg: img/cities/rokeby_overhead.jpg
 style: start-scene
 
 {!<div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
@@ -311,6 +311,8 @@ Q.scps_leader = "Martin Kelln";
 Q.pps_leader = "None";
 
 Q.thatcher_ammunition = 0.50;
+Q.college_medicare = 0;
+Q.anti_medicare_strength = 0.60;
 Q.socred_dying = 0; 
 
 Q.ccf_legislative_leader = "Williams";
@@ -2038,7 +2040,7 @@ The loudest opposition was from the benches, our party. Coldwell, Williams, and 
 
 <div class="face-figure"><img class="face-img" src="img/cities/saskatoon_overhead.jpg"></div>
 
-It's been 17 years since that day. The province, in many ways, is a lady of considerable prospects. Our socialized utilities keep rates low for citizens, our state corporation for inter-city transit connects hundreds of communities to the urban centres, and our expansion of healthcare programs, namely universal hospitalization and the air ambulance service, have brought modern medicine to those who may have gone without just 20 years earlier. The development of our oil, gas, and potash deposits have brought employment and opportunity to the corners of the province over and workers can now state that they work under the most comprehensive Labour legislation in North America.
+It's been 17 years since that day. The province, in many ways, is a lady of considerable prospects. Our socialized utilities keep rates low for citizens, our state-owned inter-city transit corporation connects hundreds of communities to the urban centres, and our expansion of healthcare programs, namely universal hospitalization and the air ambulance service, have brought modern medicine to those who may have gone without just 20 years earlier. The development of our oil, gas, and potash deposits have brought employment and opportunity to the corners of the province over and workers can now gloat that they work under the most comprehensive Labour legislation in North America.
 
 - @woodrow_lloyd_start: But it wasn't you at the helm during all this
 
@@ -2046,7 +2048,7 @@ It's been 17 years since that day. The province, in many ways, is a lady of cons
 
 <div class="face-figure"><img class="face-img" src="img/portraits/DouglasTommy.jpg"></div>
 
-No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His projection of idealism in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party elite to navigate many a difficulties as a united front. 
+No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His idealistic rhetoric in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party leadership to navigate many a difficulties as a united front. 
 
 But the steady and tested leadership of Douglas is gone. The NDP beckons him to lead the Federal party into Ottawa, attempting to overcome nearly a century of Tory and Grit rule. You, Woodrow Stanley Lloyd, are his replacement as Premier and CCF(SS) leader. Douglas leaves behind a mass of unfinished business that we will have to clean up if we want to continue and preserve the legacy of Social Democracy in Saskatchewan. Chief among them: 
 

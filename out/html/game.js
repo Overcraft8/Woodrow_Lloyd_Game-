@@ -481,7 +481,7 @@ window.updateBar = function(regionKey) {
 // ==========================================
 // Tab Changing
 // ==========================================
-window.ChangeTab = function(regionKey, newTab, tabId) {
+window.ChangeTab = function(regionKey, newTab, tabId, returning = false) {
     if (regionKey === 'left' && tabId === 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
         window.alert('Polls are not available in historical mode.');
         return;
@@ -499,9 +499,9 @@ window.ChangeTab = function(regionKey, newTab, tabId) {
         var statusPanelCards = container.getElementsByClassName('status_panel_card_image');
 
         // -------------------------------------------------------------
-        // Close if the clicked tab is already active
+        // Close if the clicked tab is already active or returning
         // -------------------------------------------------------------
-        if (window.prev_tab_id === tabId || tabButton.classList.contains('active')) {
+        if (!returning && (window.prev_tab_id === tabId || tabButton.classList.contains('active'))) {
             tabButton.classList.remove('active');
 
             // Hide nested sub-tab containers if applicable
