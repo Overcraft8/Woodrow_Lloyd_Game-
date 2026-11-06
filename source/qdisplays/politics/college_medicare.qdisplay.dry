@@ -1,6 +1,6 @@
 
-(..0.24) <span style='color: #64b52a'> Accepting </span>
-(0.25..0.50) <span style='color: #90b52a'> Receptive </span>
-(0.51..0.75) <span style='color: #b0b52a'> Wary </span>
-(0.75..1) <span style='color: #b56b2a'> Confrontational </span>
-(1.01..) <span style='color: #b54f2a'> Hostile </span>
+(..0.24) <span style='color: #c71313;'>Hostile</span>
+(0.25..0.50) <span style='color: #c77313;'>Confrontational</span>
+(0.51..0.75) <span style='color: #b0b52a'>Wary</span>
+(0.75..1) <span style='color: #8ec713;'>Receptive</span>
+(1.01..) <span style='color: #13c73a;'>Accepting</span>

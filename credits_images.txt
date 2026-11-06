@@ -89,6 +89,7 @@ oil_barrel.jpg - https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D1%80%D0%B5%D0
 liberal_target_ad.png - https://archive.org/details/P011067/P011067/
 forward_with_ccf.jpg - https://commons.wikimedia.org/wiki/File:Flag-Billboard-Forward_with_CCF,_1944.jpg
 cps_platform.png - https://archive.org/details/P004290
+waffle.jpg - https://archive.org/details/N021410/mode/2up
 
 
 // -----------------------------------
@@ -150,6 +151,7 @@ start_fresh.jpg - https://www.tvo.org/article/how-leslie-frosts-1959-election-wi
 anti_medicare_rally_colored.jpg - https://nonnocere.ca/2015/10/doctor-strikes-in-canada/
 anti_medicare_cartoon.png - https://www.sutori.com/en/story/canada-during-the-1960s--3VunXcTodQq8Y8jfeSBjtztV
 sask_medical_assocation_meeting.jpg - https://parks.canada.ca/culture/designation/evenement-event/greve-medecins-doctors-strike
+waffle-ndp_caricature.jpg - https://canadiandimension.com/articles/view/waffling-to-the-left-how-a-manifesto-shook-the-ndp-in-1969?utm_source=chatgpt.com
 
 
 stacked bar graph (thanks maybe): https://d3-graph-gallery.com/graph/barplot_stacked_basicWide.html

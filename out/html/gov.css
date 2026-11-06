@@ -264,15 +264,15 @@ outline-offset: -5px;
 
 /* Below are achievements */
 
+/* Below are achievements */
+
 .achievement {
-  background: var(--tab-color);
-  --tab-color: #efe0b9;
+  background: #f5efe0;
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 14px 10px;
-  border: 2px solid var(--border-color);
-  border-radius: 10px;
+  border: 2px inset var(--border-color);
 }
 .achievement--locked {
   border-top: 2px solid var(--border-color);
@@ -285,7 +285,6 @@ outline-offset: -5px;
   flex-shrink: 0;
   width: 90px;
   height: 90px;
-  border-radius: 8px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -314,8 +313,7 @@ outline-offset: -5px;
   margin-bottom: 4px;
   display: flex;
   justify-content: space-between;
-  font-family: "UbuntuCustom", system-ui, -apple-system, BlinkMacSystemFont,
-  Ubuntu, Cantarell, sans-serif;
+  font-family: Franklin Gothic Medium, Arial;
 }
 
 .achievement-title--unlocked { color: var(--text-color); }
@@ -324,6 +322,12 @@ outline-offset: -5px;
 .achievement-description {
   font-size: 0.85em;
 }
+
+
+
+
+
+
 
 .start-scene .choices li {
     text-align: center;

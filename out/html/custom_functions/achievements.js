@@ -3,23 +3,44 @@ window.achievements_list = {
     {
       "id": "game_completed",
       "name": "Finished the Game",
-      "description": "Finish the game.",
-      "difficulty": 1,
+      "description": "Finish the game! Woohoo!",
+      "difficulty": 0,
       "image": "img/misc_graphics/Wheat_Bundle.png"
     },
     {
-      "id": "tommy",
-      "name": "Tommy",
-      "description": "Tommy Douglas is elected as Premier.",
-      "difficulty": 3,
-      "image": "img/portraits/DouglasTommy.jpg"
+      "id": "woodrow-win",
+      "name": "The Lloyd Years",
+      "description": "Woodrow Lloyd is reelected as Premier of Saskatchewna",
+      "difficulty": 2,
+      "image": "img/portraits/LloydWoodrow.jpg"
     },
     {
-      "id": "dief_the_chief",
-      "name": "Dief The Chief",
-      "description": "John Diefenbaker is elected as Premier.",
-      "difficulty": 3,
-      "image": "img/portraits/Tories/DiefenbakerJohn_old.png"
+      "id": "thatcher-win",
+      "name": "The Iron... Gentleman?",
+      "description": "Thatcher wins the 1964 Saskatchewan General Election",
+      "difficulty": 2,
+      "image": "img/portraits/ThatcherRoss.jpg"
+    },
+    {
+      "id": "medicare-martyr",
+      "name": "Martyr of Medicare",
+      "description": "Fully implement Medicare but lose the 1964 Election",
+      "difficulty": 2,
+      "image": "img/graphics/post_medicare.jpg"
+    },
+    {
+      "id": "sask-waffle",
+      "name": "Towards a Socialist Saskatchewan",
+      "description": "Retain the Premiership whilst enacting policies of the 'Waffle Group'",
+      "difficulty": 4,
+      "image": "img/CCF/waffle.jpg"
+    },
+    {
+      "id": "waffle-success",
+      "name": "Waffling to the Left",
+      "description": "The Waffle Manifesto Passes at the 1969 Federal NDP Convention",
+      "difficulty": 2,
+      "image": "img/graphics/waffle-ndp_caricature"
     }
   ]
 }
@@ -31,7 +52,12 @@ window.achievements_loader = function(container) {
   var achievements = window.achievements_list.achievements;
   var display = "";
 
-  // Build the complete markup string
+  var difficulty_colors = ['#64b52a', '#90b52a', '#b0a52a', '#b56b2a', '#b54f2a']
+
+
+  var difficulty = achievement.difficulty;
+  var difficultyColor = difficulty_colors[difficulty];
+
   for (var achievement of achievements) {
     var lock_state = Q[achievement.id] ? '--unlocked' : '--locked';
 
@@ -42,6 +68,7 @@ window.achievements_loader = function(container) {
       <div class="achievement-body">
         <div class="achievement-title achievement-title${lock_state}">
           <span>${achievement.name}</span>
+          <span style="color:${difficultyColor};font-size:0.75em;font-weight:bold;white-space:nowrap;">${difficulty}</span>
         </div>
         <div class="achievement-description achievement-description${lock_state}">
           ${achievement.description}
