@@ -55,11 +55,10 @@ window.achievements_loader = function(container) {
   var difficulty_colors = ['#64b52a', '#90b52a', '#b0a52a', '#b56b2a', '#b54f2a']
 
 
-  var difficulty = achievement.difficulty;
-  var difficultyColor = difficulty_colors[difficulty];
-
   for (var achievement of achievements) {
     var lock_state = Q[achievement.id] ? '--unlocked' : '--locked';
+    var difficulty = achievement.difficulty;
+    var difficultyColor = difficulty_colors[difficulty];
 
     display += `<div class="achievement achievement${lock_state}" style="display:flex">
       <div class="achievement-image achievement-image${lock_state}">
