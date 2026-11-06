@@ -224,7 +224,8 @@ Q.city_government = "ccf";
 Q.nationalism = 60;
 // socialism vs capitalism
 Q.socialism_support = 26;
-Q.social_credit_support = 0;
+Q.free_enterprise_support = 45;
+Q.social_credit_support = 4;
 Q.cooperative_support = 60; 
 // pro-republic vs anti-republic
 Q.pro_republic = 59;
@@ -275,7 +276,7 @@ Q.inflation = 2.9;
 // quality of life (as % of 1932 - currently unused - should be welfare-adjusted.)
 
 
-Q.parties = ['ccf', 'cpc_s', 'lps', 'pcps', 'scps', 'other'];
+Q.parties = ['ccf', 'lps', 'pcps', 'scps', 'other'];
 Q.party_names = {
     'ccf' : 'CCF(SS)', 
     'cpc_s' : 'CPC(S)', 
@@ -1467,36 +1468,36 @@ Q.other_old_polls = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ccf = 43;
-Q.workers_cpc_s = 3;
+Q.workers_ccf = 38;
+Q.workers_cpc_s = 0;
 Q.workers_pps = 3;
 Q.workers_lps = 33;
 Q.workers_pcps = 15;
-Q.workers_scps = 0;
+Q.workers_scps = 8;
 Q.workers_other = 9;
 
 Q.old_middle_ccf = 11;
 Q.old_middle_cpc_s = 0;
 Q.old_middle_pps = 0;
-Q.old_middle_lps= 54;
+Q.old_middle_lps= 38;
 Q.old_middle_pcps = 24;
-Q.old_middle_scps = 8;
+Q.old_middle_scps = 14;
 Q.old_middle_other = 3;
 
-Q.new_middle_ccf = 34;
+Q.new_middle_ccf = 39;
 Q.new_middle_cpc_s = 0;
 Q.new_middle_pps = 0;
 Q.new_middle_lps= 30;
-Q.new_middle_pcps = 21;
+Q.new_middle_pcps = 16;
 Q.new_middle_scps = 8;
 Q.new_middle_other = 2;
 
-Q.farmers_ccf = 45;
+Q.farmers_ccf = 42;
 Q.farmers_cpc_s = 0;
 Q.farmers_pps = 0;
 Q.farmers_lps = 28;
 Q.farmers_pcps = 24;
-Q.farmers_scps = 11;
+Q.farmers_scps = 14;
 Q.farmers_other = 3;
 
 Q.unemployed_ccf = 45;
@@ -1530,7 +1531,7 @@ Q.pcps_seats = 0;
 Q.other_seats = 0;
 Q.scps_seats = 0;
 
-Q.largest_party = 'pcps';
+Q.largest_party = 'CCF(SS)';
 
 
 // calculate support for each of the parties

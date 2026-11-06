@@ -1,0 +1,76 @@
+title: The Weyburn By-Election
+subtitle: Douglas' Seat Up for Grabs
+new-page: true
+tags: event
+view-if: year = 1961 and month = 12
+priority: 2
+max-visits: 1
+on-arrival: weyburn_campaigning = 0; lps_weyburn_advantage = 4
+
+The Weyburn provincial riding results are being held now. It is a two-way race between the CCF(SS) and LPS as Thatcher, seemingly, has convinced the Tories and Socreds not to contest the district. As Douglas' longtime seat, it will be a disappointment if we lose this. 
+
+[? if weyburn_campaigning == 0 : We have done little to no campaigning in Weyburn for this by-election. ?]
+
+[? if weyburn_campaigning >= 1 and weyburn_campaigning < 3 : We have completed some campaigning for Weyburn.  ?]
+
+[? if weyburn_campaigning >= 3 : We have done extensive campaigning in Weyburn ?]
+
+- @weyburn_campaigning: Let's campaign in Weyburn
+- @weyburn_results: Let's see the results
+
+@weyburn_campaigning
+choose-if: resources >= 1 and weyburn_campaigning < 3
+on-arrival: weyburn_campaigning += 1
+go-to: weyburn_byelection
+
+@weyburn_results
+on-arrival: {!
+    Q.weyburn_class = {
+        'workers' : 25, 
+        'farmers' : 40, 
+        'new_middle' : 12, 
+        'old_middle' : 12, 
+        'unemployed' : 6
+    }
+    var lps_weyburn = 0;
+    var ccf_weyburn = 0;
+    for (var c of Q.classes) {
+        lps_weyburn += Q[c + '_lps'] + Q.lps_weyburn_advantage;
+        ccf_weyburn += Q[c + '_ccf'] + weyburn_campaigning;
+    };
+
+    var strengths = [lps_weyburn, ccf_weyburn];
+    var factionColors = ['#BE0028', '#d29c28'];
+  
+  window.customgeneratemultibar(
+      strengths, 
+      "#333333", 
+      factionColors, 
+      "weyburn_results_bar", 
+      ['Liberals', 'CCF']
+  );
+!}
+go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_weyburn > ccf_weyburn
+
+= Weyburn By-Election Results
+
+<div class="face-figure"><img class="face-img" src="img/cities/weyburn_overhead.jpg"></div>
+
+
+<div style='justify-content: center; text-align: center;'>
+<div id="weyburn_results_bar"></div><br>
+</div>
+
+
+
+
+@ccf_wins_weyburn
+title: The CCF Wins Weyburn
+
+Perhaps this result was to be expected. A sign of good times, perhaps?
+
+@lps_wins_weyburn
+title: The LPS Wins Weyburn
+on-arrival: thatcher_ammunition += 0.05; 
+
+In an upset victory, the LPS has taken control of Douglas' old riding. Certainly, this whole affair has given Thatcher's Liberals more media attention. Increasingly, Socred voters, it seems, are moving over to the LPS. 

@@ -40,7 +40,7 @@ window.achievements_list = {
       "name": "The Farmer-Labor Party",
       "description": "CCF(SS) worker and farmer support are both above 50% by game end",
       "difficulty": 4,
-      "image": "img/ccf_logo_nobg.png"
+      "image": "img/CCF_logo_nobg.png"
     },
     {
       "id": "sask-waffle",
@@ -53,7 +53,7 @@ window.achievements_list = {
       "id": "waffle-success",
       "name": "Waffling to the Left",
       "description": "The Waffle Manifesto Passes at the 1969 Federal NDP Convention",
-      "difficulty": 2,
+      "difficulty": 4,
       "image": "img/graphics/waffle-ndp_caricature.jpg"
     }
   ]

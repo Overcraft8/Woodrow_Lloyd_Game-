@@ -212,38 +212,7 @@ Current relations: [+ scps_relation : relationships +]
 **Other parties** - There is a multitude of small parties, including the miniscule Labour party and Economic Group. There are many candidates nominated by the LPS, PCPS, or PPS that run as independents and also fusion candidates such as Liberal-Labour candidates. 
 
 @organizations
-on-arrival: {!
-Q.ufc_strength = Math.round(Q.ufc_strength);
-Q.kkk_strength = Math.round(Q.kkk_strength);
-Q.ful_strength = Math.round(Q.ful_strength); 
-!}
 go-to: menu
-
-**Paramilitary groups:**
-
-**UFC(SS)**: A farm organization whose primary aim is to serve the interests of the farmers. 
-
-Strength: [+ ufc_strength +] Thousand
-
-Militarization: [+ ufc_militancy : militancy +]
-
-**Workers Unity League (WUL)**: The Trade Union Central of the Communist Party. It is rather diminished from it's peak but still holds substantial sway over the workers. 
-
-Strength: [+ wul_strength +] Thousand
-
-Militarization: [+ wul_militancy : militancy +]
-
-**Ku Klux Klan (KKK)**: A pro-British, anti-Catholic terror organization. They are a recent import from the United States. [? if ruling_government == "Cooperative Coalition" : There are rumours brewing about their connection to Anderson's PCPS. ?]
-
-Strength: [+ kkk_strength +] Thousand
-
-Militarization: [+ kkk_militancy : militancy +]
-
-**Farmers Unity League (FUL)**: This is the farmers's organization of the CPC(S), more militant and radical than the UFC(SS). It has been under flak from the Communist Party for failing to advocate the abolition of capitalism. 
-
-Strength: [+ ful_strength +] Thousand
-
-Militarization: [+ ful_militancy : militancy +]
 
 **Official military/paramilitary groups:**
 

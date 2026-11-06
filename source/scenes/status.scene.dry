@@ -239,6 +239,8 @@ PCPS: [+ pcps_ideology +] ([+ pcps_leader +])
 
 Support for Socialism: [+ socialism_support +]%
 
+Support for Free Enterprise: [+ free_enterprise_support +]%
+
 Support for Social Credit: [+ social_credit_support +]%
 
 @organizations
@@ -272,25 +274,6 @@ if (Q.ufc_strength) {
 }
 !}
 
-= Terrorists
-
-[? if 1 == 1 :
-KKK Strength: [+ kkk_strength_2 +] Thousand<br>
-KKK Militancy: [+ kkk_militancy : militancy +]<br>
-?]
-
-= Communist Organizations
-
-[? if 1 == 1 : 
-FUL Strength: [+ ful_strength_2 +] Thousand<br>
-FUL Militancy: [+ ful_militancy : militancy +]<br>
-?]
-
-[? if 1 == 1 :
-WUL Strength: [+ wul_strength_2 +] Thousand<br>
-WUL Militancy: [+ wul_militancy : militancy +]<br>
-?]
-
 = Saskatchewan Unions
 
 [? if sta_affiliated == 0 :
@@ -319,8 +302,6 @@ RCMP Suspicion: [+ rcmp_suspicion : suspicion +]
 Urban police: [+ city_police_strength : strength +]
 
 Urban police loyalty: [+ city_police_loyalty : loyalty +]
-
-Support for Socialism: [+ socialism_support +]%
 
 @interior
 
