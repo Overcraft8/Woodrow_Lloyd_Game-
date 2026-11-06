@@ -5,7 +5,10 @@ tags: event
 view-if: year = 1961 and month = 12
 priority: 2
 max-visits: 1
-on-arrival: weyburn_campaigning = 0; lps_weyburn_advantage = 4
+on-arrival: {!
+    Q.weyburn_campaigning = 0; 
+    Q.lps_weyburn_advantage = 4;
+!}
 
 The Weyburn provincial riding results are being held now. It is a two-way race between the CCF(SS) and LPS as Thatcher, seemingly, has convinced the Tories and Socreds not to contest the district. As Douglas' longtime seat, it will be a disappointment if we lose this. 
 
@@ -54,7 +57,7 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 
 = Weyburn By-Election Results
 
-<div class="face-figure"><img class="face-img" src="img/cities/weyburn_overhead.jpg"></div>
+<div class="face-figure"><img class="face-img" src="img/cities/Weyburn_Overhead.jpg"></div>
 
 
 <div style='justify-content: center; text-align: center;'>
