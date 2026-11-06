@@ -313,6 +313,7 @@ Q.pps_leader = "None";
 Q.thatcher_ammunition = 0.50;
 Q.college_medicare = 0;
 Q.anti_medicare_strength = 0.60;
+Q.northern_qol = 20;
 Q.socred_dying = 0; 
 
 Q.ccf_legislative_leader = "Williams";

@@ -152,6 +152,7 @@ anti_medicare_rally_colored.jpg - https://nonnocere.ca/2015/10/doctor-strikes-in
 anti_medicare_cartoon.png - https://www.sutori.com/en/story/canada-during-the-1960s--3VunXcTodQq8Y8jfeSBjtztV
 sask_medical_assocation_meeting.jpg - https://parks.canada.ca/culture/designation/evenement-event/greve-medecins-doctors-strike
 waffle-ndp_caricature.jpg - https://canadiandimension.com/articles/view/waffling-to-the-left-how-a-manifesto-shook-the-ndp-in-1969?utm_source=chatgpt.com
+cd_waffle.jpg - https://coat.ncf.ca/Roy/Peace.htm
 
 
 stacked bar graph (thanks maybe): https://d3-graph-gallery.com/graph/barplot_stacked_basicWide.html

@@ -10,17 +10,17 @@ window.achievements_list = {
     {
       "id": "woodrow-win",
       "name": "The Lloyd Years",
-      "description": "Woodrow Lloyd is reelected as Premier of Saskatchewna",
+      "description": "Woodrow Lloyd is reelected as Premier of Saskatchewan",
       "difficulty": 2,
       "image": "img/portraits/LloydWoodrow.jpg"
-    },
+    },/*
     {
       "id": "thatcher-win",
-      "name": "The Iron... Gentleman?",
+      "name": "That",
       "description": "Thatcher wins the 1964 Saskatchewan General Election",
       "difficulty": 2,
       "image": "img/portraits/ThatcherRoss.jpg"
-    },
+    },*/
     {
       "id": "medicare-martyr",
       "name": "Martyr of Medicare",
@@ -29,18 +29,32 @@ window.achievements_list = {
       "image": "img/graphics/post_medicare.jpg"
     },
     {
+      "id": "northern-question",
+      "name": "A Northern Recovery",
+      "description": "The North's Living Standards are 'Adequate' or above",
+      "difficulty": 3,
+      "image": "img/misc_photos/cree_women.jpg"
+    },
+    {
+      "id": "farmer-labor",
+      "name": "The Farmer-Labor Party",
+      "description": "CCF(SS) worker and farmer support are both above 50% by game end",
+      "difficulty": 4,
+      "image": "img/ccf_logo_nobg.png"
+    },
+    {
       "id": "sask-waffle",
       "name": "Towards a Socialist Saskatchewan",
       "description": "Retain the Premiership whilst enacting policies of the 'Waffle Group'",
       "difficulty": 4,
-      "image": "img/CCF/waffle.jpg"
+      "image": "img/graphics/cd_waffle.jpg"
     },
     {
       "id": "waffle-success",
       "name": "Waffling to the Left",
       "description": "The Waffle Manifesto Passes at the 1969 Federal NDP Convention",
       "difficulty": 2,
-      "image": "img/graphics/waffle-ndp_caricature"
+      "image": "img/graphics/waffle-ndp_caricature.jpg"
     }
   ]
 }
@@ -67,7 +81,8 @@ window.achievements_loader = function(container) {
       <div class="achievement-body">
         <div class="achievement-title achievement-title${lock_state}">
           <span>${achievement.name}</span>
-          <span style="color:${difficultyColor};font-size:0.75em;font-weight:bold;white-space:nowrap;">${difficulty}</span>
+          <!-- <span style="color:${difficultyColor};font-size:0.75em;font-weight:bold;white-space:nowrap;">${difficulty}</span> -->
+          <div class="box" style="background-color:${difficultyColor}; outline: 2px; outline-style: solid; height:1.2em; width: 1.2em;"> </div>
         </div>
         <div class="achievement-description achievement-description${lock_state}">
           ${achievement.description}

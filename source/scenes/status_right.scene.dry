@@ -85,3 +85,15 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
 College-Medicare Stance : [+ college_medicare : college_medicare +]
 
 Anti-Medicare Forces Strength : [+ anti_medicare_strength : militancy +]
+
+
+@northern_issue
+new-page: true
+
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
+
+= The North
+
+The North is historically the most underdeveloped and poverty-intensive region of Saskatchewan. Sparsely populated and connected largely by small aircraft, any welfare or development heading into the North would provide much needed aid to the residents.
+
+Northern Quality of Life : [+ northern_qol : northern_qol +]

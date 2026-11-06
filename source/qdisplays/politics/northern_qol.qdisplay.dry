@@ -1,0 +1,5 @@
+
+(..0.24) <span style='color: #c71313;'>Deplorable</span>
+(0.25..0.50) <span style='color: #c77313;'>Poor</span>
+(0.51..0.75) <span style='color: #b0b52a'>Adequate</span>
+(0.75..1..) <span style='color: #8ec713;'>Good</span>
