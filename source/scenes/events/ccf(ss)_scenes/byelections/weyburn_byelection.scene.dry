@@ -37,6 +37,7 @@ on-arrival: {!
         'old_middle' : 12, 
         'unemployed' : 6
     }
+    console.log('got hereereer');
     var lps_weyburn = 0;
     var ccf_weyburn = 0;
     for (var c of Q.classes) {
@@ -46,6 +47,7 @@ on-arrival: {!
         lps_weyburn += Q.weyburn_class[c] * lps_class_support;
         ccf_weyburn += Q.weyburn_class[c] * ccf_class_support;
     };
+    console.log(lps_weyburn, ccf_weyburn);
 
     var strengths = [lps_weyburn, ccf_weyburn];
     var factionColors = ['#BE0028', '#d29c28'];
@@ -58,6 +60,7 @@ on-arrival: {!
         "weyburn_results_bar", 
         ['Liberals', 'CCF']
     );
+    console.log('got hereereer');
   };
 !}
 go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_weyburn > ccf_weyburn
