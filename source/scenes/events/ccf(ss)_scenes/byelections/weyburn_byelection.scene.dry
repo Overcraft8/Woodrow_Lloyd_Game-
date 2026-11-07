@@ -44,8 +44,8 @@ on-arrival: {!
         var lps_class_support = Q[c + '_lps'] + Q.lps_weyburn_advantage;
         var ccf_class_support = Q[c + '_ccf'] + Q.weyburn_campaigning;
 
-        lps_weyburn += Q.weyburn_class[c] * lps_class_support;
-        ccf_weyburn += Q.weyburn_class[c] * ccf_class_support;
+        lps_weyburn += Q.weyburn_class[c] * lps_class_support || 0;
+        ccf_weyburn += Q.weyburn_class[c] * ccf_class_support || 0;
     };
     console.log(lps_weyburn, ccf_weyburn);
 

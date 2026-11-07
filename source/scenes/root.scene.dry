@@ -110,7 +110,7 @@ Q.managerial_dissent = 5;
 Q.movement_strength = 10;
 Q.movement_dissent = 20;
 
-Q.labour_dissent = 30;
+Q.labour_dissent = 20;
 Q.labour_strength = 30;
 Q.labour_radicalism = 16;
 
