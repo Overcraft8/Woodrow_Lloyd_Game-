@@ -6,7 +6,7 @@ view-if: year = 1961 and month = 12
 priority: 2
 max-visits: 1
 on-arrival: {!
-    Q.weyburn_campaigning = 0; 
+    if (!Q.weyburn_campaigning) {Q.weyburn_campaigning = 0;  }
     Q.lps_weyburn_advantage = 4;
 !}
 
@@ -20,7 +20,7 @@ The Weyburn provincial riding results are being held now. It is a two-way race b
 
 [? if weyburn_campaigning >= 3 : We have done extensive campaigning in Weyburn ?]
 
-- @weyburn_byelection.weyburn_campaigning: Let's campaign in Weyburn
+- @weyburn_campaigning: Let's campaign in Weyburn
 - @weyburn_results: Let's see the results
 
 @weyburn_campaigning
@@ -41,7 +41,7 @@ on-arrival: {!
     var ccf_weyburn = 0;
     for (var c of Q.classes) {
         var lps_class_support = Q[c + '_lps'] + Q.lps_weyburn_advantage;
-        var ccf_class_support = Q[c + '_ccf'] + weyburn_campaigning;
+        var ccf_class_support = Q[c + '_ccf'] + Q.weyburn_campaigning;
 
         lps_weyburn += Q.weyburn_class[c] * lps_class_support;
         ccf_weyburn += Q.weyburn_class[c] * lps_class_support;
