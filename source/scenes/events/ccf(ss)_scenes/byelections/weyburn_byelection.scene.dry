@@ -44,19 +44,21 @@ on-arrival: {!
         var ccf_class_support = Q[c + '_ccf'] + Q.weyburn_campaigning;
 
         lps_weyburn += Q.weyburn_class[c] * lps_class_support;
-        ccf_weyburn += Q.weyburn_class[c] * lps_class_support;
+        ccf_weyburn += Q.weyburn_class[c] * ccf_class_support;
     };
 
     var strengths = [lps_weyburn, ccf_weyburn];
     var factionColors = ['#BE0028', '#d29c28'];
   
-  window.customgeneratemultibar(
-      strengths, 
-      "#333333", 
-      factionColors, 
-      "weyburn_results_bar", 
-      ['Liberals', 'CCF']
-  );
+  if (window && window.customgeneratemultibar) {
+    window.customgeneratemultibar(
+        strengths, 
+        "#333333", 
+        factionColors, 
+        "weyburn_results_bar", 
+        ['Liberals', 'CCF']
+    );
+  };
 !}
 go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_weyburn > ccf_weyburn
 
