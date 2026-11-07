@@ -1456,9 +1456,6 @@ Q.corporate_tax = 0;
 /////////////////////////////////////////////////////////////////
 //---------------------------------------------------------------
 
-Q.weyburn_campaigning = 0; 
-Q.lps_weyburn_advantage = 4;
-
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;

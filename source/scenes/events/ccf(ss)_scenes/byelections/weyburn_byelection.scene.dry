@@ -18,7 +18,7 @@ The Weyburn provincial riding results are being held now. It is a two-way race b
 
 [? if weyburn_campaigning >= 3 : We have done extensive campaigning in Weyburn ?]
 
-- @weyburn_campaigning: Let's campaign in Weyburn
+- @weyburn_byelection.weyburn_campaigning: Let's campaign in Weyburn
 - @weyburn_results: Let's see the results
 
 @weyburn_campaigning
@@ -38,8 +38,10 @@ on-arrival: {!
     var lps_weyburn = 0;
     var ccf_weyburn = 0;
     for (var c of Q.classes) {
-        lps_weyburn += Q[c + '_lps'] + Q.lps_weyburn_advantage;
-        ccf_weyburn += Q[c + '_ccf'] + weyburn_campaigning;
+        var lps_class_support = Q[c + '_lps'] + Q.lps_weyburn_advantage;
+        var ccf_class_support = Q[c + '_ccf'] + weyburn_campaigning;
+
+        lps_weyburn += Q.weyburn_class[c] * lps_class_support;
     };
 
     var strengths = [lps_weyburn, ccf_weyburn];
