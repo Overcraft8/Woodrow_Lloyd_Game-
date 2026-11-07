@@ -75,7 +75,7 @@ if (Q.new_middle_ccf_normalized && Q.new_middle_ccf_normalized >= 50) {
 if (Q.farmers_ccf_normalized && Q.farmers_ccf_normalized >= 50) {
     this.achieve('bauernrevolution');
 }
-if (Q.catholics_ccf_normalized && Q.catholics_ccf_normalized >= 50) {
+if (Q.indigenous_ccf_normalized && Q.indigenous_ccf_normalized >= 50) {
     this.achieve('katholischer_sozialismus');
 }
 if (Q.workers_ccf_normalized >= 80 && Q.new_middle_ccf_normalized <= 20 && Q.old_middle_ccf_normalized <= 20 && Q.farmers_ccf_normalized <= 20) {

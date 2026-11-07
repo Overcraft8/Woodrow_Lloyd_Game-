@@ -177,17 +177,17 @@ Others: [+ other_polls +]%
 
 **Detailed results for each demographic**
 
-Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, CPC(S): [+ workers_cpc_s_display +]%, [+ party_names.lps +]: [+ workers_lps_display +]%, PCPS: [+ workers_pcps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: CCF(SS): [+ workers_ccf_display +]%, PPS: [+ workers_pps_display +]%, [+ party_names.lps +]: [+ workers_lps_display +]%, PCPS: [+ workers_pcps_display +]%; SCPS: [+ workers_scps_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%, CPC(S): [+ new_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ new_middle_lps_display +]%, PCPS: [+ new_middle_pcps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: CCF(SS): [+ new_middle_ccf_display +]%, PPS: [+ new_middle_pps_display +]%,, [+ party_names.lps +]: [+ new_middle_lps_display +]%, PCPS: [+ new_middle_pcps_display +]%; SCPS: [+ new_middle_scps_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, CPC(S): [+ old_middle_cpc_s_display +]%, [+ party_names.lps +]: [+ old_middle_lps_display +]%, PCPS: [+ old_middle_pcps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class: CCF(SS): [+ old_middle_ccf_display +]%, PPS: [+ old_middle_pps_display +]%, [+ party_names.lps +]: [+ old_middle_lps_display +]%, PCPS: [+ old_middle_pcps_display +]%; SCPS: [+ old_middle_scps_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
 
-Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, CPC(S): [+ farmers_cpc_s_display +]%, [+ party_names.lps +]: [+ farmers_lps_display +]%, PCPS: [+ farmers_pcps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
+Farmers: CCF(SS): [+ farmers_ccf_display +]%, PPS: [+ farmers_pps_display +]%, [+ party_names.lps +]: [+ farmers_lps_display +]%, PCPS: [+ farmers_pcps_display +]%; SCPS: [+ farmers_scps_display +]%, Others: [+ farmers_other_display +]% [? if sapd_formed: SAPD: [+ farmers_sapd_display +]% ?]
 
-Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, CPC(S): [+ unemployed_cpc_s_display +]%, [+ party_names.lps +]: [+ unemployed_lps_display +]%, PCPS: [+ unemployed_pcps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed: CCF(SS): [+ unemployed_ccf_display +]%, PPS: [+ unemployed_pps_display +]%, [+ party_names.lps +]: [+ unemployed_lps_display +]%, PCPS: [+ unemployed_pcps_display +]%; SCPS: [+ unemployed_scps_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
 
-Catholics: CCF(SS): [+ catholics_ccf_display +]%, PPS: [+ catholics_pps_display +]%, CPC(S): [+ catholics_cpc_s_display +]%, [+ party_names.lps +]: [+ catholics_lps_display +]%, PCPS: [+ catholics_pcps_display +]%; SCPS: [+ catholics_scps_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Indigenous: CCF(SS): [+ indigenous_ccf_display +]%, PPS: [+ indigenous_pps_display +]%, [+ party_names.lps +]: [+ indigenous_lps_display +]%, PCPS: [+ indigenous_pcps_display +]%; SCPS: [+ indigenous_scps_display +]%, Others: [+ indigenous_other_display +]% [? if sapd_formed: SAPD: [+ indigenous_sapd_display +]% ?]
 
 @parties
 go-to: menu
@@ -241,16 +241,15 @@ Overall dissent: [+ dissent_percent : dissent +]
 
 The Managerial Wing are an entrenched group of people within the upper echelons of government. Represented by people such as the retired C. M. Fines, they largely prioritize sound finance and gradual reform though many are still pragmatic social democrats and even Socialists. Due to their technocratic tendencies, they favour centralized policy-planning and somewhat top-down governance. Woodrow Lloyd as perceived by the grassroots as part of this faction. 
 
-[? if 1 == 1 : 
-<span class="tooltip-text" title="The Managerial wing of the CCF(SS) and most aligned with the Federal CCF." style="color: #d29c28;">**Managerial*</span><br> 
-Strength: [+ managerial_strength : strength +]<br> 
-Dissent: [+ managerial_dissent : dissent +]<br>
-?]
+Strength: [+ managerial_strength : strength +]
+
+Dissent: [+ managerial_dissent : dissent +]
+
 
 
 **The Agrarian-Cooperativists**
 
-The Agrarian-Cooperativists are a somewhat populist and highly rural faction within the CCF(SS). Although many are committed Social Democrats, they also support the existence of the family farm as independent producers. As such, many of them are supporters of rural cooperatives, namely the Saskatchewan Wheat Pool and the various retail co-op stores throughout rural Saskatchewan. They are also de-centralist and prefer the CCF(SS) to remian committed to it's grassroots than be directed by the party leadership in urban Regina. 
+The Agrarian-Cooperativists are a somewhat populist and highly rural faction within the CCF(SS). Although many are committed Social Democrats, they also support the existence of the family farm as independent producers. As such, many of them are supporters of rural cooperatives, namely the Saskatchewan Wheat Pool and the various retail co-op stores throughout rural Saskatchewan. They are de-centralist and prefer the CCF(SS) to remain committed to it's grassroots than be directed by the party leadership in urban Regina. 
 
 Strength: [+ agarian_strength : strength +]
 
@@ -272,7 +271,7 @@ Dissent: [+ labour_dissent : dissent +]
 
 The Left Wing of the party is primarily concerned with maintaining the committment to Socialism that the Regina Manifesto entailed before it was replaced by the moderate Winnipeg Declaration. They are generally dissatisfied with the middle-of-the-road approach of the CCF(SS) in government and advocate grater public ownership. There are committed socialists across all three factions of the CCF(SS). 
 
-[+ ccf_socialism: strength +]%
+[+ ccf_socialism : strength +]
 
 
 @neorevisionists

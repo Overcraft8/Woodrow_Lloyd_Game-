@@ -97,3 +97,13 @@ new-page: true
 The North is historically the most underdeveloped and poverty-intensive region of Saskatchewan. Sparsely populated and connected largely by small aircraft, any welfare or development heading into the North would provide much needed aid to the residents.
 
 Northern Quality of Life : [+ northern_qol : northern_qol +]
+
+
+@ccf_or_ndp
+new-page: true
+<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
+
+= CCF or NDP? 
+
+The merger of the CCF with the Canadian Labour Congress to form the New Democratic Party has not been without it's staunch opponents within our party. Many farmers are worried about the growing labour presence within the party and feel that the CCF(SS) will soon be beholden to industry and unions bosses. Thus, it seems, our rural support is declining. 
+

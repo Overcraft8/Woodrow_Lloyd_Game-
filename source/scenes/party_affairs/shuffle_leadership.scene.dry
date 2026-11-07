@@ -189,15 +189,6 @@ Nielsen has been removed as a pinned organization. The Leftist faction disapprov
 
 # neorevisionists
 
-@remove_mierendorff
-title: Remove Mierendorff
-view-if: mierendorff_advisor = 1
-tags: remove_advisor
-on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Mierendorff has been removed as a pinned organization. The Neorevisionist faction disapproves.
-
 @remove_tlc
 title: Remove TLC
 view-if: tlc_advisor = 1

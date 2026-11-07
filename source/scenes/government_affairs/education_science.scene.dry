@@ -115,7 +115,7 @@ Are you sure about this? The Liberal-CCF Coalition had an agreement to not touch
 - @cancel_advisor_action
 
 @secularize_2
-on-arrival: secularized = 1; catholics_ccf -= 15; pps_relation -= 15; pcps_relation += 6*(1-dissent); lps_relation += 6*(1-dissent); cpc_s_relation += 6*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent); education_science += 0.5; new_middle_lps += 4; new_middle_pcps += 4
+on-arrival: secularized = 1; indigenous_ccf -= 15; pps_relation -= 15; pcps_relation += 6*(1-dissent); lps_relation += 6*(1-dissent); cpc_s_relation += 6*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent); education_science += 0.5; new_middle_lps += 4; new_middle_pcps += 4
 go-to: vote_of_no_confidence.vonc_menu if in_lps_coalition or in_grand_coalition or in_unity_government
 
 # instant VONC from zentrum

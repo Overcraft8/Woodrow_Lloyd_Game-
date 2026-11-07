@@ -838,11 +838,7 @@ go-to: coalition_menu
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !} SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ sapd_vote_change +] {!</td><td>!} [+ seat_change_sapd +]{!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#920c0c'> </div> !} CPC(S): {!</td><td>!} [+ cpc_s_polls +]% {!</td><td>!} [+ cpc_s_vote_change +] {!</td><td>!}  [+ cpc_s_seats +] {!</td><td>!}  [+ seats_change_cpc_s_ +] {!</td></tr>!}
-
 {!<tr><td><div class="box" style='background-color:#BE0028'> </div> !} [+ party_names.lps +]: {!</td><td>!} [+ lps_polls +]% {!</td><td>!} [+ lps_vote_change +] {!</td><td>!} [+ lps_seats +] {!</td><td>!} [+ seats_change_lps +] {!</td></tr>!}
-
-[? if year == 1932 and month >= 2 : {!<tr><td><div class="box" style='background-color:#7e741ab3'> </div> !} PPS: {!</td><td>!} [+ pps_polls +]% {!</td><td>!} [+ pps_vote_change +] {!</td><td>!} [+ pps_seats +] {!</td><td>!} [+ seats_change_pps +]  {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#0055A5'> </div> !} PCPS: {!</td><td>!} [+ pcps_polls +]% {!</td><td>!} [+ pcps_vote_change +] {!</td><td>!} [+ pcps_seats +] {!</td><td>!} [+ seats_change_pcps +] {!</td></tr>!}
  
@@ -860,7 +856,6 @@ go-to: coalition_menu
         {!<tr>!}
             {!<th>District</th>!}
             {!<th>Seats</th>!}
-            {!<th>CPC(S)</th>!}
             {!<th>!}[+ party_names.ccf +]{!</th>!}
             [? if year == 1932 and month >= 2 : {!<th>PPS</th>!} ?]
             {!<th>LPS</th>!}
@@ -870,8 +865,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**Regina**{!</td>!}
-            {!<td>!}[+ reginaistrict_seats +]{!</td>!}
-            {!<td>!}[+ regina_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ regina_district_seats +]{!</td>!}
             {!<td>!}[+ regina_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ regina_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ regina_lps_seats +]{!</td>!}
@@ -881,8 +875,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**Saskatoon**{!</td>!}
-            {!<td>!}[+ saskatoonistrict_seats +]{!</td>!}
-            {!<td>!}[+ saskatoon_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ saskatoon_district_seats +]{!</td>!}
             {!<td>!}[+ saskatoon_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ saskatoon_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ saskatoon_lps_seats +]{!</td>!}
@@ -893,7 +886,6 @@ go-to: coalition_menu
         {!<tr>!}
             {!<td>!}**Moose Jaw**{!</td>!}
             {!<td>!}[+ moosejaw_district_seats +]{!</td>!}
-            {!<td>!}[+ moosejaw_cpc_s_seats +]{!</td>!}
             {!<td>!}[+ moosejaw_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ moosejaw_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ moosejaw_lps_seats +]{!</td>!}
@@ -904,7 +896,6 @@ go-to: coalition_menu
         {!<tr>!}
             {!<td>!}**Prince Albert**{!</td>!}
             {!<td>!}[+ princealbert_district_seats +]{!</td>!}
-            {!<td>!}[+ princealbert_cpc_s_seats +]{!</td>!}
             {!<td>!}[+ princealbert_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ princealbert_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ princealbert_lps_seats +]{!</td>!}
@@ -914,8 +905,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**Southwest**{!</td>!}
-            {!<td>!}[+ southwestistrict_seats +]{!</td>!}
-            {!<td>!}[+ southwest_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ southwest_district_seats +]{!</td>!}
             {!<td>!}[+ southwest_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ southwest_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ southwest_lps_seats +]{!</td>!}
@@ -925,8 +915,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**Southeast**{!</td>!}
-            {!<td>!}[+ southeastistrict_seats +]{!</td>!}
-            {!<td>!}[+ southeast_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ southeast_district_seats +]{!</td>!}
             {!<td>!}[+ southeast_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ southeast_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ southeast_lps_seats +]{!</td>!}
@@ -936,8 +925,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**East-Central**{!</td>!}
-            {!<td>!}[+ east_central_ccf_seats +]{!</td>!}
-            {!<td>!}[+ east_central_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ east_central_district_seats +]{!</td>!}
             {!<td>!}[+ east_central_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ east_central_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ east_central_lps_seats +]{!</td>!}
@@ -947,8 +935,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**West-Central**{!</td>!}
-            {!<td>!}[+ west_central_ccf_seats +]{!</td>!}
-            {!<td>!}[+ west_central_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ west_central_district_seats +]{!</td>!}
             {!<td>!}[+ west_central_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ west_central_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ west_central_lps_seats +]{!</td>!}
@@ -958,8 +945,7 @@ go-to: coalition_menu
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**North**{!</td>!}
-            {!<td>!}[+ northistrict_seats +]{!</td>!}
-            {!<td>!}[+ north_cpc_s_seats +]{!</td>!}
+            {!<td>!}[+ north_district_seats +]{!</td>!}
             {!<td>!}[+ north_ccf_seats +]{!</td>!}
             [? if year == 1932 and month >= 2 : {!<td>!}[+ north_pps_seats +]{!</td>!} ?]
             {!<td>!}[+ north_lps_seats +]{!</td>!}
@@ -1188,7 +1174,7 @@ Q.workers_ccf -= 5;
 Q.new_middle_ccf -= 5;
 Q.old_middle_ccf -= 5;
 Q.farmers_ccf -= 5;
-Q.catholics_ccf -= 3;
+Q.indigenous_ccf -= 3;
 Q.new_middle_pcps -= 8;
 Q.old_middle_pcps -= 8;
 Q.new_middle_lps -= 5;
@@ -1212,7 +1198,7 @@ if (Q.pro_republic < 36) {
     Q.new_middle_ccf -= 5;
     Q.old_middle_ccf -= 5;
     Q.farmers_ccf -= 5;
-    Q.catholics_ccf -= 3;
+    Q.indigenous_ccf -= 3;
     Q.workers_scps += 8;
     Q.old_middle_scps += 8;
     Q.new_middle_scps += 8;
@@ -1232,7 +1218,7 @@ The people's faith in democracy is shaken by this ordeal. Of course, the SCPSs a
 
 
 @new_elections_ccf
-on-arrival: next_election_time = time+3; next_parl_election_month = month + 3; next_parl_election_year = year; next_parl_election_year = year + 1 if next_parl_election_month > 12; next_parl_election_month = next_parl_election_month - 12 if next_parl_election_month > 12; new_middle_ccf -= 5; old_middle_ccf -= 5; workers_ccf -= 3; catholics_ccf -= 3; in_election = 1
+on-arrival: next_election_time = time+3; next_parl_election_month = month + 3; next_parl_election_year = year; next_parl_election_year = year + 1 if next_parl_election_month > 12; next_parl_election_month = next_parl_election_month - 12 if next_parl_election_month > 12; new_middle_ccf -= 5; old_middle_ccf -= 5; workers_ccf -= 3; indigenous_ccf -= 3; in_election = 1
 
 Since the remaining bourgeois and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_parl_election_month : month +] [+ next_parl_election_year +]. The previous premier has resigned, and has been replaced by Heinrich Brüning, also of the PPS Party, ruling as part of a prime ministerial cabinet. 
 

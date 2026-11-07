@@ -76,7 +76,7 @@ if (window && window.customgeneratemultibar) {
 */
 
   var strengths = [Q.movement_strength, Q.labour_strength, Q.managerial_strength, Q.agrarian_strength, Q.ccf_socialism];
-  var factionColors = ["#f2ff00", "#2844d2", "#d29c28", "#89c520", "#c32222"];
+  var factionColors = ["#f2ff00", "#2844d2", "#e8ae32", "#89c520", "#c32222"];
   
   window.customgeneratemultibar(
       strengths, 
@@ -117,17 +117,20 @@ if (window && window.customgeneratemultibar) {
 
 = Factions
 
+Agrarian-Cooperativist Dissent: [+ agrarian_dissent : dissent +]<br>   
+Agrarian-Cooperativist Strength: [+ agrarian_strength : strength +]<br> 
+
 Labour Wing Dissent: [+ labour_dissent : dissent +]<br>
 Labour Wing Strength: [+ labour_strength : strength +]<br>
 
 Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
 Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
-Moderates Dissent: [+ movement_dissent : dissent +]<br>
-Moderates Strength: [+ movement_strength : strength +]<br>
+------------------------------------
 
-Left Hardliners Dissent: [+ left_dissent : dissent +]<br>
-Left Hardliners Strength: [+ ccf_socialism : strength +]<br>
+Support for Socialism
+
+[+ ccf_socialism : strength +]<br>
 
 <!-- 
 
@@ -368,7 +371,7 @@ is-special: true
     </tr>
     <tr>
         <td>Membership: [+ membership +]</td>
-        <td>Membership Change: [+ membership_change_trend +][+ membership_change_display +]<br><div style='font-size: 0.8em;'>(Updated annually)</div>
+        <td>Membership Change: [+ membership_change_display +]<br><div style='font-size: 0.8em;'>(Updated annually)</div>
         </td>
     </tr>
     <tr>

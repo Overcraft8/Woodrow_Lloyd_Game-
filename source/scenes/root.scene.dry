@@ -85,7 +85,7 @@ Q.riding_associations = 0;
 Q.membership = 4900;
 Q.membership_change = 0;
 Q.membership_change_trend = '<img src="img/steady.png"> ';
-Q.membership_change_display = 0;
+Q.membership_change_display = '';
 
 
 
@@ -315,7 +315,7 @@ Q.pps_leader = "None";
 Q.thatcher_ammunition = 0.50;
 Q.college_medicare = 0;
 Q.anti_medicare_strength = 0.60;
-Q.northern_qol = 20;
+Q.northern_qol = 0.20;
 Q.socred_dying = 0; 
 
 Q.ccf_legislative_leader = "Williams";
@@ -1495,12 +1495,12 @@ Q.new_middle_pcps = 16;
 Q.new_middle_scps = 8;
 Q.new_middle_other = 2;
 
-Q.farmers_ccf = 42;
+Q.farmers_ccf = 39;
 Q.farmers_cpc_s = 0;
 Q.farmers_pps = 0;
-Q.farmers_lps = 28;
-Q.farmers_pcps = 24;
-Q.farmers_scps = 14;
+Q.farmers_lps = 33;
+Q.farmers_pcps = 19;
+Q.farmers_scps = 17;
 Q.farmers_other = 3;
 
 Q.unemployed_ccf = 45;
@@ -1511,13 +1511,13 @@ Q.unemployed_pcps = 32;
 Q.unemployed_scps = 2;
 Q.unemployed_other = 0;
 
-Q.catholics_ccf = 7;
-Q.catholics_cpc_s = 2;
-Q.catholics_pps = 10;
-Q.catholics_lps = 45;
-Q.catholics_pcps = 30;
-Q.catholics_scps = 0;
-Q.catholics_other = 6;
+Q.indigenous_ccf = 29;
+Q.indigenous_cpc_s = 0;
+Q.indigenous_pps = 10;
+Q.indigenous_lps = 25;
+Q.indigenous_pcps = 30;
+Q.indigenous_scps = 0;
+Q.indigenous_other = 6;
 
 
 // Current Assembly composition

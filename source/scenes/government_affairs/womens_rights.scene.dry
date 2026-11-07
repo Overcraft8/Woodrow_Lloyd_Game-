@@ -31,7 +31,7 @@ These policies mean that our party is increasing in popularity among the "new wo
 
 @family
 subtitle: Change family and inheritance law to treat women more equally.
-on-arrival: family_law += 1; womens_rights += 1; new_middle_ccf += 2*(1-dissent); workers_ccf += 3*(1-dissent); old_middle_ccf -= 2; farmers_ccf -= 2; catholics_ccf -= 4; coalition_dissent += 1; pps_relation -= 4;
+on-arrival: family_law += 1; womens_rights += 1; new_middle_ccf += 2*(1-dissent); workers_ccf += 3*(1-dissent); old_middle_ccf -= 2; farmers_ccf -= 2; indigenous_ccf -= 4; coalition_dissent += 1; pps_relation -= 4;
 max-visits: 2
 
 These policies aim to ensure that women have equal rights within a marriage, including the right to divorce. The more conservative segments of society treat our reforms as deleterious to the social fabric.
@@ -51,11 +51,11 @@ subtitle: [? if progressive_coalition < 50 : This is unlikely to succeed; we do 
 go-to: liberalize_fail if progressive_coalition < 50; liberalize_success if progressive_coalition >= 50
 
 @liberalize_fail
-on-arrival: pps_relation -= 5; coalition_dissent += 1; workers_ccf += 3*(1-dissent); catholics_ccf -= 5;
+on-arrival: pps_relation -= 5; coalition_dissent += 1; workers_ccf += 3*(1-dissent); indigenous_ccf -= 5;
 
 Unfortunately, our proposal is voted down in the Assembly, with the Catholic PPS party (our long-time partners) speaking in particularly vehement opposition, and some of our own members breaking party discipline. The activists, feeling demoralized from this attempt, have decided to bide their time.
 
 @liberalize_success
-on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 1; pps_relation -= 8; catholics_ccf -= 10; pcps_relation -= 5; workers_ccf += 3*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_pps += 3; new_middle_pps += 3; old_middle_pps += 3; old_middle_scps += 3; farmers_scps += 3; workers_scps -= 3; new_middle_scps -= 3; old_middle_scps -= 2; farmers_scps -= 2; unemployed_scps -= 2; unemployed_pps += 3; unemployed_ccf += 3*(1-dissent)
+on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 1; pps_relation -= 8; indigenous_ccf -= 10; pcps_relation -= 5; workers_ccf += 3*(1-dissent); new_middle_ccf += 3*(1-dissent); workers_pps += 3; new_middle_pps += 3; old_middle_pps += 3; old_middle_scps += 3; farmers_scps += 3; workers_scps -= 3; new_middle_scps -= 3; old_middle_scps -= 2; farmers_scps -= 2; unemployed_scps -= 2; unemployed_pps += 3; unemployed_ccf += 3*(1-dissent)
 
 With the support of a "progressive coalition" including the CPC(S) and [+ party_names.lps +], we have successfully passed a bill to legalize abortion in Saskatchewan! This has heartened our more progressive supporters, while hurting our relations with the PPS Party. With the increasing political discourse around abortion, the religiously-oriented PPS Party and SCPS have gained conservative votes at the expense of the SCPS.

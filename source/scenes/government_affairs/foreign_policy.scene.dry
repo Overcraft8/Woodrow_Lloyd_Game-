@@ -155,7 +155,7 @@ The Roman Catholic Church is interested in furthering relations with the Saskatc
 @concordat
 title: We can sign a Concordat with the Vatican!
 view-if: reichskonkordat_progress >= 4 and reichskonkordat = 0
-on-arrival: reichskonkordat = 1; pps_relation += 15*(1-dissent); catholics_ccf += 8*(1-dissent); catholics_pps += 5 if in_lps_coalition or in_grand_coalition or in_unity_government;
+on-arrival: reichskonkordat = 1; pps_relation += 15*(1-dissent); indigenous_ccf += 8*(1-dissent); indigenous_pps += 5 if in_lps_coalition or in_grand_coalition or in_unity_government;
 achievement: reichskonkordat
 
 We have successfully signed a Concordat between Saskatchewan and the Roman Catholic Church! This treaty defines a formal relationship between the Church and the Saskatchewanian state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in Saskatchewan are pleased, as are their representatives in the PPS Party.
@@ -174,7 +174,7 @@ Forming a "United States of Europe" has long been part of the Social Democratic 
 @european_union_2
 title: We can sign a treaty to form a European Union!
 view-if: american_relation >= 5 and britain_relation >= 4 and eu_progress >= 2 and eu = 0
-on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_ccf += 5*(1-dissent); new_middle_ccf += 5*(1-dissent); old_middle_ccf += 5*(1-dissent); farmers_ccf += 4*(1-dissent); catholics_ccf += 4*(1-dissent); unemployed_ccf += 4*(1-dissent); pro_republic += 5; nationalism -= 5; treasury += 1; economic_growth += 1; economic_growth += 1 if economic_growth < 3
+on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_ccf += 5*(1-dissent); new_middle_ccf += 5*(1-dissent); old_middle_ccf += 5*(1-dissent); farmers_ccf += 4*(1-dissent); indigenous_ccf += 4*(1-dissent); unemployed_ccf += 4*(1-dissent); pro_republic += 5; nationalism -= 5; treasury += 1; economic_growth += 1; economic_growth += 1 if economic_growth < 3
 max-visits: 1
 achievement: eu
 

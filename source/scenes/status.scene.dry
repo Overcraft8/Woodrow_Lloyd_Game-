@@ -656,13 +656,6 @@ on-arrival: {!
             {!<td style="background-color: #da8b53;">!}[+ old_middle_ccf_display +]%{!</td>!}
         {!</tr>!}
         {!<tr>!}
-            {!<td>!}**CPC(S)**{!</td>!}
-            {!<td style="background-color: #8a4545; ">!}[+ workers_cpc_s_display +]%{!</td>!}
-            {!<td style="background-color: #8a4545;">!}[+ unemployed_cpc_s_display +]%{!</td>!}
-            {!<td style="background-color: #8a4545;">!}[+ new_middle_cpc_s_display +]%{!</td>!}
-            {!<td style="background-color: #8a4545;">!}[+ old_middle_cpc_s_display +]%{!</td>!}
-        {!</tr>!}
-        {!<tr>!}
             {!<td>!}**LPS**{!</td>!}
             {!<td style="background-color: #a86a77; ">!}[+ workers_lps_display +]%{!</td>!}
             {!<td style="background-color: #a86a77;">!}[+ unemployed_lps_display +]%{!</td>!}
@@ -704,10 +697,6 @@ on-arrival: {!
         {!<tr>!}
             {!<td>!}**[+ party_names.ccf +]**{!</td>!}
             {!<td style="background-color: #da8b53; ">!}[+ farmers_ccf_display +]%{!</td>!}
-        {!</tr>!}
-        {!<tr>!}
-            {!<td>!}**CPC(S)**{!</td>!}
-            {!<td style="background-color: #8a4545; ">!}[+ farmers_cpc_s_display +]%{!</td>!}
         {!</tr>!}
         {!<tr>!}
             {!<td>!}**LPS**{!</td>!}
