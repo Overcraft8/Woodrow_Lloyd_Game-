@@ -13,6 +13,7 @@ Our Party has many policies that we can choose from. Some of them include a use-
 
 
 @path
+new-page: true
 
 What path should we take? 
 
@@ -39,7 +40,7 @@ face-image: img/Williams_picnic.jpg
 - @wheat_pool: We can create a provincially regulated and operated wheat pool. 
 - @grain_elevators: We can promote the construction of public grain elevators. 
 - @price_guarantee: We can set a floor price for livestock and grain. 
-- @CCF_programme.path: Go Back
+- @path: Go Back
 
 
 @use_lease
@@ -123,7 +124,7 @@ Labour is an essential part of our movement. The urban seats of Regina and Saska
 #- @social_insurance: Establish an unemployment benefit and worker's injury compensation
 #- @loan_cooperatives: Hand grants and loans to cooperatives to increase workplace democracy. 
 #- @worker_representation_board: Mandate worker's representation on Corporate Boards. 
-- @CCF_programme.path: Go Back
+- @path: Go Back
 
 
 
