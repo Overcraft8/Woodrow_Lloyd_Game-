@@ -101,6 +101,7 @@ Northern Quality of Life : [+ northern_qol : northern_qol +]
 
 @ccf_or_ndp
 new-page: true
+
 <button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
 
 = CCF or NDP? 
