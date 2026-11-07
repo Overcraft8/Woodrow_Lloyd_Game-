@@ -10,9 +10,11 @@ on-arrival: {!
     Q.lps_weyburn_advantage = 4;
 !}
 
+= Douglas' Seat up for Grabs
+
 The Weyburn provincial riding results are being held now. It is a two-way race between the CCF(SS) and LPS as Thatcher, seemingly, has convinced the Tories and Socreds not to contest the district. As Douglas' longtime seat, it will be a disappointment if we lose this. 
 
-[? if weyburn_campaigning == 0 : We have done little to no campaigning in Weyburn for this by-election. ?]
+[? if weyburn_campaigning = 0 : We have done little to no campaigning in Weyburn for this by-election. ?]
 
 [? if weyburn_campaigning >= 1 and weyburn_campaigning < 3 : We have completed some campaigning for Weyburn.  ?]
 
@@ -42,6 +44,7 @@ on-arrival: {!
         var ccf_class_support = Q[c + '_ccf'] + weyburn_campaigning;
 
         lps_weyburn += Q.weyburn_class[c] * lps_class_support;
+        ccf_weyburn += Q.weyburn_class[c] * lps_class_support;
     };
 
     var strengths = [lps_weyburn, ccf_weyburn];
