@@ -56,6 +56,7 @@ Q.time = 1;
 Q.year = 1961;
 Q.prev_year = 1960;
 Q.month = 11;
+Q.week = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 Q.last_month = 0;
@@ -70,7 +71,7 @@ Q.use_decimals = 1;
 // party resources
 Q.resources = 2;
 // party dues
-Q.dues = 2;
+Q.dues = 4;
 
 // the state of the party                       THE PARTY The Party The party the Party
 
@@ -94,20 +95,20 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['moderate', 'managerial', 'agrarian', 'left_hardliner', 'labour'];
+Q.factions = ['managerial', 'agrarian', 'labour'];
 // should this be normalized to 100%?
 
 Q.agrarian_strength = 35;
 Q.agrarian_dissent = 0;
 
-Q.left_hardliner_strength = 10;
-Q.left_hardliner_dissent = 20;
+Q.ccf_socialism = 10;
+Q.left_dissent = 20;
 
 Q.managerial_strength = 45;
 Q.managerial_dissent = 5;
 
-Q.moderate_strength = 10;
-Q.moderate_dissent = 20;
+Q.movement_strength = 10;
+Q.movement_dissent = 20;
 
 Q.labour_dissent = 30;
 Q.labour_strength = 30;
@@ -118,10 +119,10 @@ Q.neorevisionist_strength = 0;
 Q.neorevisionist_dissent = 10;
 
 Q.faction_colors = {
-    left_hardliner_color : "#c32222", 
+    left_color : "#c32222", 
     agrarian_color : "#b2c520", 
     managerial_color : "#d29c28", 
-    moderate_color : "#f2ff00"
+    movement_color : "#f2ff00"
 };
 
 Q.party_demographics = ['labour', 'middle class', 'agrarian', 'students'];
@@ -2085,7 +2086,7 @@ on-arrival: {!
   Q.dues = 1;
   Q.ufc_strength = 25.00;
   Q.managerial_dissent = 25;
-  Q.left_hardliner_dissent = 30;
+  Q.left_dissent = 30;
   Q.labour_dissent = 25;
   Q.agrarian_dissent = 25;
   Q.pps_relation = 41;
@@ -2107,7 +2108,7 @@ Q.resources = 2;
 Q.dues = 1;
 Q.ufc_strength = 15.00;
 Q.managerial_dissent = 25;
-Q.left_hardliner_dissent = 30;
+Q.left_dissent = 30;
 Q.labour_dissent = 25;
 Q.agrarian_dissent = 25;
 Q.pps_relation = 41;

@@ -23,7 +23,7 @@ Currently, the LPS remains our biggest threat. Ross Thatcher's Liberals have pre
 
 
 @anti_scps
-on-arrival: enemies = "SCPS"; left_hardliner_strength += 5; left_hardliner_dissent -= 5; workers_scps -= 3; workers_scps -= 3;
+on-arrival: enemies = "SCPS"; ccf_socialism += 5; left_dissent -= 5; workers_scps -= 3; workers_scps -= 3;
 subtitle: [? if year >= 1963 : The momentum of the SCPS has halted; their supporters seem to be drifting to either the Liberals or Tories ?]
 view-if: year >= 1935
 
@@ -41,6 +41,6 @@ on-arrival: enemies = "PCPS"; pcps_relation -= 5
 The party would earn much from distancing itself from the electorally-poisionous Communists
 
 @anti_establishment
-on-arrival: enemies = "establishment parties"; left_hardliner_strength += 8; left_hardliner_dissent -= 5; pcps_relation -= 5; pps_relation -= 5; cpc_s_relation += 5; managerial_dissent += 8; moderate_dissent += 8; workers_pps -= 3; coalition_dissent += 1
+on-arrival: enemies = "establishment parties"; ccf_socialism += 8; left_dissent -= 5; pcps_relation -= 5; pps_relation -= 5; cpc_s_relation += 5; managerial_dissent += 8; movement_dissent += 8; workers_pps -= 3; coalition_dissent += 1
 
 Targetting the old-line parties earns us populist goodwill.

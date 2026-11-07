@@ -5,7 +5,7 @@ view-if: year = 1962 and month = 5
 priority: 100
 max-visits: 1
 face-image: img/graphics/anti_medicare_cartoon.png
-on-arrival: managerial_dissent += 5; moderate_dissent += 5; thatcher_ammunition += 0.07; old_middle_ccf -= 2; new_middle_ccf -= 2
+on-arrival: managerial_dissent += 5; movement_dissent += 5; thatcher_ammunition += 0.07; old_middle_ccf -= 2; new_middle_ccf -= 2
 
 = Walter Erb Defects!
 

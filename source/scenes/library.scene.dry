@@ -6,7 +6,7 @@ go-to: menu
 
 = The Library
 
-Herein contains relevant information about the government and politics of the Saskatchewanian republic.
+Herein contains relevant information about the government and politics of Saskatchewan.
 
 @menu
 
@@ -233,41 +233,47 @@ Loyalty: [+ city_police_loyalty : loyalty +]
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the CCF(SS)**
+**Internal Factions of the CCF(SS)**
 
 Overall dissent: [+ dissent_percent : dissent +]
 
-[? if 1 == 1 :
-<span class="tooltip-text" title="A faction consisting of radical farmers, representing the small family farm." style="color: #86a71b;">**Agrarians**</span><br>
-Strength: [+ agrarian_strength : strength +] <br>
-Dissent: [+ agrarian_dissent : dissent +]<br>
-?]
+**The Managerial Wing**
 
-[? if 1 == 1 :
-<span class="tooltip-text" title="A faction of trade unionists and labour activists, representing the urban workers." style="color: #0F52BA;">**Labour**</span><br>
-Strength: [+ labour_strength : strength +]<br> 
-Dissent: [+ labour_dissent : dissent +]<br>
-?]
-
-[? if 1 == 1 :
-<span class="tooltip-text" title="A faction of radical CCF(SS)ers. Most of them have ties to the CPC(S)." style="color: #7b1616;">**Far Left**</span><br> 
-Strength: [+ left_hardliner_strength : strength +]<br> 
-Dissent: [+ left_hardliner_dissent : dissent +]<br>
-?]
+The Managerial Wing are an entrenched group of people within the upper echelons of government. Represented by people such as the retired C. M. Fines, they largely prioritize sound finance and gradual reform though many are still pragmatic social democrats and even Socialists. Due to their technocratic tendencies, they favour centralized policy-planning and somewhat top-down governance. Woodrow Lloyd as perceived by the grassroots as part of this faction. 
 
 [? if 1 == 1 : 
-<span class="tooltip-text" title="The Managerial wing of the CCF(SS) and most aligned with the Federal CCF." style="color: #d29c28;">**Moderate**</span><br> 
+<span class="tooltip-text" title="The Managerial wing of the CCF(SS) and most aligned with the Federal CCF." style="color: #d29c28;">**Managerial*</span><br> 
 Strength: [+ managerial_strength : strength +]<br> 
 Dissent: [+ managerial_dissent : dissent +]<br>
 ?]
 
-**Moderates**
 
-Moderates are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if ccf_prussia : They are dominant in the state government of City Police. ?]
+**The Agrarian-Cooperativists**
 
-Strength: [+ managerial_strength : strength +]
+The Agrarian-Cooperativists are a somewhat populist and highly rural faction within the CCF(SS). Although many are committed Social Democrats, they also support the existence of the family farm as independent producers. As such, many of them are supporters of rural cooperatives, namely the Saskatchewan Wheat Pool and the various retail co-op stores throughout rural Saskatchewan. They are also de-centralist and prefer the CCF(SS) to remian committed to it's grassroots than be directed by the party leadership in urban Regina. 
 
-Dissent: [+ managerial_dissent : dissent +]
+Strength: [+ agarian_strength : strength +]
+
+Dissent: [+ agrarian_dissent : dissent +]
+
+
+
+**Labour**
+
+Organized Labour in Saskatchewan is a rising demographic and owes much of it's success the CCF(SS)'s expansion of labour rights and public services. They generally favour an active government committed to social democracy and the raising of worker's living standards. 
+
+Strength: [+ labour_strength : strength +]
+
+Dissent: [+ labour_dissent : dissent +]
+
+--------------------------------
+
+**Committment to Socialism**
+
+The Left Wing of the party is primarily concerned with maintaining the committment to Socialism that the Regina Manifesto entailed before it was replaced by the moderate Winnipeg Declaration. They are generally dissatisfied with the middle-of-the-road approach of the CCF(SS) in government and advocate grater public ownership. There are committed socialists across all three factions of the CCF(SS). 
+
+[+ ccf_socialism: strength +]%
+
 
 @neorevisionists
 go-to: menu
