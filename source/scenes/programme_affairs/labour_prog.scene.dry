@@ -8,13 +8,13 @@ card-image: img/up_to_you_poster.jpg
 
 Our Party has many policies that we can choose from. Some of them include a use-lease policy to protect farmers from foreclosure, a comprehensive labour rights platform to ensure that tragedies such as the Bienfait Coal Miner's strike never occur again, or to attempt nationalizing the Saskatchewan railways. We can promise multiple policies within a single group or promise none at all. 
 
-- @labour_policies: Let us choose a campaign promise for the farmers. 
+- @northern_direction: Let us choose a campaign promise for the farmers. 
 - @backSpecialScene: Return
 
 # _______________________________________________________________________________________
 #                                           Labour 
 
-@labour_policies
+@northern_direction
 subtitle: Labour is an important part of any democratic socialist movement
 face-image: img/George_Jones_Speech
 
@@ -23,7 +23,7 @@ Labour is an essential part of our movement. The urban seats of Regina and Saska
 - @collective_bargaining: Legalization of collective bargaining and mandatory recognition of majority-supported unions. 
 - @safety_standards: Limit working hours and increase regulation over hazardous workplaces. Establish an unemployment benefit and worker's injury compensation
 - @minimum_wage: Raise the minimum wage. 
-- @labour_policies: Go back
+- @northern_direction: Go back
 #- @loan_cooperatives: Hand grants and loans to cooperatives to increase workplace democracy. 
 #- @worker_representation_board: Mandate worker's representation on Corporate Boards. 
 
@@ -36,7 +36,7 @@ We can grant workers of all kinds the right to collective bargaining, to unioniz
 This policy will turn many both large farmers and the shop owners away from our party. 
 
 - @yes_collective_bargaining: Yes, we will promise this policy. 
-- @labour_policies: Let's not do this. 
+- @northern_direction: Let's not do this. 
 
 @yes_collective_bargaining
 on-arrival: labour_dissent += 3; ccf_platform.labour.collective_bargaining += 1; worker_ccf += 5;
@@ -50,7 +50,7 @@ new-page: true
 We can promise new safety regulation. Saskatchewan has a history of unsafe labor, particularly during the construction of the CPR when workers were made to work for hours long. 
 
 - @yes_safety_standards: Yes, we will promise this policy. 
-- @labour_policies: Let's not do this. 
+- @northern_direction: Let's not do this. 
 
 @yes_safety_standards
 on-arrival: labour_dissent += 3; ccf_platform.labour.safety_standards += 1; worker_ccf += 4;
@@ -64,7 +64,7 @@ new-page: true
 We can promise new safety regulation. Saskatchewan has a history of unsafe labor, particularly during the construction of the CPR when workers were made to work for hours long. 
 
 - @yes_minimum_wage: Yes, we will promise this policy. 
-- @labour_policies: Let's not do this. 
+- @northern_direction: Let's not do this. 
 
 @yes_minimum_wage
 on-arrival: labour_dissent += 3; ccf_platform.labour.minimum_wage += 1; worker_ccf += 4;

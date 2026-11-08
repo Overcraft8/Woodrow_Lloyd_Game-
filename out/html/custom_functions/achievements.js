@@ -61,7 +61,7 @@ window.achievements_list = {
       "name": "Northern Experiment",
       "description": "By the end of the game, the Northern economy remains predominantly state-controlled",
       "difficulty": 2,
-      "image": "img/cities/uranium_city_overhead.jpg"
+      "image": "img/cities/uranium_city_street.jpg"
     }, 
     {
       "id": "potash-operation",
@@ -75,7 +75,7 @@ window.achievements_list = {
       "name": "Corralling the Buffallo",
       "description": "Negotiate the administering of Indian welfare and programs to Saskatchewan",
       "difficulty": 4,
-      "image": "img/misc_photos/big_bear_fort_pitt"
+      "image": "img/misc_photos/big_bear_fort_pitt.jpg"
     }, 
   ]
 }

@@ -18,6 +18,7 @@ max-cards: 6
 # - @govt_two
 
 - @party
+- @gov_direction
 - #advisor
 - @family_time
 - @lloyd_government
@@ -47,6 +48,7 @@ max-cards: 6
 # - @govt_two
 
 - @party
+- @gov_direction
 - #advisor
 - @family_time
 - @lloyd_government
@@ -58,6 +60,13 @@ card-image: img/graphics/canada_ccf_call.png
 is-deck: true
 
 - #party_affairs
+
+@gov_direction
+title: Government Directiion
+card-image: img/CCF/ccf_program_sk.png
+is-deck: true
+
+- #gov_direction
 
 @govt
 title: Government Affairs

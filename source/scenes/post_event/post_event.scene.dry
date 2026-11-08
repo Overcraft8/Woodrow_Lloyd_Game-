@@ -57,7 +57,9 @@ var total_support = 0;
 for (var party of Q.parties) {
     var party_support = 0;
     for (var c of Q.classes) {
-        party_support += Q[c]*Q[c+'_'+party+'_normalized'];
+        if (Q[c] > 0) {
+            party_support += Q[c]*Q[c+'_'+party+'_normalized'];
+        }
     }
     Q[party + '_support'] = party_support;
     total_support += party_support; 
