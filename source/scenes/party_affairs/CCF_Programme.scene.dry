@@ -1,7 +1,7 @@
 title: Party Programme
 new-page: true
 is-card: true
-tags: gov_dirrection
+tags: gov_direction
 view-if: programme_timer <= 0
 on-arrival: month_actions += 1; programme_timer = 5
 card-image: img/CCF/ccf_program_sk.png
