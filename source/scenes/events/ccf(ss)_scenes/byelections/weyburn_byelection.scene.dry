@@ -54,12 +54,11 @@ on-arrival: {!
     var total_voteshare = Q.lps_weyburn + Q.ccf_weyburn;
     console.log(total_voteshare);
 
-    Q.lps_weyburn = (Q.lps_weyburn / total_voteshare) * 100;
-    Q.ccf_weyburn = (Q.ccf_weyburn / total_voteshare) * 100;
+    Q.lps_weyburn = Math.round((Q.lps_weyburn / total_voteshare) * 100) / 10;
+    Q.ccf_weyburn = Math.round((Q.ccf_weyburn / total_voteshare) * 100) / 10;
 
-    console.log(Q.lps_weyburn, Q.ccf_weyburn);
 
-    var strengths = [Math.round(Q.lps_weyburn), Math.round(Q.ccf_weyburn)];
+    var strengths = [Q.lps_weyburn, Q.ccf_weyburn];
 
     var factionColors = ['#BE0028', '#d29c28'];
 
@@ -86,9 +85,9 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 <div id="weyburn_results_bar"></div><br>
 </div>
 
-Liberal Result : [+ lps_weyburn +]
+Liberal Result : [+ lps_weyburn +]%
 
-CCF Result : [+ ccf_weyburn +]
+CCF Result : [+ ccf_weyburn +]%
 
 
 
