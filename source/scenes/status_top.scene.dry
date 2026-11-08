@@ -75,8 +75,8 @@ if (window && window.customgeneratemultibar) {
   };
 */
 
-  var strengths = [Q.movement_strength, Q.labour_strength, Q.managerial_strength, Q.agrarian_strength, Q.ccf_socialism];
-  var factionColors = ["#f2ff00", "#2844d2", "#e8ae32", "#89c520", "#c32222"];
+  var strengths = [Q.labour_strength, Q.managerial_strength, Q.agrarian_strength];
+  var factionColors = ["#2844d2", "#e8ae32", "#89c520"];
   
   window.customgeneratemultibar(
       strengths, 
@@ -128,9 +128,7 @@ Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
 ------------------------------------
 
-Support for Socialism
-
-[+ ccf_socialism : strength +]<br>
+**Support for Socialism [+ ccf_socialism : strength +]**
 
 <!-- 
 

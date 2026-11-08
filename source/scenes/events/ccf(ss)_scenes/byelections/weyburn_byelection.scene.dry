@@ -31,37 +31,43 @@ go-to: weyburn_byelection
 @weyburn_results
 on-arrival: {!
     Q.weyburn_class = {
-        'workers' : 25, 
-        'farmers' : 40, 
-        'new_middle' : 12, 
-        'old_middle' : 12, 
+        'workers' : 25,
+        'farmers' : 45,
+        'new_middle' : 12,
+        'old_middle' : 12,
         'unemployed' : 6
-    }
-    console.log('got hereereer');
-    var lps_weyburn = 0;
-    var ccf_weyburn = 0;
-    for (var c of Q.classes) {
-        var lps_class_support = Q[c + '_lps'] + Q.lps_weyburn_advantage;
-        var ccf_class_support = Q[c + '_ccf'] + Q.weyburn_campaigning;
-
-        lps_weyburn += Q.weyburn_class[c] * lps_class_support || 0;
-        ccf_weyburn += Q.weyburn_class[c] * ccf_class_support || 0;
     };
-    console.log(lps_weyburn, ccf_weyburn);
 
-    var strengths = [lps_weyburn, ccf_weyburn];
+    Q.lps_weyburn = 0;
+    Q.ccf_weyburn = 0;
+
+    for (var c of Q.classes) {
+        var lps_class_support = (Q[c + '_lps'] || 0) + Q.lps_weyburn_advantage;
+        var ccf_class_support = (Q[c + '_ccf'] || 0) + Q.weyburn_campaigning;
+
+        Q.lps_weyburn += (Q.weyburn_class[c] / 100) * lps_class_support;
+        Q.ccf_weyburn += (Q.weyburn_class[c] / 100) * ccf_class_support;
+    };
+
+    var total_voteshare = Q.lps_weyburn + Q.ccf_weyburn;
+
+    Q.lps_weyburn = (Q.lps_weyburn / total_voteshare) * 100;
+    Q.ccf_weyburn = (Q.ccf_weyburn / total_voteshare) * 100;
+
+    var strengths = [Math.round(Q.lps_weyburn), Math.round(Q.ccf_weyburn)];
+
     var factionColors = ['#BE0028', '#d29c28'];
-  
-  if (window && window.customgeneratemultibar) {
-    window.customgeneratemultibar(
-        strengths, 
-        "#333333", 
-        factionColors, 
-        "weyburn_results_bar", 
-        ['Liberals', 'CCF']
-    );
-    console.log('got hereereer');
-  };
+
+    if (window && window.customgeneratemultibar) {
+        window.customgeneratemultibar(
+            strengths,
+            "#333333",
+            factionColors,
+            "weyburn_results_bar",
+            ['Liberals', 'CCF']
+        );
+    };
+
 !}
 go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_weyburn > ccf_weyburn
 
@@ -69,21 +75,26 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 
 <div class="face-figure"><img class="face-img" src="img/cities/Weyburn_Overhead.jpg"></div>
 
+<br>
 
 <div style='justify-content: center; text-align: center;'>
 <div id="weyburn_results_bar"></div><br>
 </div>
 
+Liberal Result : [+ lps_weyburn +]
+
+CCF Result : [+ ccf_weyburn +]
 
 
 
 @ccf_wins_weyburn
 title: The CCF Wins Weyburn
+on-arrival: thatcher_ammunition -= 0.05
 
 Perhaps this result was to be expected. A sign of good times, perhaps?
 
 @lps_wins_weyburn
 title: The LPS Wins Weyburn
-on-arrival: thatcher_ammunition += 0.05; 
+on-arrival: thatcher_ammunition += 0.05; lps_seats += 1; ccf_seats -= 1
 
 In an upset victory, the LPS has taken control of Douglas' old riding. Certainly, this whole affair has given Thatcher's Liberals more media attention. Increasingly, Socred voters, it seems, are moving over to the LPS. 

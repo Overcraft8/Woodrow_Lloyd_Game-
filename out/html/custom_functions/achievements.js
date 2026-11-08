@@ -1,7 +1,7 @@
 window.achievements_list = {
   "achievements": [
     {
-      "id": "game_completed",
+      "id": "game-completed",
       "name": "Finished the Game",
       "description": "Finish the game! Woohoo!",
       "difficulty": 0,
@@ -13,14 +13,14 @@ window.achievements_list = {
       "description": "Woodrow Lloyd is reelected as Premier of Saskatchewan",
       "difficulty": 2,
       "image": "img/portraits/LloydWoodrow.jpg"
-    },/*
+    },
     {
       "id": "thatcher-win",
       "name": "That",
       "description": "Thatcher wins the 1964 Saskatchewan General Election",
       "difficulty": 2,
       "image": "img/portraits/ThatcherRoss.jpg"
-    },*/
+    },
     {
       "id": "medicare-martyr",
       "name": "Martyr of Medicare",
@@ -55,7 +55,28 @@ window.achievements_list = {
       "description": "The Waffle Manifesto Passes at the 1969 Federal NDP Convention",
       "difficulty": 4,
       "image": "img/graphics/waffle-ndp_caricature.jpg"
-    }
+    }, 
+    {
+      "id": "northern-centralization",
+      "name": "Northern Experiment",
+      "description": "By the end of the game, the Northern economy remains predominantly state-controlled",
+      "difficulty": 2,
+      "image": "img/cities/uranium_city_overhead.jpg"
+    }, 
+    {
+      "id": "potash-operation",
+      "name": "Poh-tash?",
+      "description": "The Potash Industry is booming by end date",
+      "difficulty": 3,
+      "image": "img/misc_photos/potash_operation.jpg"
+    }, 
+    {
+      "id": "indigenous-responsibility",
+      "name": "Corralling the Buffallo",
+      "description": "Negotiate the administering of Indian welfare and programs to Saskatchewan",
+      "difficulty": 4,
+      "image": "img/misc_photos/big_bear_fort_pitt"
+    }, 
   ]
 }
 
