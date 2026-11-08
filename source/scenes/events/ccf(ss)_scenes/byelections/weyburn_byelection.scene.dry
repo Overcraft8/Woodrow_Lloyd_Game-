@@ -45,14 +45,19 @@ on-arrival: {!
         var lps_class_support = (Q[c + '_lps'] || 0) + Q.lps_weyburn_advantage;
         var ccf_class_support = (Q[c + '_ccf'] || 0) + Q.weyburn_campaigning;
 
-        Q.lps_weyburn += (Q.weyburn_class[c] / 100) * lps_class_support;
-        Q.ccf_weyburn += (Q.weyburn_class[c] / 100) * ccf_class_support;
+        Q.lps_weyburn += (Q.weyburn_class[c] / 100) * lps_class_support || 0;
+        Q.ccf_weyburn += (Q.weyburn_class[c] / 100) * ccf_class_support || 0;
     };
 
+    console.log(Q.lps_weyburn, Q.ccf_weyburn);
+
     var total_voteshare = Q.lps_weyburn + Q.ccf_weyburn;
+    console.log(total_voteshare);
 
     Q.lps_weyburn = (Q.lps_weyburn / total_voteshare) * 100;
     Q.ccf_weyburn = (Q.ccf_weyburn / total_voteshare) * 100;
+
+    console.log(Q.lps_weyburn, Q.ccf_weyburn);
 
     var strengths = [Math.round(Q.lps_weyburn), Math.round(Q.ccf_weyburn)];
 
