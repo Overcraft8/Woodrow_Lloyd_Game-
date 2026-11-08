@@ -128,9 +128,6 @@ Q.faction_colors = {
 Q.party_demographics = ['labour', 'middle class', 'agrarian', 'students'];
 
 // Strength indicates the influence of the faction in the party
-Q.agrarian_dissent = 0;
-Q.agrarian_strength = 55;
-Q.agrarian_radicalism = 21;
 
 Q.middle_class_dissent = 30;
 Q.middle_class_strength = 15;
@@ -732,7 +729,7 @@ Q.rcmp_suspicion = 50;
 //                                           CLASS DATA
 
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'farmers', 'unemployed', 'catholics'];
+Q.classes = ['workers', 'old_middle', 'new_middle', 'farmers', 'unemployed', 'indigenous'];
 
 // With arrangement [Q.class_variable, Class Display Name, Class colour]
 Q.class_info = [['workers', 'Workers', '#2844d2'], ['old_middle', 'Old Middle', '#d7be1c'], ['new_middle', 'New Middle', '#22c3c0'], 

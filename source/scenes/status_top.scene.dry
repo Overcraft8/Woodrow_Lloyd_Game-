@@ -83,7 +83,7 @@ if (window && window.customgeneratemultibar) {
       "#333333", 
       factionColors, 
       "faction_strength_bar", 
-      ['The Moderate Wing', 'The Labour Wing', 'The Managerial Wing', 'The Agrarians', 'The Left Hardliner Wing']
+      ["The Labour Wing", "The Managerial Wing", "The Agrarian-Cooperativists"]
   );
 }
 
@@ -128,7 +128,7 @@ Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
 ------------------------------------
 
-**Support for Socialism [+ ccf_socialism : strength +]**
+**Support for Socialism : [+ ccf_socialism : strength +]**
 
 <!-- 
 
