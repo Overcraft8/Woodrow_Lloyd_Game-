@@ -41,6 +41,14 @@ on-arrival: {!
 !}
 # face-image: img/Williams_picnic.jpg
 
+Traditionally, the CCF(SS) has pursued a three-pronged economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise. Saskatchewan retains a considerable private sector which proponents, both within and outside of our party, claim has aided in the development of the province. 
+
+The State : Utilities, Inter-city Transit, Telecommunications
+
+Cooperatives : Agricultural Marketing, Credit Unions, Co-op Retail
+
+Private Enterprise : 
+
 
 - @three_point
 - @state_plan
@@ -55,7 +63,7 @@ on-arrival: three_points += 1
 
 @state_plan
 title: State Ownership
-subtitle: A rapid expansion of Crown Corporations
+subtitle: A rapid expansion of Crown Corporations and support for co-operatives
 on-arrival: ccf_socialism += 3; state_plan += 1
 
 @inducing_enterprise
@@ -68,8 +76,7 @@ on-arrival: ccf_socialism -= 5; inducing_enterprise += 1
 
 @northern_direction
 new-page: true
-subtitle: Labour is an important part of any democratic socialist movement
-face-image: img/George_Jones_Speech
+face-image: img/George_Jones_Speech.jpg
 
 Labour is an essential part of our movement. The urban seats of Regina and Saskatoon have many workers that would take kindly to a party that advocates their interests. In addition, Saskatchewan has a burgeoning resource exploitation sector full of low wage and poorly regulated jobs that will need protections sooner or later. 
 

@@ -19,7 +19,6 @@ Current Dues: [+ dues +]
 
 @maintain
 subtitle: No change to dues.
-on-arrival: dues += 1;
 
 We maintain our current dues.
 

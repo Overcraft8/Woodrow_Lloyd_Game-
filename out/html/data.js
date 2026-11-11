@@ -152,6 +152,10 @@ const tooltipList = [{
     searchString: "IPSCO", 
     explanationText: "Interprovincial Steel Corporation",
     detailedText: "IPSCO is a relatively young and homegrown steel manufacturing company"
+}, 
+{
+    searchString: "(CC)", 
+    explanationText: "Crown Corporation",
 }
 ];
 
@@ -300,6 +304,10 @@ const colourList = [{
     // Companies
     {
         word: ['Interprovincial Steel Corporation', 'IPSCO'], 
+        style: "border-bottom: dotted;"
+    }, 
+    {
+        word: "(CC)", 
         style: "border-bottom: dotted;"
     }
 ];

@@ -15,8 +15,8 @@ The [+ party_names.ccf +] is torn between many different ideological currents. W
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @class_struggle: We must return to a purely Socialist movement, aimed at the creation of a true Cooperative Commonwealth. 
-- @managerial: Our main goal should be to exercise Democratic Socialism in government where we can. 
-- @agrarian: The plight of the struggling farmers will be our calling.
+- @managerial: Our main goal should be smart, pragmatic management and gradual transformation 
+- @agrarian: The plight of the farmers will be our calling.
 - @labour: We should work with the trade unions to improve the lives of workers.
 - @easy_discard
 

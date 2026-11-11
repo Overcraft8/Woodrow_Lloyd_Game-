@@ -55,12 +55,12 @@ Sales Tax: [+ sales_tax +]%
 
 @sales_tax_increase
 title: Sales Tax Increase
-subtitle: Levy a 2% increase on the provincial sales tax
+subtitle: Levy a 1% increase on the provincial sales tax
 
 
 @sales_tax_decrease
 title: Sales Tax Decrease
-subtitle: Implement a 2% decrease on the provincial sales tax
+subtitle: Implement a 1% decrease on the provincial sales tax
 
 
 @income_taxation
@@ -92,11 +92,25 @@ unavailable-subtitle: The province is not in such a fiscal crisis as to necessit
 @gov_economy
 new-page: true
 style: gov-scene
+on-arrival: {!
+    var minInflation = d3.min(Q.economic_records, d => d.inflation);
+    var maxUnemployment = d3.max(Q.economic_records, d => d.unemployment);
+    var lines_3 = d3.linegraph(true, true, ['inflation', 'unemployment'],
+            {'inflation': '#0000FF', 'unemployment': '#FF0000'},
+            {'inflation': 'Inflation', 'unemployment': 'Unemployment'},
+            maxUnemployment + 5, minInflation - 5, 21);
+    lines_3.width(width).height(300);
+    d3.select("#economic_history").datum(Q.economic_records).call(lines_3);
+!}
 
 [+ government_tabs +]
 
 [
 = The Saskatchewan Economy 
+
+
+{!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
+
 ]
 
 
@@ -157,6 +171,7 @@ style: gov-scene
 - @cooperative_technical_aid
 - @cooperative_financial_aid
 - @housing_finance
+- @crown_pulp_mill
 
 @housing_finance
 title: Financing Housing
@@ -174,6 +189,10 @@ subtitle: Provide further technical and operational assistance to developing coo
 title: Aiding Cooperatives
 subtitle: Provide generous grants and loans to developing and established cooperatives to expand the cooperative influence in the provincial economy
 
+@crown_pulp_mill
+title: A Crown Pulp Mill
+subtitle: The Douglas government was unable to find a business-case for a Pulp Mill; give the Crown Corporation Saskatchewan Forest Products a mandate to construct a pulp mill north of Prince Albert 
+
 
 
 
@@ -190,6 +209,7 @@ style: gov-scene
 - @northern_infrastructure1
 - @SaskForest_conversion
 - @SaskTrading_conversion
+- @northern_state_industry
 - @northern_qol
 
 @northern_infrastructure1
@@ -198,11 +218,15 @@ subtitle: Currently, many northern communities are accessible only by ice road; 
 
 @SaskForest_conversion
 title: Economic Decentralization
-subtitle: Continue the de-centralization of the northern economy with the conversion of Saskatchewan Fish Marketing Service into a consumer cooperative
+subtitle: Continue the de-centralization of the northern economy with the conversion of Saskatchewan Fish Marketing Service (CC) into a consumer cooperative
 
 @SaskTrading_conversion
 title: Economic Decentralization
-subtitle: Continue the decentralization of the northern economy with the conversion of Saskatchewan Government Trading Services into a retail cooperative
+subtitle: Continue the decentralization of the northern economy with the conversion of Saskatchewan Government Trading Services (CC) into a retail cooperative
+
+@northern_state_industry
+title: Expanding the Northern Fish Industry
+subtitle: Construct fish filleting and fish packing plants under the Saskatchewan Fish Marketing Services (CC) to provide employment and stimulate local economies
 
 @northern_qol
 title: Raise Northern Living Standards
