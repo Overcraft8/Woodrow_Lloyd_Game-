@@ -93,6 +93,14 @@ unavailable-subtitle: The province is not in such a fiscal crisis as to necessit
 new-page: true
 style: gov-scene
 on-display: {!
+    var width = 500;
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50;
+        height = width;
+        document.getElementById("assembly").style.height = screenWidth/2 + "px";
+    }
     var minInflation = d3.min(Q.economic_records, d => d.inflation);
     var maxUnemployment = d3.max(Q.economic_records, d => d.unemployment);
     var lines_3 = d3.linegraph(true, true, ['inflation', 'unemployment'],
@@ -191,7 +199,7 @@ subtitle: Provide generous grants and loans to developing and established cooper
 
 @crown_pulp_mill
 title: A Crown Pulp Mill
-subtitle: The Douglas government was unable to find a business-case for a Pulp Mill; give the Crown Corporation Saskatchewan Forest Products a mandate to construct a pulp mill north of Prince Albert 
+subtitle: The Douglas government was unable to find a business-case for a Pulp Mill; give Saskatchewan Forest Products (CC) a mandate to construct a pulp mill north of Prince Albert 
 
 
 
