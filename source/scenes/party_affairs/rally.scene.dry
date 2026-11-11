@@ -28,6 +28,7 @@ on-arrival: workers_ccf += 3*(1-dissent); workers_ccf += 3*(1-dissent) if welfar
 Speaking of a strong welfare state certainly inspires the workers but also farmers who are 
 
 @blame_old_line
+subtitle: Good old anti-establishmentarianism
 on-arrival: workers_pcps -= 2; workers_lps -= 2; farmers_pcps -= 2; farmers_lps -= 2; new_middle_pcps -= 2; new_middle_lps -= 2; pcps_relation -= 5
 
 The old-line parties were the old masters of the province. Perhaps it would be good to remind voters of that. 
@@ -42,6 +43,7 @@ The WTB plan has become a popular rallying cry for our party. The workers are ea
 
 
 @good_government
+subtitle: Pointing to Douglas' successes can't hurt
 on-arrival: workers_ccf += 3*(1-dissent); old_middle_ccf += 1*(1-dissent); new_middle_ccf += 2*(1-dissent); unemployed_ccf += 3*(1-dissent);
 
 Everyone likes a responsible government and our party has certainly provided clear and good government over our tenure in office. 

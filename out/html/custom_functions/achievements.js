@@ -16,7 +16,7 @@ window.achievements_list = {
     },
     {
       "id": "thatcher-win",
-      "name": "That",
+      "name": "Thatcherisms",
       "description": "Thatcher wins the 1964 Saskatchewan General Election",
       "difficulty": 2,
       "image": "img/portraits/ThatcherRoss.jpg"
@@ -59,7 +59,7 @@ window.achievements_list = {
     {
       "id": "northern-centralization",
       "name": "Northern Experiment",
-      "description": "By the end of the game, the Northern economy remains predominantly state-controlled",
+      "description": "By the end of the game, the Northern economy remains predominantly state-controlled while northern quality of living is 'Good'",
       "difficulty": 2,
       "image": "img/cities/uranium_city_street.jpg"
     }, 
@@ -73,7 +73,7 @@ window.achievements_list = {
     {
       "id": "indigenous-responsibility",
       "name": "Corralling the Buffallo",
-      "description": "Negotiate the administering of Indian welfare and programs to Saskatchewan",
+      "description": "Negotiate the administering of Indian welfare and programs to the province of Saskatchewan",
       "difficulty": 4,
       "image": "img/misc_photos/big_bear_fort_pitt.jpg"
     }, 
