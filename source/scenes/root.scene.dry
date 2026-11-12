@@ -1011,11 +1011,12 @@ Q.districts = {
         seats: 4,
 
         demographics: {
-            workers: 30,
-            old_middle: 7,
-            new_middle: 15,
-            unemployed: 18,
-            farmers: 30,
+            workers: 15,
+            old_middle: 4,
+            new_middle: 10,
+            unemployed: 16,
+            farmers: 10,
+            indigenous: 45
         },
 
         constituencies: {

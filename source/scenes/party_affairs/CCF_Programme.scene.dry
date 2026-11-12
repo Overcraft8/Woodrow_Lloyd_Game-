@@ -5,11 +5,12 @@ tags: gov_direction
 view-if: programme_timer <= 0
 on-arrival: month_actions += 1; programme_timer = 5
 card-image: img/CCF/ccf_program_sk.png
+go-to: path
 
 In this moment, our party has many different directions we can go. What should be our path? 
 
-- @path: What path should we take?
-- @return: Go back
+# - @path: What path should we take?
+# - @return: Go back
 
 
 @path
@@ -19,7 +20,7 @@ What path should we take?
 
 - @economic_direction: What Economic Direction should we take?
 - @northern_direction: What should be our stance on the North?
-# - @infra_policies: What construction or maintenance might we undertake?
+- @ccf_ndp_direction: What construction or maintenance might we undertake?
 # - @econ_policies: What economic policies might we adopt?
 # - @health_policies: What healthcare policies might we adopt?
 # - @edu_policies: What educational policies might we adopt?
@@ -39,16 +40,12 @@ on-arrival: {!
         Q.economic_direction = 'Private Enterprise'; 
     }
 !}
+face-image: img/interiors/ipsco.jpg
 # face-image: img/Williams_picnic.jpg
 
-Traditionally, the CCF(SS) has pursued a three-pronged economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise. Saskatchewan retains a considerable private sector which proponents, both within and outside of our party, claim has aided in the development of the province. 
+Traditionally, the CCF(SS) has pursued a three-pronged economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise. Over the years, provincial capital has been seen by the party bureaucracy as insufficient to develop the province at the pace of neighbouring provinces. Thus, the party has moderated it's stance on private enterprise with business still controlling a large portion of the province's economy, most notably, mineral development.
 
-The State : Utilities, Inter-city Transit, Telecommunications
-
-Cooperatives : Agricultural Marketing, Credit Unions, Co-op Retail
-
-Private Enterprise : 
-
+Current Economic Direction : [+ economic_direction +]
 
 - @three_point
 - @state_plan
@@ -56,40 +53,54 @@ Private Enterprise :
 - @path: Go Back
 
 @three_point
-title: Three Points
+title: Continue Advocating for the Three-Pronged Approach 
 subtitle: Our traditional economic direction
 on-arrival: three_points += 1
 
-
 @state_plan
-title: State Ownership
-subtitle: A rapid expansion of Crown Corporations and support for co-operatives
-on-arrival: ccf_socialism += 3; state_plan += 1
+title: Revitalize the Socialization Efforts of Joe Phelps, former Cabinet Member in Industry and Resources
+subtitle: A rapid expansion of Crown Corporations in the Mineral and Manufacturing Sector <br> This is highly unpopular with the party elite who see Phelp's state-directed economic policy as brash and disproven
+on-arrival: ccf_socialism += 3; state_plan += 1; managerial_dissent += 10
 
 @inducing_enterprise
-title: Private Initiative
-subtitle: Offering incentives to private enterprise
-on-arrival: ccf_socialism -= 5; inducing_enterprise += 1
+title: Private Capital has played a key role in the province's development, we should not disregard the benefits of them
+subtitle: Attempt to develop the province's economy at a faster rate with generous incentives to private enterprise
+on-arrival: ccf_socialism -= 5; inducing_enterprise += 1; ccf_socialism -= 5; socialism_support -= 3
 
 # _______________________________________________________________________________________
 #                                           Labour 
 
 @northern_direction
 new-page: true
-face-image: img/George_Jones_Speech.jpg
+face-image: img/misc_photos/cree_women.jpg
 
-Labour is an essential part of our movement. The urban seats of Regina and Saskatoon have many workers that would take kindly to a party that advocates their interests. In addition, Saskatchewan has a burgeoning resource exploitation sector full of low wage and poorly regulated jobs that will need protections sooner or later. 
+The North is historically the poorest and geographically isolated region of Saskatchewan. Populated by an indigenous majority, the North has proven an enigma to our party. Under the Douglas administration, efforts to centralize the northern economy under Crown Corporations saw marginal price increases for local fishers and hunters but little else. 
 
-#- @collective_bargaining: Legalization of collective bargaining and mandatory recognition of majority-supported unions. 
-#- @work_protection: Raise the minimum wage, limit working hours, and increase regulation over hazardous workplaces.
-#- @social_insurance: Establish an unemployment benefit and worker's injury compensation
-#- @loan_cooperatives: Hand grants and loans to cooperatives to increase workplace democracy. 
-#- @worker_representation_board: Mandate worker's representation on Corporate Boards. 
+In the last years of the Douglas government, plans were made to convert the northern Crown Corporations into co-operatives to better service northern residents. Necessarily, this means that we will lack much the economic clout we have to influence the northern economy. But de-centralization may well prove to handle the situation better. 
+
+- @centralize_north_direction
+- @decentralize_north_direction
 - @path: Go Back
 
+@centralize_north_direction
+title: Halt the conversion of the Northern Crown Corporations
+subtitle: This risks alienating segments of the Indigenous population who have long complained of government overreach
 
+@decentralize_north_direction
+title: Continue with the conversions of the Northern Crowns into co-operatives
+subtitle: This will leave us less room to direct the northern economy
 
 
 # ____________________________________________________________________________________________
 #                                        Infrastructure
 
+
+@ccf_ndp_direction
+new-page: true
+face-image: img/CCF_logo_nobg.png
+
+<div class="face-figure"><img class="face-img" src="img/CCF/ndp_logo.jpg"></div>
+
+The party is wracked with questions about the recent CCF-CLC merger. 
+
+- @path: Go back
