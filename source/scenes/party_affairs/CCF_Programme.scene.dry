@@ -59,7 +59,7 @@ on-arrival: three_points += 1
 
 @state_plan
 title: Revitalize the Socialization Efforts of Joe Phelps, former Cabinet Member in Industry and Resources
-subtitle: A rapid expansion of Crown Corporations in the Mineral and Manufacturing Sector <br> This is highly unpopular with the party elite who see Phelp's state-directed economic policy as brash and disproven
+subtitle: A rapid expansion of Crown Corporations in the Mineral and Manufacturing Sector <br> - This is highly unpopular with the party elite who see Phelp's state-directed economic policy as brash and disproven
 on-arrival: ccf_socialism += 3; state_plan += 1; managerial_dissent += 10
 
 @inducing_enterprise

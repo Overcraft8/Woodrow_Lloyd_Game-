@@ -111,8 +111,7 @@ const tooltipList = [{
 },
 {
     searchString: ['Wheat Pool'], 
-    explanationText: "The Wheat Pool",
-    detailedText: ""
+    explanationText: "An agricultural marketing co-operative that handles much of Saskatchewan wheat",
 },
 {
     searchString: "STA", 

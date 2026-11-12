@@ -237,6 +237,7 @@ go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 Overall dissent: [+ dissent_percent : dissent +]
 
+
 **The Managerial Wing**
 
 The Managerial Wing are an entrenched group of people within the upper echelons of government. Represented by people such as the retired C. M. Fines, they largely prioritize sound finance and gradual reform though many are still pragmatic social democrats and even Socialists. Due to their technocratic tendencies, they favour centralized policy-planning and somewhat top-down governance. Woodrow Lloyd as perceived by the grassroots as part of this faction. 
@@ -246,7 +247,6 @@ Strength: [+ managerial_strength : strength +]
 Dissent: [+ managerial_dissent : dissent +]
 
 
-
 **The Agrarian-Cooperativists**
 
 The Agrarian-Cooperativists are a somewhat populist and highly rural faction within the CCF(SS). Although many are committed Social Democrats, they also support the existence of the family farm as independent producers. As such, many of them are supporters of rural cooperatives, namely the Saskatchewan Wheat Pool and the various retail co-op stores throughout rural Saskatchewan. They are de-centralist and prefer the CCF(SS) to remain committed to it's grassroots than be directed by the party leadership in urban Regina. 
@@ -254,7 +254,6 @@ The Agrarian-Cooperativists are a somewhat populist and highly rural faction wit
 Strength: [+ agarian_strength : strength +]
 
 Dissent: [+ agrarian_dissent : dissent +]
-
 
 
 **Labour**
