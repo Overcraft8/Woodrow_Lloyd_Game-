@@ -34,10 +34,10 @@ new-page: true
 on-arrival: {!
     Q.economic_direction = 'Three Points'; 
     if (Q.state_plan > Q.three_points) {
-        Q.economic_direction = 'State Ownership'; 
+        Q.economic_direction = 'Returning to Phelps'; 
     }
     if (Q.state_plan > Q.inducing_enterprise) {
-        Q.economic_direction = 'Private Enterprise'; 
+        Q.economic_direction = 'Inducing Enterprise'; 
     }
 !}
 face-image: img/interiors/ipsco.jpg
