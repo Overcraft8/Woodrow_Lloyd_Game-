@@ -196,7 +196,7 @@ tags: remove_advisor
 on-arrival: clc_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-The clc has been removed as a pinned organization. The Labour faction disapproves.
+The CLC has been removed as a pinned organization. The Labour faction disapproves.
 
 @remove_schumacher
 title: Remove Schumacher
@@ -465,7 +465,7 @@ Clarence Fines is now an advisor.
 
 @add_clc
 title: Trades and Labour Congress
-subtitle: <img src="img/organizations/dominion_labour_congress.jpg" class="face-figure"><span>The clc is a fairly conservative but influential Labour Federation</span>  {!<br><br>!}
+subtitle: <img src="img/organizations/dominion_labour_congress.jpg" class="face-figure"><span>The CLC is a fairly conservative but influential Labour Federation</span>  {!<br><br>!}
 is-card: true
 card-image: img/organizations/dominion_labour_congress.jpg
 view-if: clc_advisor = 0 and n_advisors < 3

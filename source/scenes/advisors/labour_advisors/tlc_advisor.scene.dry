@@ -10,23 +10,23 @@ new-page: true
 The Trades and Labour Congress is a Canada-wide central federation of trade unions, only the third attempt at the formation of a unified, national labour federation in Canadian history. It is a relatively conservative organization, favouring craft-unionism, and rivalled the more left-leaning International Workers of the World and the One Big Union in the 1920s.
 
 - @clc_relations: Improve relations with the clc
-- @clc_organizing: Aid the clc in organizing workers
+- @clc_organizing: Aid the CLC in organizing workers
 - @root: Return to main
 
 @clc_relations
-title: clc Relations
+title: CLC Relations
 subtitle: -1 resources
 choose-if: advisor_action_timer == 0 and resources >= 1
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; clc_relations += 2; resources -= 1
 
-Our relations with the clc have improved. 
+Our relations with the CLC have improved. 
 
 @clc_organizing
-title: clc Organizing
+title: CLC Organizing
 subtitle: -2 resources
 choose-if: advisor_action_timer == 0 and resources >= 2
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1; resources -= 2; clc_strength += 1*(1-dissent); clc_relations += 4
 
-The strength of the clc has been increased. Our relations with the clc have improved. 
+The strength of the CLC has been increased. Our relations with the CLC have improved. 

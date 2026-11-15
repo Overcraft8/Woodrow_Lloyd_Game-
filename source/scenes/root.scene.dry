@@ -1422,7 +1422,7 @@ Q.manufacturing_shipments_millions = 344.4;
 Q.economic_compromise = 4; 
 Q.state_plan = 0; 
 Q.enterprise_plan = 0;
-Q.economic_direction = 'The Compromise';
+Q.economic_direction = 'Douglas Model';
 
 
 // ----------------------------

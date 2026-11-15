@@ -271,9 +271,9 @@ if (Q.ufc_strength) {
 = Saskatchewan Unions
 
 [? if clc_affiliated == 0 :
-clc Relations: [+ clc_relations : relationships +]<br>
-clc Militancy: [+ clc_militancy : militancy +]<br>
-clc Strength: [+ clc_strength +] Thousand<br>
+CLC Relations: [+ clc_relations : relationships +]<br>
+CLC Militancy: [+ clc_militancy : militancy +]<br>
+CLC Strength: [+ clc_strength +] Thousand<br>
 ?]
 
 

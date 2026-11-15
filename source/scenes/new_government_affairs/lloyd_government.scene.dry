@@ -177,7 +177,7 @@ on-display: {!
 
 Government Economic Policy : [+ economic_direction +]
 
-[? if economic_direction == 'The Compromise' : [+ party_names.ccf +] policy is to continue Douglas' policy of mixing state ownership, co-operatives, and private enterprise in a pragmatic manner, attempting to maintain the province's economic growth while producing a truly mixed economic outlook tailored to Saskatchewan needs. ?]
+[? if economic_direction == 'Douglas Model' : Current [+ party_names.ccf +] policy is to continue Douglas' approach of mixing state ownership, co-operatives, and private enterprise in a pragmatic manner, attempting to maintain the province's economic growth while producing a mixed economic outlook tailored to Saskatchewan needs. ?]
 
 [? if economic_direction == 'Returning to Phelps' : After much intra-party struggle, Joe Phelps' state-directed economic policy is back on the board. Necessarily, this means an expansion of Crown Corporations, particularly in the mineral and manfuacturing sectors which the Douglas administration largely left to private business. ?]
 
