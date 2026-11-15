@@ -664,18 +664,9 @@ Q.ufc_affiliated = 1;
 Q.ufc_strength = 35.00;
 Q.ufc_militancy = 0.70;
 
-Q.sta_affiliated = 0;
-Q.sta_strength = 5.00;
-Q.sta_relations = 50;
-Q.sta_militancy = 0.30;
-
-Q.tlc_relations = 40;
-Q.tlc_militancy = 0.20;
-Q.tlc_strength = 30.00;
-
-Q.accl_relations = 0;
-Q.accl_militancy = 0.20;
-Q.accl_strength = 20.00;
+Q.clc_relations = 40;
+Q.clc_militancy = 0.20;
+Q.clc_strength = 30.00;
 
 
 Q.cll_in_government = 0;
@@ -1428,10 +1419,10 @@ Q.manufacturing_shipments_millions = 344.4;
 
 
 
-Q.three_points = 4; 
+Q.economic_compromise = 4; 
 Q.state_plan = 0; 
 Q.enterprise_plan = 0;
-Q.economic_direction = 'Three Points';
+Q.economic_direction = 'The Compromise';
 
 
 // ----------------------------
@@ -1913,7 +1904,7 @@ Q.ccf_wc = 1; // CCF Women's Clubs
 // Revisionist advisors
 Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
 
-Q.tlc_advisor = 0; // Julius Leber (post-1930)
+Q.clc_advisor = 0; // Julius Leber (post-1930)
 Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
 // party advisors
@@ -2149,7 +2140,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 @intro_to_sask
 call: root
 
-In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, PCPS, and <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
+In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, CPS, <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
 
 This picture becomes clearer once examine the province as a whole. 
 
@@ -2159,9 +2150,9 @@ This picture becomes clearer once examine the province as a whole.
 
 Saskatchewan was inaugurated as a province in 1905. In the first provincial election, the Liberal Party of Thomas Walter Scott endured an upset victory over former Northwest Territories Governor Haultain, leading the 'Provincial Rights' Party. In a move that will soon become motific, the LPS quickly catered to the agricultural vote, including farm leadership in cabinet and a political climate centred around the agricultural sector. 
 
-As for the Provincial Rights Party, while it remained highly competetive, maintaining a consistent 45% of the voteshare, it could not dislodge LPS seat dominance. Haultain soon retired from the Legislature to Wellington Wiloughby, who oversaw the party's affiliation with the national Conservative Party and renaming to the Conservative Party of Saskatchewan. However, Wiloughby also led the party to successive LPS majority governments. Change was needed though the PCPS seemed unlikely to be the ones to bring it about. Prior to the 1921 provincial election, the PCPS chose to not elect a leader and nominated only 4 candidates. 
+As for the Provincial Rights Party, while it remained highly competetive, maintaining a consistent 45% of the voteshare, it could not dislodge LPS seat dominance. Haultain soon retired from the Legislature to Wellington Wiloughby, who oversaw the party's affiliation with the national Conservative Party and renaming to the Conservative Party of Saskatchewan. However, Wiloughby also led the party to successive LPS majority governments. Change was needed though the CPS seemed unlikely to be the ones to bring it about. Prior to the 1921 provincial election, the CPS chose to not elect a leader and nominated only 4 candidates. 
 
-In replacement of the PCPS, an Independent Movement was founded by disgruntled Tories and seperate school supporters (Catholic schools). It's 12 candidates were represented by a 3-way split of Tories, Labour candidates, and Non-Partisan League figures (An import from North Dakota, the NPL had scored 4% of the vote prior as an independent party). 
+In replacement of the CPS, an Independent Movement was founded by disgruntled Tories and seperate school supporters (Catholic schools). It's 12 candidates were represented by a 3-way split of Tories, Labour candidates, and Non-Partisan League figures (An import from North Dakota, the NPL had scored 4% of the vote prior as an independent party). 
 
 However, the bigger news would be the arrival of the Progressive Party, which had won all but 1 of the Federal seats in Saskatchewan in 1921. Despite running only 7 provincial candidates, the PPS would manage to elect 6 and achieve 7.5% of the popular vote. The rise of the PPS showed that there was potential for left-leaning political organizations to usurp the LPS as the voice of the farmer. 
 
@@ -2177,7 +2168,7 @@ In 1926, the Ku Klux Klan entered the province from the USA. While it's American
 
 <div class="face-figure"><img class="face-img" src="img/portraits/AndersonJames.jpg"></div>
 
-Both the PCPS under James Anderson and the PPS constructed programmes that drew on the prejudice raised by the KKK, likely aiding them in the 1929 election. Additionally, the PCPS, PPS, and numerous Independents made electoral pacts that reduced the occurence of vote-splitting, leaving the LPS with only a plurality of seats. James Anderson organized the PCPS, PPS, and Independents into what he'd call a Cooperative Coalition and took the mantle of government from the LPS. 
+Both the CPS under James Anderson and the PPS constructed programmes that drew on the prejudice raised by the KKK, likely aiding them in the 1929 election. Additionally, the CPS, PPS, and numerous Independents made electoral pacts that reduced the occurence of vote-splitting, leaving the LPS with only a plurality of seats. James Anderson organized the CPS, PPS, and Independents into what he'd call a Cooperative Coalition and took the mantle of government from the LPS. 
 
 The Cooperative Coalition remains a contentious topic. Broadly, it maintained a nativist British stance but was pushed left-ward economically by the presence of Progressives. Both French as a language of instruction and the wearing of religious garb in public schools were banned. The Cooperative Coalition also established a minimum wage, protected the Wheat Pool, and removed partisan influence from the civil service. 
 

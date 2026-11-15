@@ -189,14 +189,14 @@ Nielsen has been removed as a pinned organization. The Leftist faction disapprov
 
 # neorevisionists
 
-@remove_tlc
-title: Remove TLC
-view-if: tlc_advisor = 1
+@remove_clc
+title: Remove clc
+view-if: clc_advisor = 1
 tags: remove_advisor
-on-arrival: tlc_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: clc_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-The TLC has been removed as a pinned organization. The Labour faction disapproves.
+The clc has been removed as a pinned organization. The Labour faction disapproves.
 
 @remove_schumacher
 title: Remove Schumacher
@@ -463,13 +463,13 @@ tags: labour_advisor
 
 Clarence Fines is now an advisor.
 
-@add_tlc
+@add_clc
 title: Trades and Labour Congress
-subtitle: <img src="img/organizations/dominion_labour_congress.jpg" class="face-figure"><span>The TLC is a fairly conservative but influential Labour Federation</span>  {!<br><br>!}
+subtitle: <img src="img/organizations/dominion_labour_congress.jpg" class="face-figure"><span>The clc is a fairly conservative but influential Labour Federation</span>  {!<br><br>!}
 is-card: true
 card-image: img/organizations/dominion_labour_congress.jpg
-view-if: tlc_advisor = 0 and n_advisors < 3
-on-arrival: tlc_advisor = 1; n_advisors += 1
+view-if: clc_advisor = 0 and n_advisors < 3
+on-arrival: clc_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 tags: labour_advisor
 

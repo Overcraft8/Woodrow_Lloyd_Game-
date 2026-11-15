@@ -257,14 +257,8 @@ if (Q.kkk_strength) {
 if (Q.ful_strength) {
     Q.ful_strength_2 = Q.ful_strength.toFixed(2);
 }
-if (Q.sta_strength) {
-    Q.sta_strength_2 = Q.sta_strength.toFixed(2);
-}
-if (Q.tlc_strength) {
-    Q.tlc_strength_2 = Q.tlc_strength.toFixed(2);
-}
-if (Q.accl_strength) {
-    Q.accl_strength_2 = Q.accl_strength.toFixed(2);
+if (Q.clc_strength) {
+    Q.clc_strength_2 = Q.clc_strength.toFixed(2);
 }
 if (Q.ccym_strength) {
     Q.ccym_strength_2 = Q.ccym_strength.toFixed(2);
@@ -276,23 +270,12 @@ if (Q.ufc_strength) {
 
 = Saskatchewan Unions
 
-[? if sta_affiliated == 0 :
-STA Relations: [+ sta_relations : relationships +]<br>
-STA Militancy: [+ sta_militancy : militancy +]<br>
-STA Strength: [+ sta_strength +] Thousand<br>
+[? if clc_affiliated == 0 :
+clc Relations: [+ clc_relations : relationships +]<br>
+clc Militancy: [+ clc_militancy : militancy +]<br>
+clc Strength: [+ clc_strength +] Thousand<br>
 ?]
 
-[? if tlc_affiliated == 0 :
-TLC Relations: [+ tlc_relations : relationships +]<br>
-TLC Militancy: [+ tlc_militancy : militancy +]<br>
-TLC Strength: [+ tlc_strength +] Thousand<br>
-?]
-
-[? if accl_affiliated == 0:
-ACCL Relations: [+ accl_relations : relationships +]<br>
-ACCL Militancy: [+ accl_militancy : militancy +]<br>
-ACCL Strength: [+ accl_strength +] Thousand<br>
-?]
 
 
 = Law Enforcement

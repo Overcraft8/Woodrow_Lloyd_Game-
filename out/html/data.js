@@ -122,6 +122,11 @@ const tooltipList = [{
     explanationText: "The Trades and Labour Congress of Canada "
 },
 {
+    searchString: "CLC", 
+    explanationText: "Canadian Labour Congress", 
+    detailedText: "The Union Central for most of Canada's unions, formed from the Trades and Labour Congress and the Canadian Congress of Labour"
+},
+{
     searchString: "ACCL", 
     explanationText: "All-Canadian Congress of Labour "
 },
@@ -246,7 +251,7 @@ const colourList = [{
         style: "color: #b06262; font-weight: bold;"
     },
     {
-        word: "TLC", 
+        word: "clc", 
         style: "color: #b33a3a; font-weight: bold;"
     },
     {
