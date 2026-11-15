@@ -9,7 +9,7 @@ on-arrival: {!
     var content = document.getElementById('content');
     var left_sidebar = document.getElementById('stats_sidebar'); 
     var right_sidebar = document.getElementById('right_sidebar'); 
-    var button_container = document.getElementById('government_options_top_panel');
+    var button_container = document.getElementById('economic_options_top_panel');
 
     left_sidebar.style.display = ''; 
     right_sidebar.style.display = '';

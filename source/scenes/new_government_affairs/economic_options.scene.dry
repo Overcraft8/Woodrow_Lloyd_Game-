@@ -30,11 +30,11 @@ on-arrival: {!
 !}
 
 
-<div id="government_options_top_panel" style="display: flex;" class='tab_container'>
+<div id="economic_options_top_panel" style="display: flex;" class='tab_container'>
 
-    <div id='crown_corps_button' class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('government_options.crown_corps_options');">Crown Corporations</div>
+    <div id='crown_corps_button' class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('economic_options.crown_corps_options');">Overview</div>
 
-    <div id='ministries_button' class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('government_options.ministries_options');">Ministries</div>
+    <div id='ministries_button' class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('economic_options.ministries_options');">Ministries</div>
 
     <div id="back_gov_button"  class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('exit_gov');">Back</div>
 
@@ -84,19 +84,19 @@ Object.entries(Q.crown_economic_pairs).forEach(([crown, sectorName]) => {
 
 <!--
 <div class='tab_container'>
-    <div id='back_crowns' class='tab_button' onclick="window.ChangeTab('center', 'government_options', 'back_crowns');">Back</div>
+    <div id='back_crowns' class='tab_button' onclick="window.ChangeTab('center', 'economic_options', 'back_crowns');">Back</div>
 </div>
 -->
 
-<h1 style="margin: 0 0 0 0;">The Crown Corporations</h1>
+<h1 style="margin: 0 0 0 0;">Overview</h1>
 
-<div style="font-size: 0.8em; text-align: center;">(Updated Annually)</div>
+# <div style="font-size: 0.8em; text-align: center;">(Updated Annually)</div>
 
 
-<div id='crown_corps_panel' style="display: flex;">
+<div id='crown_corps_panel'>
 
     <div id="saskpower_panel" class="gov_panel centered-bg-img" style="background: linear-gradient( color-mix(in srgb, var(--content-bg-color, #e8dcc3) 70%, transparent), rgba(255, 255, 255, 0.4) ), url('img/powerhouse.jpg') center/cover; ">
-        <div class="h1_gov">SaskPower</div>
+        <div class="h1_gov">Manufacturing</div>
 
         <div id='saskpower_stats' class='gov_stats'>
             <div>Electrification: [+ electrification : electrification +]</div>
@@ -109,10 +109,8 @@ Object.entries(Q.crown_economic_pairs).forEach(([crown, sectorName]) => {
             <div class="net_return_panel">Annual Return: [+ saskpower.profit +]</div>
         </div>
     </div>
-
-
     <div id="sasktel_panel" class="gov_panel centered-bg-img" style="background: linear-gradient( color-mix(in srgb, var(--content-bg-color, #e8dcc3) 70%, transparent), rgba(255, 255, 255, 0.4) ), url('img/telecom_lines.jpg') center/cover; ">
-        <div class="h1_gov">SaskTel</div>
+        <div class="h1_gov">Utilities</div>
 
         <div id='sasktel_stats' class='gov_stats'>
             <div>Telecoms Access: [+ telecoms : telecom +]</div>
@@ -120,13 +118,11 @@ Object.entries(Q.crown_economic_pairs).forEach(([crown, sectorName]) => {
             <!-- 
             <div class="market_share_wrapper"> Market Share: [+ telecoms_pie_chart +]</div> -->
             <div class='tab_container'>
-                <div id='sasktel_options' style="justify-content: center;" class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('government_options.sasktel_choices');">SaskTel Actions</div>
+                <div id='sasktel_options' style="justify-content: center;" class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('economic_options.sasktel_choices');">SaskTel Actions</div>
             </div>
             <div class="net_return_panel">Annual Return: [+ sasktel.profit +]</div>
         </div>
     </div>
-
-
     <div id="stc_panel" class="gov_panel centered-bg-img" style="background: linear-gradient( color-mix(in srgb, var(--content-bg-color, #e8dcc3) 70%, transparent), rgba(255, 255, 255, 0.4) ), url('img/regina_trolleybus.jpg') center/cover; ">
         <div class="h1_gov">STC</div>
 
@@ -136,7 +132,7 @@ Object.entries(Q.crown_economic_pairs).forEach(([crown, sectorName]) => {
             <!-- 
             <div class="market_share_wrapper"> Market Share: [+ transport_pie_chart +]</div> -->
             <div class='tab_container'>
-                <div id='stc_options' style="justify-content: center;" class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('government_options.stc_choices');">STC Actions</div>
+                <div id='stc_options' style="justify-content: center;" class='tab_button' onclick="window.dendryUI.dendryEngine.goToScene('economic_options.stc_choices');">STC Actions</div>
             </div>
             <div class="net_return_panel">Annual Return: [+ stc.profit +]</div>
         </div>
@@ -183,7 +179,7 @@ Object.entries(Q.crown_economic_pairs).forEach(([crown, sectorName]) => {
 #            </div>
 #        </div>
 
-- @government_options: Return to Government Options
+- @economic_options: Return to Government Options
 
 @stc_Choices
 
@@ -204,7 +200,7 @@ on-arrival: {!
 !}
 
 <div class="tab_container">
-    <div id="back_gov_button"  class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('government_options');">Back</div>
+    <div id="back_gov_button"  class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('economic_options');">Back</div>
 </div>
 
 = The Ministries

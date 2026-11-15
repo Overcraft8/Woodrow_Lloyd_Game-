@@ -1,16 +1,16 @@
 .gov_panel {
-    min-height: 150px;
-    width: 300px;
-    box-sizing: border-box;
-    flex-shrink: 0;
     padding: 13px;
     margin-bottom: 1em;
     margin-right: 1em;
     background: var(--content-bg-color);
     box-shadow: 0 2px 4px black;
     border: 2px solid #6c512e;
-outline: 1px solid #b5a27c;
-outline-offset: -5px;
+    outline: 1px solid #b5a27c;
+    outline-offset: -5px;
+    width: 98%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin-bottom:0.7em;
 }
 
 .info_panel {
@@ -105,9 +105,11 @@ outline-offset: -5px;
 }
 
 #crown_corps_panel {
-    display: flex; 
-    flex-direction: row;
-    overflow-x: scroll; 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1em;
+    align-items: stretch;
+    justify-items: stretch;
 }
 
 .gov_stats .project_container, 
@@ -426,4 +428,85 @@ outline-offset: -5px;
    width:100%; 
    text-align:center; 
    padding:5px;
+}
+
+
+
+
+
+
+
+
+.economy-dashboard {
+    width: 100%;
+    color: var(--text-color, #ddd);
+}
+
+.economy-heading {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+}
+
+.sector-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.sector-table th {
+    text-align: left;
+    padding: 10px 8px;
+    border-bottom: 1px solid #555;
+    color: #aaa;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.sector-table td {
+    padding: 11px 8px;
+    border-bottom: 1px solid #383838;
+}
+
+.sector-row {
+    background: rgba(255,255,255,0.025);
+}
+
+.sector-row:hover {
+    background: rgba(255,255,255,0.07);
+}
+
+.sector-detail td {
+    padding: 0;
+}
+
+.sector-description {
+    display: flex;
+    gap: 16px;
+    padding: 14px;
+    background: rgba(0,0,0,0.18);
+    align-items: flex-start;
+}
+
+.sector-description img {
+    width: 115px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.sector-description p {
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+
+.status-positive {
+    color: #8ec713;
+}
+
+.status-stable {
+    color: #b0b52a;
+}
+
+.status-warning {
+    color: #c77313;
 }

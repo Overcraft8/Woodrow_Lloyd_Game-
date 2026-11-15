@@ -397,7 +397,7 @@ const Bar_Config = {
     center: {
         containerId: 'mid_panel',
         targetId: 'content',
-        starting_scene: 'government_options',
+        starting_scene: 'economic_options',
         constant_refresh: false
     },
     left: {

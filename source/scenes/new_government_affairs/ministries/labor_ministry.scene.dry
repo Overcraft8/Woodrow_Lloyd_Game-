@@ -10,7 +10,7 @@ is-pinned-card: true
 - @labour_legislation: Let us Amend Labour Legislation
 - @favour_labour: Favour Unions in Labour Disputes
 - @favour_business: Favour Business in Labour Disputes
-- @government_options.ministries_options: Return
+- @economic_options.ministries_options: Return
 
 @favour_labour
 on-arrival: workers_ccf += 3*(1-dissent); 
