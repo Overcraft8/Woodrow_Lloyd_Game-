@@ -23,7 +23,7 @@ is-special: true
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
-  <button id="medicare_button" class="status_panel_card" onclick="window.goToScene('status_right.enacting_medicare')">
+  <button id="medicare_button" class="status_panel_card" onclick="window.dendryUI.dendryEngine.goToScene('status_right.enacting_medicare')">
     <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg"> 
     <span class="card-caption">Enacting Medicare</span> 
   </button>
