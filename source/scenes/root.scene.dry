@@ -2024,6 +2024,7 @@ Q.government_panel = function() {
 
         var left_sidebar = document.getElementById('stats_sidebar'); 
         var right_sidebar = document.getElementById('right_sidebar'); 
+        var topbar = document.getElementById('topbar'); 
 
         Q.old_mid_panel_margin = mid_panel.style.margin;
         Q.old_content_maxWidth = content.style.maxWidth; 
@@ -2031,6 +2032,7 @@ Q.government_panel = function() {
 
         left_sidebar.style.display = 'none'; 
         right_sidebar.style.display = 'none';
+        topbar.style.display = 'none';
         mid_panel.style.margin = '0 0';
 
         content.style.maxWidth = '100em';

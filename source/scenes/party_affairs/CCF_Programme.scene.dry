@@ -22,7 +22,7 @@ What path should we take?
 
 - @economic_direction: What Economic Direction should we take?
 - @northern_direction: What should be our stance on the North?
-- @ccf_ndp_direction: What construction or maintenance might we undertake?
+- @ccf_ndp_direction: What policy should we take regarding the CCF-NDP debacle?
 # - @econ_policies: What economic policies might we adopt?
 # - @health_policies: What healthcare policies might we adopt?
 # - @edu_policies: What educational policies might we adopt?
@@ -45,6 +45,8 @@ on-arrival: {!
 !}
 face-image: img/interiors/ipsco.jpg
 # face-image: img/Williams_picnic.jpg
+
+= Economic Plan
 
 Traditionally, the CCF(SS) has pursued a compromise economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise where public funds are insufficient, technical expertise lacking, or political will nonexistent. Over the years, provincial capital has been seen by the party bureaucracy as insufficient to develop the province at the pace of neighbouring provinces. Thus, the party has moderated it's stance on private enterprise with business still controlling a large portion of the province's economy, most notably in mineral and manufacturing development.
 
@@ -78,6 +80,8 @@ style: gov-scene
 new-page: true
 face-image: img/misc_photos/cree_women.jpg
 
+= Northern Direction
+
 The North is historically the poorest and geographically isolated region of Saskatchewan. Populated by an indigenous majority, the North has proven an enigma to our party. Under the Douglas administration, efforts to centralize the northern economy under Crown Corporations saw marginal price increases for local fishers and hunters but little else. 
 
 In the last years of the Douglas government, plans were made to convert the northern Crown Corporations into co-operatives to better service northern residents. Necessarily, this means that we will lack much the economic clout we have to influence the northern economy. But de-centralization may well prove to handle the situation better. 
@@ -102,6 +106,8 @@ subtitle: This will leave us less room to direct the northern economy
 @ccf_ndp_direction
 style: gov-scene
 new-page: true
+
+= CCF or NDP?
 
 <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF_logo_nobg.png"></div>
 

@@ -79,8 +79,9 @@ is-special: true
 on-arrival: {!
   Q.government_panel();
 !}
+face-image: img/graphics/anti_medicare_cartoon.jpg
 
-<button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
+# <button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
 
 = Enacting Medicare
 
