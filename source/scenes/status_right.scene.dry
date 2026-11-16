@@ -23,7 +23,7 @@ is-special: true
     <span class="card-caption">The Thatcher Problem</span> 
   </button>
 
-  <button id="medicare_button" class="status_panel_card" onclick="window.ChangeTab('right', 'status_right.enacting_medicare', 'medicare_button', true)">
+  <button id="medicare_button" class="status_panel_card" onclick="window.goToScene('status_right.enacting_medicare')">
     <img class="status_panel_card_image" src="img/protests/anti_medicare_rally_colored.jpg"> 
     <span class="card-caption">Enacting Medicare</span> 
   </button>
@@ -75,6 +75,10 @@ Thatcher's Ammunition : [+ thatcher_ammunition : thatcher_ammunition +]
 
 @enacting_medicare
 new-page: true
+is-special: true
+on-arrival: {!
+  Q.government_panel();
+!}
 
 <button class="tab_button" style="width:45%;" id="important_matters_tab" onclick="window.ChangeTab('right', 'status_right.important_matters', 'important_matters_tab', true);">Back</button>
 
@@ -85,6 +89,8 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
 College-Medicare Stance : [+ college_medicare : college_medicare +]
 
 Anti-Medicare Forces Strength : [+ anti_medicare_strength : militancy +]
+
+- @backSpecialScene: Exit
 
 
 @northern_issue

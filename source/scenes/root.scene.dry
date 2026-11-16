@@ -2014,6 +2014,31 @@ window.updateBar('left');
 window.updateBar('top');
 
 console.log("reached end of root");
+
+/// Functions here 
+
+Q.government_panel = function() {
+        var mid_panel = document.getElementById('mid_panel');
+        var content = document.getElementById('content');
+        var tools = document.getElementById('tools_wrapper'); 
+
+        var left_sidebar = document.getElementById('stats_sidebar'); 
+        var right_sidebar = document.getElementById('right_sidebar'); 
+
+        Q.old_mid_panel_margin = mid_panel.style.margin;
+        Q.old_content_maxWidth = content.style.maxWidth; 
+        Q.old_content_width = content.style.width;
+
+        left_sidebar.style.display = 'none'; 
+        right_sidebar.style.display = 'none';
+        mid_panel.style.margin = '0 0';
+
+        content.style.maxWidth = '100em';
+        content.style.width = '50em';
+    };
+
+
+
 !}
 
 > *"Our party stands at the crossroad in Saskatchewan. The relentless work of capitalism is changing and corrupting the province and the people. Many have been crushed; more dispersed; all are confused and manipulated.
