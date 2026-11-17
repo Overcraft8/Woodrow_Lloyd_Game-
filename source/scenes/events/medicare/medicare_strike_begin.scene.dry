@@ -1,0 +1,17 @@
+title: Addressing the Doctors
+new-page: true
+tags: event
+view-if: year = 1962 and month = 7
+max-visits: 1
+priority: 2
+on-arrival: {!
+    Q.special_mode = 1;
+    Q.medicare_strike = 1; 
+    Q.day = 1;
+    Q.medicare_panel();
+!}
+
+= Doctor's Strike
+
+The Saskatchewan doctors are closing their doors...
+

@@ -646,6 +646,9 @@ Q.George_Williams_Dead = 0;
 
 
 
+Q.special_mode = 0; 
+Q.medicare_strike = 0; 
+Q.day = 0;
 // ----------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------
 //                               Saskatchewan Organizations
@@ -1995,7 +1998,7 @@ for (var party of Q.parties) {
 Q.parliament_diagram = data;
 
 // -------------------------------------------------------------
-//              Exterior Function calling
+//                 Function calling
 // -------------------------------------------------------------
 
 // dendryUI.dendryEngine._runActions(news_initializer.onArrival);
