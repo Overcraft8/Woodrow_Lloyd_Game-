@@ -2040,6 +2040,28 @@ Q.government_panel = function() {
     };
 
 
+Q.medicare_panel = function() {
+        var mid_panel = document.getElementById('mid_panel');
+        var content = document.getElementById('content');
+        var tools = document.getElementById('tools_wrapper'); 
+
+        var left_sidebar = document.getElementById('stats_sidebar'); 
+        var right_sidebar = document.getElementById('right_sidebar'); 
+        var topbar = document.getElementById('topbar'); 
+
+        Q.old_mid_panel_margin = mid_panel.style.margin;
+        Q.old_content_maxWidth = content.style.maxWidth; 
+        Q.old_content_width = content.style.width;
+
+        left_sidebar.style.display = 'none'; 
+        right_sidebar.style.display = 'none';
+        topbar.style.display = 'none';
+        mid_panel.style.margin = '0 0';
+
+        content.style.cssText = `max-width: 100em;width: 50em;position: absolute;left: 1em;top: 5em;`
+    };
+
+
 
 !}
 
