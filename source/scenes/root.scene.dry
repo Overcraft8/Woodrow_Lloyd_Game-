@@ -309,12 +309,25 @@ Q.lps_leader = "Ross Thatcher";
 Q.scps_leader = "Martin Kelln"; 
 Q.pps_leader = "None";
 
+// 
+
 Q.thatcher_ammunition = 0.50;
+
+
+
 Q.college_medicare = 0;
 Q.anti_medicare_strength = 0.60;
+Q.community_clinics = 0;
+
+
+
+
 Q.northern_qol = 0.20;
 Q.northern_centralization = 0.60;
 Q.socred_dying = 0; 
+
+
+
 
 Q.ccf_legislative_leader = "Williams";
 Q.ccf_president = "Williams";
@@ -2040,6 +2053,8 @@ Q.government_panel = function() {
 
         content.style.maxWidth = '100em';
         content.style.width = '50em';
+        content.style.backgroundColor = '#f6f1e5';
+        right_sidebar.style.backgroundColor = '#f6f1e5';
     };
 
 
@@ -2050,12 +2065,14 @@ Q.medicare_panel = function() {
 
         var left_sidebar = document.getElementById('stats_sidebar'); 
         //var right_sidebar = document.getElementById('right_sidebar'); 
+        var right_sidebar_tabs = document.getElementById('right_sidebar_tabs');
         var topbar = document.getElementById('topbar'); 
 
         Q.old_mid_panel_margin = mid_panel.style.margin;
         Q.old_content_maxWidth = content.style.maxWidth; 
         Q.old_content_width = content.style.width;
 
+        right_sidebar_tabs.style.display = 'none'
         left_sidebar.style.display = 'none'; 
         //right_sidebar.style.display = 'none';
         topbar.style.display = 'none';

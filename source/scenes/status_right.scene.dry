@@ -114,3 +114,15 @@ new-page: true
 = CCF or NDP? 
 
 The merger of the CCF with the Canadian Labour Congress to form the New Democratic Party has not been without it's staunch opponents within our party. Many farmers are worried about the growing labour presence within the party and feel that the CCF(SS) will soon be beholden to industry and unions bosses. Thus, it seems, our rural support is declining. 
+
+
+
+@medicare_strike
+new-page: true
+face-image: img/graphics/anti_medicare_cartoon.png
+
+College-Medicare Stance : [+ college_medicare : college_medicare +]
+
+Anti-Medicare Forces Strength : [+ anti_medicare_strength : militancy +]
+
+Community Clinics Strength : [+ community_clinics : strength +]
