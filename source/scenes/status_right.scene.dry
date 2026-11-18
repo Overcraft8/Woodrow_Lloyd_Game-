@@ -123,6 +123,10 @@ face-image: img/graphics/anti_medicare_cartoon.png
 
 College-Medicare Stance : [+ college_medicare : college_medicare +]
 
-Anti-Medicare Forces Strength : [+ anti_medicare_strength : militancy +]
+'Keep Our Doctors' Committees Forces Strength : [+ anti_medicare_strength : militancy +]
 
 Community Clinics Strength : [+ community_clinics : strength +]
+
+Medicare Concessions : [+ medicare_concessions : medicare_general +]
+
+Political Fallout : [+ medicare_fallout : medicare_general +]

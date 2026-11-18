@@ -318,6 +318,8 @@ Q.thatcher_ammunition = 0.50;
 Q.college_medicare = 0;
 Q.anti_medicare_strength = 0.60;
 Q.community_clinics = 0;
+Q.medicare_concessions = 3;
+Q.medicare_fallout = 0.2;
 
 
 
@@ -2053,8 +2055,6 @@ Q.government_panel = function() {
 
         content.style.maxWidth = '100em';
         content.style.width = '50em';
-        content.style.backgroundColor = '#f6f1e5';
-        right_sidebar.style.backgroundColor = '#f6f1e5';
     };
 
 
@@ -2064,7 +2064,7 @@ Q.medicare_panel = function() {
         var tools = document.getElementById('tools_wrapper'); 
 
         var left_sidebar = document.getElementById('stats_sidebar'); 
-        //var right_sidebar = document.getElementById('right_sidebar'); 
+        var right_sidebar = document.getElementById('right_sidebar'); 
         var right_sidebar_tabs = document.getElementById('right_sidebar_tabs');
         var topbar = document.getElementById('topbar'); 
 
@@ -2079,6 +2079,9 @@ Q.medicare_panel = function() {
         mid_panel.style.margin = '0 0';
 
         content.style.cssText = `max-width: 100em;width: 50em;position: absolute;left: 1em;top: 5em;`
+        content.style.backgroundColor = '#f6f1e5';
+        right_sidebar.style.backgroundColor = '#f6f1e5';
+        window.changeTab('right', 'medicare_strike', 'none')
     };
 
 
