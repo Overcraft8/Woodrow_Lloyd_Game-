@@ -13,13 +13,14 @@ on-arrival: {!
     Q.month_actions += 1;
     Q.government_tabs = `<div class="tab_container">
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_finance');">Finance</button>
-    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_economy');">Economy</button>
+    <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('gov_economy');">Economy</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_north');">The North</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_agriculture');">Agriculture</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_social');">Social</button>
     <button class="tab_button" onclick="window.dendryUI.dendryEngine.goToScene('lloyd_government.gov_return');">Back</button> 
 </div>`;
 !}
+go-to: gov_finance
 
 = Government Options
 
@@ -86,129 +87,6 @@ title: Reduce the Size of the Civil Service
 choose-if: treasury <= 0
 subtitle: While typically not preferred, by Lloyd, the intense fiscal pressure on government budget leaves this option open. 
 unavailable-subtitle: The province is not in such a fiscal crisis as to necessitate this measure
-
-
-
-@gov_economy
-new-page: true
-style: gov-scene
-on-display: {!
-    var width = 500;
-    var height = 500;
-    var screenWidth = document.getElementById('content').offsetWidth;
-    if (screenWidth < width - 50) {
-        width = screenWidth - 50;
-        height = width;
-        document.getElementById("assembly").style.height = screenWidth/2 + "px";
-    }
-    var minInflation = d3.min(Q.economic_records, d => d.inflation);
-    var maxUnemployment = d3.max(Q.economic_records, d => d.unemployment);
-    var lines_3 = d3.linegraph(true, true, ['inflation', 'unemployment'],
-            {'inflation': '#0000FF', 'unemployment': '#FF0000'},
-            {'inflation': 'Inflation', 'unemployment': 'Unemployment'},
-            maxUnemployment + 5, minInflation - 5, 21);
-    lines_3.width(width).height(300);
-    d3.select("#economic_history").datum(Q.economic_records).call(lines_3);
-!}
-
-[+ government_tabs +]
-
-[
-= The Saskatchewan Economy 
-
-
-{!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
-
-]
-
-
-[
-{!<div class="panel_holder">!}
-
-    {!<div class="panel">Inflation:<br>!}
-        [+ inflation_2 +]%
-    {!</div>!}
-
-    {!<div class="panel">Unemployment Rate:<br>!}
-        [+ unemployed_rounded +]%
-    {!</div>!}
-
-    {!<div class="panel">Field Crop Harvest <br>(!}
-        [+ economic_year +]
-        {!):<br>!}
-        [+ crop_harvest_mbushels +]
-        {! million bushels!}
-#       {! <!-- <img style="width: 80%;" src="img/misc_graphics/Wheat_Bundle.png"> --> !}
-    {!</div>!}
-
-{!</div>!}
-
-
-{!<div class="panel_holder">!}
-
-    {!<div class="panel">Crude Oil Production <br>(!}
-        [+ economic_year +]
-        {!):<br>!}
-        [+ crude_oil_mbarrels +]
-        {! million barrels!}
-#       {! <! -- <img style="width: 80%;" src="img/misc_graphics/oil_barrel.png"> --> !}
-    {!</div>!}
-
-    {!<div class="panel">Value of Factory Shipments <br>(!}
-        [+ economic_year +]
-        {!):<br>!}
-        [+ manufacturing_shipments_millions +]
-        {! million!}
-    {!</div>!}
-
-    {!<div class="panel">Provincial Debt Burden:<br>!}
-        [+ saskatchewan_debt +]
-        {!<div style="text-align:center;">
-            <span style="font-size:8px;">
-                (Indexed to !}
-                [+ economic_year +]
-                {! GDP)
-            </span>
-        </div>!}
-    {!</div>!}
-
-{!</div>!}
-]
-
-Government Economic Policy : [+ economic_direction +]
-
-[? if economic_direction == 'Douglas Model' : Current [+ party_names.ccf +] policy is to continue Douglas' approach of mixing state ownership, co-operatives, and private enterprise in a pragmatic manner, attempting to maintain the province's economic growth while producing a mixed economic outlook tailored to Saskatchewan needs. ?]
-
-[? if economic_direction == 'Returning to Phelps' : After much intra-party struggle, Joe Phelps' state-directed economic policy is back on the board. Necessarily, this means an expansion of Crown Corporations, particularly in the mineral and manfuacturing sectors which the Douglas administration largely left to private business. ?]
-
-[? if economic_direction == 'Inducing Enterprise' : [+ party_names.ccf +] has undergone another significant moderation in an attempt to attract private capital into the province. Private industry has already had a strong foothold in the mineral sector of Alberta and manufacturing sector of Manitoba. Perhaps this could be a harbinger of good things to come. ?]
-
-- @attract_industry
-- @cooperative_technical_aid
-- @cooperative_financial_aid
-- @housing_finance
-- @crown_pulp_mill
-
-@housing_finance
-title: Financing Housing
-subtitle: Provide low-interest loans, loan guarantees, and other financial assistance for home construction and renovation 
-
-@attract_industry
-title: Incentivizing Industrial Development
-subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation 
-
-@cooperative_technical_aid
-title: Aiding Cooperatives
-subtitle: Provide further technical and operational assistance to developing cooperatives
-
-@cooperative_financial_aid
-title: Aiding Cooperatives
-subtitle: Provide generous grants and loans to developing and established cooperatives to expand the cooperative influence in the provincial economy
-
-@crown_pulp_mill
-title: A Crown Pulp Mill
-subtitle: The Douglas government was unable to find a business-case for a Pulp Mill; give Saskatchewan Forest Products (CC) a mandate to construct a pulp mill north of Prince Albert 
-
 
 
 

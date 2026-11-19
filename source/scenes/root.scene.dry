@@ -2081,7 +2081,7 @@ Q.medicare_panel = function() {
         content.style.cssText = `max-width: 100em;width: 50em;position: absolute;left: 1em;top: 5em;`
         content.style.backgroundColor = '#f6f1e5';
         right_sidebar.style.backgroundColor = '#f6f1e5';
-        window.changeTab('right', 'medicare_strike', 'none')
+        window.ChangeTab('right', 'status_right.medicare_strike', 'none')
     };
 
 

@@ -538,6 +538,8 @@ console.log('reached end of post event');
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; main.main_easy if has_event = 0 and difficulty < 0
 
+= [? if medicare_strike == 1 : Medicare Strike ?]
+
 = [? if special_mode == 0 : [+ week : week +] [+ month : month +] [+ year +] ?] [? if special_mode == 1 : Day  [+ day +]?]
 
 @events_choice

@@ -77,7 +77,7 @@ Thatcher's Ammunition : [+ thatcher_ammunition : thatcher_ammunition +]
 new-page: true
 is-special: true
 on-arrival: {!
-  Q.government_panel();
+  Q.medicare_panel();
 !}
 face-image: img/graphics/anti_medicare_cartoon.png
 
@@ -119,7 +119,10 @@ The merger of the CCF with the Canadian Labour Congress to form the New Democrat
 
 @medicare_strike
 new-page: true
-face-image: img/graphics/anti_medicare_cartoon.png
+
+<div class="face-figure"><img class="face-img" src="img/graphics/anti_medicare_cartoon.png"></div>
+
+<hr>
 
 College-Medicare Stance : [+ college_medicare : college_medicare +]
 
