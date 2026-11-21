@@ -90,40 +90,45 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
 <br>
 
 <hr>
-
+{!
 <style>
 
 .image-panels {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5em;
+    gap: 1em;
     width: 100%;
+    margin: 1em 0;
 }
 
 .image-panel {
     min-width: 0;
-    border: 1px solid #9c8c64;
-    /* background: #f2eee2; */
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-panel img {
     display: block;
-    width: 100%;
-    height: 220px;
+    width: 50%;
+    height: ;
     object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-top: 0.4em;
 }
-
 </style>
-
+!}
 = Party Line
 
-<div style="image-panels">
+<div class="image-panels">
     <div class="image-panel">
         <img src="img/misc_graphics/eagle_branch.png">
         <div class="image-panel-text">
             <h3>The Hawks</h3>
-            <p>The Hawks believe compromise with the CPS regarding Medicare to be impossible. They believe Douglas had been too patient with the Thompson Committee, contaminated with representatives from the CPS.</p>
+            <p>The Hawks believe compromise with the CPS regarding Medicare to be impossible, figuring that Douglas had been too patient with the Thompson Committee, contaminated as it was with representatives from the college. They would rather the party move along with Medicare than let the CPS delay it's implementation further. </p>
             <p>- Dominant -</p>
         </div>
     </div>
@@ -132,7 +137,7 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
         <img src="img/misc_graphics/dove_olive.png">
         <div class="image-panel-text">
             <h3>The Doves</h3>
-            <p>The Doves believe in giving the Thompson Committee more time to issue a final report regarding the implementation of Medicare and for the doctor's to come around to Medicare. </p>
+            <p>The Doves believe in giving the CPS more time to deliberate on the Medicare Plan and that the doctors will soon come to their senses. [? if year == 1961 and month <= 12 : Walter Erb, Minister of Health, is among the Doves seeking the full cooperation of the CPS before proceeding with Medicare. ?]</p>
             <p>- Unheeded -</p>
         </div>
     </div>
@@ -167,11 +172,11 @@ The merger of the CCF with the Canadian Labour Congress to form the New Democrat
 @medicare_strike
 new-page: true
 
-= Situation
+= Medicare Sitation
 
-<div class="face-figure"><img class="face-img" src="img/graphics/anti_medicare_cartoon.png"></div>
+# <div class="face-figure"><img class="face-img" src="img/graphics/anti_medicare_cartoon.png"></div>
 
-<br>
+# <br>
 
 <hr>
 
