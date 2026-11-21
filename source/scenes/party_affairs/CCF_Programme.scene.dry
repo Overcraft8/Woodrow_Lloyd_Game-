@@ -48,7 +48,7 @@ face-image: img/interiors/ipsco.jpg
 
 = Economic Plan
 
-Traditionally, the CCF(SS) has pursued a compromise economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise where public funds are insufficient, technical expertise lacking, or political will nonexistent. Over the years, provincial capital has been seen by the party bureaucracy as insufficient to develop the province at the pace of neighbouring provinces. Thus, the party has moderated it's stance on private enterprise with business still controlling a large portion of the province's economy, most notably in mineral and manufacturing development.
+Traditionally, our party has pursued a compromise economic policy designed to foster a mixed economy. It involves empowering the state corporations and cooperatives of all types while leaving room open for private enterprise where public funds are insufficient, technical expertise lacking, or political will nonexistent. Over the years, provincial capital has been seen by the party bureaucracy as insufficient to develop the province at the pace of neighbouring provinces. Thus, the party has moderated it's stance on private enterprise with business still controlling a large portion of the province's economy, most notably in mineral and manufacturing development.
 
 Current Economic Direction : [+ economic_direction +]
 
@@ -58,12 +58,12 @@ Current Economic Direction : [+ economic_direction +]
 - @path: Go Back
 
 @three_point
-title: Continue Advocating for the Economic Compromise
+title: Continue treading Douglas' Model
 subtitle: Our traditional economic direction
 on-arrival: economic_compromise += 1
 
 @state_plan
-title: Revitalize the Socialization Efforts of Joe Phelps, former Cabinet Member in Industry and Resources
+title: Revitalize the industrial and resource socialization efforts of Joe Phelps
 subtitle: A rapid expansion of Crown Corporations in the Mineral and Manufacturing Sector <br> - This is highly unpopular with the party elite who see Phelp's state-directed economic policy as brash and disproven
 on-arrival: ccf_socialism += 3; state_plan += 1; managerial_dissent += 10
 
@@ -111,7 +111,7 @@ new-page: true
 
 <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF_logo_nobg.png"></div>
 
-<div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF/ndp_logo.jpg"></div>
+<div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF/ndp_logo.png"></div>
 
 The party is wracked with questions about the recent CCF-CLC merger. 
 

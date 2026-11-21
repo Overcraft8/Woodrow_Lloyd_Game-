@@ -193,7 +193,7 @@ function getPartyIdeology(party, Q) {
             if (Q.cpc_s_ideology === "Marxism-Leninism") return '<span style="color: #4c0e0e;">Far Left</span> (Marxist-Leninist)';
             if (Q.cpc_s_ideology === "Popular Front Socialism") return '<span style="color: #4c0e0e;">Edgy Left Wing</span> (Popular Front Socialism)';
             return 'Unknown';
-        case 'CCF(SS)':
+        case 'CCF(SS)' || 'CCF-NDP':
             if (Q.ccf_ideology === "Democratic Socialism") return '<span style="color: #c46124;">Left Wing</span> (Democratic Socialism)';
             if (Q.ccf_ideology === "Social Democracy") return '<span style="color: #eca12a;">Centre Left - Left Wing</span>  (Social Democracy)';
             if (Q.ccf_ideology === "Progressivism") return '<span style="color: #ecc22a;">Centre Left</span>  (Progressivism)';

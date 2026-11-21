@@ -276,7 +276,7 @@ Q.inflation = 2.9;
 
 Q.parties = ['ccf', 'lps', 'pcps', 'scps', 'other'];
 Q.party_names = {
-    'ccf' : 'CCF(SS)', 
+    'ccf' : 'CCF-NDP', 
     'cpc_s' : 'CPC(S)', 
     'pps' : 'PPS', 
     'lps' : 'LPS', 
@@ -2118,7 +2118,7 @@ The loudest opposition was from the benches, our party. Coldwell, Williams, and 
 
 It's been 17 years since that day. The province, in many ways, is a lady of considerable prospects. Our socialized utilities keep rates low for citizens, our state-owned inter-city transit corporation connects hundreds of communities to the urban centres, and our expansion of healthcare programs, namely universal hospitalization and the air ambulance service, have brought modern medicine to those who may have gone without just 20 years earlier. The development of our oil, gas, and potash deposits have brought employment and opportunity to the corners of the province over and workers can now gloat that they work under the most comprehensive Labour legislation in North America.
 
-- @woodrow_lloyd_start: But it wasn't you at the helm during all this
+- @woodrow_lloyd_start: But it wasn't Lloyd at the helm during all this
 
 @woodrow_lloyd_start
 
@@ -2126,7 +2126,7 @@ It's been 17 years since that day. The province, in many ways, is a lady of cons
 
 No, it was Tommy Douglas, ever charismatic and beloved by nearly everyone who comes upon him. The country son, actually born in Scotland, has amassed quite a following. His idealistic rhetoric in public has borne the party great fruit in our political endeavours. Simultaneously, his pragmatism in government has allowed the party leadership to navigate many a difficulties as a united front. 
 
-But the steady and tested leadership of Douglas is gone. The NDP beckons him to lead the Federal party into Ottawa, attempting to overcome nearly a century of Tory and Grit rule. You, Woodrow Stanley Lloyd, are his replacement as Premier and CCF(SS) leader. Douglas leaves behind a mass of unfinished business that we will have to clean up if we want to continue and preserve the legacy of Social Democracy in Saskatchewan. Chief among them: 
+But the steady and tested leadership of Douglas is gone. The NDP beckons him to lead the Federal party into Ottawa, attempting to overcome nearly a century of Tory and Grit rule. Woodrow Stanley Lloyd is his replacement as Premier and Saskatchewan CCF leader. Douglas leaves behind a mass of unfinished business that we will have to clean up if we want to continue and preserve the legacy of Social Democracy in Saskatchewan. Chief among them: 
 
 <div class="face-figure"><img class="face-img" src="img/portraits/ThatcherRoss.jpg"></div>
 
@@ -2142,7 +2142,21 @@ The question of the great north remains highly prevalent. It is the most isolate
 
 <div class="face-figure"><img class="face-img" src="img/CCF/forward_with_ccf.jpg"></div>
 
-And there still remains considerable grassroots resistance to the New Democratic Party, a merger of the CCF and the Trade Unions. Many, especially our large farmer base, view the NDP with suspicion, fearing that the homegrown CCF movement will now be dominated by Union bosses and Eastern industrial interests. We will have to find a way through this somehow without alienating either our federal counterpart or our own constituents. 
+And there still remains considerable grassroots resistance to the New Democratic Party, a transformation of the CCF into a party aligned with the Trade Unions. Many, especially our large farmer base, view the NDP with suspicion, fearing that the homegrown CCF movement will now be dominated by Union bosses and Eastern industrial interests. We will have to find a way through this somehow without alienating either our federal counterpart or our own constituents. To start, what should be the new name of our party, given our connection to the NDP?
+
+- @name_ccf_ndp: The CCF name is too valuable to lose. Rename ourselves to The Co-operative Commonwealth Federation: The Saskatchewan Section of the New Democratic Party or CCF-NDP in short.
+- @sndp_name: Our new name will be the Saskatchewan New Democratic Party (SNDP).
+
+@name_ccf_ndp
+subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF_logo_nobg.png"></div> <span>The grassroots movement in Saskatchewan has considerable attachment to the CCF which is viewed as homegrown and local.</span>
+go-to: selecting_difficulty
+
+@sndp_name
+subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF/ndp_logo.png"></div> <span>It's time to move past the old times.</span>
+go-to: selecting_difficulty
+
+
+@selecting_difficulty
 
 
 - @1932_main: Towards The Dawn!
@@ -2212,7 +2226,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 @intro_to_sask
 call: root
 
-In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the free-market liberalism of the LPS, CPS, <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF-NDP. 
+In many ways, Saskatchewan is a peculiar province. Over the last hundred years, it has alternated between the enterprise-focused LPS, CPS, and <span color="#165510">Sask</span><span color="#d5cd38">Party</span> and the Social Democracy of the CCF/NDP. 
 
 This picture becomes clearer once examine the province as a whole. 
 

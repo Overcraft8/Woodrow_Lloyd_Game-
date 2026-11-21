@@ -9,6 +9,10 @@ const tooltipList = [{
     explanationText: "New Democratic Party"
 },
 {
+    searchString: "CCF-NDP", 
+    explanationText: "Co-operative Commonwealth Federation: The Saskatchewan Section of the New Democratic Party"
+},
+{
     searchString: "FLP",
     explanationText: "The Farmer-Labour Party"
 }, 
@@ -166,7 +170,7 @@ const tooltipList = [{
 
 const colourList = [{
     // For organizations + parties
-        word: ['CCF(SS)', 'Cooperative Commonwealth Federation (Saskatchewan Section)'],
+        word: ['CCF(SS)', 'Co-operative Commonwealth Federation (Saskatchewan Section)', 'CCF-NDP', 'Co-operative Commonwealth Federation: The Saskatchewan Section of the New Democratic Party'],
         style: "color: #d29c28; font-weight: bold;"
     },
     {
@@ -178,7 +182,7 @@ const colourList = [{
         style: "color: #d29c28; font-weight: bold;"
     },
     {
-        word: ['CCF', 'Cooperative Commonwealth Federation', 'Cooperative Commonwealth Federation (Farmer-Labour-Socialist)'],
+        word: ['CCF', 'Co-operative Commonwealth Federation', 'Co-operative Commonwealth Federation (Farmer-Labour-Socialist)'],
         style: "color: #d29c28; font-weight: bold;"
     },
     {

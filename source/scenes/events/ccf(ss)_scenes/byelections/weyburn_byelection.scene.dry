@@ -68,7 +68,7 @@ on-arrival: {!
             "#333333",
             factionColors,
             "weyburn_results_bar",
-            ['Liberals', 'CCF']
+            ['Liberals - J.H. Staveley', 'CCF-NDP - Oran Reiman']
         );
     };
 
