@@ -122,7 +122,7 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
 </style>
 !}
 = Party Line
-
+{!
 <div class="image-panels">
     <div class="image-panel">
         <img src="img/misc_graphics/eagle_branch.png">
@@ -141,9 +141,11 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
             <p>- Unheeded -</p>
         </div>
     </div>
-</div>
+</div>!}
 
-- @exit_gov: Exit
+<hr>
+
+- @exit_medicare: Exit
 
 
 @northern_issue
