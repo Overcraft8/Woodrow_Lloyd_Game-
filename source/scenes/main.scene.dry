@@ -57,6 +57,7 @@ max-cards: 4
 @party
 title: Party Affairs
 card-image: img/graphics/canada_ccf_call.png
+view-if: special_mode == 0
 is-deck: true
 
 - #party_affairs
@@ -64,13 +65,14 @@ is-deck: true
 @gov_direction
 title: Policy Direction
 card-image: img/CCF/ccf_program_sk.png
+view-if: special_mode == 0
 is-deck: true
 
 - #gov_direction
 
 @govt
 title: Government Affairs
-view-if: time >= 6 and ccf_in_government = 1
+view-if: time >= 6 and ccf_in_government = 1 and special_mode == 0
 card-image: img/Saskatchewan_Legislature.jpg
 is-deck: true
 
@@ -79,6 +81,10 @@ is-deck: true
 @govt_two
 title: Government Test 
 card-image: img/Saskatchewan_Legislature.jpg
+view-if: special_mode == 0
 is-deck: true
 
 - #govtwo
+
+@medicare_ground_response
+title: Strike Response

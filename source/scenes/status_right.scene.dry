@@ -87,9 +87,56 @@ face-image: img/graphics/anti_medicare_cartoon.png
 
 The implementation of Medicare is bound to be a strenous path. The College of Physicians and Surgeons right now is wholely opposed to the Medicare plan and are currently organizing and demonstrating among the anti-Medicare crowd. 
 
-College-Medicare Stance : [+ college_medicare : college_medicare +]
+<br>
 
-Anti-Medicare Forces Strength : [+ anti_medicare_strength : militancy +]
+<hr>
+
+<style>
+
+.image-panels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    width: 100%;
+}
+
+.image-panel {
+    min-width: 0;
+    border: 1px solid #9c8c64;
+    /* background: #f2eee2; */
+    text-align: center;
+}
+
+.image-panel img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+</style>
+
+= Party Line
+
+<div style="image-panels">
+    <div class="image-panel">
+        <img src="img/misc_graphics/eagle_branch.png">
+        <div class="image-panel-text">
+            <h3>The Hawks</h3>
+            <p>The Hawks believe compromise with the CPS regarding Medicare to be impossible. They believe Douglas had been too patient with the Thompson Committee, contaminated with representatives from the CPS.</p>
+            <p>- Dominant -</p>
+        </div>
+    </div>
+
+    <div class="image-panel">
+        <img src="img/misc_graphics/dove_olive.png">
+        <div class="image-panel-text">
+            <h3>The Doves</h3>
+            <p>The Doves believe in giving the Thompson Committee more time to issue a final report regarding the implementation of Medicare and for the doctor's to come around to Medicare. </p>
+            <p>- Unheeded -</p>
+        </div>
+    </div>
+</div>
 
 - @exit_gov: Exit
 
@@ -120,13 +167,17 @@ The merger of the CCF with the Canadian Labour Congress to form the New Democrat
 @medicare_strike
 new-page: true
 
+= Situation
+
 <div class="face-figure"><img class="face-img" src="img/graphics/anti_medicare_cartoon.png"></div>
+
+<br>
 
 <hr>
 
 College-Medicare Stance : [+ college_medicare : college_medicare +]
 
-'Keep Our Doctors' Committees Forces Strength : [+ anti_medicare_strength : militancy +]
+'Keep Our Doctors' Committees Strength : [+ anti_medicare_strength : militancy +]
 
 Community Clinics Strength : [+ community_clinics : strength +]
 

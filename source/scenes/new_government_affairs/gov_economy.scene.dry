@@ -98,7 +98,6 @@ Government Economic Policy : [+ economic_direction +]
 - @cooperative_financial_aid
 - @housing_finance
 - @return_phelps
-- @crown_pulp_mill
 
 @housing_finance
 title: Financing Housing
@@ -131,6 +130,7 @@ style: gov-scene
 - @sask_mineral_expansion
 - @crown_pulp_mill
 - @sask_oil
+- @gov_economy: Back
 
 @sask_mineral_expansion
 title: Expand Saskatchewan Mineral (CC) Production

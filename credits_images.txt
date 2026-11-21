@@ -159,6 +159,14 @@ cd_waffle.jpg - https://coat.ncf.ca/Roy/Peace.htm
 potash_operation.jpg - https://magazine.cim.org/en/mining-the-archives/potash-production-comes-to-the-prairies-en/?utm_source=chatgpt.com
 
 
+
+
+# Misc
+
+eagle_branch.png - https://svgsilh.com/image/37763.html
+dove_olive.png - https://svgsilh.com/image/32510.html
+
+
 stacked bar graph (thanks maybe): https://d3-graph-gallery.com/graph/barplot_stacked_basicWide.html
 
 svgtopng conveerter: https://stackoverflow.com/questions/11567668/svg-to-canvas-with-d3-js/23667012#23667012
