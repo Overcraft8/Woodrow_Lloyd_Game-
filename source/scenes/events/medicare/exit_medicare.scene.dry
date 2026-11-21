@@ -23,5 +23,6 @@ on-arrival: {!
     content.innerHTML = '';
 
     // button_container.style.display = 'none';
+    window.changeTab('right', 'status_right.important_matters', 'none')
 !}
 go-to: root

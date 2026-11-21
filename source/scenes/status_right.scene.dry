@@ -122,7 +122,7 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
 </style>
 !}
 = Party Line
-{!
+
 <div class="image-panels">
     <div class="image-panel">
         <img src="img/misc_graphics/eagle_branch.png">
@@ -130,18 +130,17 @@ The implementation of Medicare is bound to be a strenous path. The College of Ph
             <h3>The Hawks</h3>
             <p>The Hawks believe compromise with the CPS regarding Medicare to be impossible, figuring that Douglas had been too patient with the Thompson Committee, contaminated as it was with representatives from the college. They would rather the party move along with Medicare than let the CPS delay it's implementation further. </p>
             <p>- Dominant -</p>
-        </div>
+        {!</div>
     </div>
-
     <div class="image-panel">
         <img src="img/misc_graphics/dove_olive.png">
-        <div class="image-panel-text">
+        <div class="image-panel-text">!}
             <h3>The Doves</h3>
             <p>The Doves believe in giving the CPS more time to deliberate on the Medicare Plan and that the doctors will soon come to their senses. [? if year == 1961 and month <= 12 : Walter Erb, Minister of Health, is among the Doves seeking the full cooperation of the CPS before proceeding with Medicare. ?]</p>
             <p>- Unheeded -</p>
         </div>
     </div>
-</div>!}
+</div>
 
 <hr>
 
