@@ -200,7 +200,7 @@ ul.choices li {
 ul.choices li .subtitle:has(> img) {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 7px;
     margin-top: 12px;
 }
 

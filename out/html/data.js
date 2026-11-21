@@ -13,6 +13,10 @@ const tooltipList = [{
     explanationText: "Co-operative Commonwealth Federation: The Saskatchewan Section of the New Democratic Party"
 },
 {
+    searchString: "SNDP", 
+    explanationText: "Saskatchewan New Democratic Party"
+},
+{
     searchString: "FLP",
     explanationText: "The Farmer-Labour Party"
 }, 
@@ -174,7 +178,7 @@ const colourList = [{
         style: "color: #d29c28; font-weight: bold;"
     },
     {
-        word: ['NDP', 'New Democratic Party'], 
+        word: ['NDP', 'New Democratic Party', 'Saskatchewan New Democratic Party', 'SNDP'], 
         style: "color: #D26E28; font-weight: bold;"
     },
     {

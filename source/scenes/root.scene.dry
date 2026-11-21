@@ -2151,15 +2151,20 @@ And there still remains considerable grassroots resistance to the New Democratic
 subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF_logo_nobg.png"></div> <span>The grassroots movement in Saskatchewan has considerable attachment to the CCF which is viewed as homegrown and local.</span>
 go-to: selecting_difficulty
 
+We have kept the CCF name as best we can. 
+
 @sndp_name
 subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF/ndp_logo.png"></div> <span>It's time to move past the old times.</span>
 go-to: selecting_difficulty
 
+We are moving forward with the SNDP name. 
+
 
 @selecting_difficulty
 
+Shall we begin?
 
-- @1932_main: Towards The Dawn!
+- @1932_main: Humanity First!
 - @1932_hard: Begin (hard difficulty)
 - @1932_historical: Begin (historical mode)
 

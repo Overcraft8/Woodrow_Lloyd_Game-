@@ -193,7 +193,9 @@ function getPartyIdeology(party, Q) {
             if (Q.cpc_s_ideology === "Marxism-Leninism") return '<span style="color: #4c0e0e;">Far Left</span> (Marxist-Leninist)';
             if (Q.cpc_s_ideology === "Popular Front Socialism") return '<span style="color: #4c0e0e;">Edgy Left Wing</span> (Popular Front Socialism)';
             return 'Unknown';
-        case 'CCF(SS)' || 'CCF-NDP':
+        case 'CCF(SS)':
+        case 'CCF-NDP':
+        case 'SNDP':
             if (Q.ccf_ideology === "Democratic Socialism") return '<span style="color: #c46124;">Left Wing</span> (Democratic Socialism)';
             if (Q.ccf_ideology === "Social Democracy") return '<span style="color: #eca12a;">Centre Left - Left Wing</span>  (Social Democracy)';
             if (Q.ccf_ideology === "Progressivism") return '<span style="color: #ecc22a;">Centre Left</span>  (Progressivism)';
@@ -217,7 +219,7 @@ function getPartyIdeology(party, Q) {
             return 'Unknown';
         case 'SCPS': 
             if (Q.scps_ideology === "Social Creditism") return '<span style="color: #2464c4;">Centre Right - Right Wing</span> (Social Credit Theory)';
-            if (Q.scps_ideology === "Right Wing Populism") return '<span style="color: #b97a7a;">Right Wing</span> (Right Populism))';
+            if (Q.scps_ideology === "Right-Wing Populism") return '<span style="color: #b97a7a;">Right Wing</span> (Right-WingPopulism))';
             return 'Unknown';
         // Organizations below
         default: 

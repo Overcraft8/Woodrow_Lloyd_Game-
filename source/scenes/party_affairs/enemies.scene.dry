@@ -1,4 +1,4 @@
-title: Choosing Our Enemies
+title: Enemy Strategy
 new-page: true
 view-if: enemies_timer <= 0
 on-arrival: month_actions += 1; enemies_timer = 6
@@ -6,41 +6,32 @@ is-card: true
 card-image: img/graphics/socialist_shakedown.png
 tags: party_affairs
 
-= Choosing our enemies
+= Political Enemies
 
-In our media and campaign materials, who should we consider as our main opponents? 
+Currently, the LPS remains our biggest political threat. Ross Thatcher's Liberals have presented themselves as the free-enterprise alternative to our party, aligning themselves with big business. 
 
-Currently, the LPS remains our biggest threat. Ross Thatcher's Liberals have presented themselves as the free-enterprise alternative to our party. 
+How should we present the LPS in our own campaign media?
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @anti_lps: We need to focus our attacks on the Liberals.
-- @anti_scps: Social Credit is the biggest threat to this campaign.
-- @anti_establishment: We must take on the establishment: the PCPS and the LPS.
-- @anti_pcps: We need to go after the PCPS.
+- @anti_lps_ideology: We must tackle the LPS' ideology directly; Defend our social democracy!
+- @anti_lps_corruption: We need to focus our attacks on the Liberals record of patronage and appointment whilst in government
+- @anti_pcps: Screw the Liberals, focus on discrediting the PCPS and try to win over Tory voters
 - @easy_discard: Let's drop this and move on.
 
 
-
-@anti_scps
-on-arrival: enemies = "SCPS"; ccf_socialism += 5; left_dissent -= 5; workers_scps -= 3; workers_scps -= 3;
-subtitle: [? if year >= 1963 : The momentum of the SCPS has halted; their supporters seem to be drifting to either the Liberals or Tories ?]
-view-if: year >= 1935
-
-Social Credit is a strong populist movement, more amenable to the economic conditions of farmer-dominated Saskatchewan in some aspects than us. It seems a wise choice to target them. 
-
-@anti_lps
-subtitle: The dominant party right now
+@anti_lps_corruption
+subtitle: People may still remember the days of Premier Gardiner
 on-arrival: enemies = "LPS"; scps_urgency += 1; workers_lps -= 2; farmers_lps -= 2; new_middle_lps -= 2;
 
-The LPS are our biggest opponents right now, 
+The LPS are our biggest opponents right now. 
 
 @anti_pcps
-on-arrival: enemies = "PCPS"; pcps_relation -= 5
+on-arrival: enemies = "PCPS"; pcps_relation -= 5; farmers_pcps -= 1; farmers_ccf += 1; new_middle_pcps -= 1; new_middle_ccf += 1; workers_pcps -= 2; workers_ccf += 2 
 
-The party would earn much from distancing itself from the electorally-poisionous Communists
+The PCPS' middle-of-the-road platform seems to make this a feasible strategy...
 
-@anti_establishment
-on-arrival: enemies = "establishment parties"; ccf_socialism += 8; left_dissent -= 5; pcps_relation -= 5; pps_relation -= 5; cpc_s_relation += 5; managerial_dissent += 8; movement_dissent += 8; workers_pps -= 3; coalition_dissent += 1
+@anti_lps_ideology
+on-arrival: enemies = "LPS"; ccf_socialism += 8; socialism_support += 2; free_enterprise_support -= 2; 
 
-Targetting the old-line parties earns us populist goodwill.
+This is the ideological high road but will people care? [? if socialism_support <= 40 : Most Saskatchewanians don't consider a true move to socialism as viable. ?]
