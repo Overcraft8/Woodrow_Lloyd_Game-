@@ -85,9 +85,9 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 <div id="weyburn_results_bar"></div><br>
 </div>
 
-Liberal Result : [+ lps_weyburn +]%
+Liberal Result (J.H. Staveley) : [+ lps_weyburn +]%
 
-CCF Result : [+ ccf_weyburn +]%
+CCF Result (Oran Reiman) : [+ ccf_weyburn +]%
 
 
 

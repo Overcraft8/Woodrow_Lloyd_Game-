@@ -100,6 +100,52 @@ if (window && window.customgeneratemultibar) {
   );
 }
 !}
+on-display: {!
+
+  var data = [
+    {
+        "id": "labour",
+        "legend": "Labour",
+        "name": "Labour",
+        "seats": Q.labour_strength,
+        // "bench": Q.ccf_in_government
+    }, 
+    {
+      "id": "managerial",
+      "legend": "Managerial Wing",
+      "name": "Managerial Wing",
+      "seats": Q.managerial_strength
+      // "bench": Q.ccf_in_government
+    },
+    {
+      "id": "agrarian",
+      "legend": "Agrarian-Cooperativist",
+      "name": "Agrarian-Cooperativist",
+      "seats": Q.agrarian_strength
+      // "bench": Q.ccf_in_government
+    }
+  ]
+
+  if (d3 && window) {
+        // get screen width
+        var width = 500;
+        var height = 500;
+        var screenWidth = document.getElementById('content').offsetWidth;
+        if (screenWidth < width - 50) {
+            width = screenWidth - 50;
+            height = width;
+            document.getElementById("assembly").style.height = screenWidth/2 + "px";
+        }
+        var parliament = d3.parliament();
+        parliament.width(width).height(height).innerRadiusCoef(0.4);
+        parliament.enter.fromCenter(true).smallToBig(true);
+        parliament.exit.toCenter(false).bigToSmall(true);
+        var filteredData = data.filter(function(party) {
+            return party.seats > 0; 
+        });
+        d3.select("#assembly").datum(filteredData).call(parliament);
+    }
+!}
 
 
 = Faction Strength
@@ -107,6 +153,8 @@ if (window && window.customgeneratemultibar) {
 <div style='justify-content: center; text-align: center;'>
 <div id="faction_strength_bar"></div><br>
 </div>
+
+{!<svg id="assembly" style="width: 100%; height: 250px;"> </svg>!}
 
 <!--
 

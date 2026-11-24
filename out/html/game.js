@@ -243,6 +243,8 @@ function getDynamicTooltipContent(searchString, baseTooltip) {
     const ideologyMap = {
         'CPC(S)': 'cpc_s_ideology',
         'CCF(SS)': 'ccf_ideology', 
+        'CCF-NDP': 'ccf_ideology', 
+        'SNDP': 'ccf_ideology',
         'PPS': 'pps_ideology', 
         'LPS': 'lps_ideology', 
         'PCPS': 'pcps_ideology', 
@@ -252,6 +254,8 @@ function getDynamicTooltipContent(searchString, baseTooltip) {
     const party_seats = {
         'CPC(S)': 'cpc_s_seats',
         'CCF(SS)': 'ccf_seats',
+        'CCF-NDP': 'ccf_seats',
+        'SNDP': 'ccf_seats',
         'PPS': 'pps_seats',
         'LPS': 'lps_seats',
         'PCPS': 'pcps_seats',
