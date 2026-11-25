@@ -2148,13 +2148,16 @@ And there still remains considerable grassroots resistance to the New Democratic
 - @sndp_name: Our new name will be the Saskatchewan New Democratic Party (SNDP).
 
 @name_ccf_ndp
-subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF_logo_nobg.png"></div> <span>The grassroots movement in Saskatchewan has considerable attachment to the CCF which is viewed as homegrown and local.</span>
+subtitle: <img class="face-img" src="img/CCF_logo_nobg.png" style="border: #000 solid 0px; object-fit:contain;"> <span> We will not abandon the CCF, which gave this province everything! </span>
+on-arrival: {!
+    Q.party_names.ccf = 'CCF(SS)';
+!}
 go-to: selecting_difficulty
 
 We have kept the CCF name as best we can. 
 
 @sndp_name
-subtitle: <div class="face-figure" style="width:49%;"><img class="face-img" src="img/CCF/ndp_logo.png"></div> <span>It's time to move past the old times.</span>
+subtitle: <img class="face-img" src="img/CCF/ndp_logo.png" style="border: #000 solid 0px; object-fit:contain;"> <span> The NDP name will be a signal of change and revitalization! </span>
 go-to: selecting_difficulty
 
 We are moving forward with the SNDP name. 
