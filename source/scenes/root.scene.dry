@@ -2150,7 +2150,8 @@ And there still remains considerable grassroots resistance to the New Democratic
 @name_ccf_ndp
 subtitle: <img class="face-img" src="img/CCF_logo_nobg.png" style="border: #000 solid 0px; object-fit:contain;"> <span> We will not abandon the CCF, which gave this province everything! </span>
 on-arrival: {!
-    Q.party_names.ccf = 'CCF(SS)';
+    Q.party_names.ccf = 'CCF-NDP';
+    Q.premier_party = 'CCF-NDP';
 !}
 go-to: selecting_difficulty
 
@@ -2158,6 +2159,10 @@ We have kept the CCF name as best we can.
 
 @sndp_name
 subtitle: <img class="face-img" src="img/CCF/ndp_logo.png" style="border: #000 solid 0px; object-fit:contain;"> <span> The NDP name will be a signal of change and revitalization! </span>
+on-arrival: {!
+    Q.party_names.ccf = 'SNDP';
+    Q.premier_party = 'SNDP';
+!}
 go-to: selecting_difficulty
 
 We are moving forward with the SNDP name. 

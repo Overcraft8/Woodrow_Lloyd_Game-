@@ -102,18 +102,22 @@ Government Economic Policy : [+ economic_direction +]
 @housing_finance
 title: Financing Housing
 subtitle: Provide low-interest loans, loan guarantees, and other financial assistance for home construction and renovation 
+on-arrival: unemployment -= 0.2; workers_ccf += 2; new_middle_ccf += 1
 
 @attract_industry
 title: Incentivizing Industrial Development
 subtitle: Attract private industry in secondary sectors by issuing generous grants and loans through the [? if year <= 1962 : Industrial Development Office ?][? if year > 1962 : Saskatchewan Economic Development Corporation ?] <br>This will aid in the development of IPSCO and the Saskatchewan Cement Corporation 
+on-arrival: unemployment -= 0.5; workers_ccf += 2; new_middle += 2; old_middle += 2
 
 @cooperative_technical_aid
 title: Aiding Cooperatives
 subtitle: Provide further technical and operational assistance to developing cooperatives
+on-arrival: unemployment -= 0.3; workers_ccf += 3
 
 @cooperative_financial_aid
 title: Aiding Cooperatives
 subtitle: Provide generous grants and loans to developing and established cooperatives to expand the cooperative influence in the provincial economy
+on-arrival: unemployment -= 0.3; workers_ccf += 3
 
 
 
@@ -135,11 +139,14 @@ style: gov-scene
 @sask_mineral_expansion
 title: Expand Saskatchewan Mineral (CC) Production
 subtitle: Saskatchewan Minerals so far has been a relatively minor operation; Begin constructing a sodium sulphate plant at Ingebrigt under the Sask Minerals name
+on-arrival: economic_growth += 0.3; unemployment -= 0.2; workers_ccf += 3; new_middle_ccf += 1
 
 @crown_pulp_mill
 title: A Crown Pulp Mill
 subtitle: The Douglas government was unable to find a business-case for a Pulp Mill; give Saskatchewan Forest Products (CC) a mandate to construct a pulp mill north of Prince Albert 
+on-arrival: economic_growth += 0.3; unemployment -= 0.2; workers_ccf += 2; new_middle_ccf += 1; indigenous_ccf += 5
 
 @sask_oil
 title: Establish the Saskatchewan Oil and Gas Corporation
 subtitle: Party membership calls for a government-owned oil and gas (CC); Establish a Crown Corporation to involve itself in the exploration and production of O&G
+on-arrival: economic_growth += 0.3; unemployment -= 0.2; workers_ccf += 4;

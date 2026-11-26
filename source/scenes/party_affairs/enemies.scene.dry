@@ -14,8 +14,8 @@ How should we present the LPS in our own campaign media?
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @anti_lps_ideology: We must tackle the LPS' ideology directly; Defend our social democracy!
-- @anti_lps_corruption: We need to focus our attacks on the Liberals record of patronage and appointment whilst in government
+- @anti_lps_ideology: We must tackle the LPS' free-enterprise ideology directly; Defend our social democracy!
+- @anti_lps_corruption: We need to focus our attacks on the Liberals' record of patronage and appointment whilst in government
 - @anti_pcps: Screw the Liberals, focus on discrediting the PCPS and try to win over Tory voters
 - @easy_discard: Let's drop this and move on.
 
@@ -34,4 +34,4 @@ The PCPS' middle-of-the-road platform seems to make this a feasible strategy...
 @anti_lps_ideology
 on-arrival: enemies = "LPS"; ccf_socialism += 8; socialism_support += 2; free_enterprise_support -= 2; 
 
-This is the ideological high road but will people care? [? if socialism_support <= 40 : Most Saskatchewanians don't consider a true move to socialism as viable. ?]
+This is the ideological high road but will people care? [? if socialism_support <= 40 : Most Saskatchewanians don't consider a move to socialism viable. ?]

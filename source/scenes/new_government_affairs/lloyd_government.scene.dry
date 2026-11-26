@@ -67,19 +67,22 @@ subtitle: Implement a 1% decrease on the provincial sales tax
 @income_taxation
 title: Income Tax Raise
 view-if: year >= 1962
-subtitle: The federal government has decentralized the income tax system; Raise a 3% surcharge on top of any existing provincial surcharges to personal income tax payable under the Income Tax Act. 
+subtitle: The federal government has decentralized the income tax system; Raise a 1% surcharge on top of any existing provincial surcharges to personal income tax payable under the Income Tax Act. 
+on-arrival: income_tax_surcharge += 1; workers_ccf -= 4; new_middle_ccf -= 5; old_middle_ccf -= 4; farmers_ccf -= 3
 
 
 @corporate_taxation
 title: Corporate Tax Raise
 view-if: year >= 1962
-subtitle: The federal government has decentralized the corporate tax system; Implement a 1% increase on corporate income under the Income Tax Act. 
+subtitle: The federal government has decentralized the corporate tax system; Implement a 1% increase on corporate income under the Income Tax Act.
+on-arrival: corporate_tax += 1; new_middle_ccf -= 6; old_middle_ccf -= 6 
 
 
 @spending_cuts
 title: Selective Spending Cuts
 view-if: year >= 1962
 subtitle: Pursue expenditure cuts in select departments through deferred projects, unfilled vacancies, and cutting operating expenses where necessary.
+on-arrival: treasury += 1; workers_ccf -= 3; new_middle_ccf -= 3
 
 
 @civil_service_reduction
@@ -87,6 +90,7 @@ title: Reduce the Size of the Civil Service
 choose-if: treasury <= 0
 subtitle: While typically not preferred, by Lloyd, the intense fiscal pressure on government budget leaves this option open. 
 unavailable-subtitle: The province is not in such a fiscal crisis as to necessitate this measure
+on-arrival: treasury += 2; workers_ccf -= 4; new_middle_ccf -= 6
 
 
 
@@ -109,22 +113,27 @@ style: gov-scene
 @northern_infrastructure1
 title: Uranium City Highway
 subtitle: Currently, many northern communities are accessible only by ice road; begin the construction of a highway to uranium city and subsidiary roads to adjacent towns
+on-arrival: northern_qol += 0.1; indigenous_ccf += 4; workers_ccf += 3; unemployment -= 0.2
 
 @SaskForest_conversion
 title: Economic Decentralization
 subtitle: Continue the de-centralization of the northern economy with the conversion of Saskatchewan Fish Marketing Service (CC) into a consumer cooperative
+on-arrival: northern_qol += 0.1; indigenous_ccf += 4; workers_ccf += 1
 
 @SaskTrading_conversion
 title: Economic Decentralization
 subtitle: Continue the decentralization of the northern economy with the conversion of Saskatchewan Government Trading Services (CC) into a retail cooperative
+on-arrival: northern_qol += 0.1; indigenous_ccf += 4; workers_ccf += 1
 
 @northern_state_industry
 title: Expanding the Northern Fish Industry
 subtitle: Construct fish filleting and fish packing plants under the Saskatchewan Fish Marketing Services (CC) to provide employment and stimulate local economies
+on-arrival: northern_qol += 0.1; indigenous_ccf += 4; workers_ccf += 3; unemployment -= 0.2
 
 @northern_qol
 title: Raise Northern Living Standards
 subtitle: Implement wide-ranging policies in the north to raise the standard of living; housing programs, local road improvements, renovation of public buildings, and expanding access to Kindergarten for Indigenous children
+on-arrival: northern_qol += 0.2; indigenous_ccf += 6; workers_ccf += 1
 
 
 
@@ -147,18 +156,22 @@ style: gov-scene
 @SaskLandBank
 title: Saskatchewan Land Bank
 subtitle: Approve the commission of a Saskatchewan “Land Bank” with a mandate to purchase retiring farmer’s land and lease it back at affordable rates to young startup farmers.
+on-arrival: economic_growth += 0.2; unemployment -= 0.1; farmers_ccf += 2; treasury -= 2
 
 @Northern_Agriculture
 title: Open up Northern Lands
 subtitle: Open up new land in the north for agricultural production
+on-arrival: economic_growth += 0.2; unemployment -= 0.1; farmers_ccf += 3; treasury -= 1
 
 @land_limits
 title: Impose limits on foreign and non-resident agricultural land ownership
 subtitle: Prohibit non-resident Canadians from owning land worth more than an aggregate of $15,000; limit non-Canadians to 10 acres and non-resident Canadians to 320 acres
+on-arrival: economic_growth += 0.2; unemployment -= 0.1; farmers_ccf += 4
 
 @support_agriculture_coops
 title: Help Finance Cooperative Farms
 subtitle: Revitalize the co-operative farm operations implemented after World War Two with generous grants and loans to new co-operative farm operations; set aside crownland for endeavouring co-operatives
+on-arrival: economic_growth += 0.1; unemployment -= 0.1; farmers_ccf += 2
 
 
 # Create a mandatory single desk marketing agency for the sale of hogs 

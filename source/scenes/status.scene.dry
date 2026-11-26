@@ -202,7 +202,7 @@ Next Legislative Election: [+ next_parl_election_month : month +] [+ next_parl_e
 
 {!<tr><td>!} PCPS {!</td><td>!}[+ pcps_relation : relationships +] {!</td><tr>!}
 
-{!<tr><td>!} CPC(S) {!</td><td>!}[+ cpc_s_relation : relationships +] {!</td><tr>!}
+# {!<tr><td>!} CPC(S) {!</td><td>!}[+ cpc_s_relation : relationships +] {!</td><tr>!}
 
 {!<tr><td>!} Others {!</td><td>!} Varied {!</td><tr>!}
 
