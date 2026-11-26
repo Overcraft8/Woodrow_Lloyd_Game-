@@ -154,7 +154,7 @@ on-display: {!
 <div id="faction_strength_bar"></div><br>
 </div>
 
-{!<svg id="assembly" style="width: 100%; height: 250px;"> </svg>!}
+{!<svg id="assembly" style="width: 100%;" viewBox="0 0 500 250"> </svg>!}
 
 <!--
 

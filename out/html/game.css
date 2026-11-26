@@ -897,6 +897,18 @@ table {
     fill: #C40000;
 }
 
+.seat.labour {
+    fill: blue;
+}
+
+.seat.managerial {
+  fill: orange;
+}
+
+.seat.agrarian {
+  fill:lightgreen;
+}
+
 
 .tooltip {
   position: relative;
