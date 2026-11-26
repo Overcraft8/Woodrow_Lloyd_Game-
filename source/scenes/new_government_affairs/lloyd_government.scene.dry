@@ -57,11 +57,13 @@ Sales Tax: [+ sales_tax +]%
 @sales_tax_increase
 title: Sales Tax Increase
 subtitle: Levy a 1% increase on the provincial sales tax
+on-arrival: sales_tax += 1; treasury += 1
 
 
 @sales_tax_decrease
 title: Sales Tax Decrease
 subtitle: Implement a 1% decrease on the provincial sales tax
+on-arrival: sales_tax -= 1; treasury -= 1
 
 
 @income_taxation
