@@ -150,6 +150,14 @@ const tooltipList = [{
     searchString: ["Health Services Planning Commission", 'HSPC'], 
     explanationText: "The commission tasked with introducing universal hospitalization to the province. "
 },
+{
+    searchString: ['CPS'], 
+    explanationText: "College of Physicians and Surgeons (of Saskatchewan)"
+},
+{
+    searchString: "MCIC", 
+    explanationText: "Medical Care Insurance Commission"
+},
 // Ideologies
 {
     searchString: "Social Democracy", 
@@ -175,7 +183,7 @@ const tooltipList = [{
 },
 // People
 {
-    searchString: ["Harold Dalgleish", 'Dalgleish'], 
+    searchString: ["Harold Dalgleish"], 
     explanationText: "President of the College of Physicians and Surgeons"
 }, 
 ];
@@ -304,6 +312,45 @@ const colourList = [{
     {
         word: ['Health Services Planning Commission', 'HSPC'], 
         style: 'border-bottom: dotted'
+    },
+    {
+    word: ['College of Physicians and Surgeons'],
+    split: [
+        { text: "College", style: "color: #e1e8e1;" },
+        { text: "of", style: "color: #e62222;" },
+        { text: "Physicians", style: "color: #e1e8e1;" },
+        { text: "and", style: "color: #e62222;" },
+        { text: "Surgeons", style: "color: #e1e8e1;" }
+    ],
+    style: "font-weight: bold;"
+    },
+    {
+        word: ['CPS'],
+        split: [
+            { text: "C", style: "color: #e1e8e1;" },
+            { text: "P", style: "color: #e62222;" },
+            { text: "S", style: "color: #e1e8e1;" },
+        ],
+        style: "font-weight: bold;"
+    },
+    {
+        word: ['MCIC'],
+        split: [
+            { text: "M", style: "color: #e1e8e1;" },
+            { text: "C", style: "color: #e68422;" },
+            { text: "I", style: "color: #e1e8e1;" },
+        ],
+        style: "font-weight: bold;"
+    },
+    {
+        word: ['Medical Care Insurance Commission'],
+        split: [
+            { text: "Medical", style: "color: #e1e8e1;" },
+            { text: "Care", style: "color: #e68422;" },
+            { text: "Insurance", style: "color: #e1e8e1;" },
+            { text: "Commission", style: "color: #e68422;" },
+        ],
+        style: "font-weight: bold;"
     },
     // Ideologies
     {

@@ -339,6 +339,12 @@ function applyWholesome(str) {
             let style = colour ? colour.style : '';
             let innerText = match;
 
+            if (colour && colour.split) {
+                innerText = colour.split
+                    .map(part => `<span style="${part.style}">${part.text}</span>`)
+                    .join('');
+            }
+
             if (colour && colour.img) {
                 innerText = `<img src="${colour.img}" class="p_icon" alt="">${innerText}`;
             }
