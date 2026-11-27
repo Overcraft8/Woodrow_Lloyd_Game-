@@ -156,7 +156,7 @@ on-display: {!
 !}
 
 
-= Faction Strength
+= Factions 
 
 <!-- 
 <div style='justify-content: center; text-align: center;'>
@@ -172,16 +172,14 @@ on-display: {!
 <div id='party_demography'></div><br>
 -->
 
-= Factions
+<div class="box" style="background-color:blue; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Labour Wing Dissent: [+ labour_dissent : dissent +]<br>
+<div class="box" style="background-color:blue; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Labour Wing Strength: [+ labour_strength : strength +]<br>
 
-Labour Wing Dissent: [+ labour_dissent : dissent +]<br>
-Labour Wing Strength: [+ labour_strength : strength +]<br>
+<div class="box" style="background-color:#d29c28; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
+<div class="box" style="background-color:#d29c28; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
-Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
-Managerial Wing Strength: [+ managerial_strength : strength +]<br>
-
-Agrarian Dissent: [+ agrarian_dissent : dissent +]<br>   
-Agrarian Strength: [+ agrarian_strength : strength +]<br> 
+<div class="box" style="background-color:lightgreen; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Agrarian Dissent: [+ agrarian_dissent : dissent +]<br>   
+<div class="box" style="background-color:lightgreen; outline: 2px; outline-style: solid;margin-right: 0.4em; "> </div> Agrarian Strength: [+ agrarian_strength : strength +]<br> 
 
 ------------------------------------
 

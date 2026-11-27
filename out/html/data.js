@@ -384,7 +384,7 @@ const colourList = [{
     },
     // People
     {
-        word: ['Harold Dalgleish', 'Dalgleish'], 
+        word: ['Harold Dalgleish'], 
         style: 'border-bottom: dotted'
     }
 ];
