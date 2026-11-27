@@ -36,7 +36,8 @@ on-arrival: {!
         'farmers' : 45,
         'new_middle' : 12,
         'old_middle' : 12,
-        'unemployed' : 6
+        'unemployed' : 6, 
+        'indigenous' : 0
     };
 
     Q.lps_weyburn = 0;
