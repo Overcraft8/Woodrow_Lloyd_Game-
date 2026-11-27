@@ -42,7 +42,7 @@ on-arrival: managerial_strength += 5;
 The Managerial wing of the party supports top-down economic planning with a focus on balanced budgets. 
 
 @agrarian
-subtitle: The Agrarian-Cooperativists will be pleased.
+subtitle: The Agrarians will be pleased.
 on-arrival: {!
 if (Q.ideology && Q.ideology != "agrarian") {
     Q.changed = 1;

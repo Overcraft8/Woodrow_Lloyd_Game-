@@ -146,6 +146,10 @@ const tooltipList = [{
     searchString: "Res. Workers", 
     explanationText: "Workers in the Resouce industry (lumber, mining, etc.)"
 },
+{
+    searchString: ["Health Services Planning Commission", 'HSPC'], 
+    explanationText: "The commission tasked with introducing universal hospitalization to the province. "
+},
 // Ideologies
 {
     searchString: "Social Democracy", 
@@ -168,7 +172,12 @@ const tooltipList = [{
 {
     searchString: "(CC)", 
     explanationText: "Crown Corporation",
-}
+},
+// People
+{
+    searchString: ["Harold Dalgleish", 'Dalgleish'], 
+    explanationText: "President of the College of Physicians and Surgeons"
+}, 
 ];
 
 
@@ -292,6 +301,10 @@ const colourList = [{
         word: ['Wheat Pool'],
         style: "color: #babe39; font-weight: bold;"
     },
+    {
+        word: ['Health Services Planning Commission', 'HSPC'], 
+        style: 'border-bottom: dotted'
+    }
     // Ideologies
     {
         word: ['The Lloyd Years', 'Social Democracy: The Lloyd Years'], 
@@ -321,6 +334,11 @@ const colourList = [{
     {
         word: "(CC)", 
         style: "border-bottom: dotted;"
+    },
+    // People
+    {
+        word: ['Harold Dalgleish', 'Dalgleish'], 
+        style: 'border-bottom: dotted'
     }
 ];
 

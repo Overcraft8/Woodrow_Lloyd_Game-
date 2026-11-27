@@ -86,7 +86,7 @@ if (window && window.customgeneratemultibar) {
       "#333333", 
       factionColors, 
       "faction_strength_bar", 
-      ["The Labour Wing", "The Managerial Wing", "The Agrarian-Cooperativists"]
+      ["The Labour Wing", "The Managerial Wing", "The Agrarians"]
   );
 
   
@@ -126,8 +126,8 @@ on-display: {!
     },
     {
       "id": "agrarian",
-      "legend": "Agrarian-Cooperativist",
-      "name": "Agrarian-Cooperativist",
+      "legend": "Agrarian",
+      "name": "Agrarian",
       "seats": Q.agrarian_strength
       // "bench": Q.ccf_in_government
     }
@@ -180,8 +180,8 @@ Labour Wing Strength: [+ labour_strength : strength +]<br>
 Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
 Managerial Wing Strength: [+ managerial_strength : strength +]<br>
 
-Agrarian-Cooperativist Dissent: [+ agrarian_dissent : dissent +]<br>   
-Agrarian-Cooperativist Strength: [+ agrarian_strength : strength +]<br> 
+Agrarian Dissent: [+ agrarian_dissent : dissent +]<br>   
+Agrarian Strength: [+ agrarian_strength : strength +]<br> 
 
 ------------------------------------
 

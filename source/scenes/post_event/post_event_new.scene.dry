@@ -1,4 +1,5 @@
 title: Post Event 2
+call: post_event_special
 on-arrival: {!
 
 for (c of Q.classes) {

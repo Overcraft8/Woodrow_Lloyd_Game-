@@ -1,0 +1,7 @@
+title: Post Event
+new-page: true
+on-arrival: {!
+    if (Q.special_mode == 1) {
+        Q.day += 1;
+    }
+!}

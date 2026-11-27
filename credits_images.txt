@@ -134,6 +134,7 @@ BryantJames.jpg - https://esask.uregina.ca/entry/bryant_james_fraser_1877-1945.h
 Lloyd_and_wife.jpg - https://www.esask.uregina.ca/entry/lloyd_woodrow_stanley_1913-72.html
 ipsco.jpg - https://esask.uregina.ca/entry/ipsco_inc.html
 air_ambulance.jpg - https://www.esask.uregina.ca/entry/air_ambulance.html
+DaviesBill.jpg - https://www.esask.uregina.ca/entry/davies_william_gwynne_1916-99.html
 
 
 // ------------------------------------
@@ -158,8 +159,8 @@ sask_medical_assocation_meeting.jpg - https://parks.canada.ca/culture/designatio
 waffle-ndp_caricature.jpg - https://canadiandimension.com/articles/view/waffling-to-the-left-how-a-manifesto-shook-the-ndp-in-1969
 cd_waffle.jpg - https://coat.ncf.ca/Roy/Peace.htm
 potash_operation.jpg - https://magazine.cim.org/en/mining-the-archives/potash-production-comes-to-the-prairies-en/
-more_abundant.jpg - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
-safeguard_health.jpg - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
+more_abundant.png - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
+safeguard_health.png - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
 
 
 

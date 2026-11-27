@@ -119,7 +119,7 @@ is-deck: true
 
 @medicare_government_cards
 title: Government Response
-card-image: img/CCF/more_abundant.jpg
+card-image: img/CCF/more_abundant.png
 is-deck: true
 
 - #gov-medicare_response

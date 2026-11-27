@@ -2166,6 +2166,7 @@ subtitle: <img class="face-img" src="img/CCF/ndp_logo.png" style="border: #000 s
 on-arrival: {!
     Q.party_names.ccf = 'SNDP';
     Q.premier_party = 'SNDP';
+    window.ChangeTab('left', 'status', 'main_tab');
 !}
 go-to: selecting_difficulty
 
@@ -2369,6 +2370,8 @@ In the poor and largely inaccessible north, dominated demographically by First N
 @Information
 
 The intent behind this project is not to paint any historical figures nor organizations in a certain light. Rather, it is intended to arouse interest in the conflicts of Woodrow Stanley Lloyd's tenure as Eighth Premier of Saskatchewan and the lessons that one might ascertain from both their historical result and 'what might have been'.
+
+This mod is a passion project produced primarily by one person (me!) and not affiliated with any organization. 
 
 *Terms Used*
 
