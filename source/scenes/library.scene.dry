@@ -63,7 +63,7 @@ go-to: menu
 
 **1932**: The Cooperative Coalition now resorts to retrenchment, observing the shattering rise in the provincial deficit. 
 
-**1932**: The CCF(SS) is formed by a merger of the ILP(S) and the UFC(SS)'s political apparatus. 
+**1932**: The FLP is formed by a merger of the ILP(S) and the UFC(SS)'s political wing. 
 
 @curr_gov
 go-to: cabinet if ccf_in_government; menu if not ccf_in_government
@@ -77,7 +77,7 @@ Premier: [+ premier +] ([+ premier_party +])
 Assembly composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-CCF(SS): [+ ccf_r +]%
+[+ party_names.ccf +]: [+ ccf_r +]%
 [? if sapd_formed and sapd_seats > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 5, 1930: 4 (as DstP)
 [+ party_names.lps +]: [+ lps_r +]%
@@ -129,7 +129,7 @@ go-to: menu
 
 **New Middle**: The new middle class consists of white-collar workers and government employees. 5-10% of the population. 
 
-**Farmers**: Farmers, many of whom are beholden to large banks out East. This is the base of the [+ party_names.ccf +]. They have been radicalized by the Depression and the drought conditions. 45-55% of the population.
+**Farmers**: Farmers, many of whom are beholden to large banks out east. This is the traditional base of the [+ party_names.ccf +]. 45-55% of the population.
 
 
 @public_opinion

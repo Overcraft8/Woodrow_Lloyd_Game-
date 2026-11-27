@@ -259,7 +259,7 @@ const colourList = [{
         style: "color: #b06262; font-weight: bold;"
     },
     {
-        word: "clc", 
+        word: "CLC", 
         style: "color: #b33a3a; font-weight: bold;"
     },
     {

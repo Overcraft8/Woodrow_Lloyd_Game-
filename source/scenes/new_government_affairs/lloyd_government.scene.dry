@@ -43,9 +43,9 @@ Budget: [+ treasury +]
 
 Sales Tax: [+ sales_tax +]%
 
-[? if year >= 1962 : Income Tax Surcharge: [+ income_tax_surcharge +] ?]
+[? if year >= 1962 : Income Tax Surcharge: [+ income_tax_surcharge +] ?]%
 
-[? if year >= 1962 : Corporate Tax: [+ corporate_tax +] ?]
+[? if year >= 1962 : Corporate Tax: [+ corporate_tax +] ?]%
 
 - @sales_tax_increase
 - @sales_tax_decrease

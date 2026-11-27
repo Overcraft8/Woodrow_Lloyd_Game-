@@ -63,7 +63,8 @@ if (window && window.customgeneratebar) {
   window.customgeneratebar(Q.labour_dissent, "#091f43", "#34b1ef", "labour_bar_dissent", 'A faction of trade unionists, middle-class professionals, and labour activists, representing the urban workers and lower middle-classes');
   window.customgeneratebar(Q.managerial_dissent, "#793f15", "#e1712c", "managerial_bar_dissent", 'The moderate wing of our party');
   window.customgeneratebar(Q.left_dissent, "#1f0303", "#df2c2c", "left_bar_dissent", 'A faction of hardliner socialists. Many of them have ties to Communist organizations');
- }*/
+ }
+
 
 if (window && window.customgeneratemultibar) {
   var strengths = [];
@@ -74,6 +75,8 @@ if (window && window.customgeneratemultibar) {
     factionColors.push(Q.faction_colors[faction + '_color']);
   };
 */
+/*
+
 
   var strengths = [Q.labour_strength, Q.managerial_strength, Q.agrarian_strength];
   var factionColors = ["#2844d2", "#e8ae32", "#89c520"];
@@ -85,6 +88,8 @@ if (window && window.customgeneratemultibar) {
       "faction_strength_bar", 
       ["The Labour Wing", "The Managerial Wing", "The Agrarian-Cooperativists"]
   );
+
+  
 }
 
 if (window && window.customgeneratemultibar) {
@@ -99,6 +104,8 @@ if (window && window.customgeneratemultibar) {
       ['The Agrarians - Primarily Small Farmers', 'Labour - Working Class', 'Middle Class - Professionals, Civil Servants, Teachers, etc.', 'Students, many of whom are radicals']
   );
 }
+*/
+
 !}
 on-display: {!
 
@@ -138,8 +145,9 @@ on-display: {!
         }
         var parliament = d3.parliament();
         parliament.width(width).height(height).innerRadiusCoef(0.4);
-        parliament.enter.fromCenter(true).smallToBig(true);
-        parliament.exit.toCenter(false).bigToSmall(true);
+        parliament.enter.fromCenter(false).smallToBig(false);
+        parliament.exit.toCenter(false).bigToSmall(false);
+        parliament.update.animate(false);
         var filteredData = data.filter(function(party) {
             return party.seats > 0; 
         });
@@ -150,9 +158,10 @@ on-display: {!
 
 = Faction Strength
 
+<!-- 
 <div style='justify-content: center; text-align: center;'>
 <div id="faction_strength_bar"></div><br>
-</div>
+</div> -->
 
 {!<svg id="assembly" style="width: 100%;" viewBox="0 0 500 250"> </svg>!}
 

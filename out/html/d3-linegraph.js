@@ -14,6 +14,9 @@ function addMonths(date, months) {
 
 
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
+
+    var Q = window.dendryUI?.dendryEngine?.state?.qualities;
+    
     /* params */
     if (!parties) {
         parties = ['ccf', 'cpc_s', 'lps', 'pps', 'pcps', 'scps', 'other'];
@@ -22,7 +25,7 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
         partyColors = {'ccf': '#d29c28', 'cpc_s': '#920c0c', 'lps': '#BE0028', 'pps': '#7e741ab3', 'pcps': '#0055A5', 'scps': '#49be39', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'ccf': 'CCF(SS)', 'cpc_s': 'CPC(S)', 'lps': 'LPS', 'pps': 'PPS', 'pcps': 'PCPS', 'scps': 'SCPS', 'other': 'Others'};
+        partyNames = {'ccf': Q.party_names.ccf, 'cpc_s': 'CPC(S)', 'lps': 'LPS', 'pps': 'PPS', 'pcps': 'PCPS', 'scps': 'SCPS', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;

@@ -12,7 +12,7 @@ on-arrival: {!
     document.getElementById('tools_wrapper').style.display = 'none'; 
     document.getElementById('game-title').style.display = 'none'; 
     document.getElementById('game-author').style.display = 'none'; 
-    document.getElementById('header-links').style.display = 'none'; 
+    // document.getElementById('header-links').style.display = 'none'; 
     document.getElementById('content').style.background = 'linear-gradient(rgba(232, 220, 195, 0), rgba(232, 220, 195, 0)), center 72% / cover no-repeat';
     document.getElementById('content').style.border = `0px solid #000`;
     var collage = `<div id='start_collage' style="background: url('img/graphics/CCF.png') center 72% / cover no-repeat;width: 25em;display: block;height: 20em;border: 3px ridge #4b422b;margin-top:2em;"></div>`
@@ -28,10 +28,14 @@ on-departure: {!
 set-bg: img/cities/rokeby_overhead.jpg
 style: start-scene
 
+[
+
 {!<div style="width: 30.7em;padding:  0 0 0 0;font-family: Isometra, monospace;line-height: 2em;text-shadow: 6px 2px 4px black;">
     <h1 style="color:green;margin: 0 0 0 0;">Social Democracy: </h1>
     <h1 style="color:orange;margin:0.5em 0 0 0;">The Lloyd Years</h1>
 </div>!}
+
+]
 
 # <div style="background: url('img/graphics/CCF.png') center 72% / cover no-repeat;width:100%;display: block;height: 20em;border: 3px ridge #4b422b;"></div>
 
@@ -98,19 +102,19 @@ Q.dissent_percent = 5;
 Q.factions = ['managerial', 'agrarian', 'labour'];
 // should this be normalized to 100%?
 
-Q.agrarian_strength = 35;
+Q.agrarian_strength = 25;
 Q.agrarian_dissent = 0;
 
 Q.ccf_socialism = 10;
 Q.left_dissent = 20;
 
-Q.managerial_strength = 45;
+Q.managerial_strength = 60;
 Q.managerial_dissent = 5;
 
 Q.movement_strength = 10;
 Q.movement_dissent = 20;
 
-Q.labour_dissent = 20;
+Q.labour_dissent = 15;
 Q.labour_strength = 30;
 Q.labour_radicalism = 16;
 
@@ -470,7 +474,7 @@ Q.ccf_toleration = 0;
 
 // is the current government a minority government?
 Q.minority_government = 0;
-Q.ruling_government = "CCF(SS) Majority";
+Q.ruling_government = Q.party_names.ccf + " Majority";
 
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
@@ -1549,7 +1553,7 @@ Q.pcps_seats = 0;
 Q.other_seats = 0;
 Q.scps_seats = 0;
 
-Q.largest_party = 'CCF(SS)';
+Q.largest_party = Q.party_names.ccf;
 
 
 // calculate support for each of the parties
@@ -2169,6 +2173,9 @@ We are moving forward with the SNDP name.
 
 
 @selecting_difficulty
+on-arrival: {!
+    Q.ruling_government = Q.party_names.ccf + " Majority";
+!}
 
 Shall we begin?
 
@@ -2230,7 +2237,6 @@ document.getElementById('topbar').style.display = '';
 document.getElementById('tools_wrapper').style.display = ''; 
 document.getElementById('game-title').style.display = ''; 
 document.getElementById('game-author').style.display = ''; 
-document.getElementById('header-links').style.display = ''; 
 !}
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
@@ -2370,6 +2376,7 @@ This mod uses the term 'Indian' to refer to the First Nations. As a Canadian, I 
 
 - @why_the_name : What does 'Prairie Lily' mean?
 - @how_realistic : How realistic is this mod?
+- @setting_resources: What resources are available to learn more about this setting?
 - @return: Return
 
 
@@ -2385,5 +2392,9 @@ This mod uses the term 'Indian' to refer to the First Nations. As a Canadian, I 
 # While extensive research was done for this setting, the mod is not to be taken as an accurate depiction of Saskatchewan during the game's time period. Several viable paths in this game are very unlikely to have occured. This includes the formation of a true Unity Front against the Liberals. Such an effort did exist but ultimately failed to make a breakthrough or last. The CCF(SS) leadership viewed it as a mechanism for the Communists to infiltrate legitimate parties, Social Credit was more interested in giving a middle finger to Ottawa, and the Conservatives under Diefenbaker saw Unity only as a last resort. 
 
 # The mod also gives great liberties to the player. It is unlikely that a manufacturing industry not focused on agriculture could have ever sprung up in Saskatchewan. Winnipeg to the East was already a major manufacturing center with comparisons to Chicago and the National government would always favour Ontario and Quebec for heavy manufacturing.
+
+- @return: Return
+
+@setting_resources
 
 - @return: Return

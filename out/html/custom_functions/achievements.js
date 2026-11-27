@@ -38,7 +38,7 @@ window.achievements_list = {
     {
       "id": "farmer-labor",
       "name": "The Farmer-Labor Party",
-      "description": "CCF(SS) worker and farmer support are both above 50% by game end",
+      "description": "Player party worker and farmer support are both above 50% by game end",
       "difficulty": 4,
       "image": "img/CCF_logo_nobg.png"
     },
