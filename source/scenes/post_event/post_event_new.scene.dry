@@ -2,7 +2,7 @@ title: Post Event 2
 on-arrival: {!
 
 for (c of Q.classes) {
-    Q[c + '_lps'] += 0.3 * Q.thatcher_ammunition;
+    Q[c + '_lps'] += 0.6 * Q.thatcher_ammunition;
 }
 
 if (Q.socred_dying == 1) {

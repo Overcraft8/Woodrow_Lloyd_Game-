@@ -86,5 +86,18 @@ is-deck: true
 
 - #govtwo
 
+
+
+
+
+
+@special_scene_navigation
+go-to: medicare_ground_response if medicare_strike > 0
+
 @medicare_ground_response
 title: Strike Response
+call: main
+set-bg: img/cities/regina_overhead.jpg
+is-hand: true
+max-cards: 3
+

@@ -536,7 +536,7 @@ window.updateBar('bottom');
 console.log('reached end of post event');
 
 !}
-go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; main.main_easy if has_event = 0 and difficulty < 0
+go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0 and not special_mode; main.main_easy if has_event = 0 and difficulty < 0 and not special_mode; main.special_scene_navigation if special_mode and has_event = 0
 
 = [? if medicare_strike == 1 : Medicare Strike ?]
 

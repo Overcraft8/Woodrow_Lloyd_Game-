@@ -174,14 +174,14 @@ on-display: {!
 
 = Factions
 
-Agrarian-Cooperativist Dissent: [+ agrarian_dissent : dissent +]<br>   
-Agrarian-Cooperativist Strength: [+ agrarian_strength : strength +]<br> 
-
 Labour Wing Dissent: [+ labour_dissent : dissent +]<br>
 Labour Wing Strength: [+ labour_strength : strength +]<br>
 
 Managerial Wing Dissent: [+ managerial_dissent : dissent +]<br>
 Managerial Wing Strength: [+ managerial_strength : strength +]<br>
+
+Agrarian-Cooperativist Dissent: [+ agrarian_dissent : dissent +]<br>   
+Agrarian-Cooperativist Strength: [+ agrarian_strength : strength +]<br> 
 
 ------------------------------------
 
