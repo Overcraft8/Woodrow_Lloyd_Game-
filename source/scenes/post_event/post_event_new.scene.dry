@@ -1,5 +1,4 @@
 title: Post Event 2
-call: post_event_special
 on-arrival: {!
 
 for (c of Q.classes) {
@@ -84,5 +83,7 @@ console.log("Updating party membership");
     Q.membership_change_display = Q.membership_change_trend + Q.membership_change;
 
     Q.membership_change = 0;
+
+    window.dendryUI.dendryEngine._runActions(window.dendryUI.game.scenes.post_event_special.onArrival);
 
 !}

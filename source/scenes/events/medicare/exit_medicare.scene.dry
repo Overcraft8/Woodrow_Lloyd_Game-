@@ -28,4 +28,4 @@ on-arrival: {!
     right_sidebar_tabs.style.display = '';
     window.ChangeTab('right', 'status_right.important_matters', 'none');
 !}
-go-to: root
+go-to: prevScene
