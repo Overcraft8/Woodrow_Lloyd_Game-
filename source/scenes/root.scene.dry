@@ -103,7 +103,7 @@ Q.factions = ['managerial', 'agrarian', 'labour'];
 // should this be normalized to 100%?
 
 Q.agrarian_strength = 25;
-Q.agrarian_dissent = 0;
+Q.agrarian_dissent = 45;
 
 Q.ccf_socialism = 10;
 Q.left_dissent = 20;
@@ -114,8 +114,8 @@ Q.managerial_dissent = 5;
 Q.movement_strength = 10;
 Q.movement_dissent = 20;
 
-Q.labour_dissent = 15;
-Q.labour_strength = 30;
+Q.labour_dissent = 35;
+Q.labour_strength = 15;
 Q.labour_radicalism = 16;
 
 
@@ -2368,21 +2368,23 @@ In the poor and largely inaccessible north, dominated demographically by First N
 
 @Information
 
-Credits to LBJ's Force Ghost for the idea behind the Westminster parliament diagram
+The intent behind this project is not to paint any historical figures nor organizations in a certain light. Rather, it is intended to arouse interest in the conflicts of Woodrow Stanley Lloyd's tenure as Eighth Premier of Saskatchewan and the lessons that one might ascertain from both their historical result and 'what might have been'.
 
 *Terms Used*
 
 This mod uses the term 'Indian' to refer to the First Nations. As a Canadian, I recognize that this term is somewhat controversial and that there have been attempts to remove it from common usage. Use of this term in this mod is not meant to denigrate the First Nations. Rather, it was chosen because it was the commonly used term to describe First Nations at the time. 
 
-- @why_the_name : What does 'Prairie Lily' mean?
+Credits to LBJ's Force Ghost for the idea behind the Westminster parliament diagram
+
+- @why_woodrow_lloyd: Why Woodrow Lloyd?
 - @how_realistic : How realistic is this mod?
 - @setting_resources: What resources are available to learn more about this setting?
 - @return: Return
 
 
-@why_the_name 
+@why_woodrow_lloyd
 
-[ After the fact explanation here ]
+Woodrow Stanley Lloyd took ahold of the Saskatchewan section of the NDP during a peculiar moment in it's history. Some of the specifics are explored in this mod but importantly, his tenure marked the end of nearly 20 years of CCF rule within Saskatchewan. One might wonder what Lloyd *could* have done to ward off this defeat to Thatcher and his LPS. 
 
 
 - @return: Return

@@ -65,7 +65,7 @@ is-deck: true
 @gov_direction
 title: Policy Direction
 card-image: img/CCF/ccf_program_sk.png
-view-if: special_mode == 0
+view-if: special_mode == 0 and programme_timer <= 0
 is-deck: true
 
 - #gov_direction
@@ -100,4 +100,6 @@ call: main
 set-bg: img/cities/regina_overhead.jpg
 is-hand: true
 max-cards: 3
+
+# Medicare Cards
 
