@@ -133,6 +133,7 @@ regina_riot_protest.jpg  -https://www.esask.uregina.ca/entry/labour.html
 BryantJames.jpg - https://esask.uregina.ca/entry/bryant_james_fraser_1877-1945.html
 Lloyd_and_wife.jpg - https://www.esask.uregina.ca/entry/lloyd_woodrow_stanley_1913-72.html
 ipsco.jpg - https://esask.uregina.ca/entry/ipsco_inc.html
+air_ambulance.jpg - https://www.esask.uregina.ca/entry/air_ambulance.html
 
 
 // ------------------------------------
@@ -146,7 +147,7 @@ williams_speech.jpg - https://www.winnipegfreepress.com/arts-and-life/entertainm
 // Other
 // -----------------------------------
 
-socialist_shakedown.png - https://ctasc.blog.yorku.ca/2022/04/05/march2022_catalogue/?utm_source=chatgpt.com
+socialist_shakedown.png - https://ctasc.blog.yorku.ca/2022/04/05/march2022_catalogue/
 the_cooperative_commonwealth.jpg - https://platform.coop/blog/navigating-the-goldilocks-dilemma/
 farmers_support_ccf.jpg - https://www.abebooks.co.uk/first-edition/Why-Farmers-Support-CCF-Co-operative-Commonwealth/31859887688/bd
 all_need_ccf.jpg - https://canadianworkingconditions.weebly.com/iii-actions-and-responses.html
@@ -154,10 +155,11 @@ start_fresh.jpg - https://www.tvo.org/article/how-leslie-frosts-1959-election-wi
 anti_medicare_rally_colored.jpg - https://nonnocere.ca/2015/10/doctor-strikes-in-canada/
 anti_medicare_cartoon.png - https://www.sutori.com/en/story/canada-during-the-1960s--3VunXcTodQq8Y8jfeSBjtztV
 sask_medical_assocation_meeting.jpg - https://parks.canada.ca/culture/designation/evenement-event/greve-medecins-doctors-strike
-waffle-ndp_caricature.jpg - https://canadiandimension.com/articles/view/waffling-to-the-left-how-a-manifesto-shook-the-ndp-in-1969?utm_source=chatgpt.com
+waffle-ndp_caricature.jpg - https://canadiandimension.com/articles/view/waffling-to-the-left-how-a-manifesto-shook-the-ndp-in-1969
 cd_waffle.jpg - https://coat.ncf.ca/Roy/Peace.htm
-potash_operation.jpg - https://magazine.cim.org/en/mining-the-archives/potash-production-comes-to-the-prairies-en/?utm_source=chatgpt.com
-
+potash_operation.jpg - https://magazine.cim.org/en/mining-the-archives/potash-production-comes-to-the-prairies-en/
+more_abundant.jpg - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
+safeguard_health.jpg - https://www.saskarchives.com/sites/default/files/2022-09/doctor_strike_1962_combined_learning_package.pdf?
 
 
 

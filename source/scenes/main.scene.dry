@@ -94,12 +94,32 @@ is-deck: true
 @special_scene_navigation
 go-to: medicare_ground_response if medicare_strike > 0
 
+
+
+
 @medicare_ground_response
 title: Strike Response
 call: main
-set-bg: img/cities/regina_overhead.jpg
+set-bg: img/protests/anti_medicare_rally_colored.jpg
 is-hand: true
 max-cards: 3
 
 # Medicare Cards
+
+- @medicare_response_cards
+
+@medicare_response_cards
+title: Ground Response
+card-image: img/CCF/health_pamphlet.jpg
+is-deck: true
+
+- #medicare_response
+
+
+@medicare_government_cards
+title: Government Response
+card-image: img/CCF/more_abundant.jpg
+is-deck: true
+
+- #gov-medicare_response
 
