@@ -304,7 +304,7 @@ const colourList = [{
     {
         word: ['Health Services Planning Commission', 'HSPC'], 
         style: 'border-bottom: dotted'
-    }
+    },
     // Ideologies
     {
         word: ['The Lloyd Years', 'Social Democracy: The Lloyd Years'], 
