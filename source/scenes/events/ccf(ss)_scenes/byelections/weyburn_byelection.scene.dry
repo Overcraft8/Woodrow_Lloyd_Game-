@@ -46,30 +46,42 @@ on-arrival: {!
     Q.total_weyburn_votes += Q.weyburn_campaigning * 200;
 
     for (var c of Q.classes) {
-        var lps_class_support = (Q[c + '_lps'] || 0) + Q.lps_weyburn_advantage;
-        var ccf_class_support = (Q[c + '_ccf'] || 0) + Q.weyburn_campaigning;
+        var lps_class_support =
+            (Q[c + '_lps'] || 0) + Q.lps_weyburn_advantage;
 
-        Q.lps_weyburn += (Q.weyburn_class[c] / 100) * lps_class_support;
-        Q.ccf_weyburn += (Q.weyburn_class[c] / 100) * ccf_class_support;
+        var ccf_class_support =
+            (Q[c + '_ccf'] || 0) + Q.weyburn_campaigning;
+
+        Q.lps_weyburn +=
+            (Q.weyburn_class[c] / 100) * lps_class_support;
+
+        Q.ccf_weyburn +=
+            (Q.weyburn_class[c] / 100) * ccf_class_support;
     }
-
-    console.log(Q.lps_weyburn, Q.ccf_weyburn);
 
     var total_voteshare = Q.lps_weyburn + Q.ccf_weyburn;
 
-    console.log(total_voteshare);
+    if (total_voteshare > 0) {
+        // Convert candidate support into percentages
+        Q.lps_weyburn = (Q.lps_weyburn / total_voteshare) * 100;
+        Q.ccf_weyburn = (Q.ccf_weyburn / total_voteshare) * 100;
+    } else {
+        Q.lps_weyburn = 50;
+        Q.ccf_weyburn = 50;
+    }
 
-    Q.lps_weyburn = (Q.lps_weyburn / total_voteshare) * 100;
-    Q.ccf_weyburn = (Q.ccf_weyburn / total_voteshare) * 100;
-
+    // Display percentages
     Q.lps_weyburn_proportion_display = Math.round(Q.lps_weyburn);
     Q.ccf_weyburn_proportion_display = Math.round(Q.ccf_weyburn);
 
+    // Candidate vote totals
     Q.lps_weyburn_votes = Math.round(
         (Q.lps_weyburn / 100) * Q.total_weyburn_votes
     );
 
-    Q.ccf_weyburn_votes = Q.total_weyburn_votes - Q.lps_weyburn_votes;
+    // Assign remainder to CCF to ensure totals match
+    Q.ccf_weyburn_votes =
+        Q.total_weyburn_votes - Q.lps_weyburn_votes;
 
     var strengths = [Q.lps_weyburn, Q.ccf_weyburn];
 
@@ -87,14 +99,11 @@ on-arrival: {!
 !}
 go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_weyburn > ccf_weyburn
 
+
 = Weyburn By-Election Results
 
 <div class="face-figure"><img class="face-img" src="img/cities/Weyburn_Overhead.jpg"></div>
 
-<br>
-<br>
-<br>
-<br>
 <br>
 
 <div style='justify-content: center; text-align: center;'>
@@ -104,7 +113,6 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 Liberal Result (J.H. Staveley) : [+ lps_weyburn_proportion_display +]% / [+ lps_weyburn_votes +]
 
 CCF Result (Oran Reiman) : [+ ccf_weyburn_proportion_display +]% / [+ ccf_weyburn_votes +]
-
 
 
 
