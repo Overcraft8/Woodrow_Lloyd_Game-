@@ -1795,7 +1795,7 @@ Q.timers = ['advisor_action', 'confronting_scps', 'crisis_program',
             // New party ones
 
             'organizations_relations', 'riding_orgs', 'recruitment',
-            'intra_party_relations', 
+            'intra_party_relations', 'programme', 
 
             // new govt
             'gov', 
@@ -2369,7 +2369,7 @@ In the poor and largely inaccessible north, dominated demographically by First N
 
 @Information
 
-The intent behind this project is not to paint any historical figures nor organizations in a certain light. Rather, it is intended to arouse interest in the conflicts of Woodrow Stanley Lloyd's tenure as Eighth Premier of Saskatchewan and the lessons that one might ascertain from both their historical result and 'what might have been'.
+The intent behind this project is not to paint any historical figures nor organizations in a certain light. Rather, it is intended to arouse interest in the conflicts of Woodrow Stanley Lloyd's tenure as Eighth Premier of Saskatchewan and the lessons that one might ascertain from both their historical result and 'what might have been'. I have tried my best to keep the possible historical diversions believable though obviously, some people may disagree. That's fine. One must keep in mind that this is only a form of edutainment.
 
 This mod is a passion project produced primarily by one person (me!) and not affiliated with any organization. 
 
@@ -2387,16 +2387,15 @@ Credits to LBJ's Force Ghost for the idea behind the Westminster parliament diag
 
 @why_woodrow_lloyd
 
-Woodrow Stanley Lloyd took ahold of the Saskatchewan section of the NDP during a peculiar moment in it's history. Some of the specifics are explored in this mod but importantly, his tenure marked the end of nearly 20 years of CCF rule within Saskatchewan. One might wonder what Lloyd *could* have done to ward off this defeat to Thatcher and his LPS. 
+Woodrow Stanley Lloyd took ahold of the Saskatchewan section of the NDP during a peculiar moment in it's history. Importantly, his tenure marked the end of nearly 20 years of CCF rule within Saskatchewan.
 
+Ultimately, one can only speculate what strategy, if any, could have allowed Lloyd to overcome the numerous forces playing against him. The CCF / NDP in Saskatchewan at the time was fragmented between the active grassroots movement and the tamer cabinet, the medicare strike created deep social divisions that weakened CCF-NDP support, and Thatcher's Liberals were waging a fierce ideological war on the grounds of free enterprise. 
+
+Could Lloyd have preserved the community clinics as an alternative to the private physician? Might he have maneuvered leftward economically to disprove Thatcher's free enterprise rhetoric? These are some of the questions that inspired me to venture on this project. 
 
 - @return: Return
 
 @how_realistic
-
-# While extensive research was done for this setting, the mod is not to be taken as an accurate depiction of Saskatchewan during the game's time period. Several viable paths in this game are very unlikely to have occured. This includes the formation of a true Unity Front against the Liberals. Such an effort did exist but ultimately failed to make a breakthrough or last. The CCF(SS) leadership viewed it as a mechanism for the Communists to infiltrate legitimate parties, Social Credit was more interested in giving a middle finger to Ottawa, and the Conservatives under Diefenbaker saw Unity only as a last resort. 
-
-# The mod also gives great liberties to the player. It is unlikely that a manufacturing industry not focused on agriculture could have ever sprung up in Saskatchewan. Winnipeg to the East was already a major manufacturing center with comparisons to Chicago and the National government would always favour Ontario and Quebec for heavy manufacturing.
 
 - @return: Return
 

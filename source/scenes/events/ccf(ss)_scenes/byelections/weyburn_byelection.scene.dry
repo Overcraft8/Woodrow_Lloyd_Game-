@@ -7,7 +7,7 @@ priority: 2
 max-visits: 1
 on-arrival: {!
     if (!Q.weyburn_campaigning) {Q.weyburn_campaigning = 0;  }
-    Q.lps_weyburn_advantage = 8;
+    Q.lps_weyburn_advantage = 7;
 !}
 
 = Douglas' Seat up for Grabs
@@ -113,7 +113,7 @@ go-to: ccf_wins_weyburn if ccf_weyburn > lps_weyburn; lps_wins_weyburn if lps_we
 
 Liberal Result (J.H. Staveley) : [+ lps_weyburn_proportion_display +]% / [+ lps_weyburn_votes +]
 
-CCF Result (Oran Reiman) : [+ ccf_weyburn_proportion_display +]% / [+ ccf_weyburn_votes +]
+[+ party_names.ccf +] Result (Oran Reiman) : [+ ccf_weyburn_proportion_display +]% / [+ ccf_weyburn_votes +]
 
 
 
